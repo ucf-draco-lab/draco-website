@@ -1,5 +1,5 @@
 
-# ucf-draco-labDESCRIPTION=An engaging 1-3 sentence description of your lab.'s Website
+# ucf-draco-lab
 
 Visit **[thedracolab.com](https://thedracolab.com)** 🚀
 
