@@ -9,8 +9,4 @@ links:
 
 ---
 
-Jarred Long is a current master's student at UCF, excited about ECE. 
-He is  currently very interested in being involved in the development of generative AI that is trained 
-to accurately design digital hardware using HDL, as well as the complications that may come along with it.
-He has a great interest in learning more about hardware security and doing research involving 
-performing secure/encrypted operations at the hardware levels and the issues dealing with processing time. 
+Jarred Long is a current master's student at UCF. He is currently working on the design and implementation of an encrypted ALU using polymorphic principles. Specifically, a dynamic key that changes at certain intervals. This approach aims increase the security of the system while minimizing the impact on latency compared to fully homomorphic encryption schemes. After his master’s degree Jarred hopes to find work in the digital design industry; possibly while pursuing a PhD.

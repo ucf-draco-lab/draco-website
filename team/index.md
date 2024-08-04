@@ -12,7 +12,7 @@ The DRACO lab started at UCF in Fall of 2024. We're growing and looking for unde
  Our team works hard, welcomes those who want to engage in research and outreach, and above all we treat each other with respect and support one another in our similarities and unique differences.
 
 {% include section.html %}
-% include section.html %}
+{% include section.html %}
 ## Lab PI
 
 {% include list.html data="members" component="portrait" filters="role: PI" %}
