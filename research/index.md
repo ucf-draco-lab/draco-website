@@ -7,14 +7,31 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+DRACO explores the resilience and security of computing systems. With a team of over a dozen student researchers, our focus is on automating the design, development, and assessment of attacks, resilience, robustness, and ultimately security in electronic devices and systems.
+
+Please note that the citations on this page were generated automatically from just identifiers using the [Manubot cite utility](https://github.com/manubot/manubot#cite) please reference the published version of the publications to obtain accurate citation information.
 
 {% include section.html %}
 
-## Highlighted
+{%
+  include button.html
+  icon="fa-brands fa-google fa-beat"
+  text="More on Google Scholar"
+  link="http://scholar.google.com/citations?hl=en&user=h0M0TmsAAAAJ"
+%}
+{%
+  include button.html
+  icon="fa-brands fa-researchgate fa-beat"
+  text="More on Research Gate"
+  link="https://www.researchgate.net/lab/DRACO-UCF-and-CEDAR-UWyo-Labs-Mike-Borowczak"
+%}
+{%
+  include button.html
+  icon="fa-regular fa-folder-open fa-beat"
+  text="More on ASEE Peer Repository"
+  link="https://peer.asee.org/?q=borowczak"
+%}
 
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
 
 {% include section.html %}
 
