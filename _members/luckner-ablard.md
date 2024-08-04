@@ -1,7 +1,7 @@
 ---
 name: Luckner Ablard
 image: images/people/luckner-ablard.jpeg
-role: undergrad
+role: alumni
 sponsors: [ucf]
 links:
   linkedin: luckner-ablard
