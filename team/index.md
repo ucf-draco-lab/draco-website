@@ -21,7 +21,7 @@ The DRACO lab started at UCF in Fall of 2024. We're growing and looking for unde
 {% include section.html %}
 ## Graduate Student Researchers
 
-{% include list.html data="members" component="portrait" filters="role: ms,phd" %}
+{% include list.html data="members" component="portrait" filters="role: ^(ms|phd)$" %}
 
 {% include section.html %}
 ## Undergraduate Students
