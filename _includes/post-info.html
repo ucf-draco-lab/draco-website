@@ -1,16 +1,16 @@
 <div class="post-info">
   {% if include.author %}
-  {% for each author in include.author %}
+  {% for indivauthor in include.author %}
     {% assign member = site.members
-      | where_exp: "member", "member.slug == include.author"
+      | where_exp: "member", "member.slug == indivauthor"
       | first
     %}
     {% if member %}
-      {% include portrait.html lookup=include.author style="tiny" %}
+      {% include portrait.html lookup=indivauthor style="tiny" %}
     {% else %}
       <span data-tooltip="Author">
         {% include icon.html icon="fa-solid fa-feather-pointed" %}
-        <span>{{ include.author }}</span>
+        <span>{{ indivauthor }}</span>
       </span>
     {% endif %}
     {%endfor%}
