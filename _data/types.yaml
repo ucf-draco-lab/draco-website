@@ -2,28 +2,45 @@
 
 # team member roles
 
-pi:
-  icon: fa-solid fa-microscope
+PI:
+  icon: fa-solid fa-dragon
   description: Principal Investigator
 
 postdoc:
-  icon: fa-solid fa-glasses
+  icon: fa-solid fa-hat-ninja
   description: Postdoctoral Researcher
 
 phd:
-  icon: fa-solid fa-graduation-cap
-  description: PhD Student
+  icon: fa-solid fa-user-secret
+  description: PhD Student Researcher
+
+ms:
+  icon: fa-solid fa-user-astronaut
+  description: Masters Student Researcher
 
 undergrad:
+  icon: fa-solid fa-chess-knight
+  description: Undergraduate Student Researcher
+
+alumni:
   icon: fa-solid fa-user-graduate
-  description: Undergraduate Student
+  description: Lab Alumni
+
+
+sponsor:
+  icon: fa-solid fa-meteor
+  description: Sponsor
+
+AMDundergrad:
+  icon: fa-solid person-rays
+  description: AMD Undergraduate Fellow
 
 programmer:
   icon: fa-solid fa-code
   description: Programmer
 
 mascot:
-  icon: fa-solid fa-dog
+  icon: fa-solid fa-dragon
   description: Mascot
 
 # general

@@ -1,5 +1,6 @@
 <div class="post-info">
   {% if include.author %}
+  {% for each author in include.author %}
     {% assign member = site.members
       | where_exp: "member", "member.slug == include.author"
       | first
@@ -12,6 +13,7 @@
         <span>{{ include.author }}</span>
       </span>
     {% endif %}
+    {%endfor%}
   {% endif %}
 
   {% assign published = include.published | date: "%B %d, %Y" %}

@@ -28,6 +28,16 @@ layout: default
   | array_filter
 %}
 
+% capture search -%}
+  blog/?search={{ page.name }}
+{%- endcapture %}
+
+<p class="center">
+  <a href="{{ search | relative_url }}">
+    See News Related To {{ page.name | default: page.title }}
+  </a>
+</p>
+
 {% capture search -%}
   research/?search={% for alias in aliases %}"{{ alias }}" {% endfor %}
 {%- endcapture %}
@@ -38,14 +48,30 @@ layout: default
   </a>
 </p>
 
-{% capture search -%}
-  blog/?search={{ page.name }}
-{%- endcapture %}
 
-<!--
+{% if page.sponsors %}
+
+<h3 class="center">Support</h3> 
 <p class="center">
-  <a href="{{ search | relative_url }}">
-    See {{ page.name | default: page.title }}'s posts on the Blog page
-  </a>
+
+<em>{{ page.name }}'s work and/or funding provided in-part by</em><br />
+{% for sponsor in page.sponsors %}
+{% include portrait.html lookup=sponsor %}
+{% endfor %}
+
 </p>
--->
+
+{% endif %}
+
+{% if page.supporterof %}
+
+<h3 class="center">Supporter of the Following Researchers</h3> 
+<p class="center">
+
+{% for researcher in page.supporterof %}
+{% include portrait.html lookup=researcher %}
+{% endfor %}
+
+</p>
+
+{% endif %}
