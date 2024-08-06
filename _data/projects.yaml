@@ -28,7 +28,7 @@
   tags:
     - senior-design
     - available
-    
+
 - title: OpenSense Platform (v3)
   subtitle: Unmask the secrets of data collection and logging
   image: images/projects/sense.png
@@ -42,7 +42,7 @@
 
 - title: 3D Projection Title
   description: Develop a 2^n x 2^n Grid of RGBW+ LEDs that is fed from the simulation output of a cycle/turn-based multi-agent simulator. Enable connectable components to increase the grid-size. Basic version should feature fixed 3D printed topology with each unit square being illuminated via an RGB+ led - stretch goal should feature pneumatically controlled tube structures and a flexible membrane.
-  image: images/photo.jpg
+  image: images/projects/tile.png
   link: #
   repo :
   group: sdp
@@ -54,7 +54,7 @@
   description: Create a co-processor unit that detects WiFi jamming activities and then broadcasts and establishes an audible frequency link between mesh of devices.
   image: images/photo.jpg
   link: #
-  group: sdp
+  group: featured
   tags:
     - available
     - senior-design
@@ -63,14 +63,15 @@
   description: Create a FPGA-based system that can generate and test memristors. The system should be able to generate a pattern, write it to a memristor, read the pattern back, and compare it to the original pattern. 
   image: images/photo.jpg
   link: #
-  group: research
+  group: active
   tags:
     - available
-    - research  
+    - research 
+    - undergraduate-research-spots 
 
 - title: Formal Verification of RISC-V Processor
   subtitle: Understanding Formal Verification Through Application
-  image: images/project/default.jpg 
+  image: images/photo.jpg
   description: This research project focuses on using Formal Verification, specifically Formal Equivalence Checking, to verify the equivalence(s) of two RISC-V processors. The goal is to compare the behavior of an already verified RISC-V processor with an unverified one using mathematical proofs, identifying, and addressing any discrepancies.
   group: active
   tags:
@@ -78,19 +79,35 @@
 
 - title: Attacks on Memristor Devices
   subtitle: Understanding the Security Implications of Memristor Devices
-  image: images/project/default.jpg 
+  image: images/photo.jpg 
   description: This research project focuses on understanding the security implications of memristor devices. The goal is to identify potential vulnerabilities in memristor devices and develop countermeasures to mitigate these vulnerabilities.
   group: active
   tags:
     - research
+    - undergraduate-research-spots 
+
 
 - title: Trojan Detection Using Side Channel Analysis
   subtitle: Detecting Hardware Trojans Using Side Channel Analysis
-  image: images/project/default.jpg 
+  image: images/photo.jpg
   description: This research project focuses on detecting hardware trojans using side channel analysis and machine learning. The goal is to develop a methodology to detect hardware trojans using side channel analysis and evaluate the effectiveness of the methodology on different hardware trojans.
   group: active
   tags:
     - research
+
+
+
+- title: Detect AI Workloads Using Side Channel Analysis
+  subtitle: Detecting AI Workloads Using Side Channel Analysis
+  image: images/photo.jpg
+  description: This research project focuses on detecting AI workloads using side channel analysis. The goal is to develop a methodology to detect AI workloads using side channel analysis and evaluate the effectiveness of the methodology on different AI workloads.
+  group: featured
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots 
+    - graduate-research-spots 
+
 
 # - title: Cool Dataset
 #   subtitle: a subtitle
