@@ -27,7 +27,7 @@ All of our research and nearly all of our (~100) publications and presentations 
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/research/research-highlight.png"
   link="research"
   title="Our Research"
   text=text
@@ -51,7 +51,7 @@ We have opportunities for undergraduate (paid or experiential based on interest 
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/projects.png"
   link="projects"
   title="Our Projects"
   flip=true
@@ -78,6 +78,6 @@ We're an open and collaborative group - learn more about who we are!
   include feature.html
   image="images/2024-draco-team.jpg"
   link="team"
-  title="2024 Partial Team Photo"
+  title="Meet the Team"
   text=text
 %}
