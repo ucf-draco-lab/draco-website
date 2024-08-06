@@ -2,15 +2,16 @@
 title: Projects
 nav:
   order: 2
-  tooltip: Software, datasets, and more
+  tooltip: Lab and Senior Design Project Ideas
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+At any given time the DRACO lab has several active research projects as well as open research or senior design project ideas.
+Interested in contributing to a project (individually or as part of senior design)? Contact [Dr. Mike]({{ site.baseurl }}/contact) and include details on who you are, what you would like to work on, and why.
 
-{% include tags.html tags="publication, resource, website" %}
+
+{% include tags.html tags="research, senior-design" %}
 
 {% include search-info.html %}
 
@@ -22,6 +23,14 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 
 {% include section.html %}
 
-## More
 
-{% include list.html component="card" data="projects" filters="group: " style="small" %}
+## Active Research
+
+{% include list.html component="card" data="projects" filters="group: active" style="small" %}
+
+{% include section.html %}
+
+
+## Senior Design
+
+{% include list.html component="card" data="projects" filters="group: sdp" style="small" %}

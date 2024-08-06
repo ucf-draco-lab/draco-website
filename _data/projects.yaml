@@ -1,3 +1,97 @@
+- title: Polymorphic Encrypted Components
+  subtitle: Design Fundamental Building Blocks with Polymorphic Properties 
+  image: images/photo.jpg
+  link: #
+  description: Using techniques common in malware detection evasion create encrypted components that perform standard operations with a constantly changing key.
+  repo: 
+  group: active
+  tags:
+    - research
+
+- title: Polymorphic Encrypted Components
+  subtitle: Design Fundamental Building Blocks with Polymorphic Properties 
+  image: images/photo.jpg
+  link: #
+  description: Using techniques common in malware detection evasion create encrypted components that perform standard operations with a constantly changing key.
+  repo: 
+  group: active
+  tags:
+    - research
+
+- title: Blocks of Code (v3)
+  subtitle: Physical block programming.
+  image: images/projects/block-o-code.png
+  link: #
+  description: Create a block that based on orientation and manipulations performs one of several fundamental operations. When blocks are placed together they form more complex actions. Blocks should be ultra low-power and cost under five dollar per unit. End product should contain at least 25 blocks. See results from V1 completed by [PDX Senior Capstone team circa 2015](https://github.com/erebus-labs/blocks-o-code) and V2 completed by [UCF 2024 team]().
+  repo: 
+  group: sdp
+  tags:
+    - senior-design
+    - available
+    
+- title: OpenSense Platform (v3)
+  subtitle: Unmask the secrets of data collection and logging
+  image: images/projects/sense.png
+  link: #
+  description: Create a data collection platform that allows for basic environmental data collection for at least three different properties (e.g., temperature, weight/pressure, brightness). Trading off sensor accuracy for simplicity is critical. Platform should allow end user to input the model that converts raw data measurements into known units. See results from V1 completed by [PDX Senior Capstone team circa 2015](https://github.com/erebus-labs/sense_platform) and V2 completed by [UCF 2024 team]().
+  repo: 
+  group: sdp
+  tags:
+    - senior-design
+    - available
+
+- title: 3D Projection Title
+  description: Develop a 2^n x 2^n Grid of RGBW+ LEDs that is fed from the simulation output of a cycle/turn-based multi-agent simulator. Enable connectable components to increase the grid-size. Basic version should feature fixed 3D printed topology with each unit square being illuminated via an RGB+ led - stretch goal should feature pneumatically controlled tube structures and a flexible membrane.
+  image: images/photo.jpg
+  link: #
+  repo :
+  group: sdp
+  tags:
+    - available
+    - senior-design
+
+- title: WiFi Jammer Detector and Audible Peer-to-Peer Backup
+  description: Create a co-processor unit that detects WiFi jamming activities and then broadcasts and establishes an audible frequency link between mesh of devices.
+  image: images/photo.jpg
+  link: #
+  group: sdp
+  tags:
+    - available
+    - senior-design
+
+- title: FPGA-based Memristor Pattern Generator and Tester
+  description: Create a FPGA-based system that can generate and test memristors. The system should be able to generate a pattern, write it to a memristor, read the pattern back, and compare it to the original pattern. 
+  image: images/photo.jpg
+  link: #
+  group: research
+  tags:
+    - available
+    - research  
+
+- title: Formal Verification of RISC-V Processor
+  subtitle: Understanding Formal Verification Through Application
+  image: images/project/default.jpg 
+  description: This research project focuses on using Formal Verification, specifically Formal Equivalence Checking, to verify the equivalence(s) of two RISC-V processors. The goal is to compare the behavior of an already verified RISC-V processor with an unverified one using mathematical proofs, identifying, and addressing any discrepancies.
+  group: active
+  tags:
+    - research
+
+- title: Attacks on Memristor Devices
+  subtitle: Understanding the Security Implications of Memristor Devices
+  image: images/project/default.jpg 
+  description: This research project focuses on understanding the security implications of memristor devices. The goal is to identify potential vulnerabilities in memristor devices and develop countermeasures to mitigate these vulnerabilities.
+  group: active
+  tags:
+    - research
+
+- title: Trojan Detection Using Side Channel Analysis
+  subtitle: Detecting Hardware Trojans Using Side Channel Analysis
+  image: images/project/default.jpg 
+  description: This research project focuses on detecting hardware trojans using side channel analysis and machine learning. The goal is to develop a methodology to detect hardware trojans using side channel analysis and evaluate the effectiveness of the methodology on different hardware trojans.
+  group: active
+  tags:
+    - research
+
 # - title: Cool Dataset
 #   subtitle: a subtitle
 #   group: featured
