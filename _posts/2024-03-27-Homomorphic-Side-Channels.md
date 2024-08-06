@@ -10,4 +10,4 @@ tags:
 ---
 
 
-![Homomorphic Side Channels](/DRACO/images/assets/2024/2024-SSS-Homomorphic-Side-Channels.jpg){:class="img-responsive"}
+![Homomorphic Side Channels](/images/assets/2024/2024-SSS-Homomorphic-Side-Channels.jpg){:class="img-responsive"}

@@ -11,4 +11,4 @@ tags:
 ---
 
 
-![AI and Formal Verification](/DRACO/images/assets/2024/2024-SSS-AI-and-Formal-Verification.jpg){:class="img-responsive"}
+![AI and Formal Verification](/images/assets/2024/2024-SSS-AI-and-Formal-Verification.jpg){:class="img-responsive"}

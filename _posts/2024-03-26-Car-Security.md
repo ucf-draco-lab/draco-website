@@ -10,4 +10,4 @@ tags:
 ---
 
 
-![Car Security](/DRACO/images/assets/2024/2024-SSS-Car-Security.jpg){:class="img-responsive"}
+![Car Security](/images/assets/2024/2024-SSS-Car-Security.jpg){:class="img-responsive"}

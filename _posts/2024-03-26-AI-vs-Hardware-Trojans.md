@@ -10,4 +10,4 @@ tags:
 ---
 
 
-![AI vs Hardware Trojan](/DRACO/images/assets/2024/2024-SSS-AI-vs-Hardware-Trojans.jpg){:class="img-responsive"}
+![AI vs Hardware Trojan](/images/assets/2024/2024-SSS-AI-vs-Hardware-Trojans.jpg){:class="img-responsive"}

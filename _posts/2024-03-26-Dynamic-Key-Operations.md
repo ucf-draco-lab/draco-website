@@ -10,5 +10,5 @@ tags:
 ---
 
 
-![Encypted Arithmetic Operations](/DRACO/images/assets/2024/2024-SSS-Encrypted-Arithmetic-Operations.jpg){:class="img-responsive"}
+![Encypted Arithmetic Operations](/images/assets/2024/2024-SSS-Encrypted-Arithmetic-Operations.jpg){:class="img-responsive"}
 
