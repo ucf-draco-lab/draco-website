@@ -17,20 +17,9 @@ Interested in contributing to a project (individually or as part of senior desig
 
 {% include section.html %}
 
-## Featured
 
-{% include list.html component="card" data="projects" filters="group: featured" %}
-
-{% include section.html %}
-
-
-## Active Research
-
-{% include list.html component="card" data="projects" filters="group: active" style="small" %}
+{% include list.html component="card" data="projects" %}
 
 {% include section.html %}
 
 
-## Senior Design
-
-{% include list.html component="card" data="projects" filters="group: sdp" style="small" %}
