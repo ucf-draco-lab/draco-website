@@ -1,0 +1,38 @@
+<div class="project-info">
+  {% if include.projectmembers %}
+    {% for team_member in include.projectmembers %}
+      {% assign member = site.members
+          | where_exp: "member", "member.slug == team_member.id"
+          | first
+        %}
+
+        {% if member %}
+        {% if team_member.role %}
+        <span data-tooltip="{{team_member.role}}">  
+          {% endif %}
+        {% include portrait.html lookup=team_member.id style="tiny" %}
+        {% if team_member.role %}
+        </span>  
+          {% endif %}
+        {% else %}
+           <span data-tooltip="Member">
+            {% include icon.html icon="fa-solid fa-feather-pointed" %}
+            <span>{{ team_member.name }}</span><span> {{ team_member.email }}</span>
+          </span>
+        {% endif %}
+      
+    {% endfor %}
+  {% endif %}
+
+  {% if include.prq %}
+<div>
+<span><strong>Primary Research Question:</strong></span> {{ include.prq }}
+</div>
+{% endif %}
+
+</div>
+
+{% if include.tags %}
+  {% include tags.html tags=include.tags link="blog" %}
+{% endif %}
+

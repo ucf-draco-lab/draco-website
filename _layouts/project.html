@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<h1 class="center">{{ page.title }}</h1>
+
+{%
+  include project-info.html
+  projectmembers=page.projectmembers
+  member=page.member
+  published=page.date
+  updated=page.last_modified_at
+  prq=page.prq
+  tags=page.tags
+%}
+
+{% include section.html %}
+
+{{ content }}
+
+{% include section.html %}
+
+{% include project-nav.html project=page %}
