@@ -6,12 +6,14 @@
 
 {% include section.html %}
 
+Welcome to the Design of Resilient Architectures for Computing (DRACO) lab website. We're a part of the [Electrical and Computer Engineering Department](http://ece.ucf.edu) at the [University of Central Florida](http://ucf.edu) located in spectacular Orlando, Florida.
+
 ## Highlights
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+We develop algorithms and processes to design, develop, and assess the resilience, robustness, security electronic devices and systems.
+All of our research and nearly all of our (~100) publications and presentations involve students.
 {%
   include button.html
   link="research"
@@ -33,8 +35,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We work on a broad range of projects, funded by various federal and industry partners, while much of our work is open source, some of our work may remain embargoed or partially-redacted when necessary.
 
+We have opportunities for undergraduate (paid or experiential based on interest and time commitment) and graduate research (funded). Our research projects are tightly coupled with the topics listed above, but we also sponsor more applied projects which may be of interest to Senior Design Teams.
 {%
   include button.html
   link="projects"
@@ -58,7 +61,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We're an open and collaborative group - learn more about who we are!
 
 {%
   include button.html
@@ -73,8 +76,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/2024-draco-team.jpg"
   link="team"
-  title="Our Team"
+  title="2024 Partial Team Photo"
   text=text
 %}
