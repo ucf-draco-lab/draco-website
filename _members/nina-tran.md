@@ -1,6 +1,6 @@
 ---
 name: Nina Tran
-image: 
+image: images/people/nina-tran.jpg
 role: ms
 group:
 sponsors: [ucf] 
