@@ -2,6 +2,7 @@
 name: Firstname LastName
 image: images/people/firstname-lastname.png
 role: undergrad-ms-phd
+sponsors: [ucf , others-if-known]
 links:
   home-page: http://URLHERE
   linkedin: USERNAME
