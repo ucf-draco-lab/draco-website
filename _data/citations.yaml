@@ -1,5 +1,19 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.33225/pec/24.82.507
+  title: 'QUANTITATIVE TECHNIQUES WITH SMALL SAMPLE SIZES: AN EDUCATIONAL SUMMER CAMP
+    EXAMPLE'
+  authors:
+  - Trina Johnson Kilty
+  - Kevin T. Kilty
+  - Andrea C Burrows Borowczak
+  - Mike Borowczak
+  publisher: Problems of Education in the 21st Century
+  date: '2024-08-12'
+  link: https://doi.org/gt6s6g
+  orcid: 0000-0001-9409-8245
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.18260/1-2--46898
   title: 'Board 319: Integrating Computing Throughout K-12 While Bridging the Digital
     Divide'
