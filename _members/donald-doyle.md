@@ -1,6 +1,6 @@
 ---
 name: Donald Doyle
-image: images/people/donald-doyle.png
+image: images/people/donald-doyle.jpg
 role: undergrad
 links:
   linkedin: donald-a-doyle-iii-b2b620279
