@@ -1,6 +1,6 @@
 ---
 name: Alicia Thoney
-image: images/people/alicia-thoney.png
+image: images/people/alicia-thoney.jpg
 role: ms
 group:
 sponsors: [ucf] 
