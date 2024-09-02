@@ -6,6 +6,7 @@ sponsors: [northrop-grumman]
 links:
   linkedin: www.linkedin.com/in/raul-graterol-509716241
   github: raulgrat
+  orcid: 0009-0004-0311-9995
 
 ---
 
