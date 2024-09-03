@@ -1,6 +1,6 @@
 ---
 name: Calvin Vanwomer
-image: 
+image: images/people/calvin-vanwormer.png
 role: ms
 group:
 sponsors: [ucf] 
