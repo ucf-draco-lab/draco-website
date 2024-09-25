@@ -1,5 +1,5 @@
 ---
-name: Calvin Vanwomer
+name: Calvin VanWormer
 image: images/people/calvin-vanwormer.png
 role: ms
 group:
