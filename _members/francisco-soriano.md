@@ -5,7 +5,7 @@ role: undergrad
 sponsors: [amd]
 links:
   linkedin: www.linkedin.com/in/francisco-e-soriano
-
+  github: https://github.com/Francisco-Soriano
 ---
 
 Francisco Soriano is an undergraduate senior at the University of Central Florida (UCF) and is pursuing a B.S. in Computer Engineering on the VLSI Track. Since Fall 2023, he has been one of the University's AMD Undergraduate Research Fellows where he engages in ongoing RTL Design projects. During Summer 2024, Francisco successfully completed an internship at AMD Orlando as a Silicon Design Engineer Intern where he gained invaluable RTL Design skills from industry leaders/Engineers.

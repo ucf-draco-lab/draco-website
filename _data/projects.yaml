@@ -20,16 +20,6 @@
   tags:
     - research
 
-- title: Polymorphic Encrypted Components
-  subtitle: Design Fundamental Building Blocks with Polymorphic Properties 
-  image: images/photo.jpg
-  link: #
-  description: Using techniques common in malware detection evasion create encrypted components that perform standard operations with a constantly changing key.
-  repo: 
-  group: active
-  tags:
-    - research
-
 - title: Blocks of Code (v3)
   subtitle: Physical block programming.
   image: images/projects/block-o-code.png
@@ -81,10 +71,10 @@
     - research 
     - undergraduate-research-spots 
 
-- title: Formal Verification of RISC-V Processor
-  subtitle: Understanding Formal Verification Through Application
+- title: Converting Scan Dumps to Gold 
+  subtitle: Locating regions based on scan dump results
   image: images/photo.jpg
-  description: This research project focuses on using Formal Verification, specifically Formal Equivalence Checking, to verify the equivalence(s) of two RISC-V processors. The goal is to compare the behavior of an already verified RISC-V processor with an unverified one using mathematical proofs, identifying, and addressing any discrepancies.
+  description: TBA
   group: active
   tags:
     - research
@@ -96,7 +86,7 @@
   group: active
   tags:
     - research
-    - undergraduate-research-spots 
+    - undergraduate-research-spots
 
 
 - title: Trojan Detection Using Side Channel Analysis
@@ -106,8 +96,6 @@
   group: active
   tags:
     - research
-
-
 
 - title: Detect AI Workloads Using Side Channel Analysis
   subtitle: Detecting AI Workloads Using Side Channel Analysis
@@ -120,8 +108,18 @@
     - undergraduate-research-spots 
     - graduate-research-spots 
 
-
-# - title: Cool Dataset
+- title: Secure, Heterogeneous, Autonomous, and Rotational Knowledge for Swarms
+  subtitle: SHARKS
+  image: images/photo.jpg
+  description: This research project focuses on developing drones in a given swarm with limited compute resources and little memory, so developing efficient behaviors is necessary for the agents to work within these restrictions. In addition to positioning behaviors, this project investigates safety protocols to protect the swarm from adversarial swarms and environmental obstacles. 
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots 
+    - graduate-research-spots
+  
+  # - title: Cool Dataset
 #   subtitle: a subtitle
 #   group: featured
 #   image: images/photo.jpg
