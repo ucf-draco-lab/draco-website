@@ -1,3 +1,15 @@
+- title: Shadow AI
+  subtitle:  Detecting artifically intelligent workloads using side channel analysis
+  image: images/photo.jpg
+  link: #
+  description: 
+  repo: 
+  group: active
+  tags:
+    - research
+    - undergraduate-research-spots
+    - available
+
 - title: Polymorphic Encrypted Components
   subtitle: Design Fundamental Building Blocks with Polymorphic Properties 
   image: images/photo.jpg
