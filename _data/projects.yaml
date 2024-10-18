@@ -110,7 +110,7 @@
  - title: Side-Channel-Resistant Computer Architecture
    subtitle: Analyzing and testing methods for computation that are resistant to side-channel attacks.
    group: active
-   image: images/projects/SHARE.jpg
+   image: images/projects/SHARE.jpeg
    description: The current focus of this research project is to build upon existing research on side-channel-resistant architectures using partially homomorphic encryption. Our goal is to test and analyze how these systems will work in hardware, rather than just in simulation  
    tags:
      - undergraduate-research-spots
