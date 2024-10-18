@@ -1,22 +1,22 @@
 ---
-title: AI Detecting Hardware Trojans
-subtitle: Using AI to detect hardware trojans through side-channel power.
-image: images/project/default.jpg
+title: Side-Channel-Resistant Computer Architecture
+subtitle: Analyzing and testing methods for computation that are resistant to side-channel attacks.
+image: images/projects/SHARE.jpeg
 projectmembers:
 -
   id: yvan-pierre
-  name: Yvan Pierre Jr.
-  email: yv525941@ucf.edu
+  name: Jarred Long
+  email: ja756814@ucf.edu
   role: "Project Lead"
-  start-date: "2023-10-10"
+  start-date: "2024-08-19"
 tags: 
   - active
-  - artificial intelligence 
-  - Hardware Trojans
+  - Hardware security 
+  - Computer Architecture
   - Side-Channels
-  - Power Attacks
-prq: Is it possible for an AI system to detect hardware trojans?
+prq: Are partially homomorphic architectures practical for side channel security.
 ---
 
-The aim of this project is to assess if a hardware trojan could be detected within a large-scale system. The approach involves implementing a hardware trojan designed to periodically acquire "sensitive information." The goal is to investigate whether the AI model can detect variations in voltage power consumption and determine if can decipher when sensitive information is being leaked exactly.
+The current focus of this research project is to build upon existing research on side-channel-resistant architectures using partially homomorphic encryption. Our goal is to test and analyze how these systems will work in hardware, rather than just in simulation. We will be building
+off of a paper titled "E3X" which describes an ISA for a side-channel resistant architecture using partially homomorphic cryptosystem. 
 
