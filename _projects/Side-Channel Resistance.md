@@ -4,7 +4,7 @@ subtitle: Analyzing and testing methods for computation that are resistant to si
 image: images/projects/SHARE.jpeg
 projectmembers:
 -
-  id: yvan-pierre
+  id: jarred-long
   name: Jarred Long
   email: ja756814@ucf.edu
   role: "Project Lead"
