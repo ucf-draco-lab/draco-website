@@ -106,16 +106,17 @@
     - available
     - undergraduate-research-spots 
     - graduate-research-spots
-  
-  # - title: Cool Dataset
-#   subtitle: a subtitle
-#   group: featured
-#   image: images/photo.jpg
-#   link: https://github.com/
-#   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   repo: greenelab/lab-website-template
-#   tags:
-#     - resource
+
+- title: Side-Channel-Resistant Computer Architecture
+  subtitle: Analyzing and testing methods for computation that are resistant to side-channel attacks.
+  group: active
+  image: images/projects/SHARE.jpeg
+  description: The current focus of this research project is to build upon existing research on side-channel-resistant architectures using partially homomorphic encryption. Our goal is to test and analyze how these systems will work in hardware, rather than just in simulation  
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots 
+    - graduate-research-spots
 
 # - title: Cool Package
 #   subtitle: a subtitle
