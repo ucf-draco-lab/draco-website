@@ -3,7 +3,7 @@ name: Alicia Thoney
 image: images/people/alicia-thoney.jpg
 role: ms
 group:
-sponsors: [ucf] 
+sponsors: [awn, ucf] 
 links:
   linkedin: aliciathoney
   github: athoney
