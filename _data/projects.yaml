@@ -1,5 +1,5 @@
 - title: Shadow AI
-  subtitle:  Detecting artifically intelligent workloads using side channel analysis
+  subtitle:  Detecting artificially intelligent workloads using side channel analysis
   image: images/projects/shadow-ai.png
   link: #
   description: 
@@ -59,7 +59,7 @@
   tags:
     - available
     - senior-design
-    
+
 # - title: WiFi Jammer Detector and Audible Peer-to-Peer Backup
 #   description: Create a co-processor unit that detects WiFi jamming activities and then broadcasts and establishes an audible frequency link between mesh of devices.
 #   image: images/photo.jpg
