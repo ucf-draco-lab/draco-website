@@ -1,6 +1,6 @@
 - title: Shadow AI
   subtitle:  Detecting artifically intelligent workloads using side channel analysis
-  image: images/photo.jpg
+  image: images/projects/shadow-ai.png
   link: #
   description: 
   repo: 
@@ -12,7 +12,7 @@
 
 - title: Polymorphic Encrypted Components
   subtitle: Design Fundamental Building Blocks with Polymorphic Properties 
-  image: images/photo.jpg
+  image: images/projects/poly.png
   link: #
   description: Using techniques common in malware detection evasion create encrypted components that perform standard operations with a constantly changing key.
   repo: 
@@ -52,18 +52,26 @@
     - available
     - senior-design
 
-- title: WiFi Jammer Detector and Audible Peer-to-Peer Backup
-  description: Create a co-processor unit that detects WiFi jamming activities and then broadcasts and establishes an audible frequency link between mesh of devices.
-  image: images/photo.jpg
-  link: #
-  group: featured
+- title: Dizzy Quadcopter
+  description: Develop a micro-drone (<250g) with main-body continuously spinning at specific RPM; drone must still be fully controllable in XYZ. Preference toward hardware (PID) control system approach to spin correction. Spinning main body must be able to hold distance sensor.Telemetry and sensor data should be reported back to base controller. 
+  repo : #
+  group: sdp
   tags:
     - available
     - senior-design
+    
+# - title: WiFi Jammer Detector and Audible Peer-to-Peer Backup
+#   description: Create a co-processor unit that detects WiFi jamming activities and then broadcasts and establishes an audible frequency link between mesh of devices.
+#   image: images/photo.jpg
+#   link: #
+#   group: featured
+#   tags:
+#     - available
+#     - senior-design
 
 - title: FPGA-based Memristor Pattern Generator and Tester
   description: Create a FPGA-based system that can generate and test memristors. The system should be able to generate a pattern, write it to a memristor, read the pattern back, and compare it to the original pattern. 
-  image: images/photo.jpg
+  image: images/projects/fpga-mem.png
   link: #
   group: active
   tags:
@@ -73,15 +81,15 @@
 
 - title: Converting Scan Dumps to Gold 
   subtitle: Locating regions based on scan dump results
-  image: images/photo.jpg
-  description: TBA
+  image: images/projects/golden-scan.png
+  description: 
   group: active
   tags:
     - research
 
 - title: Attacks on Memristor Devices
   subtitle: Understanding the Security Implications of Memristor Devices
-  image: images/photo.jpg 
+  image: images/projects/amemristor.png 
   description: This research project focuses on understanding the security implications of memristor devices. The goal is to identify potential vulnerabilities in memristor devices and develop countermeasures to mitigate these vulnerabilities.
   group: active
   tags:
@@ -91,31 +99,19 @@
 
 - title: Trojan Detection Using Side Channel Analysis
   subtitle: Detecting Hardware Trojans Using Side Channel Analysis
-  image: images/photo.jpg
+  image: images/projects/tsc.png
   description: This research project focuses on detecting hardware trojans using side channel analysis and machine learning. The goal is to develop a methodology to detect hardware trojans using side channel analysis and evaluate the effectiveness of the methodology on different hardware trojans.
   group: active
   tags:
     - research
 
-- title: Detect AI Workloads Using Side Channel Analysis
-  subtitle: Detecting AI Workloads Using Side Channel Analysis
-  image: images/photo.jpg
-  description: This research project focuses on detecting AI workloads using side channel analysis. The goal is to develop a methodology to detect AI workloads using side channel analysis and evaluate the effectiveness of the methodology on different AI workloads.
-  group: featured
-  tags:
-    - research
-    - available
-    - undergraduate-research-spots 
-    - graduate-research-spots 
-
 - title: Secure, Heterogeneous, Autonomous, and Rotational Knowledge for Swarms
   subtitle: SHARKS
-  image: images/photo.jpg
+  image: images/projects/sharks.png
   description: This research project focuses on developing drones in a given swarm with limited compute resources and little memory, so developing efficient behaviors is necessary for the agents to work within these restrictions. In addition to positioning behaviors, this project investigates safety protocols to protect the swarm from adversarial swarms and environmental obstacles. 
   group: active
   tags:
     - research
-    - available
     - undergraduate-research-spots 
     - graduate-research-spots
 

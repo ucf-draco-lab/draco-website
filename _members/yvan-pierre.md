@@ -1,7 +1,7 @@
 ---
 name: Yvan Pierre
 image: images/people/yvan-pierre.jpg
-role: undergrad
+role: alumni
 sponsors: [ucf]
 links:
   linkedin: ypjr
