@@ -54,6 +54,7 @@
 
 - title: Dizzy Quadcopter
   description: Develop a micro-drone (<250g) with main-body continuously spinning at specific RPM; drone must still be fully controllable in XYZ. Preference toward hardware (PID) control system approach to spin correction. Spinning main body must be able to hold distance sensor.Telemetry and sensor data should be reported back to base controller. 
+  image: images/projects/stopquad.png
   repo : #
   group: sdp
   tags:
