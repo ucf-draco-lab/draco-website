@@ -7,9 +7,9 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-The DRACO lab started at UCF in Fall of 2024. We're growing and looking for undergraduate and graduate researchers alike to join us. While we're new, we're committed to building a diverse, collaborative, and supportive research team.
+The DRACO Laboratory in the Electrical and Computer Engineering Department within UCF's College of Engineering and Computer Science advances resilient computing architectures through research activities in side-channel security, swarm intelligence, and emerging computational paradigms. Our team welcomes researchers at all levels to engage in work spanning theoretical foundations to system-level implementations, with current opportunities in AI workload detection, autonomous swarm architectures, and hardware security innovations. 
 
- Our team works hard, welcomes those who want to engage in research and outreach, and above all we treat each other with respect and support one another in our similarities and unique differences.
+ Our team works hard, welcomes those who want to engage in research and outreach - sound like something you're interested in? Reach out with you resume and a brief statement about how your interests might intersect.
 
 {% include section.html %}
 ## Lab PI
@@ -42,14 +42,11 @@ The work, projects, publications, materials, and members represented have been f
 
 
 ### Sponsors
-
-Click on the profiles below to see the projects/researchers these entitles have sponsored.
+A special thank you to our current sponors -  click on the profiles below to see the projects/researchers these entitles have sponsored.
 {% include list.html data="members" component="portrait" filters="role: sponsor " %}
 
 
-
-Our broader work has been sponsored by many agencies and organizations - learn more about them by visiting their web presence.
-
+The work shown throughout our website has been sponsored by many agencies and organizations - learn more about them by visiting their web presence.
 
 {% capture content %}
 
