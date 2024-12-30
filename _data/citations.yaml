@@ -1,5 +1,19 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1007/978-3-031-81900-1_11
+  title: "Hardware Trojan Key-Corruption Detection with\_Automated Neural Architecture\
+    \ Search"
+  authors:
+  - Franco Mezzarapa
+  - Jenna Goodrich
+  - Andey Robins
+  - Mike Borowczak
+  publisher: IFIP Advances in Information and Communication Technology
+  date: '2024-12-29'
+  link: https://doi.org/g8xbcv
+  orcid: 0000-0001-9409-8245
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.3390/cryptography8030040
   title: Strict Avalanche Criterion of SHA-256 and Sub-Function-Removed Variants
   authors:
