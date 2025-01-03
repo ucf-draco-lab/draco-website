@@ -1,7 +1,7 @@
 ---
 name: Jarred Long
 image: images/people/jarred-long.jpg
-role: alumni,ms 
+role: ms 
 sponsors: [ucf]
 links:
   linkedin: jlong1221
