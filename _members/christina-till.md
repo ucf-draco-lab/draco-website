@@ -4,9 +4,7 @@ image: images/people/christina-till.png
 role: phd
 sponsors: [ucf]
 links:
-  home-page: 
-  linkedin: christinatill12@gmail.com
-  github: 
+  linkedin: christina-till-716874174
   orcid: 0009-0008-3311-0122
 
 
