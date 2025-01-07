@@ -1,6 +1,6 @@
 ---
 name: Victoria Moreno
-image: images/people/victoria-moreno.png
+image: images/people/victoria-moreno.jpg
 role: ms
 sponsors: [ucf]
 links:
