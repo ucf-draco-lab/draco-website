@@ -1,8 +1,8 @@
 ---
-title: UCF and AWN Partner in year-long collaborative research.
+title: UCF Awarded 2 Year NSF Noyce WRNN Subaward
 date: 01-09-2024
 last_modified_at: "23-01-2025"
-author: [mike-borowczak, alicia-thoney, calvin-vanwormer, AWN]
+author: [mike-borowczak, andrea-borowczak, NSF]
 tags:
   - research
   - funding
