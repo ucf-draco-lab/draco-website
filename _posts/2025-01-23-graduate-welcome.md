@@ -2,7 +2,7 @@
 title: DRACO Welcomes New Graduate Researchers
 date: 23-01-2025
 last_modified_at: ""
-author: [christina-till, marcus-simmonds, vicotria-moreno]
+author: [christina-till, marcus-simmonds, victoria-moreno]
 tags:
   - graduate
   - welcome
