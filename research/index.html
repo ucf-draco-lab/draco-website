@@ -841,6 +841,44 @@
 
 <p>DRACO explores the resilience and security of computing systems. With a team of over a dozen student researchers, our focus is on automating the design, development, and assessment of attacks, resilience, robustness, and ultimately security in electronic devices and systems.</p>
 
+<p>Learn more about some of our side channel analysis work in the following video.</p>
+
+<div class="youtube-placeholder yt-container-hXAL-cSkj1w" style="cursor: pointer;">
+  <img src="/img/placeholder.jpg" alt="Video thumbnail">
+</div>
+<div class="youtube-placeholder-description">
+  Clicking on this image will load the video and send data from and to YouTube/Google.
+</div>
+<style>
+  .youtube-placeholder {
+    width: 560px; 
+    height: auto;
+  }
+  .youtube-placeholder-description {
+    color: gray;
+    font-style: italic;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var container = document.querySelector('.yt-container-hXAL-cSkj1w');
+    function addElement() {
+      var iframe = document.createElement('iframe');
+      iframe.setAttribute('width', '560');
+      iframe.setAttribute('height', '315');
+      iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/hXAL-cSkj1w?autoplay=1');
+      iframe.setAttribute('title', 'YouTube video player');
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+      iframe.setAttribute('allowfullscreen', '');
+      container.innerHTML = '';
+      container.appendChild(iframe);
+    }
+    container.addEventListener('click', addElement);
+  });
+</script>
+
 <p>Please note that the citations on this page were generated automatically from just identifiers using the <a href="https://github.com/manubot/manubot#cite">Manubot cite utility</a> please reference the published version of the publications to obtain accurate citation information.</p>
   </section>
 
