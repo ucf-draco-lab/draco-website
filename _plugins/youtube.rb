@@ -26,10 +26,9 @@ module Jekyll
       video_id, image_url = @text.split(' ')
       <<~HTML
         <div class="youtube-placeholder yt-container-#{video_id}" style="cursor: pointer;">
-          <img src="#{image_url}" alt="Video thumbnail">
+          <img src="https://img.youtube.com/vi/#{video_id}/0.jpeg" alt="Video thumbnail">
         </div>
         <div class="youtube-placeholder-description">
-          Clicking on this image will load the video and send data from and to YouTube/Google.
         </div>
         <style>
           .youtube-placeholder {
