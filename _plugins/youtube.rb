@@ -26,7 +26,7 @@ module Jekyll
       video_id, image_url = @text.split(' ')
       <<~HTML
         <div class="youtube-placeholder yt-container-#{video_id}" style="cursor: pointer;">
-          <img src="https://img.youtube.com/vi/#{video_id}/0.jpeg" alt="Video thumbnail">
+          <img src="https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg" alt="Video thumbnail">
         </div>
         <div class="youtube-placeholder-description">
         </div>
