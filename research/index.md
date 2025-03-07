@@ -9,6 +9,10 @@ nav:
 
 DRACO explores the resilience and security of computing systems. With a team of over a dozen student researchers, our focus is on automating the design, development, and assessment of attacks, resilience, robustness, and ultimately security in electronic devices and systems.
 
+Learn more about some of our side channel analysis work in the following video.
+
+{% youtube hXAL-cSkj1w /img/placeholder.jpg %}
+
 Please note that the citations on this page were generated automatically from just identifiers using the [Manubot cite utility](https://github.com/manubot/manubot#cite) please reference the published version of the publications to obtain accurate citation information.
 
 {% include section.html %}
