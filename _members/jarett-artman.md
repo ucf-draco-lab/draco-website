@@ -1,7 +1,7 @@
 ---
 name: Jarett Artman
 image: images/people/jarett-artman.png
-role: ms
+role: ms-alumni
 sponsors: [ucf]
 links:
   home-page: http://jarettartman.com
