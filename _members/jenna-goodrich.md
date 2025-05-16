@@ -1,7 +1,7 @@
 ---
 name: Jenna Goodrich
 image: images/people/jenna-goodrich.jpg
-role: ms
+role: ms-alumni
 sponsors: [ucf]
 group: 
 links:
