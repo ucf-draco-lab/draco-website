@@ -22,9 +22,14 @@ undergrad:
   icon: fa-solid fa-chess-knight
   description: Undergraduate Student Researcher
 
+
+ms-alumni:
+  icon: fa-solid fa-user-graduate
+  description: Master's Alumni
+  
 alumni:
   icon: fa-solid fa-user-graduate
-  description: Lab Alumni
+  description: Undergraduate Alumni
 
 
 sponsor:
