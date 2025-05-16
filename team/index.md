@@ -33,7 +33,7 @@ The DRACO Laboratory in the Electrical and Computer Engineering Department withi
 
 ## Alumni
 
-{% include list.html data="members" component="portrait" filters="role: alumni" %}
+{% include list.html data="members" component="portrait" filters="role: (ms-alumni|alumni)" %}
 
 {% include section.html %}
 
