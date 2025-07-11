@@ -1,7 +1,7 @@
 ---
 name: Davi Dantas
 image: images/people/davi-dantas-hd.jpg
-role: undergrad
+role: alumni
 sponsors: N/A
 links:
   home-page: N/A
