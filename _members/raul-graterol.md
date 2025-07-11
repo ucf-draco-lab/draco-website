@@ -1,7 +1,7 @@
 ---
 name: Raul Graterol
 image: images/people/raul-graterol.jpg
-role: undergrad
+role: alumni
 sponsors: [northrop-grumman]
 links:
   linkedin: www.linkedin.com/in/raul-graterol-509716241
