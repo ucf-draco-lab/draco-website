@@ -13,5 +13,5 @@ links:
 
 ---
 
-Michael Castiglia is a Computer Engineering undergraduate student on the Digital VLSI Circuits track at the University of Central Florida, with plans to graduate in Summer 2025. Michael is one of the university's [AMD Undergraduate Research Fellows](https://www.ece.ucf.edu/new-amd-partnership-provides-undergraduate-research-fellowship-to-ece-students/), directing him towards research closely aligning with AMD's work in AI and formal verification, where he also interned last summer in the local AMD Orlando office.
-Michael is also actively involved on campus outside of the lab, with roles including the Treasuer of UCF's IEEE student branch and a former test systems lead for the Knights Experimental Rocketry Ion Propulsion project.
+Michael Castiglia is a part-time Computer Engineering Master's student at the University of Central Florida (UCF), having graduated with his Bachelor's of Science in Computer Engineering from UCF in 2025. Michael is working full-time at AMD's Orlando Research and Design Center, having previously been one of the university's [AMD Research Fellows](https://www.ece.ucf.edu/new-amd-partnership-provides-undergraduate-research-fellowship-to-ece-students/) for two years prior to his graduation. 
+Michael is also actively involved on campus outside of the lab, with roles including the President of UCF's IEEE-HKN honor society chapter and a former Treasurer of the university's IEEE Student Branch for the 2024-2025 school year.
