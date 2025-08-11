@@ -1,5 +1,18 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.3390/educsci15070893
+  title: 'Building Successful STEM Partnerships in Education: Strategies for Enhancing
+    Collaboration'
+  authors:
+  - Andrea C. Borowczak
+  - Trina Johnson Kilty
+  - Mike Borowczak
+  publisher: Education Sciences
+  date: '2025-07-12'
+  link: https://doi.org/g9trz7
+  orcid: 0000-0001-9409-8245
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1145/3716368.3735255
   title: Integrating Generative AI into Microelectronics Education
   authors:
