@@ -3,7 +3,7 @@ name: Gabriel Martin
 image: images/people/gabriel-martin.jpg
 role: ms
 group:
-sponsors: [ucf] 
+sponsors: [awn] 
 links:
   linkedin: gabriel-martin-161a0121a
   github: gmartin02
