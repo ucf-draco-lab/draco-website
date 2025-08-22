@@ -2,7 +2,7 @@
 name: Daniel De Armas
 image: images/people/daniel-de-armas.png
 role: ms
-sponsors: [ucf]
+sponsors: [awn]
 links:
   linkedin: daniel-d-b92589145
   github: https://github.com/Daniel-DeArmas
