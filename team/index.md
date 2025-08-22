@@ -36,12 +36,12 @@ The DRACO Laboratory in the Electrical and Computer Engineering Department withi
 {% include list.html data="members" component="portrait" filters="role: (ms-alumni|alumni)" %}
 
 
-### Alumni and First Companies Post Graduation
-- Michael Castiglia, B.S., 2025 [AMD; UCF Grad School]
-- Jarett Artman, M.S., 2025 []
-- Jenna Goodrich, M.S., 2025 []
+### Alumni 
+- Michael Castiglia, B.S., 2025 [AMD; UCF ECE MS Program]
+- Jarett Artman, M.S., 2025 
+- Jenna Goodrich, M.S., 2025 
 - Davi Dantas, B.S., 2025 [BAE Systems]
-- Raul Graterol, B.S., 2025 [] 
+- Raul Graterol, B.S., 2025  
 - Malia Rojas, B.S., 2024 [Lockheed Martin]
 - Yvan Pierre, B.S., 2024 [Honeywell]
 - Luckner Ablard, B.S., 2024 [Collins Aerospace]
