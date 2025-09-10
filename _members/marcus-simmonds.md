@@ -2,7 +2,7 @@
 name: Marcus Simmonds
 image: images/people/marcus-simmonds.png
 role: ms
-sponsors: [ucf]
+sponsors: [ucf, ibm, gem]
 links:
   linkedin: marcsimmonds
   github: marc4813
