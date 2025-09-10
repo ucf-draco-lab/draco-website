@@ -76,7 +76,7 @@ We're an open and collaborative group - learn more about who we are!
 
 {%
   include feature.html
-  image="images/2024-draco-team.jpg"
+  image="images/2025-draco-par-team.jpg"
   link="team"
   title="Meet the Team"
   text=text
