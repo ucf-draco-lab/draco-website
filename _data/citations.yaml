@@ -704,7 +704,7 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: wosuid:PPRN:19311083
-  title: Web of Science
+  title: ''
   authors: []
   publisher: ''
   date: ''

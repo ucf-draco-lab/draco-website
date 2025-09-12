@@ -1,14 +1,70 @@
+- title: SHARKS
+  subtitle: Secure, Heterogeneous, Autonomous, and Rotational Knowledge for Swarms
+  image: images/projects/sharks.png
+  description: This project focuses on developing stable multi-agent coordination methods for target encirclement under uncertainty, emphasizing computational efficiency, resilience, and deployment on edge hardware to enable robust, real-time swarm autonomy.
+  group: active
+  tags:
+    - research
+    - undergraduate-research-spots 
+    - graduate-research-spots
+
+- title: Dark Logic
+  subtitle:  Malicious RTL Generation and Insertion
+  image: images/projects/dark_logic.webp
+  description: We aim to test whether generative AI can insert malicious RTL into hardware designs and evade detection by verification. Our experiments will use a large RISC-V processor on an FPGA and smaller modular designs, all with existing formal verification in place.
+  group: active
+  tags:
+    - research
+    - undergraduate-research-spots
+
+- title: CHIRP
+  subtitle: Ultra Lightweight IoT Communication
+  image: images/projects/chirp.webp
+  description: We aim to implement an ultra light-weight peer-to-peer IoT network using the CHIRP communication algorithm.
+  group: active
+  tags:
+    - research
+    - undergraduate-research-spots
+
 - title: Shadow AI
-  subtitle:  Detecting artificially intelligent workloads using side channel analysis
-  image: images/projects/shadow-ai.png
-  link: #
-  description: 
+  subtitle:  Workload Detection Through Side Channel Analysis
+  image: images/projects/shadow_ai.png
+  description: Focused on detecting unique software behavior by monitoring hardware-level signals.
   repo: 
   group: active
   tags:
     - research
     - undergraduate-research-spots
+
+- title: Dark Fabric
+  subtitle: AI Based FPGA Trojan
+  image: images/projects/dark_fabric.webp
+  description: Researching AI based Trojan Attack on different parts of the FPGA development lifecycle. From HDL to Bitstream, how can AI developed trojan attackers affect FPGAs performance and efficiency while remaining unknown until attack.
+  group: active
+  tags:
+    - research
+    - undergraduate-research-spots
+    - graduate-research-spots
+
+- title: Encrypted Processor Framework & Accelerator
+  subtitle: A Framework for Fast, Secure Processing
+  image: images/projects/epfa.webp
+  description: We aim to implement a novel modification to a well known cryptosystem to build a framework and accelerator that enable secure computation by allowing operations on encrypted data. We aim to be more secure than traditional computation while faster than FHE. 
+  group: active
+  tags:
+    - research
     - available
+    - undergraduate-research-spots 
+    - graduate-research-spots
+
+- title: Signal Insight
+  subtitle:  Appyling Information Theory to Power Estimation and Optimization
+  image: images/projects/signal_insight.png
+  description: We aim to explore how information theory concepts, such as entropy, can be applied to improve power estimation and guide power-driven optimization in hardware designs. The project will investigate both the accuracy of entropy-based estimation methods and their effectiveness in reducing power through optimization strategies.
+  group: active
+  tags:
+    - research
+    - undergraduate-research-spots
 
 - title: Polymorphic Encrypted Components
   subtitle: Design Fundamental Building Blocks with Polymorphic Properties 
@@ -105,16 +161,6 @@
   group: active
   tags:
     - research
-
-- title: Secure, Heterogeneous, Autonomous, and Rotational Knowledge for Swarms
-  subtitle: SHARKS
-  image: images/projects/sharks.png
-  description: This research project focuses on developing drones in a given swarm with limited compute resources and little memory, so developing efficient behaviors is necessary for the agents to work within these restrictions. In addition to positioning behaviors, this project investigates safety protocols to protect the swarm from adversarial swarms and environmental obstacles. 
-  group: active
-  tags:
-    - research
-    - undergraduate-research-spots 
-    - graduate-research-spots
 
 - title: Side-Channel-Resistant Computer Architecture
   subtitle: Analyzing and testing methods for computation that are resistant to side-channel attacks.
