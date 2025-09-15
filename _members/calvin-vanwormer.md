@@ -3,7 +3,7 @@ name: Calvin VanWormer
 image: images/people/calvin-vanwormer.png
 role: ms
 group:
-sponsors: [awn, ucf] 
+sponsors: [ucf] 
 links:
   linkedin: calvin-vanwormer
 

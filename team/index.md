@@ -10,7 +10,7 @@ nav:
 The DRACO Laboratory in the Electrical and Computer Engineering Department within UCF's College of Engineering and Computer Science advances resilient computing architectures through research activities in side-channel security, swarm intelligence, and emerging computational paradigms. Our team welcomes researchers at all levels to engage in work spanning theoretical foundations to system-level implementations, with current opportunities in AI workload detection, autonomous swarm architectures, and hardware security innovations. 
 
  Our team works hard and welcomes those who want to engage in research and outreach. Does this sound like something you're interested in? 
- Reach out with you resume and a brief statement about how your interests might intersect. 
+ Reach out with your resume and a brief statement about how your interests might intersect. 
 
 {% include section.html %}
 ## Lab PI

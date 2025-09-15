@@ -1,7 +1,7 @@
 ---
 name: Ashley Hanzelka
 image: images/people/ashley-hanzelka.png
-role: undergrad
+role: alumni
 sponsors: [ucf]
 links:
   linkedin: www.linkedin.com/in/ashhanz
