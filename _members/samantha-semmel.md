@@ -1,6 +1,6 @@
 ---
 name: Samantha Semmel
-image: images/people/samantha-semmel.png
+image: images/people/samantha-semmel.jpg
 role: undergrad
 sponsors: [ucf]
 links:
