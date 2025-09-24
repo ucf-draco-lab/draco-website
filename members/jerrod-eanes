@@ -458,7 +458,7 @@
 
 <header
   class="background"
-  style="--image: url('')"
+  style="--image: url('/images/2025-draco-par-team.jpg')"
   
     data-dark="true"
   
@@ -1104,7 +1104,7 @@ Jerrod Eanes is a Computer Engineering Undergraduate student at the University o
 
 <footer
   class="background"
-  style="--image: url('')"
+  style="--image: url('/images/Reflection_Pond_01.jpg')"
   
     data-dark="true"
   
