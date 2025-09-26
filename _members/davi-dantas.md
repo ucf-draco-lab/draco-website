@@ -2,9 +2,8 @@
 name: Davi Dantas
 image: images/people/davi-dantas-hd.jpg
 role: alumni
-sponsors: N/A
+sponsors: []
 links:
-  home-page: N/A
   linkedin: davi-dantas-07806979
   github: davidantas9
   orcid: N/A
