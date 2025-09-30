@@ -66,7 +66,7 @@
 - title: Signal Insight
   subtitle:  Applying Information Theory to Power Estimation and Optimization
   image: images/projects/signal_insight.png
-  link: images/projects/2025/signal-insight.png
+  link: images/projects/2025/signal-insights.png
   description: We aim to explore how information theory concepts, such as entropy, can be applied to improve power estimation and guide power-driven optimization in hardware designs. The project will investigate both the accuracy of entropy-based estimation methods and their effectiveness in reducing power through optimization strategies.
   group: active
   tags:
