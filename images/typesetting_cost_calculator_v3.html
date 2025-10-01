@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Typesetting Cost Calculator</title>
+  <style>
+    :root { --bg:#0b0c10; --card:#12141a; --text:#e8e8e8; --muted:#a9b0b8; --accent:#ffd166; --ok:#06d6a0; --bad:#ef476f; }
+    *{ box-sizing:border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:linear-gradient(180deg, #0b0c10 0%, #101218 100%); color:var(--text); }
+    .wrap { max-width: 980px; margin: 40px auto; padding: 24px; }
+    .card { background: var(--card); border:1px solid #1e2230; border-radius: 16px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+    h1 { font-size: 1.6rem; margin: 0 0 12px; }
+    p.lead { color: var(--muted); margin-top: 0; }
+    .grid { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    label { display:block; font-size: .9rem; color: var(--muted); margin-bottom: 6px; }
+    input[type="number"] { width:100%; padding:10px 12px; border-radius: 10px; border:1px solid #2a2f42; background:#0f1219; color:var(--text); }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button{ -webkit-appearance: none; margin:0; }
+    .row { display:flex; gap:12px; align-items:center; flex-wrap: wrap; }
+    .controls { display:flex; gap:16px; align-items:center; flex-wrap: wrap; }
+    .control { display:flex; align-items:center; gap:8px; }
+    .control input { transform: translateY(1px); }
+    button { background:#1b2030; color:var(--text); border:1px solid #2a2f42; padding:10px 14px; border-radius: 10px; cursor:pointer; }
+    button.primary{ background: var(--accent); color:#191919; border-color:#e7be57; font-weight:600; }
+    button.ghost{ background: transparent; }
+    button:active{ transform: translateY(1px); }
+    .totals { margin-top:16px; display:grid; grid-template-columns: repeat(6, 1fr); gap:12px; }
+    .pill { background:#0f1219; border:1px solid #2a2f42; padding:10px 12px; border-radius: 12px; text-align:center; }
+    .pill strong{ display:block; font-size:1.05rem; margin-top:4px; color:var(--accent); }
+    .muted { color: var(--muted); }
+    .footer { margin-top: 18px; color: var(--muted); font-size: .9rem; }
+    .hr { height:1px; background:#21263a; margin:16px 0; border-radius: 1px; }
+    .warn { color: var(--bad); font-size: .9rem; }
+    .ok { color: var(--ok); }
+    .right { text-align:right; }
+    .table { width:100%; border-collapse: collapse; background:#0f1219; border:1px solid #2a2f42; border-radius: 10px; overflow:hidden; }
+    .table th, .table td { padding:10px 12px; border-bottom:1px solid #22283b; }
+    .table th { text-align:left; color:var(--muted); font-weight:600; background:#121725; }
+    .table tr:last-child td { border-bottom:none; }
+    .tag { font-size:.8rem; padding:2px 8px; border-radius:999px; border:1px solid #2a2f42; background:#0f1219; color:var(--muted); }
+    .badge { font-size:.75rem; padding:2px 6px; border-radius:6px; border:1px solid #2a2f42; color:var(--muted); }
+    .credit { color: var(--ok); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ASEE CoED Typesetting Cost Estimator</h1>
+      <p class="lead">Pricing: <span class="tag">≈$7 / 500 words</span> · <span class="tag">≈$7 / figure/table</span> · <span class="tag">≈$5 / block equation</span></p>
+
+      <div class="grid" style="margin-top:12px">
+        <div>
+          <label for="wordCount">Word Count (increments of 1000)</label>
+          <input type="number" id="wordCount" min="0" step="1000" value="3000" />
+        </div>
+        <div>
+          <label for="figures">Figures/Tables</label>
+          <input type="number" id="figures" min="0" step="1" value="6" />
+        </div>
+        <div>
+          <label for="equations">Block Equations</label>
+          <input type="number" id="equations" min="0" step="1" value="4" />
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:12px">
+        <button class="primary" id="calcBtn">Calculate</button>
+        <button class="ghost" id="resetBtn" title="Reset inputs to defaults">Reset</button>
+        <span id="msg" class="warn" role="status" aria-live="polite"></span>
+      </div>
+
+      <div class="totals" style="margin-top:18px">
+        <div class="pill">
+          <span class="muted">Words</span>
+          <strong id="wordsCost">≈ $0</strong>
+        </div>
+        <div class="pill">
+          <span class="muted">Figures/Tables</span>
+          <strong id="figsCost">≈ $0</strong>
+        </div>
+        <div class="pill">
+          <span class="muted">Equations</span>
+          <strong id="eqsCost">≈ $0</strong>
+        </div>
+        <div class="pill">
+          <span class="muted">Base Total</span>
+          <strong id="baseTotal">≈ $0</strong>
+        </div>
+        <div class="pill">
+          <span class="muted">Journal Credit</span>
+          <strong id="creditAmt" class="credit">-$150</strong>
+          <span class="muted" style="font-size:.8rem;">Included in Publication Charge</span>
+        </div>
+        <div class="pill">
+          <span class="muted">Extra Typesetting Costs – Submission Specific</span>
+          <strong id="netCharge">≈ $0</strong>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="controls">
+        <div class="control"><input type="checkbox" id="varWords" checked /><label for="varWords">Forecast Words (Low/Med/High)</label></div>
+        <div class="control"><input type="checkbox" id="varFigs" checked /><label for="varFigs">Forecast Figures/Tables (Low/Med/High)</label></div>
+        <div class="control"><input type="checkbox" id="varEqs" checked /><label for="varEqs">Forecast Block Equations (Low/Med/High)</label></div>
+      </div>
+
+      <div style="margin-top:10px" class="muted">All prices are <strong>rounded up</strong> to the nearest $10 and shown with the ≈ symbol.</div>
+
+      <div style="margin-top:10px">
+        <div class="row" style="justify-content:space-between; align-items:center;">
+          <h2 style="margin:0; font-size:1.1rem;">Scenario Forecast</h2>
+          <span class="muted">Combinations across selected parameters</span>
+        </div>
+        <table class="table" id="forecastTable" style="margin-top:10px">
+          <thead>
+            <tr>
+              <th>Words</th>
+              <th>Figures/Tables</th>
+              <th>Block Equations</th>
+              <th class="right">Extra Typesetting Costs – Submission Specific</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- rows injected -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="footer">
+        <div>Charge rule: If the base total is <strong>&lt; $150</strong>, the fee is <strong>Included in Journal Publication Charge</strong>. Otherwise, the charge equals <strong>Base Total − $150</strong> (then rounded up to the nearest $10 and displayed as ≈).</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const PRICE_PER_500 = 7;
+    const PRICE_PER_FIG = 7;
+    const PRICE_PER_EQ = 5;
+    const JOURNAL_CREDIT = 150;
+
+    const wordEl = document.getElementById('wordCount');
+    const figEl = document.getElementById('figures');
+    const eqEl = document.getElementById('equations');
+    const msgEl = document.getElementById('msg');
+
+    const wordsCostEl = document.getElementById('wordsCost');
+    const figsCostEl = document.getElementById('figsCost');
+    const eqsCostEl = document.getElementById('eqsCost');
+    const baseTotalEl = document.getElementById('baseTotal');
+    const netChargeEl = document.getElementById('netCharge');
+
+    const varWordsEl = document.getElementById('varWords');
+    const varFigsEl = document.getElementById('varFigs');
+    const varEqsEl = document.getElementById('varEqs');
+
+    const forecastTableBody = document.querySelector('#forecastTable tbody');
+
+    function ceilTo10(n){ return Math.ceil(n / 10) * 10; }
+    function approx(n){ return '≈ $' + ceilTo10(n).toLocaleString(); }
+    function dollars(n){ return '$' + n.toFixed(2); }
+
+    function maskCharge(total){
+      const net = Math.max(0, total - JOURNAL_CREDIT);
+      if (net <= 0) return 'Included in Journal Publication Charge';
+      return approx(net);
+    }
+
+    function validateInputs(){
+      const wc = Number(wordEl.value) || 0;
+      const figs = Number(figEl.value) || 0;
+      const eqs = Number(eqEl.value) || 0;
+
+      let ok = true;
+      msgEl.textContent = '';
+
+      if (wc < 0 || figs < 0 || eqs < 0){
+        msgEl.textContent = 'Values cannot be negative.';
+        ok = false;
+      }
+
+      if (wc % 1000 !== 0){
+        msgEl.textContent = 'Word count must be in increments of 1000.';
+        ok = false;
+      }
+      return ok;
+    }
+
+    function computeCosts(words, figs, eqs){
+      const wordCost = (words / 500) * PRICE_PER_500;
+      const figCost = figs * PRICE_PER_FIG;
+      const eqCost = eqs * PRICE_PER_EQ;
+      const total = wordCost + figCost + eqCost;
+      const net = Math.max(0, total - JOURNAL_CREDIT);
+      return { wordCost, figCost, eqCost, total, net };
+    }
+
+    function threeLevelsNumber(val){
+      const low = Math.floor(val * 0.5);
+      const med = Math.floor(val);
+      const high = Math.ceil(val * 1.5);
+
+      // Ensure non-negative and ascending unique values
+      let set = Array.from(new Set([Math.max(0, low), Math.max(0, med), Math.max(0, high)])).sort((a,b)=>a-b);
+      while (set.length < 3){
+        set.push(set[set.length-1] + 1);
+      }
+      return set.slice(0,3);
+    }
+
+    function threeLevelsWords(val){
+      const step = 1000;
+      const low = Math.max(0, Math.floor((val * 0.5) / step) * step);
+      const med = Math.floor(val / step) * step;
+      const high = Math.max(step, Math.ceil((val * 1.5) / step) * step);
+
+      let set = Array.from(new Set([low, med, high])).sort((a,b)=>a-b);
+
+      // Ensure at least [0, step, 2*step] when val is very small
+      if (set.length < 3){
+        if (!set.includes(0)) set.unshift(0);
+        while (set.length < 3){
+          set.push((set[set.length-1] || 0) + step);
+        }
+      }
+      return set.slice(0,3);
+    }
+
+    function renderTotals(){
+      if(!validateInputs()) return;
+
+      const wc = Number(wordEl.value) || 0;
+      const figs = Number(figEl.value) || 0;
+      const eqs = Number(eqEl.value) || 0;
+
+      const { wordCost, figCost, eqCost, total, net } = computeCosts(wc, figs, eqs);
+
+      // Display with ≈ and rounded up to $10
+      wordsCostEl.textContent = approx(wordCost);
+      figsCostEl.textContent = approx(figCost);
+      eqsCostEl.textContent = approx(eqCost);
+      baseTotalEl.textContent = approx(total);
+      netChargeEl.textContent = maskCharge(total);
+    }
+
+    function renderForecast(){
+      const figsVal = Number(figEl.value) || 0;
+      const eqsVal = Number(eqEl.value) || 0;
+      const wordsVal = Number(wordEl.value) || 0;
+
+      const wordsOpts = varWordsEl.checked ? threeLevelsWords(wordsVal) : [wordsVal];
+      const figOpts = varFigsEl.checked ? threeLevelsNumber(figsVal) : [figsVal];
+      const eqOpts = varEqsEl.checked ? threeLevelsNumber(eqsVal) : [eqsVal];
+
+      const labels = ['Low', 'Med', 'High'];
+
+      const rows = [];
+      for (let wi = 0; wi < wordsOpts.length; wi++){
+        for (let fi = 0; fi < figOpts.length; fi++){
+          for (let ei = 0; ei < eqOpts.length; ei++){
+            const w = wordsOpts[wi], f = figOpts[fi], e = eqOpts[ei];
+            const { total } = computeCosts(w, f, e);
+            const wLabel = (wordsOpts.length === 3) ? ' <span class="badge">' + labels[wi] + '</span>' : '';
+            const fLabel = (figOpts.length === 3) ? ' <span class="badge">' + labels[fi] + '</span>' : '';
+            const eLabel = (eqOpts.length === 3) ? ' <span class="badge">' + labels[ei] + '</span>' : '';
+
+            rows.push(
+              `<tr>
+                <td>${w.toLocaleString()}${wLabel}</td>
+                <td>${f}${fLabel}</td>
+                <td>${e}${eLabel}</td>
+                <td class="right"><strong>${maskCharge(total)}</strong></td>
+              </tr>`
+            );
+          }
+        }
+      }
+      forecastTableBody.innerHTML = rows.join('');
+    }
+
+    function resetInputs(){
+      wordEl.value = 3000;
+      figEl.value = 6;
+      eqEl.value = 4;
+      varWordsEl.checked = true;
+      varFigsEl.checked = true;
+      varEqsEl.checked = true;
+      msgEl.textContent = '';
+      renderTotals();
+      renderForecast();
+    }
+
+    // Wire up events
+    document.getElementById('calcBtn').addEventListener('click', () => {
+      renderTotals();
+      renderForecast();
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', resetInputs);
+
+    [wordEl, figEl, eqEl, varWordsEl, varFigsEl, varEqsEl].forEach(el => {
+      el.addEventListener('input', () => {
+        renderTotals();
+        renderForecast();
+      });
+      el.addEventListener('change', () => {
+        renderTotals();
+        renderForecast();
+      });
+    });
+
+    // Initial render
+    resetInputs();
+  </script>
+</body>
+</html>
