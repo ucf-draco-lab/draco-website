@@ -1,4 +1,13 @@
-# Privacy Policy
+---
+title: Privacy 
+nav:
+  order: 5
+  tooltip: Policy
+---
+
+# {% include icon.html icon="fa-regular fa-shield-halved" %}Privacy
+
+
 
 _Last updated: October 2025_
 
