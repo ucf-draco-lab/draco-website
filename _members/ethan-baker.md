@@ -1,6 +1,6 @@
 ---
 name: Ethan Baker
-image: https://photos.app.goo.gl/Ua7ju1iApiaiumLW9
+image: images/people/ethan-baker.jpg
 role: undergrad
 sponsors: ucf 
 links:
