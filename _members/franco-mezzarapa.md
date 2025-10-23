@@ -3,12 +3,20 @@ name: Franco Mezzarapa
 image: images/people/franco-mezzarapa.png
 role: undergrad
 sponsors: [ucf]
+
 links:
   linkedin: franco-mezzarapa-09a16028b
-  github: Franco-Mezzarapa/
-  
+  github: Franco-Mezzarapa
+  orcid: 0009-0005-9306-5149
 
 ---
 
-Franco Mezzarapa is an undergraduate student at UCF and a driven cybersecurity partisan with experience in the area. Having been a participant in the UCF Collegiate Cyber Defense Team, his passion for cybersecurity is focused primarily on the development of embedded and operating systems as well as malware analysis. In his free time, he pursues personal projects related to DLL injections, security tooling, and general improvement of his C/C++ programming. He looks forward to pursuing a master's degree in cybersecurity in the upcoming years and making an impact in the field of malware analysis and detection.
+Franco is an undergraduate at the University of Central Florida pursuing a Bachelor’s in Computer Engineering, focusing on hardware, operating system security, and malware development and analysis.
+
+He leads multiple projects in the DRACO Lab, including DarkLogic and TRIDENT, and also contributes to CHIRP. Beyond the lab, Franco is active in the UCF cybersecurity community, currently serving as a Red Team operator for the Horse Plinko competition.
+
+In his free time, he develops personal cybersecurity projects in the areas of memory injections, rootkits, and post-exploitation techniques for cybersecurity competitions. Looking ahead, Franco plans to pursue a Ph.D. in cybersecurity, with the goal of making a significant impact in the field of malware analysis and detection.
+
+
+
 

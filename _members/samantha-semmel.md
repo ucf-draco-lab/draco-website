@@ -2,7 +2,7 @@
 name: Samantha Semmel
 image: images/people/samantha-semmel.jpg
 role: undergrad
-sponsors: [northrop-grumman]
+sponsors: [ucf]
 links:
   linkedin: https://www.linkedin.com/in/samantha-semmel/
   github: https://github.com/175Samantha175
