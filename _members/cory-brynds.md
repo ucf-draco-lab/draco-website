@@ -5,9 +5,8 @@ role: ms
 sponsors: amd
 links:
   home-page: N/A
-  linkedin: [cbrynds](https://www.linkedin.com/in/corybrynds/)
-  github: [cbrynds](https://github.com/cbrynds)
-  orcid: N/A
+  linkedin: corybrynds
+  github: cbrynds
 
 
 ---

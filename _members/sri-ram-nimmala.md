@@ -1,11 +1,11 @@
 ---
-name: sri ram nimmala
+name: Sri Ram Nimmala
 image: images/people/sriram-nimmala.png
 role: phd
 sponsors: [ucf]
 links:
   linkedin: sri-ram-nimmala-4b593915a
-  github: https://github.com/goatgate
+  github: goatgate
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: Aany Van Der Linden
 image: images/people/firstname-lastname.png
-role: Undergraduate Research Assistant
+role: undergrad
 sponsors: [ucf]
 links:
   home-page: 

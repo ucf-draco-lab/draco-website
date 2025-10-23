@@ -4,9 +4,7 @@ image: images/people/nicholas-mcneill.jpg
 role: undergrad
 sponsors: [ucf]
 links:
-  linkedin: Nicholas McNeill
-  github: https://github.com/Doppl-r
-
+  github: Doppl-r
 
 ---
 

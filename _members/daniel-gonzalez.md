@@ -5,9 +5,6 @@ name: Daniel Gonzalez
 role: undergrad
 
 sponsors: Ucf 
-
-
-
   linkedin: Daniel-Gonzalez-5b8005624
 
 

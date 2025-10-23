@@ -7,6 +7,7 @@ links:
   linkedin: marcsimmonds
   github: marc4813
   orcid: 0009-0004-2956-4296
+  
 ---
 
 Marcus Simmonds is a Master’s student in Computer Engineering at the University of Central Florida (UCF), where he also earned his B.S. in Computer Science in May 2024.

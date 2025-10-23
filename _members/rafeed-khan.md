@@ -5,7 +5,7 @@ role: undergrad
 sponsors: [UCF]
 links:
   linkedin: rafeed-khan
-  github: https://github.com/BigManRaffa
+  github: BigManRaffa
   orcid: 0009-0004-4488-9021
 
 

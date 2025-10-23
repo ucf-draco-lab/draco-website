@@ -5,7 +5,7 @@ role: undergrad
 sponsors: [ucf , amd]
 links:
   linkedin: sebastiancandelaria
-  github: github.com/Meowcaroni
+  github: Meowcaroni
 
 
 ---
