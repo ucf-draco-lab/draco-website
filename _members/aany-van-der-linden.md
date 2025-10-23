@@ -1,6 +1,6 @@
 ---
 name: Aany Van Der Linden
-image: images/people/firstname-lastname.png
+image: images/people/aany-van-der-linden.jpg
 role: undergrad
 sponsors: [ucf]
 links:

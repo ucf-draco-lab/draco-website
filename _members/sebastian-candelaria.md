@@ -1,6 +1,6 @@
 ---
 name: Sebastian Candelaria
-image: images/people/sebastian-candelaria.png
+image: images/people/sebastian-candelaria.jpg
 role: undergrad
 sponsors: [ucf , amd]
 links:

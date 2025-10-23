@@ -1,6 +1,6 @@
 ---
 name: Lona Van Der Linden
-image: images/people/lona-vanderlinden.png
+image: images/people/ilona-vanderlinden.png
 role: phd
 sponsors: 
 links:

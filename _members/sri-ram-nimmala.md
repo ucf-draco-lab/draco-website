@@ -1,6 +1,6 @@
 ---
 name: Sri Ram Nimmala
-image: images/people/sriram-nimmala.png
+image: images/people/sri-ram-nimmala.png
 role: phd
 sponsors: [ucf]
 links:

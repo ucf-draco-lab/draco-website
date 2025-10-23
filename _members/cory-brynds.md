@@ -1,6 +1,6 @@
 ---
 name: Cory Brynds
-image: images/people/cory-brynds.png
+image: images/people/cory-brynds.jpg
 role: ms
 sponsors: amd
 links:
