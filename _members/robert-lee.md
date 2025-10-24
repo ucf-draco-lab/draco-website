@@ -1,11 +1,10 @@
 ---
 name: Robert Lee
-image: 
+image: images/people/robert-lee.jpg
 role: Undergrad
 sponsors: [ucf]
 links:
-  linkedin: www.linkedin.com/in/2020robertlee
-  github:
+  linkedin: 2020robertlee
   orcid:0009-0004-9329-3013
 ---
 
