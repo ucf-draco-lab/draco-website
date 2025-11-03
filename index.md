@@ -1,7 +1,7 @@
 ---
 ---
 
-# DRACO IS AWESOME
+# DRACO
 
 
 {% include section.html %}
