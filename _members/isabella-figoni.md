@@ -2,7 +2,7 @@
 name: Isabella Figoni
 image: images/people/isabella-figoni.png
 role: undergrad
-sponsors: [ucf]
+sponsors: ucf
 links:
   linkedin: www.linkedin.com/in/bella-figoni-286a62190
   orcid: 0009-0004-7997-9262

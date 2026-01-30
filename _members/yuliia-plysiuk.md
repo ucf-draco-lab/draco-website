@@ -1,11 +1,12 @@
 ---
 name: Yuliia Plysiuk
-image: images/people/yuliia-plysiuk.jpg
+image: 
 role: undergrad
-sponsors: [ucf]
+sponsors:
 links:
   linkedin: yuliia-plysiuk
-  github: YuliiaPlysiuk
+  github: https://github.com/YuliiaPlysiuk
+  orcid: - 
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 name: Sebastian Candelaria
-image: images/people/sebastian-candelaria.jpg
+image: images/people/sebastian-candelaria.png
 role: undergrad
 sponsors: [ucf , amd]
 links:
   linkedin: sebastiancandelaria
-  github: Meowcaroni
+  github: github.com/Meowcaroni
 
 
 ---

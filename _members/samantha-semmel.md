@@ -4,8 +4,8 @@ image: images/people/samantha-semmel.jpg
 role: undergrad
 sponsors: [ucf]
 links:
-  linkedin: samantha-semmel
-  github: 175Samantha175
+  linkedin: https://www.linkedin.com/in/samantha-semmel/
+  github: https://github.com/175Samantha175
 
 
 ---

@@ -4,7 +4,7 @@ image: images/people/raul-graterol.jpg
 role: alumni
 sponsors: [northrop-grumman]
 links:
-  linkedin: raul-graterol-509716241
+  linkedin: www.linkedin.com/in/raul-graterol-509716241
   github: raulgrat
   orcid: 0009-0004-0311-9995
 

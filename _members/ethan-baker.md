@@ -1,11 +1,11 @@
 ---
 name: Ethan Baker
-image: images/people/ethan-baker.jpg
+image: https://photos.app.goo.gl/Ua7ju1iApiaiumLW9
 role: undergrad
 sponsors: ucf 
 links:
-  linkedin: ethanbbaker
-  github: ReadHeadRedemption
+  linkedin: https://www.linkedin.com/in/ethanbbaker/
+  github: https://github.com/ReadHeadRedemption
   orcid: 0009-0002-2425-7137
 
 

@@ -1,12 +1,13 @@
 ---
 name: Cory Brynds
-image: images/people/cory-brynds.jpg
+image: images/people/cory-brynds.png
 role: ms
 sponsors: amd
 links:
   home-page: N/A
-  linkedin: corybrynds
-  github: cbrynds
+  linkedin: [cbrynds](https://www.linkedin.com/in/corybrynds/)
+  github: [cbrynds](https://github.com/cbrynds)
+  orcid: N/A
 
 
 ---

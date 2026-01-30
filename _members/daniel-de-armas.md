@@ -5,7 +5,7 @@ role: ms
 sponsors: [awn]
 links:
   linkedin: daniel-d-b92589145
-  github: Daniel-DeArmas
+  github: https://github.com/Daniel-DeArmas
 
 ---
 

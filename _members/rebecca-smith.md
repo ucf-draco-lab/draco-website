@@ -1,6 +1,6 @@
 ---
 name: Rebecca Smith
-image: images/people/rebecca-smith.jpg
+image: images/people/rebecca-smith.png
 role: undergrad
 sponsors: [ucf]
 links:
