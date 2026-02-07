@@ -1,5 +1,16 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1109/ACCESS.2026.3662283
+  title: A Statistical Approach for Keystroke Continuous Authentication Subversion
+  authors:
+  - D. Radosevich
+  - M. Borowczak
+  publisher: IEEE Access
+  date: '2026-01-01'
+  link: https://doi.org/hbnxgw
+  orcid: 0000-0001-9409-8245
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.3390/educsci15070893
   title: 'Building Successful STEM Partnerships in Education: Strategies for Enhancing
     Collaboration'
