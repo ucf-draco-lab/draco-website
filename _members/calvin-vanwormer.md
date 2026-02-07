@@ -2,13 +2,15 @@
 name: Calvin VanWormer
 image: images/people/calvin-vanwormer.png
 role: ms
-group:
-sponsors: [ucf] 
+sponsors: [ucf]
 links:
+  home-page: http://URLHERE
   linkedin: calvin-vanwormer
 
 ---
 
-Calvin VanWormer is a Computer Engineering Master's student at the University of Central Florida. 
+Calvin VanWormer is a Computer Engineering master’s student at the University of Central Florida, with an anticipated graduation in Spring 2026. He graduated with his Bachelor of Science in Computer Science from the University of Wyoming in Spring 2024. His academic specialization lies in computer networks and cybersecurity.
 
-He recently graduated from the University of Wyoming with a B.S. in Computer Science. Although he has a large background in software, he is strongly interested in hardware-based encryption schemes. He is excited to begin with the lab and contribute to its research goals!
+Calvin is currently working on his thesis research, which focuses on implementing the CHIRP communication protocol through distributed networking and device synchronization within an ultra-lightweight IoT network. In addition, he is contributing to the development of a distributed server architecture designed to support an AI-based penetration testing assistant for the lab.
+
+Outside of his academic and research pursuits, He enjoys spending time outdoors, particularly hiking, biking, and skiing.

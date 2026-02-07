@@ -1,15 +1,13 @@
 ---
 name: Sebastian Candelaria
-image: images/people/sebastian-candelaria.jpg
+image: images/people/sebastian-candelaria.png
 role: undergrad
-sponsors: [ucf]
+sponsors: [ucf , amd]
 links:
-  home-page:
   linkedin: sebastiancandelaria
-  github: Meowcaroni
-  orcid: 
+  github: github.com/Meowcaroni
 
 
 ---
 
-Sebastian Candelaria is a second-year student at UCF pursuing a bachelor’s degree in Computer Engineering to graduate with Honors in May 2027. With a passion for computer hardware and its diverse uses across many industries, Sebastian seeks to do research involving hardware design. Outside of the DRACO Lab, Sebastian serves as the community service chair for IEEE@UCF. Sebastian hopes to apply his growing skillset, including Verilog, C, & Python, and his problem-solving mindset in the silicon manufacturing industry as a computer hardware engineer.
+Sebastian Candelaria is a third-year undergraduate Computer Engineering student set to graduate with Honors in Spring 2027. As a UCF/AMD Undergraduate Fellow, Sebastian seeks to do research involving computer architecture, design, and verification. Sebastian is currently working on the lab's Encrypted Processor project with designing a comparison accelerator. Outside of the DRACO Lab, Sebastian serves as a co-lead for IEEE UCF's Gaming CPU project and enjoys playing video games.

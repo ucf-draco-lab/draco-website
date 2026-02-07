@@ -4,7 +4,6 @@ image: images/people/sheridan-sloan.png
 role: alumni
 sponsors: [ucf]
 links:
-  home-page: #
   linkedin: sheridan-sloan
 
 

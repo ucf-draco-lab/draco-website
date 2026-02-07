@@ -6,7 +6,9 @@
 
 {% include section.html %}
 
-Welcome to the Design of Resilient Architectures for Computing (DRACO) lab website. We're a part of the [Electrical and Computer Engineering Department](http://ece.ucf.edu) at the [University of Central Florida](http://ucf.edu) located in spectacular Orlando, Florida.
+The DRACO Lab, a part of the [Electrical and Computer Engineering Department](http://ece.ucf.edu) at the [University of Central Florida](http://ucf.edu) explores secure and resilient computing at the intersection of hardware, embedded systems, and artificial intelligence. We design methods to protect against side-channel attacks, hardware Trojans, and malicious logic, while also creating open-source tools and hands-on platforms that prepare the next generation of engineers and educators.
+
+{% include figure.html image="images/2025-draco-par-team.jpg" width="100%" %}
 
 ## Highlights
 
