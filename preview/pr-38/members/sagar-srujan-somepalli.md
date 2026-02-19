@@ -1,0 +1,1 @@
+I am Master’s in Computer Science student and I hold a Bachelor’s degree in Computer Science. Additionally, I have experience working on AI/ML and Computer Vision projects.
