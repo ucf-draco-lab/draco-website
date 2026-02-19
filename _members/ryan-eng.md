@@ -1,6 +1,6 @@
 ---
 name: Ryan Eng
-image: images/people/ryan-eng.png
+image: images/people/ryan-eng.jpg
 role: undergrad
 sponsors: [ucf , amd]
 links:

@@ -1,6 +1,6 @@
 ---
 name: Jaden Yun
-image: images/people/jaden-yun.png
+image: images/people/jaden-yun.jpg
 role: undergrad-ms-phd
 sponsors: [ucf , DRACO Lab]
 links:

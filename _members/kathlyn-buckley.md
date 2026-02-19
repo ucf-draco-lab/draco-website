@@ -1,6 +1,6 @@
 ---
 name: Kathlyn Buckley
-image: images/people/kathlyn-buckley.jpeg
+image: images/people/kathlyn-buckley.jpg
 role: undergrad
 sponsors: [ucf]
 links: 

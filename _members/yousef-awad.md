@@ -1,6 +1,6 @@
 ---
 name: Yousef Awad
-image: images/people/yousef-awad.png
+image: images/people/yousef-awad.jpg
 role: undergrad
 sponsors: [ucf]
 links:

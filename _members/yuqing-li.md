@@ -1,6 +1,6 @@
 ---
 name: Yuqing Li
-image: images/people/Yuqing-li.png
+image: images/people/yuqing-li.jpg
 role: undergraduate
 sponsors: [UCF]
 links:

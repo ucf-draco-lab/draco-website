@@ -1,13 +1,9 @@
 ---
 name: Daniel Gonzalez
-
-![image](Headshot.png)
+image: images/people/daniel-gonzalez.png
 role: undergrad
-
-sponsors: Ucf 
-
-
-
+sponsors: ucf 
+links:
   linkedin: Daniel-Gonzalez-5b8005624
 
 
