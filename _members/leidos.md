@@ -1,6 +1,6 @@
 ---
 name: Leidos
-image: images/sponsors/leidos.png
+image: images/sponsors/leidos-square.png
 role: sponsor
 supporterof : [calvin-vanwormer, franco-mezzarapa, alexei-solonari]
 links:
