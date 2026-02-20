@@ -2,9 +2,8 @@
 name: Calvin VanWormer
 image: images/people/calvin-vanwormer.png
 role: ms
-sponsors: [ucf]
+sponsors: [ucf, leidos]
 links:
-  home-page: http://URLHERE
   linkedin: calvin-vanwormer
 
 ---
