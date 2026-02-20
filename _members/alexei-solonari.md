@@ -2,7 +2,7 @@
 name: Alexei Solonari
 image: images/people/alexei-solonari.png
 role: undergrad
-sponsors: []
+sponsors: [leidos]
 links:
   home-page: https://asolonari.com/
   linkedin: alexei-solonari
