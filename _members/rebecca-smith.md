@@ -1,10 +1,9 @@
 ---
 name: Rebecca Smith
-image: images/people/rebecca-smith.png
+image: images/people/rebecca-smith.jpg
 role: undergrad
 sponsors: [ucf]
 links:
-  home-page:
   linkedin: rebecca-smith3
   github: R3b3cc4G4m3r
   orcid: 0009-0007-4411-7701

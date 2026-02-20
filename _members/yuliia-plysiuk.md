@@ -1,12 +1,11 @@
 ---
 name: Yuliia Plysiuk
-image: 
+image: images/people/yuliia-plysiuk.jpg
 role: undergrad
 sponsors:
 links:
   linkedin: yuliia-plysiuk
-  github: https://github.com/YuliiaPlysiuk
-  orcid: - 
+  github: YuliiaPlysiuk
 
 ---
 

@@ -4,8 +4,8 @@ image: images/people/alyssa-pinnock.png
 role: undergrad
 sponsors: [ucf]
 links:
-  linkedin: https://www.linkedin.com/in/alyssapinnock/
-  github: https://github.com/alyssapinnock
+  linkedin: alyssapinnock
+  github: alyssapinnock
   orcid: 0009-0006-4760-9755
 
 ---
