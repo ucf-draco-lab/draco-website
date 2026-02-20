@@ -2,7 +2,7 @@
 name: Franco Mezzarapa
 image: images/people/franco-mezzarapa.png
 role: undergrad
-sponsors: [ucf]
+sponsors: [ucf,leidos]
 
 links:
   linkedin: franco-mezzarapa-09a16028b
