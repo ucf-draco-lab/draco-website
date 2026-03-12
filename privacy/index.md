@@ -1,7 +1,7 @@
 ---
 title: Privacy 
 nav:
-  order: 5
+  order: 6
   tooltip: Policy
 ---
 

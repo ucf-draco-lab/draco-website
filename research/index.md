@@ -21,7 +21,7 @@ Please note that the citations on this page were generated automatically from ju
   include button.html
   icon="fa-brands fa-google fa-beat"
   text="More on Google Scholar"
-  link="http://scholar.google.com/citations?hl=en&user=h0M0TmsAAAAJ"
+  link="https://scholar.google.com/citations?hl=en&user=h0M0TmsAAAAJ"
 %}
 {%
   include button.html
