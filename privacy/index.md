@@ -1,5 +1,8 @@
 ---
-title: Privacy
+title: Privacy 
+nav:
+  order: 6
+  tooltip: Policy
 ---
 
 # {% include icon.html icon="fa-regular fa-shield-halved" %}Privacy
