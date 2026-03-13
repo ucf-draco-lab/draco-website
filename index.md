@@ -1,14 +1,45 @@
 ---
 ---
 
-# DRACO
+<div class="hero-tagline">We break things.<br>So you can build them better.</div>
 
+<div class="hero-sub">Applied security research from silicon to swarms. The DRACO Lab at <a href="https://ucf.edu">UCF</a> goes where others hesitate — red teaming systems, exploiting side channels, and hardening everything from transistor gates to autonomous drone swarms.</div>
+
+{%
+  include button.html
+  link="research"
+  text="Explore Research"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+%}
+{%
+  include button.html
+  link="contact"
+  text="Join the Lab"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+%}
+
+<div class="stats-banner">
+  <div class="stat">
+    <span class="stat-number">100+</span>
+    <span class="stat-label">Publications</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">12+</span>
+    <span class="stat-label">Researchers</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">8</span>
+    <span class="stat-label">Active Projects</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">6</span>
+    <span class="stat-label">Sponsors</span>
+  </div>
+</div>
 
 {% include section.html %}
-
-The DRACO Lab, a part of the [Electrical and Computer Engineering Department](http://ece.ucf.edu) at the [University of Central Florida](http://ucf.edu) explores secure and resilient computing at the intersection of hardware, embedded systems, and artificial intelligence. We design methods to protect against side-channel attacks, hardware Trojans, and malicious logic, while also creating open-source tools and hands-on platforms that prepare the next generation of engineers and educators.
-
-{% include figure.html image="images/2025-draco-par-team.jpg" width="100%" %}
 
 ## Highlights
 
