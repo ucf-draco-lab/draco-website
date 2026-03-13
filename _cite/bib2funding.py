@@ -40,7 +40,17 @@ def clean_latex(text):
         text = re.sub(r'\{([^{}]*)\}', r'\1', text)
     text = text.replace("\\&", "&").replace("\\#", "#").replace("\\$", "$")
     text = re.sub(r'\s+', ' ', text).strip()
-    return text
+    if len(text) >= 2 and text[0] == '"' and text[-1] == '"':
+        text = text[1:-1].strip()
+    # Convert remaining straight double-quotes to curly pairs (HTML-safe)
+    result, n = [], 0
+    for ch in text:
+        if ch == '"':
+            result.append("\u201c" if n % 2 == 0 else "\u201d")
+            n += 1
+        else:
+            result.append(ch)
+    return "".join(result)
 
 
 def get_field(entry, name, default=""):

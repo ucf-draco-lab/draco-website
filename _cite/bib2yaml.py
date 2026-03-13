@@ -62,14 +62,31 @@ def clean_latex(text):
     # Unescape common LaTeX commands
     replacements = {
         "\\&": "&", "\\%": "%", "\\$": "$", "\\#": "#", "\\_": "_",
-        "\\textendash": "–", "\\textemdash": "—",
+        "\\textendash": "\u2013", "\\textemdash": "\u2014",
         "\\textquoteright": "\u2019", "\\textquoteleft": "\u2018",
-        "~": "\u00a0",  # non-breaking space
+        "\\textquotedbl": '"',
+        "``": "\u201c",        # LaTeX opening double-quote
+        "''": "\u201d",        # LaTeX closing double-quote
+        "~": "\u00a0",         # non-breaking space
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
     # Collapse whitespace
     text = re.sub(r'\s+', ' ', text).strip()
+    # Strip outer wrapping quotes (e.g., "Some Title" → Some Title)
+    if len(text) >= 2 and text[0] == '"' and text[-1] == '"':
+        text = text[1:-1].strip()
+    # Convert remaining straight double-quotes to curly pairs (HTML-safe)
+    # Pair them: odd occurrence → open, even → close
+    result = []
+    quote_count = 0
+    for ch in text:
+        if ch == '"':
+            result.append("\u201c" if quote_count % 2 == 0 else "\u201d")
+            quote_count += 1
+        else:
+            result.append(ch)
+    text = "".join(result)
     return text
 
 
