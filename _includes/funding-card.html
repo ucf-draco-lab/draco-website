@@ -1,0 +1,24 @@
+{% assign type = site.data.types[include.status] %}
+
+<div class="funding-card" data-status="{{ include.status }}">
+  <div class="funding-card-icon">
+    {% include icon.html icon=type.icon %}
+  </div>
+  <div class="funding-card-text">
+    <div class="funding-card-title">
+      {{ include.title | default: "[no title]" }}
+    </div>
+    <div class="funding-card-meta">
+      <span class="funding-card-institution">{{ include.institution }}</span>
+      &nbsp;·&nbsp;
+      <span class="funding-card-period">{{ include.period }}</span>
+    </div>
+    <div class="funding-card-details">
+      <span class="funding-card-amount" data-tooltip="Total award">{{ include.total_fmt }}</span>
+      {% if include.share_pct != 100 %}
+        <span class="funding-card-share" data-tooltip="PI share ({{ include.share_pct }}%)">→ {{ include.share_fmt }}</span>
+      {% endif %}
+      <span class="funding-card-role">{{ include.role }}</span>
+    </div>
+  </div>
+</div>

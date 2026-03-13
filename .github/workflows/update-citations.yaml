@@ -59,6 +59,11 @@ jobs:
         run: python _cite/bib2yaml.py
         timeout-minutes: 5
 
+      - name: Build updated funding
+        if: github.event.action != 'closed'
+        run: python _cite/bib2funding.py
+        timeout-minutes: 5
+
       - name: Commit cache
         if: failure()
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -73,6 +78,7 @@ jobs:
         with:
           files: |
             _data/citations.yaml
+            _data/funding.yaml
 
       - name: Commit updated citations to branch
         if: |

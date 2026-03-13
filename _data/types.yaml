@@ -251,3 +251,20 @@ package:
   icon: fa-solid fa-box
   text: Package
   tooltip: Package
+
+# funding statuses
+
+active:
+  icon: fa-solid fa-circle-check
+  text: Active
+  tooltip: Active grant
+
+pending:
+  icon: fa-solid fa-clock
+  text: Pending
+  tooltip: Pending grant
+
+completed:
+  icon: fa-solid fa-flag-checkered
+  text: Completed
+  tooltip: Completed grant
