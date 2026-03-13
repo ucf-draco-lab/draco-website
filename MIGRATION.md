@@ -33,12 +33,14 @@ This overwrites the listed files only — no other files are affected.
 | `_data/funding.yaml` | new | 43 grants with computed stats |
 | `_data/types.yaml` | replaced | Added conference, invited, presentation, other, active, pending, completed types |
 | **Pages & templates** | | |
-| `research/index.md` | replaced | Filter buttons, removed Manubot disclaimer |
+| `research/index.md` | replaced | Filter buttons, full-bleed video hero, removed Manubot disclaimer |
 | `funding/index.md` | new | Funding page with stats + grant cards |
 | `_includes/funding-card.html` | new | Grant card template |
+| `_plugins/youtube.rb` | replaced | Clean class-based markup, click-to-play, no inline styles |
 | **Styles** | | |
 | `_styles/pub-filters.scss` | new | Publication filter pill buttons |
 | `_styles/funding.scss` | new | Funding stats + grant card styling |
+| `_styles/video-hero.scss` | new | Full-bleed dark hero with glow + YouTube embed base |
 | **Config & CI** | | |
 | `_config.yaml` | replaced | Added `_bibliography` to exclude list |
 | `.github/workflows/update-citations.yaml` | replaced | Runs both bib2yaml.py and bib2funding.py |

@@ -289,6 +289,10 @@
   
 
   
+    <link href="/_styles/video-hero.css" rel="stylesheet">
+  
+
+  
 
   
 
@@ -865,43 +869,51 @@
 <i class="icon fa-solid fa-microscope"></i>Research</h1>
 
 <p>DRACO explores the resilience and security of computing systems. With a team of over a dozen student researchers, our focus is on automating the design, development, and assessment of attacks, resilience, robustness, and ultimately security in electronic devices and systems.</p>
+  </section>
 
-<p>Learn more about some of our side channel analysis work in the following video.</p>
+  
+  
+  
 
-<div class="youtube-placeholder yt-container-hXAL-cSkj1w" style="cursor: pointer;">
-  <img src="https://i.ytimg.com/vi/hXAL-cSkj1w/hqdefault.jpg" alt="Video thumbnail">
+  <section class="background" data-size="full">
+    <!--
+  background: ;
+  dark: ;
+  size: full;
+-->
+
+<div class="video-hero">
+  <div class="video-hero-inner">
+    <div class="yt-embed" data-video-id="hXAL-cSkj1w">
+  <img src="https://i.ytimg.com/vi/hXAL-cSkj1w/maxresdefault.jpg" alt="Video thumbnail" loading="lazy" onerror="this.src='https://i.ytimg.com/vi/hXAL-cSkj1w/hqdefault.jpg'; this.onerror=null;">
+  <button class="yt-play" aria-label="Play video">
+    <svg viewbox="0 0 68 48" width="68" height="48">
+      <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fill-opacity=".8"></path>
+      <path d="M45 24L27 14v20" fill="#fff"></path>
+    </svg>
+  </button>
 </div>
-<div class="youtube-placeholder-description">
-</div>
-<style>
-  .youtube-placeholder {
-    width: 560px; 
-    height: auto;
-  }
-  .youtube-placeholder-description {
-    color: gray;
-    font-style: italic;
-  }
-</style>
-
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var container = document.querySelector('.yt-container-hXAL-cSkj1w');
-    function addElement() {
+    var el = document.querySelector('.yt-embed[data-video-id="hXAL-cSkj1w"]');
+    if (!el) return;
+    el.addEventListener('click', function() {
       var iframe = document.createElement('iframe');
-      iframe.setAttribute('width', '560');
-      iframe.setAttribute('height', '315');
-      iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/hXAL-cSkj1w?autoplay=1');
-      iframe.setAttribute('title', 'YouTube video player');
-      iframe.setAttribute('frameborder', '0');
-      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
-      iframe.setAttribute('allowfullscreen', '');
-      container.innerHTML = '';
-      container.appendChild(iframe);
-    }
-    container.addEventListener('click', addElement);
+      iframe.src = 'https://www.youtube-nocookie.com/embed/hXAL-cSkj1w?autoplay=1';
+      iframe.title = 'YouTube video player';
+      iframe.frameBorder = '0';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      el.innerHTML = '';
+      el.classList.add('yt-embed-active');
+      el.appendChild(iframe);
+    });
   });
 </script>
+
+    <p class="video-hero-caption">Exploring side-channel vulnerabilities in modern hardware</p>
+  </div>
+</div>
   </section>
 
   
