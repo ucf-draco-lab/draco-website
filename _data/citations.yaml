@@ -12,7 +12,7 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1109/ACCESS.2026.3668453
-  title: 'MiNTT: A Family of Module Lattice-based Cryptographic Compression Functions'
+  title: 'MiNTT: A Family of Module Lattice-Based Cryptographic Compression Functions'
   authors:
   - Riley Vaughn
   - Mike Borowczak
