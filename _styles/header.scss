@@ -13,7 +13,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
+  padding: 20px 30px;
   box-shadow: var(--shadow);
 
   @if $sticky {
@@ -58,12 +58,17 @@ header a {
 }
 
 .title {
-  font-size: var(--large);
+  font-size: var(--xl);
+  font-weight: var(--bold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .subtitle {
-  opacity: 0.65;
+  opacity: 0.5;
   font-weight: var(--thin);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
 }
 
 .nav-toggle {
@@ -98,17 +103,23 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   font-family: var(--heading);
+  font-weight: var(--semi-bold);
   text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
 }
 
 nav > a {
-  padding: 5px;
+  padding: 6px 12px;
+  border-radius: var(--rounded);
+  transition: background var(--transition), color var(--transition);
 }
 
 nav > a:hover {
   color: var(--primary);
+  background: var(--overlay);
 }
 
 header:not([data-big]) {

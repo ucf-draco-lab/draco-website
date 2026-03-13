@@ -1,8 +1,10 @@
 <!-- Google Fonts -->
-<!-- automatically get url from fonts used in theme file -->
-{% assign googlefonts = "_styles/-theme.scss" | file_read | google_fonts %}
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="{{ googlefonts }}" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Clash Display (via Fontshare) -->
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 {% assign fontawesome = "https://use.fontawesome.com/releases/v6.5.0/css/all.css" %}
