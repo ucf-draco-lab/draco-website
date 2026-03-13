@@ -1,3 +1,16 @@
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 10px 15px;
+  background: var(--primary);
+  color: #fff;
+  z-index: 1000;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 main {
   display: flex;
   flex-direction: column;
