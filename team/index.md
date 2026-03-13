@@ -58,7 +58,7 @@ The work, projects, publications, materials, and members represented have been f
 
 
 ### Sponsors
-A special thank you to our current sponors -  click on the profiles below to see the projects/researchers these entitles have sponsored.
+A special thank you to our current sponsors - click on the profiles below to see the projects/researchers these entities have sponsored.
 {% include list.html data="members" component="portrait" filters="role: sponsor " %}
 
 
@@ -66,19 +66,19 @@ The work shown throughout our website has been sponsored by many agencies and or
 
 {% capture content %}
 
-{% include figure.html image="images/sponsors/nsf.png"   link="http://nsf.gov" %}
-{% include figure.html image="images/sponsors/nsa.png" link="http://nsa.gov" %}
-{% include figure.html image="images/sponsors/gencyber.jpg" link="http://gen-cyber.com" %} 
-{% include figure.html image="images/sponsors/doe.png" link="http://energy.gov"%} 
-{% include figure.html image="images/sponsors/inl.png" link="http://inl.gov"%} 
+{% include figure.html image="images/sponsors/nsf.png"   link="https://nsf.gov" %}
+{% include figure.html image="images/sponsors/nsa.png" link="https://nsa.gov" %}
+{% include figure.html image="images/sponsors/gencyber.jpg" link="https://gen-cyber.com" %}
+{% include figure.html image="images/sponsors/doe.png" link="https://energy.gov" %}
+{% include figure.html image="images/sponsors/inl.png" link="https://inl.gov" %}
 
-{% include figure.html image="images/sponsors/amd.png"   link="http://amd.com" %}
+{% include figure.html image="images/sponsors/amd.png"   link="https://amd.com" %}
 {% include figure.html image="images/sponsors/ng-square.png"   link="https://www.northropgrumman.com" %}
-{% include figure.html image="images/sponsors/awn-sq.png"   link="http://arcticwolf.com" %}
+{% include figure.html image="images/sponsors/awn-sq.png"   link="https://arcticwolf.com" %}
 
-{% include figure.html image="images/sponsors/iog.png" link="http://iog.io" %} 
-{% include figure.html image="images/sponsors/kraken.png" link="http://kraken.com"%} 
-{% include figure.html image="images/sponsors/ripple.png" link="http://ripple.com" %} 
+{% include figure.html image="images/sponsors/iog.png" link="https://iog.io" %}
+{% include figure.html image="images/sponsors/kraken.png" link="https://kraken.com" %}
+{% include figure.html image="images/sponsors/ripple.png" link="https://ripple.com" %} 
 
 
 {% endcapture %}
