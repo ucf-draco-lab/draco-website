@@ -7,10 +7,9 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-The DRACO Laboratory in the Electrical and Computer Engineering Department within UCF's College of Engineering and Computer Science advances resilient computing architectures through research activities in side-channel security, swarm intelligence, and emerging computational paradigms. Our team welcomes researchers at all levels to engage in work spanning theoretical foundations to system-level implementations, with current opportunities in AI workload detection, autonomous swarm architectures, and hardware security innovations. 
+The DRACO Laboratory in the Electrical and Computer Engineering Department within UCF's College of Engineering and Computer Science advances resilient computing architectures through research in side-channel security, hardware Trojan detection and insertion, AI-driven design automation for security, post-quantum cryptographic primitives, secure swarm coordination, and emerging paradigms such as encrypted processing and memristive computing.
 
- Our team works hard and welcomes those who want to engage in research and outreach. Does this sound like something you're interested in? 
- Reach out with your resume and a brief statement about how your interests might intersect. 
+Our team welcomes researchers at all levels — from undergraduates to postdoctoral scholars — to engage in work spanning theoretical foundations to system-level implementations. Interested? See our [open opportunities]({{ site.baseurl }}/opportunities) or reach out with your resume and a brief statement about how your interests might intersect.
 
 {% include section.html %}
 ## Lab PI
@@ -36,12 +35,12 @@ The DRACO Laboratory in the Electrical and Computer Engineering Department withi
 {% include list.html data="members" component="portrait" filters="role: (ms-alumni|alumni)" %}
 
 
-### Alumni 
+### Alumni
 - Michael Castiglia, B.S., 2025 [AMD; UCF ECE MS Program]
-- Jarett Artman, M.S., 2025 
-- Jenna Goodrich, M.S., 2025 
+- Jarett Artman, M.S., 2025
+- Jenna Goodrich, M.S., 2025
 - Davi Dantas, B.S., 2025 [BAE Systems]
-- Raul Graterol, B.S., 2025  
+- Raul Graterol, B.S., 2025
 - Malia Rojas, B.S., 2024 [Lockheed Martin]
 - Yvan Pierre, B.S., 2024 [Honeywell]
 - Luckner Ablard, B.S., 2024 [Collins Aerospace]
@@ -54,31 +53,31 @@ The DRACO Laboratory in the Electrical and Computer Engineering Department withi
 
 ## Funding and Support
 
-The work, projects, publications, materials, and members represented have been funded by a variety of federal, state, local, and corporate entities. We appreciate their support and look forward to continuing to develop mutually beneficial relationships. Have a project you're interesting in supporting? Contact [Dr. Mike]({{ site.baseurl }}/contact).
+The work, projects, publications, materials, and members represented have been funded by a variety of federal, state, local, and corporate entities. We appreciate their support and look forward to continuing to develop mutually beneficial relationships. Have a project you're interested in supporting? Contact [Dr. Mike]({{ site.baseurl }}/contact).
 
 
 ### Sponsors
-A special thank you to our current sponors -  click on the profiles below to see the projects/researchers these entitles have sponsored.
+A special thank you to our current sponsors — click on the profiles below to see the projects and researchers these entities have sponsored.
 {% include list.html data="members" component="portrait" filters="role: sponsor " %}
 
 
-The work shown throughout our website has been sponsored by many agencies and organizations - learn more about them by visiting their web presence.
+The work shown throughout our website has been sponsored by many agencies and organizations — learn more about them by visiting their web presence.
 
 {% capture content %}
 
-{% include figure.html image="images/sponsors/nsf.png"   link="http://nsf.gov" %}
-{% include figure.html image="images/sponsors/nsa.png" link="http://nsa.gov" %}
-{% include figure.html image="images/sponsors/gencyber.jpg" link="http://gen-cyber.com" %} 
-{% include figure.html image="images/sponsors/doe.png" link="http://energy.gov"%} 
-{% include figure.html image="images/sponsors/inl.png" link="http://inl.gov"%} 
+{% include figure.html image="images/sponsors/nsf.png"   link="https://nsf.gov" %}
+{% include figure.html image="images/sponsors/nsa.png" link="https://nsa.gov" %}
+{% include figure.html image="images/sponsors/gencyber.jpg" link="https://gen-cyber.com" %}
+{% include figure.html image="images/sponsors/doe.png" link="https://energy.gov" %}
+{% include figure.html image="images/sponsors/inl.png" link="https://inl.gov" %}
 
-{% include figure.html image="images/sponsors/amd.png"   link="http://amd.com" %}
+{% include figure.html image="images/sponsors/amd.png"   link="https://amd.com" %}
 {% include figure.html image="images/sponsors/ng-square.png"   link="https://www.northropgrumman.com" %}
-{% include figure.html image="images/sponsors/awn-sq.png"   link="http://arcticwolf.com" %}
+{% include figure.html image="images/sponsors/awn-sq.png"   link="https://arcticwolf.com" %}
 
-{% include figure.html image="images/sponsors/iog.png" link="http://iog.io" %} 
-{% include figure.html image="images/sponsors/kraken.png" link="http://kraken.com"%} 
-{% include figure.html image="images/sponsors/ripple.png" link="http://ripple.com" %} 
+{% include figure.html image="images/sponsors/iog.png" link="https://iog.io" %}
+{% include figure.html image="images/sponsors/kraken.png" link="https://kraken.com" %}
+{% include figure.html image="images/sponsors/ripple.png" link="https://ripple.com" %}
 
 
 {% endcapture %}
