@@ -9,6 +9,13 @@
   background: var(--background);
   overflow: hidden;
   box-shadow: var(--shadow);
+  border: 1px solid var(--light-gray);
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.citation:hover {
+  border-color: var(--primary);
+  transform: translateY(-1px);
 }
 
 .citation-image {
@@ -54,8 +61,8 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  color: var(--light-gray);
-  opacity: 0.5;
+  color: var(--primary);
+  opacity: 0.15;
   font-size: 30px;
   z-index: -1;
 }

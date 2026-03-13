@@ -11,6 +11,14 @@
   overflow: hidden;
   box-shadow: var(--shadow);
   vertical-align: top;
+  border: 1px solid var(--light-gray);
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 24px 0 rgba(168, 85, 247, 0.15);
+  transform: translateY(-2px);
 }
 
 .card[data-style=small] {

@@ -13,6 +13,7 @@
   border-radius: var(--rounded);
   overflow: hidden;
   box-shadow: var(--shadow);
+  border: 1px solid var(--light-gray);
 }
 
 .feature-image img {
@@ -26,10 +27,12 @@
 }
 
 .feature-title {
-  font-size: var(--large);
+  font-size: var(--xl);
   text-align: center;
-  font-family: var(--heading);
-  font-weight: var(--semi-bold);
+  font-family: var(--title);
+  font-weight: var(--bold);
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .feature[data-flip] {
