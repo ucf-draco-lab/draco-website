@@ -1,0 +1,65 @@
+.card {
+  display: inline-flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  max-width: calc(100% - 15px - 15px);
+  margin: 15px;
+  background: var(--background);
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  vertical-align: top;
+  border: 1px solid var(--light-gray);
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 24px 0 rgba(168, 85, 247, 0.15);
+  transform: translateY(-2px);
+}
+
+.card[data-style=small] {
+  width: 250px;
+}
+
+.card-image img {
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 100%;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card-text > * {
+  margin: 0 !important;
+}
+
+.card-title {
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+}
+
+.card-subtitle {
+  margin-top: -8px !important;
+  font-style: italic;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.card-text .tags {
+  justify-content: center;
+}
+
+/*# sourceMappingURL=card.css.map */

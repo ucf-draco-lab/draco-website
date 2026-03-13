@@ -1,0 +1,46 @@
+[data-dark=false] {
+  --primary: #a855f7;
+  --secondary: #ede9fe;
+  --accent: #22d3ee;
+  --text: #1a1a1a;
+  --background: #fafafe;
+  --background-alt: #f0eff5;
+  --light-gray: #d8d6e0;
+  --gray: #706f7a;
+  --dark-gray: #3a3945;
+  --overlay: #0000000d;
+}
+
+[data-dark=true] {
+  --primary: #a855f7;
+  --secondary: #2e1c4a;
+  --accent: #22d3ee;
+  --text: #f0eef5;
+  --background: #12111a;
+  --background-alt: #1e1c2a;
+  --light-gray: #3a3850;
+  --gray: #8a889a;
+  --dark-gray: #c0bfca;
+  --overlay: #ffffff08;
+}
+
+:root {
+  --title: "Clash Display", "DM Sans", sans-serif;
+  --heading: "DM Sans", sans-serif;
+  --body: "DM Sans", sans-serif;
+  --code: "IBM Plex Mono", monospace;
+  --large: 1.2rem;
+  --xl: 1.5rem;
+  --xxl: 2rem;
+  --thin: 300;
+  --regular: 400;
+  --semi-bold: 600;
+  --bold: 700;
+  --spacing: 1.8;
+  --compact: 1.5;
+  --rounded: 6px;
+  --shadow: 0 2px 16px 0 var(--overlay);
+  --transition: 0.25s ease;
+}
+
+/*# sourceMappingURL=-theme.css.map */
