@@ -1,8 +1,12 @@
 # site properties and page defaults
 title: DRACO
 subtitle: Design of Resilient Architectures for Computing
+<<<<<<< claude/analyze-jekyll-site-l3Bw8
+description: "DRACO Lab at UCF: applied research in hardware security, side channel analysis, and resilient computing — from logic gates to autonomous systems."
+=======
 description: "DRACO Lab at UCF explores secure and resilient computing at the intersection of hardware, embedded systems, and AI."
 url: "https://thedracolab.com"
+>>>>>>> main
 header: images/2025-draco-par-team.jpg
 footer: images/Reflection_Pond_01.jpg
 proofer: false

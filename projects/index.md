@@ -2,13 +2,16 @@
 title: Projects
 nav:
   order: 2
-  tooltip: Lab and Senior Design Project Ideas
+  tooltip: Research and Senior Design Projects
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
+Our research spans hardware security, side channel analysis, AI-assisted vulnerability assessment, secure autonomous systems, and cryptographic design. Below are active research projects and applied project ideas for senior design teams.
 
 {% include tags.html tags="research, senior-design, available, undergraduate-research-spots, graduate-research-spots" %}
+
+{% include search-box.html %}
 
 {% include search-info.html %}
 
