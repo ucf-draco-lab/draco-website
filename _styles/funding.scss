@@ -1,0 +1,117 @@
+---
+---
+
+// funding summary stats banner
+
+.funding-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.funding-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 1rem 1.5rem;
+  border-radius: var(--rounded);
+  background: var(--background);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--light-gray);
+  min-width: 140px;
+}
+
+.funding-stat-value {
+  font-size: 1.6em;
+  font-weight: var(--semi-bold);
+  color: var(--primary);
+}
+
+.funding-stat-label {
+  font-size: 0.85em;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+// individual funding cards
+
+.funding-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin: 12px 0;
+  padding: 14px 20px;
+  border-radius: var(--rounded);
+  background: var(--background);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--light-gray);
+  transition: border-color var(--transition);
+
+  &:hover {
+    border-color: var(--primary);
+  }
+}
+
+.funding-card-icon {
+  flex-shrink: 0;
+  color: var(--primary);
+  opacity: 0.6;
+  font-size: 1.1em;
+  padding-top: 2px;
+}
+
+.funding-card[data-status="active"] .funding-card-icon {
+  color: #22c55e;
+  opacity: 1;
+}
+
+.funding-card[data-status="pending"] .funding-card-icon {
+  color: #f59e0b;
+  opacity: 1;
+}
+
+.funding-card-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.funding-card-title {
+  font-weight: var(--semi-bold);
+  margin-bottom: 2px;
+}
+
+.funding-card-meta {
+  font-size: 0.9em;
+  color: var(--gray);
+  margin-bottom: 4px;
+}
+
+.funding-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.85em;
+}
+
+.funding-card-amount {
+  font-weight: var(--semi-bold);
+  color: var(--primary);
+}
+
+.funding-card-share {
+  color: var(--gray);
+}
+
+.funding-card-role {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--light-gray);
+  font-size: 0.9em;
+  color: var(--gray);
+}

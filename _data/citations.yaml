@@ -1,116 +1,223 @@
-# DO NOT EDIT, GENERATED AUTOMATICALLY
+# DO NOT EDIT — generated automatically by bib2yaml.py
+# Source: _bibliography/*.bib (152 entries)
 
-- id: doi:10.1109/ACCESS.2026.3662283
+- id: '11414067'
+  title: 'MiNTT: A Family of Module Lattice-based Cryptographic Compression Functions'
+  authors:
+  - Riley Vaughn
+  - Mike Borowczak
+  publisher: IEEE Access
+  date: '2026-01-01'
+  link: https://doi.org/10.1109/ACCESS.2026.3668453
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+  - Polynomials
+  - Security
+  - Cryptography
+  - Vectors
+  - Resistance
+- id: '11373715'
   title: A Statistical Approach for Keystroke Continuous Authentication Subversion
   authors:
   - Danny Radosevich
   - Mike Borowczak
   publisher: IEEE Access
   date: '2026-01-01'
-  link: https://doi.org/hbnxgw
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ACCESS.2026.3668453
-  title: 'MiNTT: A Family of Module Lattice-Based Cryptographic Compression Functions'
+  link: https://doi.org/10.1109/ACCESS.2026.3662283
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+  - Authentication
+  - Timing
+  - Standards
+  - Forgery
+  - Data models
+- id: ifip-iot2025
+  title: LMAP - Low-cost Microcontroller Architecture Platform
   authors:
-  - Riley Vaughn
+  - Binh Pham
+  - Arthur Weeks
   - Mike Borowczak
-  publisher: IEEE Access
-  date: '2026-01-01'
-  link: https://doi.org/hbqx6t
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/educsci15070893
-  title: 'Building Successful STEM Partnerships in Education: Strategies for Enhancing
-    Collaboration'
+  publisher: 8TH IFIP INTERNATIONAL INTERNET OF THINGS (IoT) CONFERENCE
+  date: '2025-11-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: cars-2025
+  title: Discrete Gaussian Integer Aggregation and Trust-Budget Gating for Federated Learning in IoT-Enabled CPS
   authors:
+  - Sajjad H. Shah
+  - Mike Borowczak
+  publisher: 2025 Cyber Awareness and Research Symposium (CARS)
+  date: '2025-10-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: asee_peer2025
+  title: 'Blending Agile Methods with Constructivist Pedagogy: Enhancing Learning Outcomes in Introductory Computer Science
+    Courses'
+  authors:
+  - Mike Borowczak
   - Andrea C. Borowczak
-  - Trina Johnson Kilty
+  publisher: 2025 ASEE Annual Conference & Exposition
+  date: '2025-06-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: borowczak2025
+  title: 'Integrating Micro:bits for Cross-Disciplinary Computer Science Instruction: A Virtual Collaborative Model for STEM
+    and Beyond'
+  authors:
+  - Mike Borowczak
+  - Andrea Carneal. Borowczak
+  publisher: Society for Information Technology & Teacher Education Interactive Conference
+  date: '2025-03-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: edsci2025
+  title: 'Building Successful STEM Partnerships in Education: Strategies for Enhancing Collaboration'
+  authors:
+  - Andrea C.B. Borowczak
+  - Trina Kilty
   - Mike Borowczak
   publisher: Education Sciences
-  date: '2025-07-12'
-  link: https://doi.org/g9trz7
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1145/3716368.3735255
-  title: Integrating Generative AI into Microelectronics Education
+  date: '2025-01-01'
+  link: https://doi.org/10.3390/educsci15070893
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: borowczak2025ai
+  title: 'Integrating Generative AI into Microelectronics Education: Implications for Learning and Pedagogical Practice'
   authors:
   - Mike Borowczak
-  - Andrea C Borowczak
-  publisher: Proceedings of the Great Lakes Symposium on VLSI 2025
-  date: '2025-06-29'
-  link: https://doi.org/g9rsdq
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--56579
-  title: 'Flexible Learning Cycles: Introducing Agile Constructivist Pedagogy'
-  authors:
-  - Mike Borowczak
-  - Andrea Borowczak
-  publisher: 2025 ASEE Annual Conference &amp; Exposition  Proceedings
-  date: ''
-  link: https://doi.org/g9xwkx
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1007/978-3-031-81900-1_11
-  title: "Hardware Trojan Key-Corruption Detection with\_Automated Neural Architecture\
-    \ Search"
+  - Andrea C. Borowczak
+  publisher: Proceedings of the Great Lakes Symposium on VLSI 2025 (GLSVLSI '25)
+  date: '2025-01-01'
+  link: https://doi.org/10.1145/3716368.3735255
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: ifip-iot2024
+  title: Hardware Trojan Key-Corruption Detection with Automated Neural Architecture Search
   authors:
   - Franco Mezzarapa
   - Jenna Goodrich
   - Andey Robins
   - Mike Borowczak
-  publisher: IFIP Advances in Information and Communication Technology
-  date: '2024-12-29'
-  link: https://doi.org/g8xbcv
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/cryptography8030040
+  publisher: 7TH IFIP INTERNATIONAL INTERNET OF THINGS (IoT) CONFERENCE
+  date: '2024-11-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: cars-2024
+  title: Feature Selection Framework for Optimizing ML-based Malicious URL Detection
+  authors:
+  - Sajjad H. Shah
+  - Amit Garu
+  - Duong N. Nguyen
+  - Mike Borowczak
+  publisher: 2024 Cyber Awareness and Research Symposium (CARS)
+  date: '2024-10-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: '1742'
+  title: 'Quantitative Techniques With Small Sample Sizes: An Educational Summer Camp Example'
+  authors:
+  - Trina Johnson Kilty
+  - Kevin T. Kilty
+  - A. C. Burrows Borowczak
+  - Mike Borowczak
+  publisher: Problems of Education in the 21st Century
+  date: '2024-08-01'
+  link: https://doi.org/10.33225/pec/24.82.507
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: mwscas2024
+  title: 'SAGA: Synthesis Augmentation with Genetic Algorithms for In-Memory Sequence Optimization'
+  authors:
+  - Andey Robins
+  - Mike Borowczak
+  publisher: 2024 IEEE 67th International Midwest Symposium on Circuits and Systems (MWSCAS)
+  date: '2024-08-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: asee_peer2024
+  title: Integrating Computing Throughout K-12 While Bridging the Digital Divide
+  authors:
+  - Mike Borowczak
+  - Andrea Carneal Borowczak
+  publisher: 2024 ASEE Annual Conference & Exposition
+  date: '2024-06-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: cryptography8030040
   title: Strict Avalanche Criterion of SHA-256 and Sub-Function-Removed Variants
   authors:
   - Riley Vaughn
   - Mike Borowczak
   publisher: Cryptography
-  date: '2024-09-08'
-  link: https://doi.org/gxt9gr
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.33225/pec/24.82.507
-  title: 'QUANTITATIVE TECHNIQUES WITH SMALL SAMPLE SIZES: AN EDUCATIONAL SUMMER CAMP
-    EXAMPLE'
+  date: '2024-01-01'
+  link: https://doi.org/10.3390/cryptography8030040
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: asemf2023
+  title: Capabilities of Generative Artificial Intelligence for Circuit Design Automation
   authors:
-  - Trina Johnson Kilty
-  - Kevin T. Kilty
-  - Andrea C Burrows Borowczak
+  - Andey Robins
+  - Jenna Goodrich
   - Mike Borowczak
-  publisher: Problems of Education in the 21st Century
-  date: '2024-08-12'
-  link: https://doi.org/gt6s6g
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--46898
-  title: 'Board 319: Integrating Computing Throughout K-12 While Bridging the Digital
-    Divide'
+  publisher: 2023 Academy of Science, Engineering & Medicine of Florida Annual Meeting - Poster Presentation
+  date: '2023-11-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: inl-poster-2023
+  title: Faster Cyberattack Response Using STIG
   authors:
-  - Mike Borowczak
-  - Andrea Borowczak
-  publisher: 2024 ASEE Annual Conference &amp; Exposition Proceedings
-  date: ''
-  link: https://doi.org/gt5zz8
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/jcp3040038
-  title: Challenging Assumptions of Normality in AES s-Box Configurations under Side-Channel
-    Analysis
+  - F. Coslett
+  - R. Foster
+  - Z. Priest
+  - M. Borowczak
+  publisher: INL Poster Symposium 2023
+  date: '2023-08-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: jcp3040038
+  title: Challenging Assumptions of Normality in AES s-Box Configurations under Side-Channel Analysis
   authors:
   - Clay Carper
   - Stone Olguin
@@ -118,14 +225,14 @@
   - Caylie Charlton
   - Mike Borowczak
   publisher: Journal of Cybersecurity and Privacy
-  date: '2023-11-29'
-  link: https://doi.org/gs7dp7
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/jcp3030018
-  title: Power-Based Side-Channel Attacks on Program Control Flow with Machine Learning
-    Models
+  date: '2023-01-01'
+  link: https://doi.org/10.3390/jcp3040038
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: jcp3030018
+  title: Power-Based Side-Channel Attacks on Program Control Flow with Machine Learning Models
   authors:
   - Andey Robins
   - Stone Olguin
@@ -133,145 +240,377 @@
   - Clay Carper
   - Mike Borowczak
   publisher: Journal of Cybersecurity and Privacy
-  date: '2023-07-07'
-  link: https://doi.org/gsgv6h
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--41203
-  title: On the Development of Cybersecurity and Computing Centric Professional Developments
-    and the Subsequent Implementation of Topics in K12 Lesson Plans (RTP)
+  date: '2023-01-01'
+  link: https://doi.org/10.3390/jcp3030018
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: foster2023faster
+  title: Faster Cyberattack Response Using STIG
+  authors:
+  - Faith Coslett
+  - Rita Foster
+  - Zachary Priest
+  - Mike Borowczak
+  publisher: 2023 Annual INL Poster Session
+  date: '2023-01-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: borowczak-ises
+  title: 'Using Power to Uncover the Secrets from Within: A Hands-on Exploration of Side-Channels'
   authors:
   - Mike Borowczak
-  - Andrea Burrows
-  - Andey Robins
-  publisher: 2022 ASEE Annual Conference &amp; Exposition Proceedings
-  date: ''
-  link: https://doi.org/gtg74w
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--41204
-  title: The Artful Craft of Improving Virtual Summer Camps in the Midst of COVID-19
-    (Work in Progress)
+  publisher: 8th IEEE International Symposium on Smart Electronic Systems
+  date: '2022-12-18'
+  link: ''
+  type: invited
+  source: invited.bib
+  tags:
+  - invited
+- id: asee_peer_41204
+  title: The Artful Craft of Improving Virtual Summer Camps in the Midst of COVID-19 (Work in Progress)
   authors:
-  - Mike Borowczak
-  - Andrea Burrows
   - Shawna Wolf
   - Shaya Wolf
-  - Hui Hu
-  publisher: 2022 ASEE Annual Conference &amp; Exposition Proceedings
-  date: ''
-  link: https://doi.org/gtg74x
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1177/21582440221097916
+  - Hu Hui
+  - Andrea Burrows
+  - Mike Borowczak
+  publisher: 2022 ASEE Annual Conference & Exposition
+  date: '2022-08-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: asee_peer_41203
+  title: On the Development of Cybersecurity and Computing Centric Professional Developments and the Subsequent Implementation
+    of Topics in K12 Lesson Plans (RTP)
+  authors:
+  - Andey Robins
+  - Andrea Burrows
+  - Mike Borowczak
+  publisher: 2022 ASEE Annual Conference & Exposition
+  date: '2022-08-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: reynolds2022confusion
   title: 'Confusion Over Models: Exploring Discourse in a STEM Professional Development'
   authors:
   - Todd Reynolds
-  - Andrea C. Burrows
+  - Andrea C Burrows
   - Mike Borowczak
-  publisher: Sage Open
-  date: '2022-04-01'
-  link: https://doi.org/gshfn3
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1145/3485447.3511975
-  title: Learning Privacy-Preserving Graph Convolutional Network with Partially Observed
-    Sensitive Attributes
-  authors:
-  - Hui Hu
-  - Lu Cheng
-  - Jayden Parker Vap
-  - Mike Borowczak
-  publisher: Proceedings of the ACM Web Conference 2022
-  date: '2022-04-25'
-  link: https://doi.org/gshfn5
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1007/978-3-030-78841-4_14
-  title: 'S*FSMs for Reduced Information Leakage: Power Side Channel Protection Through
-    Secure Encoding'
-  authors:
-  - Mike Borowczak
-  - Ranga Vemuri
-  publisher: Behavioral Synthesis for Hardware Security
-  date: '2021-05-28'
-  link: https://doi.org/gshfpc
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/iSES54909.2022.00095
-  title: 'TP-NET: Training Privacy-Preserving Deep Neural Networks under Side-Channel
-    Power Attacks'
-  authors:
-  - Hui Hu
-  - Jessa Gegax-Randazzo
-  - Clay Carper
-  - Mike Borowczak
-  publisher: 2022 IEEE International Symposium on Smart Electronic Systems (iSES)
-  date: '2022-12-01'
-  link: https://doi.org/gshfpg
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ICCD56317.2022.00090
-  title: Transition Recovery Attack on Embedded State Machines Using Power Analysis
-  authors:
-  - Clay Carper
-  - Andey Robins
-  - Mike Borowczak
-  publisher: 2022 IEEE 40th International Conference on Computer Design (ICCD)
-  date: '2022-10-01'
-  link: https://doi.org/gshfpj
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/educsci12010004
-  title: 'Computer Science beyond Coding: Partnering to Create Teacher Cybersecurity
-    Microcredentials'
+  publisher: SAGE Open
+  date: '2022-01-01'
+  link: https://doi.org/10.1177/21582440221097916
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: educsci12010004
+  title: 'Computer Science beyond Coding: Partnering to Create Teacher Cybersecurity Microcredentials'
   authors:
   - Andrea C. Burrows
   - Mike Borowczak
   - Bekir Mugayitoglu
   publisher: Education Sciences
-  date: '2021-12-22'
-  link: https://doi.org/gsbv2d
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--36927
-  title: 'Designing a Creative Cybersecurity Microcredential for Educators: Challenges
-    and Successes of K-12 Teacher Professional Development'
+  date: '2022-01-01'
+  link: https://doi.org/10.3390/educsci12010004
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: ises-2022
+  title: 'TP-NET: Training Privacy-Preserving Deep Neural Networks Under Side-Channel Power Attacks'
+  authors:
+  - Hui Hu
+  - Jessa Gegax-Randazzo
+  - Clay Carper
+  - Mike Borowczak
+  publisher: The 8th Annual IEEE International Symposium on Smart Electronic Systems
+  date: '2022-01-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: iccd-2022
+  title: Transition Recovery Attack on Embedded State Machines Using Power Analysis
+  authors:
+  - Clay Carper
+  - Andey Robins
+  - Mike Borowczak
+  publisher: The 40th IEEE International Conference on Computer Design
+  date: '2022-01-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: nist-lwc-2022
+  title: TVLA, Correlation Power Analysis and Side-Channel Leakage Assessment Metrics
+  authors:
+  - William Unger
+  - Liljana Babinkostova
+  - Mike Borowczak
+  - Robert Erbes
+  - Aparna Srinath
+  publisher: NIST Lightweight Cryptography Workshop 2022
+  date: '2022-01-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: wsdm-2022
+  title: Learning Privacy-Preserving Graph Convolutional Network with Partially Observed Sensitive Attributes
+  authors:
+  - Hui Hu
+  - Lu Cheng
+  - Jayden Vap
+  - Mike Borowczak
+  publisher: The Web Conference 2022
+  date: '2022-01-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: Borowczak2022
+  title: 'S*FSMs for Reduced Information Leakage: Power Side Channel Protection Through Secure Encoding'
+  authors:
+  - Mike Borowczak
+  - Ranga Vemuri
+  publisher: Behavioral Synthesis for Hardware Security
+  date: '2022-01-01'
+  link: https://doi.org/10.1007/978-3-030-78841-4_14
+  type: book
+  source: books.bib
+  tags:
+  - book
+- id: burrows2022stem
+  title: 'Intentional Focus on Integrated STEM: Was Costner the Original STEM Influencer?'
+  authors:
+  - Andrea C. Burrows
+  - Michelle T. Chamberlin
+  - Mike Borowczak
+  publisher: Kevin Costner, America's Teacher
+  date: '2022-01-01'
+  link: ''
+  type: book
+  source: books.bib
+  tags:
+  - book
+- id: nicek1221
+  title: K-12 Teachers Experiences of Cybersecurity During the Micro-credential
+  authors:
+  - Mike Borowczak
+  - Bekir Mugayitoglu
+  - Andrea Burrows
+  publisher: 2021 NICE K12 Cybersecurity Education Conference
+  date: '2021-12-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: inl-poster-2021
+  title: Data Analysis for Flexible Test Corpora in Structured Intelligence
+  authors:
+  - S. Wolf
+  - R. Foster
+  - A. Mack
+  - Z. Priest
+  - J. Haile
+  - M. Borowczak
+  publisher: INL Poster Symposium 2021
+  date: '2021-08-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: asee-Bekir
+  title: 'Designing a Creative Cybersecurity Micro-credential Course for Educators: Challenges and Successes'
   authors:
   - Bekir Mugayitoglu
   - Mike Borowczak
-  - Andrea Burrows
-  publisher: 2021 ASEE Virtual Annual Conference Content Access Proceedings
-  date: ''
-  link: https://doi.org/gsbv2j
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--38225
-  title: WySLICE - Integrating Computer Science throughout Existing K-12 Core Disciplinary
-    Areas
+  - Andrea C Burrows
+  publisher: 2021 ASEE Annual Conference & Exposition
+  date: '2021-07-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: asee-NSFWySLICE
+  title: WySLICE - Integrating Computer Science throughout Existing K-12 Core Disciplinary Areas
   authors:
   - Mike Borowczak
-  - Andrea Borowczak
-  - Mason Johnson
-  publisher: 2021 ASEE Virtual Annual Conference Content Access Proceedings
-  date: ''
-  link: https://doi.org/gtjtkd
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/educsci11010021
-  title: "Integrated STEM for Teacher Professional Learning and Development: \u201C\
-    I Need Time for Practice\u201D"
+  - Andrea C Burrows
+  publisher: 2021 ASEE Annual Conference & Exposition
+  date: '2021-07-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: bekir-design-thinking
+  title: 'Using Design Thinking Approach: Micro-credential Professional Development in Cybersecurity Education K-12 Teachers.'
+  authors:
+  - B. Mugayitoglu
+  - M. Borowczak
+  - A. C. Burrows
+  publisher: Rocky Mountain Section of the American Society for Engineering Education (RMS ASEE)
+  date: '2021-06-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: INL-innovation
+  title: 'Side Channels and ML Defense: Power Analysis to Define ML Vulnerabilities'
+  authors:
+  - S. Wolf
+  - R. Foster
+  - M. Borowczak
+  publisher: INL Innovation Week 2021
+  date: '2021-05-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: aera-2021-fostering
+  title: 'Fostering accessibility: Creating high-quality, competency-based computer science micro-credentials for K-12 teachers'
+  authors:
+  - Bekir Mugayitoglu
+  - Andrea C. Burrows
+  - Mike Borowczak
+  - Caitlyn Person
+  - Alexander Finch
+  - Caitlin Kennedy
+  - Amanda Carson
+  publisher: Annual Meeting of the American Educational Research Association (AERA)
+  date: '2021-04-09'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: SDM-2021
+  title: Doctoral Poster Presentation
+  authors:
+  - Hu Hui
+  - Mike Borowczak
+  publisher: SIAM International Conference on Data Mining (SDM'21)
+  date: '2021-04-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: iceti-2021-eval
+  title: 'A University''s developmental framework: Creating, implementing, and evaluating a K-12 teacher cybersecurity micro-credential
+    course [Best Paper Award]'
+  authors:
+  - Bekir Mugayitoglu
+  - Mike Borowczak
+  - Andrea C. Burrows
+  - Amanda Carson
+  - Caitlyn Person
+  - Alexander Finch
+  - Caitlin Kennedy
+  publisher: 12th International Conference on Education, Training, and Informatics (ICETI 2021)
+  date: '2021-03-09'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: BurrBoroMuga20212c
+  title: Assisting K-12 Teachers to Make the Connection between Computational Thinking in Cybersecurity Unplugged Activities
+    and Mathematical Mindset through A Cybersecurity Micro-credential
+  authors:
+  - Andrea Burrows
+  - Mike Borowczak
+  - Bekir Mugayitoglu
+  - Caitlin Kennedy
+  - Amanda Carson
+  - Caitlin Person
+  - Alexander Finch
+  publisher: Proceedings of Society for Information Technology & Teacher Education International Conference 2021
+  date: '2021-03-01'
+  link: https://www.learntechlib.org/p/219108
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: bekir-stem-micro-cred
+  title: Lessons learned on integrating STEM into a micro-credential cybersecurity
+  authors:
+  - B. Mugayitoglu
+  - M. Borowczak
+  - A. C. Burrows
+  - A Finch
+  - C Kennedy
+  - A Carson
+  - C Person
+  publisher: 2021 X-DBER Conference
+  date: '2021-03-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: borowczak-dber
+  title: 'Weaving together Cybersecurity & CS into Existing STEM Disciplines: Learning from K12 Experiences'
+  authors:
+  - Mike Borowczak
+  publisher: University of Texas DBER Invited Seminar Talk
+  date: '2021-02-01'
+  link: ''
+  type: invited
+  source: invited.bib
+  tags:
+  - invited
+- id: borowczak-codebreaker
+  title: Systems Have Leaky Side Channels And Attackers Know It What Can You Do?
+  authors:
+  - Mike Borowczak
+  publisher: Idaho National Lab Center for Advanced Energy Studies CodeBreakers
+  date: '2021-01-07'
+  link: ''
+  type: invited
+  source: invited.bib
+  tags:
+  - invited
+- id: mugayitoglu2021university
+  title: 'A University''s developmental framework: Creating, implementing, and evaluating a K-12 teacher cybersecurity micro-credential
+    course'
+  authors:
+  - Bekir Mugayitoglu
+  - Mike Borowczak
+  - Andrea C Burrows
+  - A Carson
+  - C Person
+  - A Finch
+  - C Kennedy
+  publisher: Journal of Systemics, Cybernetics and Informatics
+  date: '2021-01-01'
+  link: ''
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: educsci11010021
+  title: 'Integrated STEM for Teacher Professional Learning and Development: “I Need Time for Practice”'
   authors:
   - Andrea C. Burrows
   - Mike Borowczak
@@ -279,21 +618,27 @@
   - Andria C. Schwortz
   - Courtney McKim
   publisher: Education Sciences
-  date: '2021-01-05'
-  link: https://doi.org/gk9296
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:PPRN:11837388
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:11837388
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/BigData52589.2021.9671573
+  date: '2021-01-01'
+  link: https://doi.org/10.3390/educsci11010021
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: wolf2021data
+  title: Data-Driven Suitability Analysis to Enable Machine Learning Explainability and Security
+  authors:
+  - Shaya Wolf
+  - Rita Foster
+  - Jed Haile
+  - Mike Borowczak
+  publisher: 2021 Resilience Week (RWS)
+  date: '2021-01-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: ieee-big-data-2021
   title: Comparing Ransomware using TLSH and @DisCo Analysis Frameworks
   authors:
   - Rafer Cooley
@@ -302,66 +647,27 @@
   - Rita Foster
   - Jed Haile
   - Mike Borowczak
-  publisher: 2021 IEEE International Conference on Big Data (Big Data)
-  date: '2021-12-15'
-  link: https://doi.org/gshfpm
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/RWS52686.2021.9611792
-  title: Data-Driven Suitability Analysis to Enable Machine Learning Explainability
-    and Security
-  authors:
-  - Shaya Wolf
-  - Rita Foster
-  - Jed Haile
-  - Mike Borowczak
-  publisher: 2021 Resilience Week (RWS)
-  date: '2021-10-18'
-  link: https://doi.org/gsbv2f
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ISC253183.2021.9562816
-  title: 'Jangseung: A Guardian for Machine Learning Algorithms to Protect Against
-    Poisoning Attacks'
+  publisher: IEEE Big Data 2021, Workshop on Cyber Threat Intelligence and Hunting with AI
+  date: '2021-01-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: wolf2021jangseung
+  title: 'Jangseung: A Guardian for Machine Learning Algorithms to Protect Against Poisoning Attacks'
   authors:
   - Shaya Wolf
   - Woodrow Gamboa
   - Mike Borowczak
   publisher: 2021 IEEE International Smart Cities Conference (ISC2)
-  date: '2021-09-07'
-  link: https://doi.org/gsbv2g
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/IJCNN52387.2021.9534017
-  title: Privacy-Preserving Fair Machine Learning Without Collecting Sensitive Demographic
-    Data
-  authors:
-  - Hui Hu
-  - Mike Borowczak
-  - Zhengzhang Chen
-  publisher: 2021 International Joint Conference on Neural Networks (IJCNN)
-  date: '2021-07-18'
-  link: https://doi.org/gsbv2h
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ISVLSI51109.2021.00051
-  title: 'Side-channel Leakage Assessment Metrics: A Case Study of GIFT Block Ciphers'
-  authors:
-  - William Unger
-  - Liljana Babinkostova
-  - Mike Borowczak
-  - Robert Erbes
-  publisher: 2021 IEEE Computer Society Annual Symposium on VLSI (ISVLSI)
-  date: '2021-07-01'
-  link: https://doi.org/gsbv2k
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ISVLSI51109.2021.00052
+  date: '2021-01-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: '9516772'
   title: Stealing Machine Learning Parameters via Side Channel Power Attacks
   authors:
   - Shaya Wolf
@@ -369,101 +675,313 @@
   - Rafer Cooley
   - Mike Borowczak
   publisher: 2021 IEEE Computer Society Annual Symposium on VLSI (ISVLSI)
-  date: '2021-07-01'
-  link: https://doi.org/gsbv2m
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/educsci10120353
-  title: 'Integrated Outreach: Increasing Engagement in Computer Science and Cybersecurity'
+  date: '2021-01-01'
+  link: https://doi.org/10.1109/ISVLSI51109.2021.00052
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: '9516763'
+  title: 'Side-channel Leakage Assessment Metrics: A Case Study of GIFT Block Ciphers'
+  authors:
+  - William Unger
+  - Liljana Babinkostova
+  - Mike Borowczak
+  - Robert Erbes
+  publisher: 2021 IEEE Computer Society Annual Symposium on VLSI (ISVLSI)
+  date: '2021-01-01'
+  link: https://doi.org/10.1109/ISVLSI51109.2021.00051
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: '9534017'
+  title: Privacy-Preserving Fair Machine Learning Without Collecting Sensitive Demographic Data
+  authors:
+  - Hui Hu
+  - Mike Borowczak
+  - Zhengzhang Chen
+  publisher: 2021 International Joint Conference on Neural Networks (IJCNN)
+  date: '2021-01-01'
+  link: https://doi.org/10.1109/IJCNN52387.2021.9534017
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: saraji2021blockchain
+  title: A blockchain-based carbon credit ecosystem
+  authors:
+  - Soheil Saraji
+  - Mike Borowczak
+  publisher: arXiv preprint arXiv:2107.00185
+  date: '2021-01-01'
+  link: ''
+  type: other
+  source: otherwork.bib
+  tags:
+  - other
+- id: borowczak-boise
+  title: Exploiting Simplified Models of Complex Systems; Exploiting (and protecting) Side Channels
+  authors:
+  - Mike Borowczak
+  publisher: Boise State Invited Seminar Talk
+  date: '2020-12-03'
+  link: ''
+  type: invited
+  source: invited.bib
+  tags:
+  - invited
+- id: nicek1220
+  title: 'The Importance of Cybersecurity in STEM and CS: a K-12 Micro-credential'
+  authors:
+  - Mike Borowczak
+  - Bekir Mugayitoglu
+  - Andrea Burrows
+  publisher: 2020 NICE K12 Cybersecurity Education Conference
+  date: '2020-12-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: IntegratedOuteach
+  title: 'Integrated Outreach: Increasing Student Engagement in Computer Science and Cybersecurity'
   authors:
   - Shaya Wolf
-  - Andrea Carneal Burrows
+  - Andrea C. Burrows
   - Mike Borowczak
   - Mason Johnson
   - Rafer Cooley
-  - Kyle Mogenson
-  publisher: Education Sciences
-  date: '2020-11-26'
-  link: https://doi.org/gk93bm
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--34327
+  - Kyle Mogensen
+  publisher: 'Education Sciences: Cybersecurity and Digital Education Special Issue'
+  date: '2020-11-01'
+  link: https://doi.org/10.3390/educsci10120353
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: icce-2020-sharks
+  title: Defensive Strategies for Autonomous Decentralized Lightweight Swarms
+  authors:
+  - Shaya Wolf
+  - Mike Borowczak
+  publisher: 2020 IEEE 10th International Conference on Consumer Electronics (ICCE-Berlin 2020)
+  date: '2020-11-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: icce-2020-canary
+  title: Detecting DDoS Attacks Near The Edge with Router Canaries
+  authors:
+  - Winston Howard
+  - Mike Borowczak
+  publisher: 2020 IEEE 10th International Conference on Consumer Electronics (ICCE-Berlin 2020)
+  date: '2020-11-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: MDDevConnect20
+  title: Methods for Adaptive Autonomous Drone Swarm Attack Resilience
+  authors:
+  - Mike Borowczak
+  - Shaya Wolf
+  publisher: '2020 Defense Tech Connect: Defense Innovation'
+  date: '2020-11-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: NSAShowcaseFa20
+  title: Hosting a Virtual Teacher Camp
+  authors:
+  - Mike Borowczak
+  - Andrea Burrows
+  publisher: GenCyber Virtual Fall Meeting
+  date: '2020-09-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: inl-poster-2020
+  title: Machine Learning Fragility, Resiliency, and Reliability
+  authors:
+  - S. Wolf
+  - R. Foster
+  - Z. Priest
+  - J. Haile
+  - W Austad
+  - M. Borowczak
+  publisher: INL Poster Symposium 2020
+  date: '2020-08-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: asee_peer_31078
   title: Constructing and Refining Computer Science Outreach Focused on Student Engagement
   authors:
   - Shaya Wolf
   - Rafer Cooley
   - Mason Johnson
-  - Andrea Burrows
+  - Andrea C. Burrows
   - Mike Borowczak
-  publisher: 2020 ASEE Virtual Annual Conference Content Access Proceedings
-  date: ''
-  link: https://doi.org/gsbv2r
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ICCE-Berlin50680.2020.9352161
-  title: Defensive Strategies for Autonomous Decentralized Lightweight Swarms
+  publisher: 2020 ASEE Annual Conference & Exposition
+  date: '2020-06-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: data_coral2
+  title: 'Teaching Data Collection and Analysis: Using Data Corral Technology to Create Lesson Plans for STEM Secondary Teachers'
   authors:
-  - Shaya Wolf
+  - Nycole Marsh
+  - Dawn Palmquist-Whaley
+  - Andrea C Burrows
+  - Shannon Albeke
+  - Rasana Manandhar
   - Mike Borowczak
-  publisher: 2020 IEEE 10th International Conference on Consumer Electronics (ICCE-Berlin)
-  date: '2020-11-09'
-  link: https://doi.org/gsbv2n
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ICCE-Berlin50680.2020.9352164
-  title: Detecting DDoS Attacks Near The Edge with Router Canaries
-  authors:
-  - Winston Howard
-  - Mike Borowczak
-  publisher: 2020 IEEE 10th International Conference on Consumer Electronics (ICCE-Berlin)
-  date: '2020-11-09'
-  link: https://doi.org/gsbv2p
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/MCE.2020.2969174
-  title: 'Secure and Resilient Swarms: Autonomous Decentralized Lightweight UAVs to
-    the Rescue'
+  publisher: 2020 Society for Information Technology & Teacher Education (SITE) Conference
+  date: '2020-04-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: '9109421'
+  title: 'Secure and Resilient Swarms: Autonomous Decentralized Lightweight UAVs to the Rescue'
   authors:
   - Shaya Wolf
   - Rafer Cooley
   - Jason Fantl
   - Mike Borowczak
   publisher: IEEE Consumer Electronics Magazine
-  date: '2020-07-01'
-  link: https://doi.org/gsbv2q
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1080/09650792.2019.1566082
-  title: 'Computer science and engineering: utilizing action research and lesson study'
+  date: '2020-01-01'
+  link: https://doi.org/10.1109/MCE.2020.2969174
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: borowczak2020self
+  title: 'Self-paced E-learning: Exploring the Development of a Cybersecurity Micro-credential through K-12 Teacher Professional
+    Development'
   authors:
+  - Mike Borowczak
+  - Bekir Mugayitoglu
   - Andrea C. Burrows
-  - Mike Borowczak
-  publisher: Educational Action Research
-  date: '2019-01-16'
-  link: https://doi.org/gsbv2w
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1049/iet-cdt.2018.5186
-  title: Mitigating information leakage during critical communication using S*FSM
+  - Caitlin Kennedy
+  - Amanda Carson
+  - Caitlin Person
+  publisher: SITE Interactive Conference
+  date: '2020-01-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: aste2020
+  title: Integrating Computer Science Into K-12 Science It's Not Programming, It's Problem Solving
   authors:
   - Mike Borowczak
+  - Andrea Burrows
+  publisher: 2020 The Association for Science Teacher Education
+  date: '2020-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: ICMLA
+  title: One-class Classification to Continuously Authenticate Users Based on Keystroke Timing Dynamics
+  authors:
+  - Rasana Manandhar
+  - Shaya Wolf
+  - Mike Borowczak
+  publisher: 2019 IEEE International Conference on Machine Learning and Applications
+  date: '2019-12-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: 19nicek12
+  title: 'Teaching Cybersecurity Through Physical Computing: A MicroBit Approach'
+  authors:
+  - Shaya Wolf
+  - Rafer Cooley
+  - Andrea Burrows
+  - Mike Borowczak
+  publisher: 2019 NICE K12 Cybersecurity Education Conference
+  date: '2019-12-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: 19nice
+  title: Raising Cybersecurity Expectations through Outreach Opportunities and Real-World Experience
+  authors:
+  - Shaya Wolf
+  - Rafer Cooley
+  - Andrea Burrows
+  - Mike Borowczak
+  publisher: 2019 NICE Cybersecurity Conference
+  date: '2019-11-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: smartcities2019
+  title: Adversarial Impacts on Autonomous Decentralized Lightweight Swarms
+  authors:
+  - Rafer Cooley
+  - Shaya Wolf
+  - Mike Borowczak
+  publisher: 2019 IEEE International Smart Cities Conference (ISC2 2019)
+  date: '2019-10-15'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: 19MDDevConnect
+  title: Autonomous Decentralized Swarms with Adversarial Resistance
+  authors:
+  - Mike Borowczak
+  - Shaya Wolf
+  - Rafer Cooley
+  - Jason Fantl
+  - Garrett Burrows
+  publisher: '2019 Defense Tech Connect: Defense Innovation'
+  date: '2019-10-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: JETTD
+  title: A State Machine Encoding Methodology Against Power Analysis Attacks
+  authors:
+  - Richa Agrawal
   - Ranga Vemuri
-  publisher: IET Computers &amp; Digital Techniques
-  date: '2019-03-20'
-  link: https://doi.org/gsbv2x
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--32484
-  title: Building Collaboration and Securing Interest in Computer Science Education
-    through Outreach Opportunities
+  - Mike Borowczak
+  publisher: 'Journal of Electronic Testing: Theory and Application'
+  date: '2019-09-01'
+  link: https://doi.org/10.1007/s10836-019-05821-z
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: asee_peer_27365
+  title: Building Collaboration and Securing Interest in Computer Science Education through Outreach Opportunities
   authors:
   - Shaya Wolf
   - Fiona Moss
@@ -472,201 +990,307 @@
   - Rafer Cooley
   - Andrea Burrows
   - Mike Borowczak
-  publisher: 2019 ASEE Annual Conference &amp; Exposition  Proceedings
-  date: ''
-  link: https://doi.org/gsbv2z
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--33136
+  publisher: 2019 ASEE Annual Conference & Exposition
+  date: '2019-06-17'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: asee_peer_27304
   title: Novel STEM Research Programs Could Minimize Attrition in Undergraduate Engineering
   authors:
   - Garrett Burrows
   - Mike Borowczak
-  publisher: 2019 ASEE Annual Conference &amp; Exposition  Proceedings
-  date: ''
-  link: https://doi.org/gsbv22
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/educsci9010066
-  title: "Ants Go Marching\u2014Integrating Computer Science into Teacher Professional\
-    \ Development with NetLogo"
+  publisher: 2019 ASEE Annual Conference & Exposition
+  date: '2019-06-16'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: Borowczak2019Fueling
+  title: Fueling Cybersecurity Interest through Authentic Experience, Competition, and Teamwork
+  authors:
+  - Rafer Cooley
+  - Shaya Wolf
+  - Mike Borowczak
+  publisher: Rocky Mountain Section of the American Society of Engineering Education, 2019. RMS-ASEE 2019
+  date: '2019-05-20'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: Borowczak2019CSUnplugged
+  title: CS:Unplugged
+  authors:
+  - Shaya Wolf
+  - Rafer Cooley
+  - Andrea Burrows
+  - Mike Borowczak
+  publisher: Rocky Mountain Section of the American Society of Engineering Education, 2019. RMS-ASEE 2019
+  date: '2019-05-20'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: educsci9010066
+  title: Ants Go Marching-Integrating Computer Science into Teacher Professional Development with NetLogo
   authors:
   - Mike Borowczak
   - Andrea C. Burrows
   publisher: Education Sciences
-  date: '2019-03-26'
-  link: https://doi.org/gg39tm
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31235/osf.io/jre5k
+  date: '2019-03-01'
+  link: https://doi.org/10.3390/educsci9010066
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: BorowBurrows2016o9
   title: 'CyberSecurity and Technology: How Do They Fit into a Science Classroom?'
+  authors:
+  - Andrea Burrows
+  - Mike Borowczak
+  publisher: Society for Information Technology & Teacher Education International Conference 2019
+  date: '2019-03-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: iet:/content/journals/10.1049/iet-cdt.2018.5186
+  title: Mitigating early-boot information leakage using SFSM
+  authors:
+  - Mike Borowczak
+  - Ranga Vemuri
+  publisher: IET Computers & Digital Techniques
+  date: '2019-01-18'
+  link: https://doi.org/10.1049/iet-cdt.2018.5186
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: burrows2019lesson
+  title: 'Computer Science and Engineering: Utilizing Action Research and Lesson Study'
   authors:
   - Andrea C Burrows
   - Mike Borowczak
-  publisher: Center for Open Science
-  date: '2019-01-04'
-  link: https://doi.org/gsbv23
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/vlsid.2019.00031
-  title: A State Encoding Methodology for Side-Channel Security vs. Power Trade-off
-    Exploration
+  publisher: Educational Action Research
+  date: '2019-01-15'
+  link: https://doi.org/10.1080/09650792.2019.1566082
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: LPFSMrAgrawal
+  title: A State Encoding Methodology for Side-Channel Security vs. Power Trade-off Exploration
   authors:
   - Richa Agrawal
   - Mike Borowczak
   - Ranga Vemuri
-  publisher: 2019 32nd International Conference on VLSI Design and 2019 18th International
-    Conference on Embedded Systems (VLSID)
-  date: '2019-01-01'
-  link: https://doi.org/gsbv24
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/MPOT.2018.2850600
-  title: 'S-CHIRP: Securing Communications in Lightweight Peer-to-Peer Networks in
-    the IoT'
+  publisher: 2019 International Conference on VLSI Design (VLSID 2019)
+  date: '2019-01-08'
+  link: https://goo.gl/4kDDec
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: '8595464'
+  title: 'S-CHIRP: Securing Communications in Lightweight Peer-to-Peer Networks in the IoT'
   authors:
-  - Shaya Wolf
-  - Rafer Cooley
-  - Mike Borowczak
+  - S. Wolf
+  - R. Cooley
+  - M. Borowczak
   publisher: IEEE Potentials
-  date: '2019-01-01'
-  link: https://doi.org/gsbv25
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1007/s10836-019-05821-z
-  title: A State Machine Encoding Methodology Against Power Analysis Attacks
-  authors:
-  - Richa Agrawal
-  - Ranga Vemuri
-  - Mike Borowczak
-  publisher: Journal of Electronic Testing
-  date: '2019-09-09'
-  link: https://doi.org/gsbv2v
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ISC246665.2019.9071763
-  title: Adversarial Impacts on Autonomous Decentralized Lightweight Swarms
-  authors:
-  - Shaya Wolf
-  - Rafer Cooley
-  - Mike Borowczak
-  publisher: 2019 IEEE International Smart Cities Conference (ISC2)
-  date: '2019-10-01'
-  link: https://doi.org/gsbv2t
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ICMLA.2019.00207
-  title: One-Class Classification to Continuously Authenticate Users Based on Keystroke
-    Timing Dynamics
+  date: '2019-01-05'
+  link: https://doi.org/10.1109/MPOT.2018.2850600
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+  - Internet of Things
+  - Network security
+  - Computer security
+  - Peer-to-peer computing
+- id: ContinuousSpyHunter
+  title: Dynamic Anonymized Evaluation for Behavioral Continuous Authentication
   authors:
   - Rasana Manandhar
   - Shaya Wolf
   - Mike Borowczak
-  publisher: 2019 18th IEEE International Conference On Machine Learning And Applications
-    (ICMLA)
-  date: '2019-12-01'
-  link: https://doi.org/gsbv2s
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/isc2.2018.8656988
-  title: Blockchain-Based Election Infrastructures
+  publisher: Preprint
+  date: '2019-01-01'
+  link: https://arxiv.org/abs/1903.03132
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: burrows_borowczak_2019
+  title: 'CyberSecurity and Technology: How Do They Fit into a Science Classroom?'
+  authors:
+  - Andrea C Burrows
+  - Mike Borowczak
+  publisher: International Conference of the Association for Science Teacher Education, 2019, ASTE, 2019.
+  date: '2019-01-01'
+  link: https://doi.org/10.31235/osf.io/jre5k
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: nicek12-borowczak
+  title: Cybersecurity in Existing STEM Courses- PDs that connect Cybersecurity to the NGSS & Common Core
+  authors:
+  - Mike Borowczak
+  - Andrea Burrows
+  publisher: The 2018 NICE K12 Cybersecurity Education Conference
+  date: '2018-12-03'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: rmcwic18a
+  title: Accessible Computer Science Education
+  authors:
+  - Fiona Moss
+  - Rasana Manandhar
+  - Madison Cooley
+  - Shaya Wolf
+  - Andrea Burrows
+  - Mike Borowczak
+  publisher: The 2018 Rocky Mountain Celebration of Women in Computing (RMCWIC 2018)
+  date: '2018-11-02'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: rmcwic18b
+  title: Accessible Computer Science Education Workshop Presentation
+  authors:
+  - Rasana Manandhar
+  - Fiona Moss
+  - Madison Cooley
+  - Shaya Wolf
+  - Andrea Burrows
+  - Mike Borowczak
+  publisher: The 2018 Rocky Mountain Celebration of Women in Computing (RMCWIC 2018)
+  date: '2018-11-02'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: TampaDevConnect
+  title: Lightweight Command, Control, and Communication for Heterogenous Agent Swarms
+  authors:
+  - Mike Borowczak
+  - Rafer Cooley
+  - Shaya Wolf
+  publisher: '2018 Defense Tech Connect: Defense Innovation'
+  date: '2018-10-24'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: GenCyberNSTA
+  title: 'GenCyber Wyoming: COWPOKES, Professional Development, Camp, & Experiences'
+  authors:
+  - Mike Borowczak
+  - Garrett Burrows
+  - Nic Robinson
+  publisher: 2018 National Science Teachers Association (NSTA)
+  date: '2018-10-12'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: showcaseRAMPED
+  title: Science Teacher Lesson Showcasing Engineering from RAMPED II
+  authors:
+  - Andrea Burrows
+  - Mike Borowczak
+  - Garrett Burrows
+  - Nic Robinson
+  publisher: 2018 National Science Teachers Association (NSTA)
+  date: '2018-10-12'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: csintegrated
+  title: Integrating computer science in K-12 classes
+  authors:
+  - Andrea C. Burrows
+  - Mike Borowczak
+  - Rafer Cooley
+  - Shaya Wolf
+  - Mason Johnson
+  publisher: AdvancEd Mountain Region Fall Conference
+  date: '2018-09-25'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: NSAShowcaseFa18
+  title: Micro:Badge for Cybersecurity Engagement
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  publisher: GenCyber Fall Meeting 2018
+  date: '2018-09-22'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: Borowczak2018ISC2-BLESS
+  title: Blockchain Based Election Infrastructures
   authors:
   - Rafer Cooley
   - Shaya Wolf
   - Mike Borowczak
-  publisher: 2018 IEEE International Smart Cities Conference (ISC2)
-  date: '2018-09-01'
-  link: https://doi.org/gsbv27
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/isc2.2018.8656982
+  publisher: 2018 ISC2 International Workshop on BLockchain Enabled Sustainable Smart Cities (BLESS 2018)
+  date: '2018-09-19'
+  link: https://goo.gl/KXidyZ
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: Borowczak2018ISC2-5GWork
   title: 'EVO-SCHIRP: Evolved Secure Swarm Communications'
   authors:
   - Shaya Wolf
   - Rafer Cooley
   - Mike Borowczak
-  - Nicholas Cheney
-  publisher: 2018 IEEE International Smart Cities Conference (ISC2)
-  date: '2018-09-01'
-  link: https://doi.org/gsbv28
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/isc2.2018.8656939
-  title: Secure and Decentralized Swarm Behavior with Autonomous Agents for Smart
-    Cities
+  - Nick Cheney
+  publisher: 2018 International ISC2 Workshop on 5G Communication, Security and Privacy in Smart Cities
+  date: '2018-09-19'
+  link: https://goo.gl/nwdN74
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: Borowczak2018ISC2
+  title: Secure and Decentralized Swarm Behavior with Autonomous Agents for Smart Cities
   authors:
   - Rafer Cooley
   - Shaya Wolf
   - Mike Borowczak
-  publisher: 2018 IEEE International Smart Cities Conference (ISC2)
-  date: '2018-09-01'
-  link: https://doi.org/gsbv26
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--30370
-  title: 'Enabling Advanced Topics in Computing and Engineering Through Authentic
-    Inquiry: A Cybersecurity Case Study'
-  authors:
-  - Mike Borowczak
-  - Andrea Burrows
-  publisher: 2018 ASEE Annual Conference &amp; Exposition  Proceedings
-  date: ''
-  link: https://doi.org/gsbv3b
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/educsci8010004
-  title: 'Integrated STEM: Focus on Informal Education and Community Collaboration
-    through Engineering'
-  authors:
-  - Andrea Burrows
-  - Meghan Lockwood
-  - Mike Borowczak
-  - Edward Janak
-  - Brian Barber
-  publisher: Education Sciences
-  date: '2018-01-01'
-  link: https://doi.org/gfb35n
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/icce.2018.8326333
-  title: 'Portable tor router: Easily enabling web privacy for consumers'
-  authors:
-  - Adrian Barberis
-  - Danny Radosevich
-  - Wyatt Emery
-  - Mike Borowczak
-  publisher: 2018 IEEE International Conference on Consumer Electronics (ICCE)
-  date: '2018-01-01'
-  link: https://doi.org/gkmdts
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/icce.2018.8326301
-  title: 'S-CHIRP: Secure communication for heterogeneous IoTs with round-robin protection'
-  authors:
-  - Mike Borowczak
-  - George Purdy
-  publisher: 2018 IEEE International Conference on Consumer Electronics (ICCE)
-  date: '2018-01-01'
-  link: https://doi.org/gkmdp3
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ISVLSI.2018.00129
+  publisher: 2018 IEEE International Smart Cities Conference (ISC2 2018)
+  date: '2018-09-18'
+  link: https://goo.gl/i45ivW
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: Borowczak2018ISVLSI
   title: Designing for Security Within and Between IoT Devices
   authors:
   - Mike Borowczak
@@ -674,272 +1298,744 @@
   - Shaya Wolf
   publisher: 2018 IEEE Computer Society Annual Symposium on VLSI (ISVLSI)
   date: '2018-07-01'
-  link: https://doi.org/gsbv29
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1145/3194206.3195587
-  title: Predictive liability models and visualizations of high dimensional retail
-    employee data
+  link: https://goo.gl/iiuuK4
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: 2018AAS...23212201B
+  title: 'Noyce SWARMS Scholars and Two Professional Development Models (LASSI and RAMPED): Summer 2015, 2016, and 2017'
+  authors:
+  - Andrea C. Burrows
+  - Adam Myers
+  - Mike Borowczak
+  publisher: 'American Astronomical Society Meeting Abstracts #232'
+  date: '2018-06-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: asee_peer_30370
+  title: 'Enabling Advanced Topics in Computing and Engineering Through Authentic Inquiry: A Cybersecurity Case Study'
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  publisher: 2018 ASEE Annual Conference & Exposition
+  date: '2018-06-01'
+  link: https://goo.gl/d58EPq
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: NSAShowcaseSp18
+  title: 'Computer Science GenCyber Expo: Microbits and Pin Guessers'
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  publisher: GenCyber Spring Meeting 2018
+  date: '2018-04-22'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: FliGridSITE
+  title: 'Using Flipgrid with K12 STEM teachers: Successes and challenges'
+  authors:
+  - Andrea C. Burrows
+  - Mike Borowczak
+  publisher: Poster presentation at the Society for Information Technology & Teacher Education (SITE)
+  date: '2018-03-28'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: Borowczak2018SCHIRP
+  title: 'S-CHIRP: Secure Communication for Heterogeneous IoTs with Round-Robin Protection'
+  authors:
+  - Mike Borowczak
+  - George Purdy
+  publisher: IEEE International Conference on Consumer Electronics, 2018. ICCE 2018.
+  date: '2018-01-20'
+  link: https://goo.gl/LQzAVh
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: Borowczak2018ToR
+  title: 'Portable Tor Router: Easily Enabling Web Privacy for Consumers'
+  authors:
+  - Adrian Barberis
+  - Wyatt Emery
+  - Danny Radosevich
+  - Mike Borowczak
+  publisher: IEEE International Conference on Consumer Electronics, 2018. ICCE 2018.
+  date: '2018-01-20'
+  link: https://goo.gl/fQ7hyP
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: bleedingedge
+  title: Developing interest bleeding edge STEM fields like cybersecurity
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  publisher: International Conference of the Association for Science Teacher Education, 2018, ASTE, 2018.
+  date: '2018-01-04'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: integratedstem
+  title: 'Integrated STEM: Focus on Informal Education and Community Collaboration through Engineering'
+  authors:
+  - Andrea C. Burrows
+  - Megan Lockwood
+  - Mike Borowczak
+  - Edward Janak
+  - Brian Barber
+  publisher: Education Sciences
+  date: '2018-01-01'
+  link: https://goo.gl/uCxBkv
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: Yang:2018:PLM:3194206.3195587
+  title: Predictive Liability Models and Visualizations of High Dimensional Retail Employee Data
   authors:
   - Richard R. Yang
   - Mike Borowczak
-  publisher: Proceedings of the 2nd International Conference on Innovation in Artificial
-    Intelligence
-  date: '2018-03-09'
-  link: https://doi.org/gkj23c
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--29416
-  title: Hardening Freshman Engineering Student Soft Skills
-  authors:
-  - Andrea Borowczak
-  - Mike Borowczak
-  publisher: 2017 FYEE Conference Proceedings
-  date: ''
-  link: https://doi.org/gthtds
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--28571
-  title: Interactive Web Notebooks Using the Cloud to Enable CS in K-16+ Classrooms
-    and PDs
+  publisher: 2nd International Conference on Innovation in Artificial Intelligence
+  date: '2018-01-01'
+  link: https://goo.gl/nwAq5h
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+  - data embedding
+  - feature selection
+  - regression analysis
+  - retail liability assessment
+- id: Borowczak2017AuthInquiry
+  title: Developing Collegiate Cybersecurity Interest through Authentic Inquiry
   authors:
   - Mike Borowczak
-  - Andrea Burrows
-  publisher: 2017 ASEE Annual Conference &amp; Exposition Proceedings
-  date: ''
-  link: https://doi.org/gsbv3c
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--28926
+  - Andrea C. Burrows
+  publisher: Rocky Mountain Section of the American Society of Engineering Education, 2017. RMS-ASEE 2017
+  date: '2017-09-21'
+  link: https://goo.gl/g6zhRR
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: borowczak2017harden
+  title: Hardening Freshman Engineering Student Soft Skills.
+  authors:
+  - Andrea C Burrows
+  - Mike Borowczak
+  publisher: First Year Engineering Education Conference of the American Society of Engineering Education 2017, FYEE-ASEE,
+    2017.
+  date: '2017-08-01'
+  link: https://goo.gl/jWd2gp
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: borowczak2017interactive
+  title: Interactive Web Notebooks Using the Cloud to Enable CS in K-16+ Classrooms and PDs
+  authors:
+  - Mike Borowczak
+  - Andrea C Burrows
+  publisher: 2017 ASEE Annual Conference & Exposition
+  date: '2017-06-01'
+  link: https://goo.gl/JaPHh8
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: burrows2017Netlogo
   title: Teaching Teachers to Think Like Engineers Using NetLogo
   authors:
-  - Andrea Burrows
+  - Andrea C Burrows
   - Mike Borowczak
-  publisher: 2017 ASEE Annual Conference &amp; Exposition Proceedings
-  date: ''
-  link: https://doi.org/gsbv3d
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:PPRN:19311083
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:19311083
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:PPRN:19305937
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:19305937
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/p.26275
-  title: 'Arduinos and Games: K-12 Teachers Explore Computer Science (Evaluation)'
+  publisher: 2017 ASEE Annual Conference & Exposition
+  date: '2017-06-01'
+  link: https://goo.gl/3wbjif
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: borowczak-wycbyersec
+  title: 'Attack! Of the IoT: Are your devices becoming digital informants?'
+  authors:
+  - Mike Borowczak
+  publisher: Wyoming Cybersecurity Symposium
+  date: '2017-05-01'
+  link: ''
+  type: invited
+  source: invited.bib
+  tags:
+  - invited
+- id: NLOGO_TeacherUsingCS
+  title: 'NetLogo: Teachers Using Computer Science'
   authors:
   - Andrea Burrows
   - Mike Borowczak
-  publisher: 2016 ASEE Annual Conference &amp; Exposition Proceedings
-  date: ''
-  link: https://doi.org/gsbv3r
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/p.26718
+  publisher: 2017 Society for Information Technology and Teacher Education (SITE)
+  date: '2017-03-07'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: WebNotebookes
+  title: 'Interactive Web Notebooks: Expanding Teacher and Student Preparation'
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  publisher: 2017 Society for Information Technology and Teacher Education (SITE)
+  date: '2017-03-07'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: GuffyClassroomSupport
+  title: 'Support in the classroom: SWARMS scholars'' perceptions before and after beginning to teach'
+  authors:
+  - Katie Guffey
+  - Andrea C. Burrows
+  - Mike Borowczak
+  publisher: UW College of Education Research Symposium
+  date: '2017-03-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: Borowczak2017Naturally
+  title: Naturally Inspired - Modeling Natural Systems to Teach Computer Science Fundamentals
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  publisher: 2017 International Conference of the Association for Science Teacher Education
+  date: '2017-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: Burrows2017PreServiceCS
+  title: 'Pre-Service Teachers'' Computer Science and Engineering Perspectives: What is This?'
+  authors:
+  - Andrea C. Burrows
+  - Mike Borowczak
+  publisher: 2017 International Conference of the Association for Science Teacher Education
+  date: '2017-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: borowczak2016developing
   title: 'Developing a Creative K-12 Manipulative: An ECECS Capstone'
   authors:
   - Mike Borowczak
-  - Andrea Burrows
-  publisher: 2016 ASEE Annual Conference &amp; Exposition Proceedings
-  date: ''
-  link: https://doi.org/gsbv3s
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:WOS:000453756400006
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000453756400006
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:WOS:000453754600003
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000453754600003
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.cpb.2015.09.001
-  title: 'CressInt : A user-friendly web resource for genome-scale exploration of
-    gene regulation in Arabidopsis thaliana'
+  - Andrea C Burrows
+  publisher: 2016 ASEE Annual Conference & Exposition
+  date: '2016-06-01'
+  link: https://goo.gl/S14FXQ
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: burrows2016arduinos
+  title: 'Arduinos and Games: K-12 Teachers Explore Computer Science'
+  authors:
+  - Andrea C Burrows
+  - Mike Borowczak
+  publisher: 2016 ASEE Annual Conference & Exposition
+  date: '2016-06-01'
+  link: https://goo.gl/dyup3e
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: borowczak-iac
+  title: Hardware Security in the Era of Big Data, the IoT and Connected Medical Devices
+  authors:
+  - Mike Borowczak
+  publisher: 4th Annual Industry Academic Conclave (IAC), Indian Institute of Technology at Indore, Indore India, 2016
+  date: '2016-02-19'
+  link: ''
+  type: invited
+  source: invited.bib
+  tags:
+  - invited
+- id: borowczak2016enabling
+  title: 'Enabling Collaboration and Video Assessment: Exposing Trends in Science Preservice Teachers'' Assessments'
+  authors:
+  - Mike Borowczak
+  - Andrea C Burrows
+  publisher: Contemporary Issues in Technology and Teacher Education
+  date: '2016-01-01'
+  link: https://goo.gl/yKweht
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: burrows2016authentic
+  title: 'Authentic Science Experiences: Pre-collegiate Science Educators'' successes And Challenges During Professional Development'
+  authors:
+  - Andrea C Burrows
+  - Michael A DiPompeo
+  - Adam D Myers
+  - Ryan C Hickox
+  - Mike Borowczak
+  - Debbie A French
+  - Andria C Schwortz
+  publisher: Problems of Education in the 21st Century
+  date: '2016-01-01'
+  link: https://goo.gl/nYd6p9
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: borowczak2016gis
+  title: GIS Technology+Socio-Scientific Issues=Teacher and Student Learning
+  authors:
+  - Mike Borowczak
+  - Andrea C Burrows
+  publisher: Society for Information Technology & Teacher Education International Conference
+  date: '2016-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: burrows2016visualization
+  title: 'Visualization Basics, UGame-ICompute: An ITEST Year-3 Summary of K-12 Teacher/Student Observations in the Field'
+  authors:
+  - Andrea C Burrows
+  - Jacqueline Leonard
+  - Mike Borowczak
+  publisher: Society for Information Technology & Teacher Education International Conference
+  date: '2016-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: NonIntrusive
+  title: Non-intrusive assessment of communication and collaboration in STEM
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  publisher: 2016 International Conference of the Association for Science Teacher Education
+  date: '2016-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: rwcompute
+  title: Real world computing in K-20 classrooms through NGSS
+  authors:
+  - Andrea C. Burrows
+  - Mike Borowczak
+  publisher: 2016 International Conference of the Association for Science Teacher Education
+  date: '2016-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: CollaborationBorowczak
+  title: 'Collaboration and communication: Assessment using an open version control tool'
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  publisher: National Science Teachers Association (NSTA) Area Conference in conjunction with the Association for Science
+    Teacher Education (ASTE)
+  date: '2015-10-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: partnership_burrows_myers
+  title: 'Partnerships: A systemic study of two professional developments'
+  authors:
+  - Andrea C. Burrows
+  - Adam Myers
+  - Michael DiPompeo
+  - Mike Borowczak
+  - Andria Schwortz
+  - Debbie French
+  - S Hall
+  publisher: National Science Teachers Association (NSTA) Area Conference in conjunction with the Association for Science
+    Teacher Education (ASTE)
+  date: '2015-10-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: chen2015cressint
+  title: 'CressInt: A user-friendly web resource for genome-scale exploration of gene regulation in Arabidopsis thaliana'
   authors:
   - Xiaoting Chen
   - Kevin Ernst
   - Frances Soman
   - Mike Borowczak
-  - Matthew T. Weirauch
-  publisher: Current Plant Biology
-  date: '2015-09-01'
-  link: https://doi.org/gsbv3h
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ISVLSI.2014.78
-  title: Enabling Side Channel Secure FSMs in the Presence of Low Power Requirements
+  - Matthew T Weirauch
+  publisher: Current plant biology
+  date: '2015-01-01'
+  link: https://goo.gl/SGawhd
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: borowczak2015communication
+  title: 'Communication in STEM education: A non-intrusive method for assessment & K20 educator feedback'
+  authors:
+  - Mike Borowczak
+  publisher: Problems of Education in the 21st Century
+  date: '2015-01-01'
+  link: https://goo.gl/XaKzEU
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: Engineering_partners
+  title: 'Engineering and teacher partners in STEM education: What do engineers think?'
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  publisher: 2015 International Conference of the Association for Science Teacher Education
+  date: '2015-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: borowczak2014enabling
+  title: Enabling side channel secure FSMs in the presence of low power requirements
   authors:
   - Mike Borowczak
   - Ranga Vemuri
-  publisher: 2014 IEEE Computer Society Annual Symposium on VLSI
-  date: '2014-07-01'
-  link: https://doi.org/gsbv3j
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:WOS:000453582700002
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000453582700002
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/MWSCAS.2013.6674708
-  title: 'Secure controllers: Requirements of S*FSM'
+  publisher: VLSI (ISVLSI), 2014 IEEE Computer Society Annual Symposium on
+  date: '2014-01-01'
+  link: https://goo.gl/CDEVzz
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: burrows2014online
+  title: 'Online STEM integration: Pre-service science teachers in the Director''s Chair .'
+  authors:
+  - Andrea C Burrows
+  - Mike Borowczak
+  publisher: Proceedings of world conference on e-learning in corporate, government, healthcare, and higher education
+  date: '2014-01-01'
+  link: https://goo.gl/x7u44W
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: IntegrateBurrowsBOrowczak
+  title: 'Integrated STEM: What does it mean to educators?'
+  authors:
+  - Andrea C. Burrows
+  - Timothy Slater
+  - Mike Borowczak
+  publisher: 2014 International Conference of the Association for Science Teacher Education
+  date: '2014-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: burrows2013enhancing
+  title: 'Enhancing pedagogy with context and partnerships: Science in hand'
+  authors:
+  - Andrea Burrows
+  - Gabriel Wickizer
+  - Helen Meyer
+  - Mike Borowczak
+  publisher: 'Problems in Education in the 21st Century: Science, Technology, Society and Environment Education'
+  date: '2013-01-01'
+  link: https://goo.gl/5CgqDt
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: borowczak2013secure
+  title: 'Secure controllers: Requirements of SFSM'
   authors:
   - Mike Borowczak
   - Ranga Vemuri
-  publisher: 2013 IEEE 56th International Midwest Symposium on Circuits and Systems
-    (MWSCAS)
-  date: '2013-08-01'
-  link: https://doi.org/gsbv3n
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/BioMedCom.2012.22
-  title: 'S*FSM: A Paradigm Shift for Attack Resistant FSM Designs and Encodings'
+  publisher: Circuits and Systems (MWSCAS), 2013 IEEE 56th International Midwest Symposium on
+  date: '2013-01-01'
+  link: https://goo.gl/UFg8yp
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: robots_21
+  title: 'Robotics in the 21st century: Making STEM come alive with computer science'
+  authors:
+  - Andrea C. Burrows
+  - Mike Borowczak
+  publisher: 2013 International Conference of the Association for Science Teacher Education
+  date: '2013-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: borowczak-youdemo
+  title: 'YouDemo.info: Effective use of videos in the classroom'
+  authors:
+  - Mike Borowczak
+  - Andrea Carneal Burrows
+  publisher: Education Seminar Series and Lakehead University
+  date: '2012-05-23'
+  link: ''
+  type: invited
+  source: invited.bib
+  tags:
+  - invited
+- id: youdemo_20
+  title: 'Video characteristics: YouDemo.info.'
+  authors:
+  - Andrea C. Burrows
+  - Mike Borowczak
+  publisher: The 2012 Annual NSF GK-12 Conference
+  date: '2012-03-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: burrows2012teaching
+  title: 'Teaching computer science & engineering through robotics: Science & art form'
+  authors:
+  - Andrea Burrows
+  - Mike Borowczak
+  - Timothy F Slater
+  - J Chris Haynes
+  publisher: Problems of Education in the 21st Century
+  date: '2012-01-01'
+  link: https://goo.gl/oEo9pn
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
+- id: borowczak2012s
+  title: 'SFSM: A Paradigm Shift for Attack Resistant FSM Designs and Encodings'
   authors:
   - Mike Borowczak
   - Ranga Vemuri
-  publisher: 2012 ASE/IEEE International Conference on BioMedical Computing (BioMedCom)
-  date: '2012-12-01'
-  link: https://doi.org/gsbv3m
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/HST.2012.6224315
-  title: 'SDMLp: On the use of complementary Pass transistor Logic for design of DPA
-    resistant circuits'
+  publisher: BioMedical Computing (BioMedCom), 2012 ASE/IEEE International Conference on
+  date: '2012-01-01'
+  link: https://goo.gl/nxM6AE
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: ramakrishnan2012sdmlp
+  title: 'SDMLp: On the use of complementary Pass transistor Logic for design of DPA resistant circuits'
   authors:
   - Lakshmi Narasimhan Ramakrishnan
   - Manoj Chakkaravarthy
   - Antarpreet Singh Manchanda
   - Mike Borowczak
   - Ranga Vemuri
-  publisher: 2012 IEEE International Symposium on Hardware-Oriented Security and Trust
-  date: '2012-06-01'
-  link: https://doi.org/gsbv3q
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:WOS:000453576200002
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000453576200002
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:WOS:000392562500006
-  title: Web of Science
-  authors: []
-  publisher: ''
-  date: ''
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:WOS:000392562500006
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--16896
-  title: 'Engineering Education Collaboration: Innovative Pedagogical Methods For  High
-    School And University Environmentalists'
+  publisher: Hardware-Oriented Security and Trust (HOST), 2012 IEEE International Symposium on
+  date: '2012-01-01'
+  link: https://goo.gl/Y3oppf
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: qualities_videos
+  title: Which qualities matter most in creating (STEM) methods videos?
   authors:
-  - Leslie Hadaway
-  - Megan Urbaitis
-  - Regina Lamendella
-  - Daniel Oerther
-  - Andrea Burrows
+  - Andrea C. Burrows
   - Mike Borowczak
-  - Anant Kukreti
-  publisher: 2010 Annual Conference &amp; Exposition Proceedings
-  date: ''
-  link: https://doi.org/gsbv3t
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--16900
-  title: 'Go With The Flow: Describing Storm Water Runoff Rates Using The Derivative'
+  publisher: 2012 International Conference of the Association for Science Teacher Education
+  date: '2012-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: youdemo_info
+  title: 'Video characteristics: YouDemo.info.'
+  authors:
+  - Andrea C. Burrows
+  - Mike Borowczak
+  publisher: Future of Education Technology Conference (FETC)
+  date: '2012-01-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: bigbang
+  title: 'There was a big bang: But can you still hear it?'
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  - Rhonda Cargile
+  - Ranga Vemuri
+  publisher: The 2011 Annual NSF GK-12 Conference
+  date: '2011-03-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: borowczak2011youdemo
+  title: 'YouDemo: Capturing live data from videos'
+  authors:
+  - Mike Borowczak
+  - Andrea C. Burrows
+  publisher: Proceedings of the International Conference on Information and Communication Technologies and Applications
+  date: '2011-01-01'
+  link: ''
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: colder
+  title: It's getting colder - but can you tell?
+  authors:
+  - Mike Borowczak
+  - Brad Hunt
+  - Andrea C. Burrows
+  publisher: The 2010 Annual NSF GK-12 Conference
+  date: '2010-03-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: engineerit
+  title: Engineer it!
+  authors:
+  - Mike Borowczak
+  - Megan Urbaitis
+  - Andrea C. Burrows
+  - Ranga Vemuri
+  publisher: The 2010 Annual NSF GK-12 Conference
+  date: '2010-03-01'
+  link: ''
+  type: presentation
+  source: conf_pres_no_proceeding.bib
+  tags:
+  - presentation
+- id: hunt2010go
+  title: 'Go With the Flow: Describing Storm Water Runoff Rates Using the Derivative'
   authors:
   - Brad Hunt
   - Regina Lamendella
   - Sara Garrison
-  - Andrea Burrows
+  - Andrea C Burrows
   - Mike Borowczak
   - Anant Kukreti
-  publisher: 2010 Annual Conference &amp; Exposition Proceedings
-  date: ''
-  link: https://doi.org/gsbv3v
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.18260/1-2--16917
-  title: Improving Future Faculty With Graduate Engineering Education
+  publisher: American Society for Engineering Education
+  date: '2010-01-01'
+  link: https://goo.gl/bfGxMK
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: burrows2010improving
+  title: Improving Future Faculty with Graduate Engineering Education
   authors:
-  - Andrea Burrows
+  - Andrea C Burrows
   - Anant Kukreti
   - Mike Borowczak
   - Amr Safwat
-  publisher: 2010 Annual Conference &amp; Exposition Proceedings
-  date: ''
-  link: https://doi.org/gsbv3w
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/NAECON.2008.4806561
+  publisher: American Society for Engineering Education
+  date: '2010-01-01'
+  link: https://goo.gl/kjcTYG
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: hadaway2010engineering
+  title: 'Engineering Education Collaboration: Innovative Pedagogical Methods for High School and University Environmentalists'
+  authors:
+  - Leslie Hadaway
+  - Megan Urbaitis
+  - Regina Lamendella
+  - Daniel B Oerther
+  - Andrea C Burrows
+  - Mike Borowczak
+  - Anant R Kukreti
+  publisher: American Society for Engineering Education
+  date: '2010-01-01'
+  link: https://goo.gl/LHsFPm
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: wilsey2008self
+  title: Self-protecting storage device
+  authors:
+  - Philip A Wilsey
+  - Roy Brian Anderson
+  - Mike Borowczak
+  publisher: US Patent App. 12/328,034
+  date: '2008-12-01'
+  link: ''
+  type: other
+  source: otherwork.bib
+  tags:
+  - other
+- id: vemuri2008safety
   title: Safety-Centric Design of Distributed Embedded Avionics
   authors:
   - Ranga Vemuri
   - Mike Borowczak
   - Annie Avakian
-  publisher: 2008 IEEE National Aerospace and Electronics Conference
-  date: '2008-07-01'
-  link: https://doi.org/dp5r9x
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ANSS-41.2008.34
-  title: The Use of Device Simulation in Development of USB Storage Devices
+  publisher: Aerospace and Electronics Conference, 2008. NAECON 2008. IEEE National
+  date: '2008-01-01'
+  link: https://goo.gl/Vrh1Si
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: anderson2008use
+  title: The use of device simulation in development of usb storage devices
   authors:
-  - R. Brian Anderson
+  - R Brian Anderson
   - Mike Borowczak
-  - Philip A. Wilsey
-  publisher: 41st Annual Simulation Symposium (anss-41 2008)
-  date: '2008-04-01'
-  link: https://doi.org/dmj6b3
-  orcid: 0000-0001-9409-8245
-  plugin: orcid.py
-  file: orcid.yaml
+  - Philip A Wilsey
+  publisher: Simulation Symposium, 2008. ANSS 2008. 41st Annual
+  date: '2008-01-01'
+  link: https://goo.gl/R5TCcx
+  type: conference
+  source: proceedings.bib
+  tags:
+  - conference
+- id: renz2005implementing
+  title: Implementing lazy streams in C++
+  authors:
+  - David Renz
+  - Mike Borowczak
+  publisher: Morehead Electronic Journal of Applicable Mathematics
+  date: '2005-01-01'
+  link: https://goo.gl/EbT6Y2
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal

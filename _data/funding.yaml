@@ -1,0 +1,533 @@
+# DO NOT EDIT — generated automatically by bib2funding.py
+# Source: _bibliography/funding.bib (43 entries)
+
+stats:
+  total_awarded: 7671
+  total_awarded_fmt: $7.7M
+  total_share: 4305
+  total_share_fmt: $4.3M
+  total_pending: 2000
+  total_pending_fmt: $2M
+  total_all: 9671
+  total_all_fmt: $9.7M
+  count_active: 6
+  count_pending: 1
+  count_completed: 36
+  count_all: 43
+grants:
+- id: grant:trace
+  title: Trace-AI
+  institution: Arctic Wolf Network
+  period: 02/26 -- 02/27
+  year: 2026
+  total: 100
+  total_fmt: $100K
+  share_pct: 100
+  share: 100
+  share_fmt: $100K
+  role: PI
+  status: active
+- id: grant:tracematch
+  title: Trace-AI 2:1 Match
+  institution: FL High Tech Corr.
+  period: 02/26 -- 02/27
+  year: 2026
+  total: 50
+  total_fmt: $50K
+  share_pct: 100
+  share: 50
+  share_fmt: $50K
+  role: PI
+  status: active
+- id: grant:leidos
+  title: Red Teaming
+  institution: Leidos
+  period: 01/26 -- 12/26
+  year: 2025
+  total: 100
+  total_fmt: $100K
+  share_pct: 100
+  share: 100
+  share_fmt: $100K
+  role: PI
+  status: active
+- id: grant:ngc
+  title: Automation Tech. for Superconducting Logic
+  institution: Northrop Grumman Corporation
+  period: Submitted 03/2025
+  year: 2025
+  total: 2000
+  total_fmt: $2M
+  share_pct: 60
+  share: 1200
+  share_fmt: $1.2M
+  role: PI
+  status: pending
+- id: grant:wyslice
+  title: 'CS For All: RPP WySLICE (DRL#1923542)'
+  institution: National Science Foundation
+  period: 08/19 -- 07/25
+  year: 2025
+  total: 1000
+  total_fmt: $1M
+  share_pct: 65
+  share: 650
+  share_fmt: $650K
+  role: PI
+  status: completed
+- id: grant:shadow
+  title: Shadow AI
+  institution: Arctic Wolf Network
+  period: 09/24 -- 05/26
+  year: 2024
+  total: 165
+  total_fmt: $165K
+  share_pct: 90
+  share: 148
+  share_fmt: $148K
+  role: PI
+  status: active
+- id: grant:shadowmatch
+  title: Shadow AI 2:1 Match
+  institution: FL High Tech Corr.
+  period: 09/24 -- 08/25
+  year: 2024
+  total: 80
+  total_fmt: $80K
+  share_pct: 90
+  share: 72
+  share_fmt: $72K
+  role: PI
+  status: active
+- id: grant:gencyber23
+  title: GenCyberWY 2023
+  institution: National Security Agency
+  period: 09/22 -- 03/24
+  year: 2024
+  total: 325
+  total_fmt: $325K
+  share_pct: 50
+  share: 162
+  share_fmt: $162K
+  role: PI-LI
+  status: completed
+- id: grant:wystack
+  title: WySTACK
+  institution: National Science Foundation
+  period: 04/21 -- 03/24
+  year: 2024
+  total: 600
+  total_fmt: $600K
+  share_pct: 60
+  share: 360
+  share_fmt: $360K
+  role: PI
+  status: completed
+- id: grant:tacos9
+  title: MilliporeSigma Outreach -- TACoS IX (Summer 2023)
+  institution: MilliporeSigma
+  period: 2022 -- 2023
+  year: 2023
+  total: 17
+  total_fmt: $17K
+  share_pct: 50
+  share: 8
+  share_fmt: $8K
+  role: Co-PI
+  status: completed
+- id: grant:code22
+  title: Microsoft for Code.org Regional Trainer Support
+  institution: Microsoft
+  period: 08/22 -- 07/23
+  year: 2023
+  total: 35
+  total_fmt: $35K
+  share_pct: 100
+  share: 35
+  share_fmt: $35K
+  role: PI
+  status: completed
+- id: grant:templeton
+  title: Templeton Endowed Professorship
+  institution: Uwyo Endow.
+  period: 07/22 -- 06/23
+  year: 2023
+  total: 45
+  total_fmt: $45K
+  share_pct: 100
+  share: 45
+  share_fmt: $45K
+  role: PI
+  status: completed
+- id: grant:kraken
+  title: Kraken Research Support
+  institution: Kraken
+  period: 07/21 -- 06/23
+  year: 2023
+  total: 150
+  total_fmt: $150K
+  share_pct: 100
+  share: 150
+  share_fmt: $150K
+  role: PI
+  status: completed
+- id: grant:kraken_block
+  title: Secure Blockchain Initiatives
+  institution: Kraken
+  period: 07/21 -- 06/23
+  year: 2023
+  total: 75
+  total_fmt: $75K
+  share_pct: 100
+  share: 75
+  share_fmt: $75K
+  role: PI
+  status: completed
+- id: grant:ripple_val
+  title: Ripple XRPL Validator
+  institution: Ripple
+  period: 02/22 -- 03/23
+  year: 2023
+  total: 45
+  total_fmt: $45K
+  share_pct: 100
+  share: 45
+  share_fmt: $45K
+  role: PI
+  status: completed
+- id: grant:ripple_smart
+  title: Ripple Smart Contracts
+  institution: Ripple
+  period: 02/22 -- 03/23
+  year: 2023
+  total: 285
+  total_fmt: $285K
+  share_pct: 50
+  share: 142
+  share_fmt: $142K
+  role: PI
+  status: completed
+- id: grant:iohk22
+  title: IOHK Research Lab
+  institution: IOHK
+  period: 02/22 -- 03/23
+  year: 2023
+  total: 337
+  total_fmt: $337K
+  share_pct: 50
+  share: 168
+  share_fmt: $168K
+  role: PI
+  status: completed
+- id: grant:gencyber22
+  title: GenCyberWY 2022
+  institution: National Security Agency
+  period: 09/21 -- 08/23
+  year: 2023
+  total: 175
+  total_fmt: $175K
+  share_pct: 50
+  share: 88
+  share_fmt: $88K
+  role: PI-LI
+  status: completed
+- id: grant:inl
+  title: Red Teaming Artificial Intelligence
+  institution: INL/DoE LDRD
+  period: 10/20 -- 09/23
+  year: 2023
+  total: 1000
+  total_fmt: $1M
+  share_pct: 40
+  share: 400
+  share_fmt: $400K
+  role: Co-PI
+  status: completed
+- id: grant:noyce
+  title: (Sub-award) Western Regional Noyce Network
+  institution: NSF / Univ. of OR
+  period: 10/22 -- 09/25
+  year: 2022
+  total: 150
+  total_fmt: $150K
+  share_pct: 50
+  share: 75
+  share_fmt: $75K
+  role: PI
+  status: active
+- id: grant:tacos8
+  title: MilliporeSigma Outreach -- TACoS VIII (Summer 2022)
+  institution: MilliporeSigma
+  period: 2021 -- 2022
+  year: 2022
+  total: 17
+  total_fmt: $17K
+  share_pct: 50
+  share: 8
+  share_fmt: $8K
+  role: Co-PI
+  status: completed
+- id: grant:microcred
+  title: Micro-Credentials
+  institution: Wy Dept. Ed
+  period: 10/19 -- 09/22
+  year: 2022
+  total: 400
+  total_fmt: $400K
+  share_pct: 50
+  share: 200
+  share_fmt: $200K
+  role: Co-PI
+  status: completed
+- id: grant:caes22
+  title: CAES Joint Security Cert.
+  institution: INL-CAES
+  period: 01/22 -- 10/22
+  year: 2022
+  total: 12
+  total_fmt: $12K
+  share_pct: 100
+  share: 12
+  share_fmt: $12K
+  role: PI
+  status: completed
+- id: grant:lifelong
+  title: Lifelong Learning at the HTI Workshops
+  institution: National Science Foundation
+  period: 08/21 -- 07/22
+  year: 2022
+  total: 100
+  total_fmt: $100K
+  share_pct: 20
+  share: 20
+  share_fmt: $20K
+  role: Co-PI
+  status: completed
+- id: grant:code21
+  title: code.org Regional Partnership
+  institution: Microsoft
+  period: 08/21 -- 07/22
+  year: 2022
+  total: 50
+  total_fmt: $50K
+  share_pct: 50
+  share: 25
+  share_fmt: $25K
+  role: Co-PI
+  status: completed
+- id: grant:gencyber21
+  title: GenCyber Wyoming (H98230-21-1-0122)
+  institution: National Security Agency
+  period: 04/21 -- 05/22
+  year: 2022
+  total: 125
+  total_fmt: $125K
+  share_pct: 50
+  share: 62
+  share_fmt: $62K
+  role: PI-LI
+  status: completed
+- id: grant:nextgen
+  title: Next Gen Secure Digital Ecosystems
+  institution: Uwyo Provost
+  period: 06/21 -- 05/22
+  year: 2022
+  total: 45
+  total_fmt: $45K
+  share_pct: 20
+  share: 9
+  share_fmt: $9K
+  role: Co-PI
+  status: completed
+- id: grant:iohk20
+  title: IOHK Research Lab
+  institution: IOHK
+  period: 05/20 -- 02/22
+  year: 2022
+  total: 1000
+  total_fmt: $1M
+  share_pct: 50
+  share: 500
+  share_fmt: $500K
+  role: Co-PI
+  status: completed
+- id: grant:gencyber20
+  title: GenCyber WY (H98230-20-1-0086)
+  institution: National Security Agency
+  period: 05/20 -- 04/22
+  year: 2022
+  total: 100
+  total_fmt: $100K
+  share_pct: 50
+  share: 50
+  share_fmt: $50K
+  role: PI-LI
+  status: completed
+- id: grant:grandchal
+  title: 'Grand Challenge: NextGen Sec. Digital Ecosys.'
+  institution: Uwyo Research
+  period: 04/21 -- 12/21
+  year: 2021
+  total: 20
+  total_fmt: $20K
+  share_pct: 20
+  share: 4
+  share_fmt: $4K
+  role: Co-PI
+  status: completed
+- id: grant:caes21
+  title: CAES Joint Security Cert.
+  institution: INL-CAES
+  period: 01/21 -- 10/21
+  year: 2021
+  total: 12
+  total_fmt: $12K
+  share_pct: 100
+  share: 12
+  share_fmt: $12K
+  role: PI
+  status: completed
+- id: grant:crypto_sca
+  title: Cryptographic Resistance to SCA
+  institution: INL/DoE LDRD
+  period: 09/20 -- 08/21
+  year: 2021
+  total: 100
+  total_fmt: $100K
+  share_pct: 33
+  share: 33
+  share_fmt: $33K
+  role: Co-PI
+  status: completed
+- id: grant:code20
+  title: code.org Regional Partnership
+  institution: Microsoft
+  period: 08/20 -- 07/21
+  year: 2021
+  total: 126
+  total_fmt: $126K
+  share_pct: 50
+  share: 63
+  share_fmt: $63K
+  role: Co-PI
+  status: completed
+- id: grant:caes20
+  title: CAES Joint Security Cert.
+  institution: INL-CAES
+  period: 02/20 -- 09/20
+  year: 2020
+  total: 44
+  total_fmt: $44K
+  share_pct: 100
+  share: 44
+  share_fmt: $44K
+  role: PI
+  status: completed
+- id: grant:caes_visit
+  title: CAES Visiting Faculty Sum. Prog.
+  institution: INL-CAES
+  period: 05/20 -- 08/20
+  year: 2020
+  total: 15
+  total_fmt: $15K
+  share_pct: 100
+  share: 15
+  share_fmt: $15K
+  role: PI
+  status: completed
+- id: grant:code19
+  title: code.org Regional Partnership
+  institution: Microsoft, UW
+  period: 08/19 -- 07/20
+  year: 2020
+  total: 126
+  total_fmt: $126K
+  share_pct: 50
+  share: 63
+  share_fmt: $63K
+  role: Co-PI
+  status: completed
+- id: grant:async
+  title: Async Cybersecurity
+  institution: UWYo (Dist.Ed)
+  period: 08/19 -- 06/20
+  year: 2020
+  total: 35
+  total_fmt: $35K
+  share_pct: 100
+  share: 35
+  share_fmt: $35K
+  role: PI
+  status: completed
+- id: grant:gencyber19
+  title: GenCyber WY (H98230-19-1-0095)
+  institution: National Security Agency
+  period: 05/19 -- 04/20
+  year: 2020
+  total: 100
+  total_fmt: $100K
+  share_pct: 50
+  share: 50
+  share_fmt: $50K
+  role: PI-LI
+  status: completed
+- id: grant:caes19
+  title: CAES Joint Security Certificate
+  institution: INL-CAES
+  period: 07/19 -- 09/19
+  year: 2019
+  total: 10
+  total_fmt: $10K
+  share_pct: 100
+  share: 10
+  share_fmt: $10K
+  role: PI
+  status: completed
+- id: grant:cowpokes
+  title: COWPOKES-CS (H98230-18-1-0095)
+  institution: National Security Agency
+  period: 05/18 -- 04/19
+  year: 2019
+  total: 100
+  total_fmt: $100K
+  share_pct: 50
+  share: 50
+  share_fmt: $50K
+  role: PI-LI
+  status: completed
+- id: grant:teacher_ext
+  title: Teacher Extensions in Wy
+  institution: Wy Dept. Ed
+  period: 09/18 -- 03/19
+  year: 2019
+  total: 75
+  total_fmt: $75K
+  share_pct: 30
+  share: 22
+  share_fmt: $22K
+  role: Co-PI
+  status: completed
+- id: grant:caes18
+  title: CAES Joint Security Certificate
+  institution: INL-CAES
+  period: 07/18 -- 09/18
+  year: 2018
+  total: 25
+  total_fmt: $25K
+  share_pct: 100
+  share: 25
+  share_fmt: $25K
+  role: PI
+  status: completed
+- id: grant:ramped
+  title: RAMPED II
+  institution: Wy Dept. Ed
+  period: 01/18 -- 09/18
+  year: 2018
+  total: 300
+  total_fmt: $300K
+  share_pct: 40
+  share: 120
+  share_fmt: $120K
+  role: Co-PI
+  status: completed

@@ -1,7 +1,7 @@
 ---
 ---
 
-<div class="hero-tagline">We break things.<br>So you can build them better.</div>
+<div class="hero-tagline">Securing Systems.<br>From Silicon to Swarms.</div>
 
 <div class="hero-sub">Applied security research from logic gates to autonomous swarms. The <strong>DRACO</strong> (<strong>D</strong>esign of <strong>R</strong>esilient <strong>A</strong>rchitectures for <strong>C</strong>omputing) Lab at <a href="https://ucf.edu">UCF</a> automates the design, attack, and defense of computing systems — from side-channel-resistant architectures and AI-driven hardware Trojan detection to post-quantum cryptographic primitives and secure swarm coordination.</div>
 

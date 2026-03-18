@@ -1,19 +1,10 @@
-# Licensed to the Apache Software Foundation (ASF) under one
-# or more contributor license agreements.  See the NOTICE file
-# distributed with this work for additional information
-# regarding copyright ownership.  The ASF licenses this file
-# to you under the Apache License, Version 2.0 (the
-# "License"); you may not use this file except in compliance
-# with the License.  You may obtain a copy of the License at
+# YouTube embed plugin — lazy-loading thumbnail with click-to-play.
+# Usage:  {% youtube VIDEO_ID %}
 #
-#   http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing,
-# software distributed under the License is distributed on an
-# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-# KIND, either express or implied.  See the License for the
-# specific language governing permissions and limitations
-# under the License.
+# Uses hqdefault.jpg (always available at 480×360) as the initial
+# thumbnail, then attempts a JS upgrade to maxresdefault.jpg.
+# YouTube returns a tiny 120×90 gray placeholder instead of a 404
+# when maxresdefault doesn't exist, so the upgrade checks naturalWidth.
 
 module Jekyll
   class YouTube < Liquid::Tag
@@ -23,40 +14,46 @@ module Jekyll
     end
 
     def render(context)
-      video_id, image_url = @text.split(' ')
+      video_id = @text.split(' ')[0]
       <<~HTML
-        <div class="youtube-placeholder yt-container-#{video_id}" style="cursor: pointer;">
-          <img src="https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg" alt="Video thumbnail">
+        <div class="yt-embed" data-video-id="#{video_id}">
+          <img src="https://i.ytimg.com/vi/#{video_id}/hqdefault.jpg"
+               alt="Video thumbnail" loading="lazy">
+          <button class="yt-play" aria-label="Play video">
+            <svg viewBox="0 0 68 48" width="68" height="48">
+              <path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.64 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fill-opacity=".8"/>
+              <path d="M45 24L27 14v20" fill="#fff"/>
+            </svg>
+          </button>
         </div>
-        <div class="youtube-placeholder-description">
-        </div>
-        <style>
-          .youtube-placeholder {
-            width: 560px; 
-            height: auto;
-          }
-          .youtube-placeholder-description {
-            color: gray;
-            font-style: italic;
-          }
-        </style>
         <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            var container = document.querySelector('.yt-container-#{video_id}');
-            function addElement() {
+          (function() {
+            var vid = '#{video_id}';
+            var el = document.querySelector('.yt-embed[data-video-id="' + vid + '"]');
+            if (!el) return;
+            var img = el.querySelector('img');
+
+            // Try upgrading to maxresdefault (1280×720) if it exists.
+            // YouTube returns a 120×90 gray placeholder for missing thumbs.
+            var hires = new Image();
+            hires.onload = function() {
+              if (hires.naturalWidth > 200) img.src = hires.src;
+            };
+            hires.src = 'https://i.ytimg.com/vi/' + vid + '/maxresdefault.jpg';
+
+            // Click to play
+            el.addEventListener('click', function() {
               var iframe = document.createElement('iframe');
-              iframe.setAttribute('width', '560');
-              iframe.setAttribute('height', '315');
-              iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/#{video_id}?autoplay=1');
-              iframe.setAttribute('title', 'YouTube video player');
-              iframe.setAttribute('frameborder', '0');
-              iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
-              iframe.setAttribute('allowfullscreen', '');
-              container.innerHTML = '';
-              container.appendChild(iframe);
-            }
-            container.addEventListener('click', addElement);
-          });
+              iframe.src = 'https://www.youtube-nocookie.com/embed/' + vid + '?autoplay=1';
+              iframe.title = 'YouTube video player';
+              iframe.frameBorder = '0';
+              iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+              iframe.allowFullscreen = true;
+              el.innerHTML = '';
+              el.classList.add('yt-embed-active');
+              el.appendChild(iframe);
+            });
+          })();
         </script>
       HTML
     end

@@ -1,0 +1,501 @@
+% ======================================================================
+% FUNDING BIB — STRUCTURED NUMERIC FIELDS
+% ======================================================================
+% Field conventions for grant entries:
+%   usera  = Total award amount in thousands of dollars (integer)
+%            e.g., 100 = $100K, 2000 = $2M
+%   userb  = PI share percentage (integer, 0–100)
+%   userc  = Role: PI, Co-PI, PI-LI, etc.
+%   note   = Date range or submission status
+%   year   = Sorting year (end year or submission year)
+%
+% The LaTeX engine computes:
+%   - Per-entry share amount (usera × userb / 100)
+%   - Aggregate totals for awarded, pending, and PI-share funding
+%   - Formatted display using K/M notation
+% ======================================================================
+
+% ======================================================================
+% ACTIVE PROJECTS
+% ======================================================================
+@misc{grant:leidos,
+  entrysubtype = {grant},
+  title        = {Red Teaming},
+  institution  = {Leidos},
+  note         = {01/26 -- 12/26},
+  usera        = {100},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {active},
+  year         = {2025}
+}
+@misc{grant:noyce,
+  entrysubtype = {grant},
+  title        = {(Sub-award) Western Regional Noyce Network},
+  institution  = {NSF / Univ. of OR},
+  note         = {10/22 -- 09/25},
+  usera        = {150},
+  userb        = {50},
+  userc        = {PI},
+  keywords     = {active},
+  year         = {2022}
+}
+@misc{grant:trace,
+  entrysubtype = {grant},
+  title        = {Trace-AI},
+  institution  = {Arctic Wolf Network},
+  note         = {02/26 -- 02/27},
+  usera        = {100},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {active},
+  year         = {2026}
+}
+@misc{grant:tracematch,
+  entrysubtype = {grant},
+  title        = {Trace-AI 2:1 Match},
+  institution  = {FL High Tech Corr.},
+  note         = {02/26 -- 02/27},
+  usera        = {50},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {active},
+  year         = {2026}
+}
+@misc{grant:shadow,
+  entrysubtype = {grant},
+  title        = {Shadow AI},
+  institution  = {Arctic Wolf Network},
+  note         = {09/24 -- 05/26},
+  usera        = {165},
+  userb        = {90},
+  userc        = {PI},
+  keywords     = {active},
+  year         = {2024}
+}
+@misc{grant:shadowmatch,
+  entrysubtype = {grant},
+  title        = {Shadow AI 2:1 Match},
+  institution  = {FL High Tech Corr.},
+  note         = {09/24 -- 08/25},
+  usera        = {80},
+  userb        = {90},
+  userc        = {PI},
+  keywords     = {active},
+  year         = {2024}
+}
+
+% ======================================================================
+% PENDING PROJECTS
+% ======================================================================
+@misc{grant:ngc,
+  entrysubtype = {grant},
+  title        = {Automation Tech. for Superconducting Logic},
+  institution  = {Northrop Grumman Corporation},
+  note         = {Submitted 03/2025},
+  usera        = {2000},
+  userb        = {60},
+  userc        = {PI},
+  keywords     = {pending},
+  year         = {2025}
+}
+
+% ======================================================================
+% COMPLETED PROJECTS
+% ======================================================================
+@misc{grant:tacos9,
+  entrysubtype = {grant},
+  title        = {MilliporeSigma Outreach -- TACoS IX (Summer 2023)},
+  institution  = {MilliporeSigma},
+  note         = {2022 -- 2023},
+  usera        = {17},
+  userb        = {50},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2023}
+}
+@misc{grant:code22,
+  entrysubtype = {grant},
+  title        = {Microsoft for Code.org Regional Trainer Support},
+  institution  = {Microsoft},
+  note         = {08/22 -- 07/23},
+  usera        = {35},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2023}
+}
+@misc{grant:tacos8,
+  entrysubtype = {grant},
+  title        = {MilliporeSigma Outreach -- TACoS VIII (Summer 2022)},
+  institution  = {MilliporeSigma},
+  note         = {2021 -- 2022},
+  usera        = {17},
+  userb        = {50},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2022}
+}
+@misc{grant:wyslice,
+  entrysubtype = {grant},
+  title        = {CS For All: RPP WySLICE (DRL\#1923542)},
+  institution  = {National Science Foundation},
+  note         = {08/19 -- 07/25},
+  usera        = {1000},
+  userb        = {65},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2025}
+}
+@misc{grant:gencyber23,
+  entrysubtype = {grant},
+  title        = {GenCyberWY 2023},
+  institution  = {National Security Agency},
+  note         = {09/22 -- 03/24},
+  usera        = {325},
+  userb        = {50},
+  userc        = {PI-LI},
+  keywords     = {completed},
+  year         = {2024}
+}
+@misc{grant:templeton,
+  entrysubtype = {grant},
+  title        = {Templeton Endowed Professorship},
+  institution  = {Uwyo Endow.},
+  note         = {07/22 -- 06/23},
+  usera        = {45},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2023}
+}
+@misc{grant:kraken,
+  entrysubtype = {grant},
+  title        = {Kraken Research Support},
+  institution  = {Kraken},
+  note         = {07/21 -- 06/23},
+  usera        = {150},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2023}
+}
+@misc{grant:kraken_block,
+  entrysubtype = {grant},
+  title        = {Secure Blockchain Initiatives},
+  institution  = {Kraken},
+  note         = {07/21 -- 06/23},
+  usera        = {75},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2023}
+}
+@misc{grant:ripple_val,
+  entrysubtype = {grant},
+  title        = {Ripple XRPL Validator},
+  institution  = {Ripple},
+  note         = {02/22 -- 03/23},
+  usera        = {45},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2023}
+}
+@misc{grant:ripple_smart,
+  entrysubtype = {grant},
+  title        = {Ripple Smart Contracts},
+  institution  = {Ripple},
+  note         = {02/22 -- 03/23},
+  usera        = {285},
+  userb        = {50},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2023}
+}
+@misc{grant:iohk22,
+  entrysubtype = {grant},
+  title        = {IOHK Research Lab},
+  institution  = {IOHK},
+  note         = {02/22 -- 03/23},
+  usera        = {337},
+  userb        = {50},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2023}
+}
+@misc{grant:gencyber22,
+  entrysubtype = {grant},
+  title        = {GenCyberWY 2022},
+  institution  = {National Security Agency},
+  note         = {09/21 -- 08/23},
+  usera        = {175},
+  userb        = {50},
+  userc        = {PI-LI},
+  keywords     = {completed},
+  year         = {2023}
+}
+@misc{grant:inl,
+  entrysubtype = {grant},
+  title        = {Red Teaming Artificial Intelligence},
+  institution  = {INL/DoE LDRD},
+  note         = {10/20 -- 09/23},
+  usera        = {1000},
+  userb        = {40},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2023}
+}
+@misc{grant:wystack,
+  entrysubtype = {grant},
+  title        = {WySTACK},
+  institution  = {National Science Foundation},
+  note         = {04/21 -- 03/24},
+  usera        = {600},
+  userb        = {60},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2024}
+}
+@misc{grant:microcred,
+  entrysubtype = {grant},
+  title        = {Micro-Credentials},
+  institution  = {Wy Dept. Ed},
+  note         = {10/19 -- 09/22},
+  usera        = {400},
+  userb        = {50},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2022}
+}
+@misc{grant:caes22,
+  entrysubtype = {grant},
+  title        = {CAES Joint Security Cert.},
+  institution  = {INL-CAES},
+  note         = {01/22 -- 10/22},
+  usera        = {12},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2022}
+}
+@misc{grant:lifelong,
+  entrysubtype = {grant},
+  title        = {Lifelong Learning at the HTI Workshops},
+  institution  = {National Science Foundation},
+  note         = {08/21 -- 07/22},
+  usera        = {100},
+  userb        = {20},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2022}
+}
+@misc{grant:code21,
+  entrysubtype = {grant},
+  title        = {code.org Regional Partnership},
+  institution  = {Microsoft},
+  note         = {08/21 -- 07/22},
+  usera        = {50},
+  userb        = {50},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2022}
+}
+@misc{grant:gencyber21,
+  entrysubtype = {grant},
+  title        = {GenCyber Wyoming (H98230-21-1-0122)},
+  institution  = {National Security Agency},
+  note         = {04/21 -- 05/22},
+  usera        = {125},
+  userb        = {50},
+  userc        = {PI-LI},
+  keywords     = {completed},
+  year         = {2022}
+}
+@misc{grant:nextgen,
+  entrysubtype = {grant},
+  title        = {Next Gen Secure Digital Ecosystems},
+  institution  = {Uwyo Provost},
+  note         = {06/21 -- 05/22},
+  usera        = {45},
+  userb        = {20},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2022}
+}
+@misc{grant:iohk20,
+  entrysubtype = {grant},
+  title        = {IOHK Research Lab},
+  institution  = {IOHK},
+  note         = {05/20 -- 02/22},
+  usera        = {1000},
+  userb        = {50},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2022}
+}
+@misc{grant:grandchal,
+  entrysubtype = {grant},
+  title        = {Grand Challenge: NextGen Sec. Digital Ecosys.},
+  institution  = {Uwyo Research},
+  note         = {04/21 -- 12/21},
+  usera        = {20},
+  userb        = {20},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2021}
+}
+@misc{grant:caes21,
+  entrysubtype = {grant},
+  title        = {CAES Joint Security Cert.},
+  institution  = {INL-CAES},
+  note         = {01/21 -- 10/21},
+  usera        = {12},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2021}
+}
+@misc{grant:crypto_sca,
+  entrysubtype = {grant},
+  title        = {Cryptographic Resistance to SCA},
+  institution  = {INL/DoE LDRD},
+  note         = {09/20 -- 08/21},
+  usera        = {100},
+  userb        = {33},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2021}
+}
+@misc{grant:code20,
+  entrysubtype = {grant},
+  title        = {code.org Regional Partnership},
+  institution  = {Microsoft},
+  note         = {08/20 -- 07/21},
+  usera        = {126},
+  userb        = {50},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2021}
+}
+@misc{grant:caes20,
+  entrysubtype = {grant},
+  title        = {CAES Joint Security Cert.},
+  institution  = {INL-CAES},
+  note         = {02/20 -- 09/20},
+  usera        = {44},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2020}
+}
+@misc{grant:caes_visit,
+  entrysubtype = {grant},
+  title        = {CAES Visiting Faculty Sum. Prog.},
+  institution  = {INL-CAES},
+  note         = {05/20 -- 08/20},
+  usera        = {15},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2020}
+}
+@misc{grant:code19,
+  entrysubtype = {grant},
+  title        = {code.org Regional Partnership},
+  institution  = {Microsoft, UW},
+  note         = {08/19 -- 07/20},
+  usera        = {126},
+  userb        = {50},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2020}
+}
+@misc{grant:async,
+  entrysubtype = {grant},
+  title        = {Async Cybersecurity},
+  institution  = {UWYo (Dist.Ed)},
+  note         = {08/19 -- 06/20},
+  usera        = {35},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2020}
+}
+@misc{grant:gencyber20,
+  entrysubtype = {grant},
+  title        = {GenCyber WY (H98230-20-1-0086)},
+  institution  = {National Security Agency},
+  note         = {05/20 -- 04/22},
+  usera        = {100},
+  userb        = {50},
+  userc        = {PI-LI},
+  keywords     = {completed},
+  year         = {2022}
+}
+@misc{grant:gencyber19,
+  entrysubtype = {grant},
+  title        = {GenCyber WY (H98230-19-1-0095)},
+  institution  = {National Security Agency},
+  note         = {05/19 -- 04/20},
+  usera        = {100},
+  userb        = {50},
+  userc        = {PI-LI},
+  keywords     = {completed},
+  year         = {2020}
+}
+@misc{grant:caes19,
+  entrysubtype = {grant},
+  title        = {CAES Joint Security Certificate},
+  institution  = {INL-CAES},
+  note         = {07/19 -- 09/19},
+  usera        = {10},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2019}
+}
+@misc{grant:cowpokes,
+  entrysubtype = {grant},
+  title        = {COWPOKES-CS (H98230-18-1-0095)},
+  institution  = {National Security Agency},
+  note         = {05/18 -- 04/19},
+  usera        = {100},
+  userb        = {50},
+  userc        = {PI-LI},
+  keywords     = {completed},
+  year         = {2019}
+}
+@misc{grant:teacher_ext,
+  entrysubtype = {grant},
+  title        = {Teacher Extensions in Wy},
+  institution  = {Wy Dept. Ed},
+  note         = {09/18 -- 03/19},
+  usera        = {75},
+  userb        = {30},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2019}
+}
+@misc{grant:caes18,
+  entrysubtype = {grant},
+  title        = {CAES Joint Security Certificate},
+  institution  = {INL-CAES},
+  note         = {07/18 -- 09/18},
+  usera        = {25},
+  userb        = {100},
+  userc        = {PI},
+  keywords     = {completed},
+  year         = {2018}
+}
+@misc{grant:ramped,
+  entrysubtype = {grant},
+  title        = {RAMPED II},
+  institution  = {Wy Dept. Ed},
+  note         = {01/18 -- 09/18},
+  usera        = {300},
+  userb        = {40},
+  userc        = {Co-PI},
+  keywords     = {completed},
+  year         = {2018}
+}

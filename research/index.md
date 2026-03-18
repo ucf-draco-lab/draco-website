@@ -11,7 +11,7 @@ DRACO investigates the security and resilience of computing systems at every lev
 
 With a team of over a dozen active researchers, our work produces open-source tools, reproducible methodologies, and real-world impact through industry and government partnerships.
 
-Learn more about some of our side channel analysis work in the following video.
+{% include section.html size="full" %}
 
 {% youtube hXAL-cSkj1w /img/placeholder.jpg %}
 
@@ -84,13 +84,50 @@ Please note that the citations on this page were generated automatically from id
   link="https://peer.asee.org/?q=borowczak"
 %}
 
-
 {% include section.html %}
 
 ## All Publications
+## Publications
+
+<div class="pub-filters">
+  <a class="pub-filter" data-filter="" onclick="filterPubs(this)" data-active>All ({{ site.data.citations | size }})</a>
+  {% assign journals = site.data.citations | where: "type", "journal" %}
+  <a class="pub-filter" data-filter="journal" onclick="filterPubs(this)">{% include icon.html icon="fa-regular fa-newspaper" %} Journals ({{ journals | size }})</a>
+  {% assign confs = site.data.citations | where: "type", "conference" %}
+  <a class="pub-filter" data-filter="conference" onclick="filterPubs(this)">{% include icon.html icon="fa-solid fa-users-rectangle" %} Proceedings ({{ confs | size }})</a>
+  {% assign books = site.data.citations | where: "type", "book" %}
+  <a class="pub-filter" data-filter="book" onclick="filterPubs(this)">{% include icon.html icon="fa-solid fa-book" %} Books ({{ books | size }})</a>
+  {% assign invites = site.data.citations | where: "type", "invited" %}
+  <a class="pub-filter" data-filter="invited" onclick="filterPubs(this)">{% include icon.html icon="fa-solid fa-microphone" %} Invited ({{ invites | size }})</a>
+  {% assign pres = site.data.citations | where: "type", "presentation" %}
+  <a class="pub-filter" data-filter="presentation" onclick="filterPubs(this)">{% include icon.html icon="fa-solid fa-chalkboard-user" %} Presentations ({{ pres | size }})</a>
+  {% assign others = site.data.citations | where: "type", "other" %}
+  <a class="pub-filter" data-filter="other" onclick="filterPubs(this)">{% include icon.html icon="fa-solid fa-file-lines" %} Other ({{ others | size }})</a>
+</div>
 
 {% include search-box.html %}
 
 {% include search-info.html %}
 
 {% include list.html data="citations" component="citation" style="rich" %}
+
+<script>
+function filterPubs(el) {
+  document.querySelectorAll('.pub-filter').forEach(function(btn) {
+    btn.removeAttribute('data-active');
+  });
+  el.setAttribute('data-active', '');
+
+  var filter = el.getAttribute('data-filter');
+  var input = document.querySelector('.search-input');
+  if (filter) {
+    var query = '"tag: ' + filter + '"';
+    if (input) input.value = query;
+    // call the global search handler directly (avoids 1s debounce)
+    if (typeof onSearchInput === 'function') onSearchInput(input);
+  } else {
+    if (input) input.value = '';
+    if (typeof onSearchClear === 'function') onSearchClear();
+  }
+}
+</script>
