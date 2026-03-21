@@ -37,9 +37,13 @@ We're always looking for motivated researchers at all levels. See our [Opportuni
 
 {% include section.html %}
 
-## For Industry Partners
+## For Industry & Government Partners
 
-DRACO engages with industry through sponsored research, capstone project mentorship, and collaborative R&D. If you have a security challenge or are interested in partnering, reach out to [Dr. Borowczak](mailto:mike.borowczak@ucf.edu) directly.
+DRACO engages with organizations through sponsored research, capstone mentorship, and collaborative R&D — delivering tools, IP, and trained engineers. Whether you have a specific security challenge or want to invest in the next generation of hardware security talent, reach out to [Dr. Borowczak](mailto:mike.borowczak@ucf.edu) directly.
+
+## For Alumni & Supporters
+
+DRACO alumni are making an impact at AMD, Lockheed Martin, L3Harris, Collins Aerospace, Northrop Grumman, and beyond. Your support — whether through mentorship, collaboration, or giving — helps the next cohort of students access the same transformative research experience. Connect with us to get involved.
 
 {% include section.html %}
 

@@ -1,20 +1,9 @@
 ---
 ---
 
-// colors
-[data-dark="false"] {
-  --primary: #1d4ed8;
-  --secondary: #bfdbfe;
-  --accent: #06b6d4;
-  --text: #0f172a;
-  --background: #f0f5ff;
-  --background-alt: #e0eafc;
-  --light-gray: #b8cceb;
-  --gray: #4b6a9b;
-  --dark-gray: #1e3a5f;
-  --overlay: #0a2a5a0d;
-}
-[data-dark="true"] {
+// color themes — all dark/blue UCF + space palettes
+// Deep Space (default)
+[data-theme="deep-space"], :root {
   --primary: #60a5fa;
   --secondary: #1e3a5f;
   --accent: #22d3ee;
@@ -25,13 +14,89 @@
   --gray: #6b8fc4;
   --dark-gray: #a3c4f0;
   --overlay: #2563eb08;
+  --theme-dot: #60a5fa;
+}
+
+// Nebula
+[data-theme="nebula"] {
+  --primary: #a78bfa;
+  --secondary: #2e1065;
+  --accent: #c084fc;
+  --text: #e8e0f7;
+  --background: #0c0820;
+  --background-alt: #150f2e;
+  --light-gray: #2e1f5e;
+  --gray: #9484bf;
+  --dark-gray: #c8b8e8;
+  --overlay: #7c3aed08;
+  --theme-dot: #a78bfa;
+}
+
+// Aurora
+[data-theme="aurora"] {
+  --primary: #34d399;
+  --secondary: #0f3d2e;
+  --accent: #22d3ee;
+  --text: #d6f5ea;
+  --background: #04120e;
+  --background-alt: #091f19;
+  --light-gray: #1a3d33;
+  --gray: #6bbfa3;
+  --dark-gray: #a8e6cf;
+  --overlay: #10b98108;
+  --theme-dot: #34d399;
+}
+
+// Solar Flare
+[data-theme="solar-flare"] {
+  --primary: #fbbf24;
+  --secondary: #3d2800;
+  --accent: #f97316;
+  --text: #fef3c7;
+  --background: #0f0a02;
+  --background-alt: #1a1206;
+  --light-gray: #3d2e10;
+  --gray: #c49a4a;
+  --dark-gray: #f5d98a;
+  --overlay: #d9760008;
+  --theme-dot: #fbbf24;
+}
+
+// UCF Knight
+[data-theme="ucf-knight"] {
+  --primary: #ffc904;
+  --secondary: #2a2200;
+  --accent: #ffd740;
+  --text: #f5edd0;
+  --background: #0a0a0a;
+  --background-alt: #141414;
+  --light-gray: #2e2e2e;
+  --gray: #a89860;
+  --dark-gray: #d4c484;
+  --overlay: #ffc90408;
+  --theme-dot: #ffc904;
+}
+
+// Lunar Surface
+[data-theme="lunar-surface"] {
+  --primary: #94a3b8;
+  --secondary: #1e293b;
+  --accent: #cbd5e1;
+  --text: #e2e8f0;
+  --background: #0b0f18;
+  --background-alt: #111827;
+  --light-gray: #1e293b;
+  --gray: #7b8ba3;
+  --dark-gray: #b8c8dc;
+  --overlay: #64748b08;
+  --theme-dot: #94a3b8;
 }
 
 :root {
   // font families
-  --title: "Clash Display", "DM Sans", sans-serif;
-  --heading: "DM Sans", sans-serif;
-  --body: "DM Sans", sans-serif;
+  --title: "Orbitron", "Exo 2", sans-serif;
+  --heading: "Exo 2", sans-serif;
+  --body: "Exo 2", sans-serif;
   --code: "IBM Plex Mono", monospace;
 
   // font sizes

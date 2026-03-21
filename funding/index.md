@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-hand-holding-dollar" %}Funding
 
-DRACO research is made possible through the support of federal agencies, industry partners, and university programs.
+Every dollar invested in DRACO funds student researchers, builds open-source security tools, and produces graduates ready to lead in industry and government. Our work is made possible through the support of federal agencies, industry partners, and the broader UCF community.
 
 {% include section.html %}
 

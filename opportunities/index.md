@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-door-open" %}Join Us
 
-DRACO is always looking for motivated researchers who want to work on problems others hesitate to tackle. We value curiosity, initiative, and a willingness to learn across disciplines — from hardware design to machine learning to formal verification.
+DRACO is always looking for motivated researchers who want to work on problems others hesitate to tackle. Our students publish in top venues, contribute to federally funded projects, and graduate into roles at leading defense and technology companies. We value curiosity, initiative, and a willingness to learn across disciplines.
 
 {% include section.html %}
 
@@ -49,14 +49,14 @@ Browse available projects on the [Projects]({{ site.baseurl }}/projects) page an
 
 {% include section.html %}
 
-## Industry Collaboration
+## Industry & Government Partnerships
 
-DRACO partners with industry on sponsored research, red team assessments, and collaborative R&D. Our sponsors include NSF, NSA, DOE, Idaho National Laboratory, AMD, Northrop Grumman, Arctic Wolf, IOG, Kraken, and Ripple.
+DRACO works with organizations that need answers to hard security questions — and a pipeline of engineers trained to keep delivering them. Current and recent partners include NSF, NSA, DOE, Idaho National Laboratory, AMD, Northrop Grumman, Arctic Wolf, IOG, Kraken, and Ripple.
 
 **Partnership models:**
-- Sponsored research projects
-- Capstone project mentorship and sponsorship
-- Collaborative tool development
-- Consulting on hardware security and resilience
+- Sponsored research with defined deliverables and IP options
+- Capstone project mentorship — shape the next generation of engineers firsthand
+- Collaborative tool development and red team assessments
+- Early access to graduating talent trained on your problem domain
 
-Contact [Dr. Borowczak](mailto:mike.borowczak@ucf.edu) to discuss opportunities.
+Contact [Dr. Borowczak](mailto:mike.borowczak@ucf.edu) to explore what's possible.

@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-Our research spans hardware security, side channel analysis, AI-assisted vulnerability assessment, secure autonomous systems, and cryptographic design. Below are active research projects and applied project ideas for senior design teams.
+Our research spans hardware security, side channel analysis, AI-assisted vulnerability assessment, secure autonomous systems, and cryptographic design. Each project below is backed by real partnerships, produces open deliverables, and trains the next generation of security engineers. Browse active research and applied project ideas for senior design teams.
 
 {% include tags.html tags="research, senior-design, available, undergraduate-research-spots, graduate-research-spots" %}
 
