@@ -7,9 +7,9 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-The DRACO Laboratory in the Electrical and Computer Engineering Department within UCF's College of Engineering and Computer Science advances resilient computing architectures through research in side-channel security, hardware Trojan detection and insertion, AI-driven design automation for security, post-quantum cryptographic primitives, secure swarm coordination, and emerging paradigms such as encrypted processing and memristive computing.
+The DRACO Laboratory in UCF's Department of Electrical and Computer Engineering develops resilient computing architectures through research in side-channel security, hardware Trojan detection, AI-driven design automation, post-quantum cryptographic primitives, secure swarm coordination, and emerging paradigms such as encrypted processing and memristive computing.
 
-Our team welcomes researchers at all levels — from undergraduates to postdoctoral scholars — to engage in work spanning theoretical foundations to system-level implementations. Interested? See our [open opportunities]({{ site.baseurl }}/opportunities) or reach out with your resume and a brief statement about how your interests might intersect.
+Our team includes undergraduates through postdoctoral scholars — all gaining hands-on experience with the tools and challenges they'll face in careers at companies like AMD, Lockheed Martin, Northrop Grumman, and beyond. Interested? See our [open opportunities]({{ site.baseurl }}/opportunities) or reach out.
 
 {% include section.html %}
 ## Lab PI
@@ -53,7 +53,7 @@ Our team welcomes researchers at all levels — from undergraduates to postdocto
 
 ## Funding and Support
 
-The work, projects, publications, materials, and members represented have been funded by a variety of federal, state, local, and corporate entities. We appreciate their support and look forward to continuing to develop mutually beneficial relationships. Have a project you're interested in supporting? Contact [Dr. Mike]({{ site.baseurl }}/contact).
+Our research, tools, and student training are made possible through partnerships with federal, state, and corporate entities. These collaborations advance critical security research while giving partners early access to emerging talent, novel IP, and applied results. Interested in what a partnership looks like? Contact [Dr. Mike]({{ site.baseurl }}/contact).
 
 
 ### Sponsors

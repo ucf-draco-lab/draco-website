@@ -3,7 +3,7 @@
 
 <div class="hero-tagline">Securing Systems.<br>From Silicon to Swarms.</div>
 
-<div class="hero-sub">Applied security research from logic gates to autonomous swarms. The <strong>DRACO</strong> (<strong>D</strong>esign of <strong>R</strong>esilient <strong>A</strong>rchitectures for <strong>C</strong>omputing) Lab at <a href="https://ucf.edu">UCF</a> automates the design, attack, and defense of computing systems — from side-channel-resistant architectures and AI-driven hardware Trojan detection to post-quantum cryptographic primitives and secure swarm coordination.</div>
+<div class="hero-sub">The <strong>DRACO</strong> (<strong>D</strong>esign of <strong>R</strong>esilient <strong>A</strong>rchitectures for <strong>C</strong>omputing) Lab at <a href="https://ucf.edu">UCF</a> partners with federal agencies and industry leaders to advance the security of computing systems — from side-channel-resistant architectures and AI-driven hardware Trojan detection to post-quantum cryptographic primitives and secure swarm coordination. Our students become the engineers who build what's next.</div>
 
 {%
   include button.html
@@ -35,7 +35,7 @@
   </div>
   <div class="stat">
     <span class="stat-number">11</span>
-    <span class="stat-label">Sponsors</span>
+    <span class="stat-label">Partners</span>
   </div>
 </div>
 
@@ -45,7 +45,7 @@
 
 {% capture text %}
 
-We develop automated methods to design, attack, and harden electronic devices and computing systems — spanning side-channel analysis, hardware Trojan detection, cryptographic primitive design, and secure autonomous coordination. With 100+ publications, nearly all of our work involves students as co-authors and collaborators.
+We develop automated methods to design, attack, and harden electronic devices and computing systems — spanning side-channel analysis, hardware Trojan detection, cryptographic primitive design, and secure autonomous coordination. With 100+ publications and students as co-authors on nearly every paper, our research directly builds the workforce that industry and government need.
 {%
   include button.html
   link="research"
@@ -67,9 +67,9 @@ We develop automated methods to design, attack, and harden electronic devices an
 
 {% capture text %}
 
-We work on a broad range of projects funded by federal and industry partners. While much of our work is open source, some may remain embargoed or partially redacted when necessary.
+Our portfolio of projects — backed by agencies like NSF, NSA, and DOE and companies like AMD and Northrop Grumman — translates directly into tools, IP, and trained talent. Much of our work is open source; some remains embargoed when required by sponsors.
 
-We have opportunities for undergraduate (paid or experiential, based on interest and time commitment) and graduate research (funded). Our research projects span hardware security, side-channel analysis, swarm intelligence, and cryptographic design, but we also sponsor applied projects that may be of interest to Senior Design Teams.
+Undergraduate and graduate students work side-by-side on real deliverables across hardware security, side-channel analysis, swarm intelligence, and cryptographic design. Our alumni hold positions at AMD, Lockheed Martin, L3Harris, Collins Aerospace, BAE Systems, and more.
 {%
   include button.html
   link="projects"
@@ -93,7 +93,7 @@ We have opportunities for undergraduate (paid or experiential, based on interest
 
 {% capture text %}
 
-We're an open and collaborative group — learn more about who we are!
+Researchers, mentors, and future industry leaders — meet the people behind the work and see where they go next.
 
 {%
   include button.html

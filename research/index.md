@@ -7,9 +7,9 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-DRACO investigates the security and resilience of computing systems at every level of abstraction — from transistor-level side channels to system-level threat models. Our applied research spans hardware security, side channel analysis, embedded systems, and AI-assisted vulnerability assessment. We also lead nationally recognized cybersecurity education programs from K-12 through graduate level.
+DRACO investigates the security and resilience of computing systems at every level of abstraction — from transistor-level side channels to system-level threat models. Our applied research spans hardware security, side channel analysis, embedded systems, and AI-assisted vulnerability assessment, delivering open-source tools, reproducible methodologies, and field-tested solutions to our partners.
 
-With a team of over a dozen active researchers, our work produces open-source tools, reproducible methodologies, and real-world impact through industry and government partnerships.
+With over a dozen active researchers and nationally recognized cybersecurity education programs from K-12 through graduate level, every project we undertake doubles as a talent pipeline — producing publications and production-ready engineers in parallel.
 
 {% include section.html size="full" %}
 
