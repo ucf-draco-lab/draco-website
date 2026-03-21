@@ -52,8 +52,8 @@
 .video-hero {
   position: relative;
   padding: 3rem 1.5rem;
-  background: #0c1222;
-  color: #f0eef5;
+  background: #060d1f;
+  color: #e0eafc;
   text-align: center;
   overflow: hidden;
 }
@@ -66,7 +66,7 @@
   transform: translate(-50%, -50%);
   width: 60%;
   height: 70%;
-  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.25) 0%, rgba(34, 211, 238, 0.08) 50%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(29, 78, 216, 0.3) 0%, rgba(34, 211, 238, 0.08) 50%, transparent 80%);
   filter: blur(60px);
   pointer-events: none;
   z-index: 0;
@@ -81,18 +81,18 @@
 
 .video-hero .yt-embed {
   border-radius: 12px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 8px 40px rgba(0, 0, 0, 0.5), 0 0 80px -20px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 8px 40px rgba(0, 0, 0, 0.5), 0 0 80px -20px rgba(29, 78, 216, 0.4);
 }
 
 .video-hero-caption {
   margin-top: 1.25rem;
   font-size: 0.9em;
-  color: #8a889a;
+  color: #6b8fc4;
   letter-spacing: 0.02em;
 }
 
 .video-hero-caption a {
-  color: #3b82f6;
+  color: #60a5fa;
 }
 
 /*# sourceMappingURL=video-hero.css.map */

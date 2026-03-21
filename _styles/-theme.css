@@ -1,33 +1,91 @@
-[data-dark=false] {
-  --primary: #2563eb;
-  --secondary: #dbeafe;
+[data-theme=deep-space], :root {
+  --primary: #60a5fa;
+  --secondary: #1e3a5f;
   --accent: #22d3ee;
-  --text: #1a1a1a;
-  --background: #fafbfe;
-  --background-alt: #eef2f8;
-  --light-gray: #d4dae6;
-  --gray: #6b7280;
-  --dark-gray: #374151;
-  --overlay: #0000000d;
+  --text: #e0eafc;
+  --background: #060d1f;
+  --background-alt: #0c1a36;
+  --light-gray: #1e3a5f;
+  --gray: #6b8fc4;
+  --dark-gray: #a3c4f0;
+  --overlay: #2563eb08;
+  --theme-dot: #60a5fa;
 }
 
-[data-dark=true] {
-  --primary: #3b82f6;
-  --secondary: #1e2a4a;
+[data-theme=nebula] {
+  --primary: #a78bfa;
+  --secondary: #2e1065;
+  --accent: #c084fc;
+  --text: #e8e0f7;
+  --background: #0c0820;
+  --background-alt: #150f2e;
+  --light-gray: #2e1f5e;
+  --gray: #9484bf;
+  --dark-gray: #c8b8e8;
+  --overlay: #7c3aed08;
+  --theme-dot: #a78bfa;
+}
+
+[data-theme=aurora] {
+  --primary: #34d399;
+  --secondary: #0f3d2e;
   --accent: #22d3ee;
-  --text: #eef0f5;
-  --background: #0c1222;
-  --background-alt: #141c2e;
-  --light-gray: #2a3350;
-  --gray: #8891a4;
-  --dark-gray: #bfc6d4;
-  --overlay: #ffffff08;
+  --text: #d6f5ea;
+  --background: #04120e;
+  --background-alt: #091f19;
+  --light-gray: #1a3d33;
+  --gray: #6bbfa3;
+  --dark-gray: #a8e6cf;
+  --overlay: #10b98108;
+  --theme-dot: #34d399;
+}
+
+[data-theme=solar-flare] {
+  --primary: #fbbf24;
+  --secondary: #3d2800;
+  --accent: #f97316;
+  --text: #fef3c7;
+  --background: #0f0a02;
+  --background-alt: #1a1206;
+  --light-gray: #3d2e10;
+  --gray: #c49a4a;
+  --dark-gray: #f5d98a;
+  --overlay: #d9760008;
+  --theme-dot: #fbbf24;
+}
+
+[data-theme=ucf-knight] {
+  --primary: #ffc904;
+  --secondary: #2a2200;
+  --accent: #ffd740;
+  --text: #f5edd0;
+  --background: #0a0a0a;
+  --background-alt: #141414;
+  --light-gray: #2e2e2e;
+  --gray: #a89860;
+  --dark-gray: #d4c484;
+  --overlay: #ffc90408;
+  --theme-dot: #ffc904;
+}
+
+[data-theme=lunar-surface] {
+  --primary: #94a3b8;
+  --secondary: #1e293b;
+  --accent: #cbd5e1;
+  --text: #e2e8f0;
+  --background: #0b0f18;
+  --background-alt: #111827;
+  --light-gray: #1e293b;
+  --gray: #7b8ba3;
+  --dark-gray: #b8c8dc;
+  --overlay: #64748b08;
+  --theme-dot: #94a3b8;
 }
 
 :root {
-  --title: "Clash Display", "DM Sans", sans-serif;
-  --heading: "DM Sans", sans-serif;
-  --body: "DM Sans", sans-serif;
+  --title: "Orbitron", "Exo 2", sans-serif;
+  --heading: "Exo 2", sans-serif;
+  --body: "Exo 2", sans-serif;
   --code: "IBM Plex Mono", monospace;
   --large: 1.2rem;
   --xl: 1.5rem;
