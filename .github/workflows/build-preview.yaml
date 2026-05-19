@@ -37,6 +37,15 @@ jobs:
           ruby-version: "3.1"
           bundler-cache: true
 
+      - name: Cache generated portrait thumbnails
+        if: github.event.action != 'closed'
+        uses: actions/cache@v4
+        with:
+          path: .jekyll-cache/thumbs
+          key: jekyll-thumbs-${{ hashFiles('images/people/**', '_members/**', '_plugins/image_thumbnails.rb') }}
+          restore-keys: |
+            jekyll-thumbs-
+
       - name: Get Pages url
         if: github.event.action != 'closed'
         id: pages
