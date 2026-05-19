@@ -1,6 +1,6 @@
 \---  
 name: Matthew Wilbanks  
-image: images/people/Matthew-Wilbanks.png  
+image: images/people/matthew-wilbanks.jpg  
 role: undergrad  
 sponsors: \[ucf\]  
 links:  

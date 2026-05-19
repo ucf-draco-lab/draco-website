@@ -1,6 +1,6 @@
 ---
 name: Ashley Hanzelka
-image: images/people/ashley-hanzelka.png
+image: images/people/ashley-hanzelka.jpg
 role: alumni
 sponsors: [ucf]
 links:

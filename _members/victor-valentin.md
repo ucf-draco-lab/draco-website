@@ -1,6 +1,6 @@
 ---
 name: Victor Valentin
-image: images/people/victor-valentin.png
+image: images/people/victor-valentin.jpg
 role: undergrad
 sponsors: ucf
 links:

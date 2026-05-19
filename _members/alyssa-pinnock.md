@@ -1,7 +1,7 @@
 ---
 name: Alyssa Pinnock
-image: images/people/alyssa-pinnock.png
-role: undergrad
+image: images/people/alyssa-pinnock.jpg
+role: alumni
 sponsors: [ucf]
 links:
   linkedin: alyssapinnock

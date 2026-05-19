@@ -1,6 +1,6 @@
 ---
 name: Calvin VanWormer
-image: images/people/calvin-vanwormer.png
+image: images/people/calvin-vanwormer.jpg
 role: ms-alumni
 sponsors: [ucf, leidos]
 links:

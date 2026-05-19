@@ -1,6 +1,6 @@
 ---
 name: Leo Melson
-image: images/people/leo-melson.png
+image: images/people/leo-melson.jpg
 role: undergrad
 sponsors: [amd]
 links:

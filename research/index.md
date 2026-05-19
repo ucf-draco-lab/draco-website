@@ -55,7 +55,7 @@ Secure coordination protocols for heterogeneous autonomous swarms (SHARKS), adve
 {% endcapture %}
 {%
   include feature.html
-  image="images/projects/sharks.png"
+  image="images/projects/sharks.jpg"
   title="Autonomous Systems & IoT"
   flip=true
   text=text

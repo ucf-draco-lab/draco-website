@@ -83,7 +83,7 @@ Undergraduate and graduate students work side-by-side on real deliverables acros
 
 {%
   include feature.html
-  image="images/projects.png"
+  image="images/projects.jpg"
   link="projects"
   title="Our Projects"
   flip=true

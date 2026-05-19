@@ -1,6 +1,6 @@
 ---
 name: Sarayu Panditi
-image: images/people/sarayu-panditi.png
+image: images/people/sarayu-panditi.jpg
 role: ms
 sponsors: [ucf]
 links:

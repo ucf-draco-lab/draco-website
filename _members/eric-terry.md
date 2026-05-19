@@ -1,6 +1,6 @@
 ---
 name: Eric Terry Jr.
-image: images/people/eric-terry.png
+image: images/people/eric-terry.jpg
 role: undergrad
 sponsors: [ucf]
 links:
