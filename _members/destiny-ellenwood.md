@@ -1,7 +1,7 @@
 ---
 name: Destiny Ellenwood
 image: images/people/destiny-ellenwood.png
-role: undergrad
+role: alumni
 sponsors: [ucf]
 links:
   linkedin: destinyellenwood

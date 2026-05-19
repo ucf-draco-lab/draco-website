@@ -1,7 +1,7 @@
 ---
 name: Cory Brynds
 image: images/people/cory-brynds.jpg
-role: ms
+role: [ms-alumni, alumni-mentor]
 sponsors: amd
 links:
   linkedin: corybrynds

@@ -18,9 +18,14 @@ Our team includes undergraduates through postdoctoral scholars — all gaining h
 
 
 {% include section.html %}
-## Graduate Student Researchers
+## PhD Student Researchers
 
-{% include list.html data="members" component="portrait" filters="role: ^(ms|phd)$" %}
+{% include list.html data="members" component="portrait" filters="role: ^phd$" %}
+
+{% include section.html %}
+## Masters Student Researchers
+
+{% include list.html data="members" component="portrait" filters="role: ^ms$" %}
 
 {% include section.html %}
 ## Undergraduate Students
@@ -30,9 +35,15 @@ Our team includes undergraduates through postdoctoral scholars — all gaining h
 
 {% include list.html data="members" component="portrait" filters="role: capstone-senior " %}
 
+{% include section.html %}
+## Alumni Mentors
+
+{% include list.html data="members" component="portrait" filters="role: alumni-mentor" %}
+
+{% include section.html %}
 ## Alumni
 
-{% include list.html data="members" component="portrait" filters="role: (ms-alumni|alumni)" %}
+{% include list.html data="members" component="portrait" filters="role: (ms-alumni|^alumni$)" %}
 
 
 ### Alumni

@@ -7,7 +7,8 @@
   {% assign member = include %}
 {% endif %}
 
-{% assign type = site.data.types[member.role] %}
+{% assign primary_role = member.role | coerce_first %}
+{% assign type = site.data.types[primary_role] %}
 
 <div class="portrait-wrapper">
   <a
@@ -22,13 +23,24 @@
       {% include icon.html icon=type.icon %}
     {% endif %}
 
-    <img
-      src="{{ member.image | relative_url }}"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      {% include fallback.html %}
-    >
+    {% assign thumb_1x = member.image | thumb_url: 400 %}
+    {% assign thumb_2x = member.image | thumb_url: 800 %}
+    <picture>
+      {% if thumb_1x != "" %}
+        <source
+          type="image/webp"
+          srcset="{{ thumb_1x | relative_url }} 1x, {{ thumb_2x | relative_url }} 2x"
+        >
+      {% endif %}
+      <img
+        src="{{ member.image | relative_url }}"
+        class="portrait-image"
+        alt="member portrait"
+        loading="lazy"
+        decoding="async"
+        {% include fallback.html %}
+      >
+    </picture>
 
     {% if member.name %}
       <span class="portrait-name">

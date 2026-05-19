@@ -4,6 +4,9 @@ FROM ruby:3.1.2
 # set working directory within container
 WORKDIR /usr/src/app
 
+# install system packages: imagemagick (portrait thumbnails) and python (cite process)
+RUN apt update && apt install -y imagemagick libwebp-dev python3 python3-pip
+
 # pull in ruby (jekyll) and python (cite process) package info
 COPY Gemfile Gemfile.lock _cite/requirements.txt ./
 
@@ -11,9 +14,6 @@ COPY Gemfile Gemfile.lock _cite/requirements.txt ./
 RUN VERSION=$(grep -A 1 'BUNDLED WITH' Gemfile.lock | tail -n 1 | xargs); \
     gem install bundler --version ${VERSION} && \
     bundle _${VERSION}_ install
-
-# install python
-RUN apt update && apt install -y python3 python3-pip
 
 # install python packages
 RUN python3 -m pip install --no-cache-dir --upgrade --requirement requirements.txt
