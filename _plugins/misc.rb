@@ -29,12 +29,27 @@ module Jekyll
         # find unspecified fields
         if value == nil
           data.select!{|d| d[key] == nil}
-        # find fields that match regex
+        # find fields that match regex (any element if value is an array)
         elsif value.is_a?(String)
-          data.select!{|d| d[key].to_s =~ /#{value}/m}
+          data.select!{|d|
+            field = d[key]
+            if field.is_a?(Array)
+              field.any? { |item| item.to_s =~ /#{value}/m }
+            else
+              field.to_s =~ /#{value}/m
+            end
+          }
         end
       end
       return data
+    end
+
+    # return first element of an array, or the value itself if not an array
+    def coerce_first(value)
+      if value.is_a?(Array)
+        return value.first
+      end
+      return value
     end
 
     # from css text, find font family definitions and construct google font url

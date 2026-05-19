@@ -1,7 +1,7 @@
 ---
 name: Alicia Thoney
 image: images/people/alicia-thoney.jpg
-role: ms
+role: [ms-alumni, alumni-mentor]
 group:
 sponsors: [amd, ucf, awn] 
 links:

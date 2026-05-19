@@ -7,7 +7,8 @@
   {% assign member = include %}
 {% endif %}
 
-{% assign type = site.data.types[member.role] %}
+{% assign primary_role = member.role | coerce_first %}
+{% assign type = site.data.types[primary_role] %}
 
 <div class="portrait-wrapper">
   <a

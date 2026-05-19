@@ -26,10 +26,18 @@ undergrad:
 ms-alumni:
   icon: fa-solid fa-user-graduate
   description: Master's Alumni
-  
+
+phd-alumni:
+  icon: fa-solid fa-user-graduate
+  description: PhD Alumni
+
 alumni:
   icon: fa-solid fa-user-graduate
   description: Undergraduate Alumni
+
+alumni-mentor:
+  icon: fa-solid fa-hands-helping
+  description: Alumni Mentor
 
 
 sponsor:

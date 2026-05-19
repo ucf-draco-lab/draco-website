@@ -1,7 +1,7 @@
 ---
 name: Jordan Merkel
 image: images/people/jordan-merkel.png
-role: undergrad
+role: [ms, alumni]
 sponsors: [amd, ucf]
 links:
   linkedin: jordanmerkel-
