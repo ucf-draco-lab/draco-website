@@ -1,7 +1,7 @@
 ---
 name: Leo Melson
 image: images/people/leo-melson.jpg
-role: ms
+role: [ms, alumni]
 sponsors: [amd]
 links:
   home-page: 
