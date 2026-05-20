@@ -49,7 +49,6 @@ We tailor each engagement to the partner's timeline, IP needs, and clearance pos
 A snapshot of recent and historical partners — see the [Funding]({{ site.baseurl }}/funding) page for the full list.
 
 **Hardware security & defense R&D**
-- *Northrop Grumman Corporation* — Automation for Superconducting Logic ($2M, PI, 60%) — synthesis and verification automation for superconducting / SFQ logic families.
 - *Idaho National Laboratory / DOE LDRD & INL-CAES* — multi-year engagements on resilient architectures and cyber-physical security for energy infrastructure.
 - *AMD, Lockheed Martin, L3Harris, Collins Aerospace, BAE Systems* — ongoing alumni placements and collaboration on trusted hardware and secure design.
 
