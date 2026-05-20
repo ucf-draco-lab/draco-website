@@ -1,7 +1,7 @@
 ---
 name: Robert Lee
 image: images/people/robert-lee.jpg
-role: undergrad
+role: ms
 sponsors: [ucf]
 links:
   linkedin: 2020robertlee
