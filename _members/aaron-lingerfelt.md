@@ -2,6 +2,8 @@
 name: Aaron Lingerfelt
 image: images/people/aaron-lingerfelt.jpg
 role: alumni
+date: 2024-05-01
+affiliation: Northrop Grumman
 sponsors: [ucf, northrop-grumman]
 links:
   linkedin: aaronlingerfelt

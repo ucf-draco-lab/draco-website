@@ -2,6 +2,8 @@
 name: Davi Dantas
 image: images/people/davi-dantas-hd.jpg
 role: alumni
+date: 2025-05-01
+affiliation: BAE Systems
 sponsors: N/A
 links:
   home-page: N/A

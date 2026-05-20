@@ -2,6 +2,8 @@
 name: Lana Perkins
 image: images/people/lana-perkins.jpg
 role: alumni
+date: 2024-05-01
+affiliation: L3Harris
 sponsors: [amd]
 group: AMD
 links:

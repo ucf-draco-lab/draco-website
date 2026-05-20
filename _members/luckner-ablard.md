@@ -2,6 +2,8 @@
 name: Luckner Ablard
 image: images/people/luckner-ablard.jpeg
 role: alumni
+date: 2024-08-01
+affiliation: Collins Aerospace
 sponsors: [ucf]
 links:
   linkedin: luckner-ablard
