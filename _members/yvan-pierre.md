@@ -2,6 +2,8 @@
 name: Yvan Pierre
 image: images/people/yvan-pierre.jpg
 role: alumni
+date: 2024-05-01
+affiliation: Honeywell
 sponsors: [ucf]
 links:
   linkedin: ypjr

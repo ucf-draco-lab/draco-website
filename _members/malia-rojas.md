@@ -2,6 +2,8 @@
 name: Malia Rojas 
 image: images/people/malia_rojas.jpg
 role: alumni
+date: 2024-05-01
+affiliation: Lockheed Martin
 sponsors: [ucf]
 links:
   linkedin: malia-rojas  

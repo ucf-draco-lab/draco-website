@@ -12,9 +12,20 @@ The DRACO Laboratory in UCF's Department of Electrical and Computer Engineering 
 Our team includes undergraduates through postdoctoral scholars — all gaining hands-on experience with the tools and challenges they'll face in careers at companies like AMD, Lockheed Martin, Northrop Grumman, and beyond. Interested? See our [open opportunities]({{ site.baseurl }}/opportunities) or reach out.
 
 {% include section.html %}
+
+{% capture lab_pi %}
 ## Lab PI
 
 {% include list.html data="members" component="portrait" filters="role: PI" %}
+{% endcapture %}
+
+{% capture alumni_mentors %}
+## Alumni Mentors
+
+{% include list.html data="members" component="portrait" filters="role: alumni-mentor" %}
+{% endcapture %}
+
+{% include cols.html col1=lab_pi col2=alumni_mentors %}
 
 
 {% include section.html %}
@@ -36,29 +47,9 @@ Our team includes undergraduates through postdoctoral scholars — all gaining h
 {% include list.html data="members" component="portrait" filters="role: capstone-senior " %}
 
 {% include section.html %}
-## Alumni Mentors
-
-{% include list.html data="members" component="portrait" filters="role: alumni-mentor" %}
-
-{% include section.html %}
 ## Alumni
 
-{% include list.html data="members" component="portrait" filters="role: (ms-alumni|^alumni$)" %}
-
-
-### Alumni
-- Michael Castiglia, B.S., 2025 [AMD; UCF ECE MS Program]
-- Jarett Artman, M.S., 2025
-- Jenna Goodrich, M.S., 2025
-- Davi Dantas, B.S., 2025 [BAE Systems]
-- Raul Graterol, B.S., 2025
-- Malia Rojas, B.S., 2024 [Lockheed Martin]
-- Yvan Pierre, B.S., 2024 [Honeywell]
-- Luckner Ablard, B.S., 2024 [Collins Aerospace]
-- Francisco Soriano, B.S., 2024 [AMD; UCF Grad School]
-- Lana Perkins, BS, 2024 [L3Harris]
-- Sheridan Sloan, BS, 2024 [Lockheed Martin]
-- Aaron Lingerfelt, BS, 2024 [Northrop Grumman]
+{% include list.html data="members" component="portrait" filters="role: (ms-alumni|^alumni$)" style="small" %}
 
 {% include section.html %}
 

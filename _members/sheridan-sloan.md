@@ -2,6 +2,8 @@
 name: Sheridan Sloan
 image: images/people/sheridan-sloan.png
 role: alumni
+date: 2024-05-01
+affiliation: Lockheed Martin
 sponsors: [ucf]
 links:
   linkedin: sheridan-sloan
