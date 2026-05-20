@@ -1,7 +1,7 @@
 ---
 name: Brendan Rodriguez
 image: images/people/brendan-rodriguez.jpg
-role: undergrad
+role: alumni
 sponsors: [ucf]
 links:
   home-page: http://URLHERE
