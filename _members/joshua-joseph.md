@@ -1,7 +1,7 @@
 ---
 name: Joshua Joseph
 image: images/people/joshua-joseph.jpg
-role: undergrad
+role: ms
 sponsors: [northrop-grumman]
 links:
   linkedin: joshua-joseph-a7708a256

@@ -1,7 +1,7 @@
 - title: SHARKS
   subtitle: Secure, Heterogeneous, Autonomous, and Rotational Knowledge for Swarms
-  image: images/projects/sharks.png
-  link: images/projects/2025/sharks.png
+  image: images/projects/sharks.jpg
+  link: images/projects/2025/sharks.jpg
   description: This project focuses on developing stable multi-agent coordination methods for target encirclement under uncertainty, emphasizing computational efficiency, resilience, and deployment on edge hardware to enable robust, real-time swarm autonomy.
   group: active
   tags:
@@ -12,7 +12,7 @@
 - title: Dark Logic
   subtitle:  Malicious RTL Generation and Insertion
   image: images/projects/dark_logic.webp
-  link: images/projects/2025/dark-logic.png
+  link: images/projects/2025/dark-logic.jpg
   description: We aim to test whether generative AI can insert malicious RTL into hardware designs and evade detection by verification. Our experiments will use a large RISC-V processor on an FPGA and smaller modular designs, all with existing formal verification in place.
   group: active
   tags:
@@ -22,7 +22,7 @@
 - title: CHIRP
   subtitle: Ultra Lightweight IoT Communication
   image: images/projects/chirp.webp
-  link: images/projects/2025/chirp.png
+  link: images/projects/2025/chirp.jpg
   description: We aim to implement an ultra light-weight peer-to-peer IoT network using the CHIRP communication algorithm.
   group: active
   tags:
@@ -31,8 +31,8 @@
 
 - title: Shadow AI
   subtitle:  Workload Detection Through Side Channel Analysis
-  image: images/projects/shadow_ai.png
-  link: images/projects/2025/shadow-ai.png
+  image: images/projects/shadow_ai.jpg
+  link: images/projects/2025/shadow-ai.jpg
   description: Focused on detecting unique software behavior by monitoring hardware-level signals.
   repo: 
   group: active
@@ -43,7 +43,7 @@
 - title: Dark Fabric
   subtitle: AI Based FPGA Trojan
   image: images/projects/dark_fabric.webp
-  link: images/projects/2025/dark-fabric.png
+  link: images/projects/2025/dark-fabric.jpg
   description: Researching AI based Trojan Attack on different parts of the FPGA development lifecycle. From HDL to Bitstream, how can AI developed trojan attackers affect FPGAs performance and efficiency while remaining unknown until attack.
   group: active
   tags:
@@ -54,7 +54,7 @@
 - title: Encrypted Processor Framework & Accelerator
   subtitle: A Framework for Fast, Secure Processing
   image: images/projects/epfa.webp
-  link: images/projects/2025/encrypted-processor.png
+  link: images/projects/2025/encrypted-processor.jpg
   description: We aim to implement a novel modification to a well known cryptosystem to build a framework and accelerator that enable secure computation by allowing operations on encrypted data. We aim to be more secure than traditional computation while faster than FHE. 
   group: active
   tags:
@@ -66,7 +66,7 @@
 - title: Signal Insight
   subtitle:  Applying Information Theory to Power Estimation and Optimization
   image: images/projects/signal_insight.png
-  link: images/projects/2025/signal-insights.png
+  link: images/projects/2025/signal-insights.jpg
   description: We aim to explore how information theory concepts, such as entropy, can be applied to improve power estimation and guide power-driven optimization in hardware designs. The project will investigate both the accuracy of entropy-based estimation methods and their effectiveness in reducing power through optimization strategies.
   group: active
   tags:
@@ -75,7 +75,7 @@
 
 - title: Polymorphic Encrypted Components
   subtitle: Design Fundamental Building Blocks with Polymorphic Properties 
-  image: images/projects/poly.png
+  image: images/projects/poly.jpg
   link: #
   description: Using techniques common in malware detection evasion create encrypted components that perform standard operations with a constantly changing key.
   repo: 
@@ -96,7 +96,7 @@
 
 - title: OpenSense Platform (v3)
   subtitle: Unmask the secrets of data collection and logging
-  image: images/projects/sense.png
+  image: images/projects/sense.jpg
   link: #
   description: Create a data collection platform that allows for basic environmental data collection for at least three different properties (e.g., temperature, weight/pressure, brightness). Trading off sensor accuracy for simplicity is critical. Platform should allow end user to input the model that converts raw data measurements into known units. See results from V1 completed by [PDX Senior Capstone team circa 2015](https://github.com/erebus-labs/sense_platform) and V2 completed by [UCF 2024 team]().
   repo: 
@@ -107,7 +107,7 @@
 
 - title: 3D Projection Title
   description: Develop a 2^n x 2^n Grid of RGBW+ LEDs that is fed from the simulation output of a cycle/turn-based multi-agent simulator. Enable connectable components to increase the grid-size. Basic version should feature fixed 3D printed topology with each unit square being illuminated via an RGB+ led - stretch goal should feature pneumatically controlled tube structures and a flexible membrane.
-  image: images/projects/tile.png
+  image: images/projects/tile.jpg
   link: #
   repo :
   group: sdp
@@ -117,7 +117,7 @@
 
 - title: Dizzy Quadcopter
   description: Develop a micro-drone (<250g) with main-body continuously spinning at specific RPM; drone must still be fully controllable in XYZ. Preference toward hardware (PID) control system approach to spin correction. Spinning main body must be able to hold distance sensor.Telemetry and sensor data should be reported back to base controller. 
-  image: images/projects/stopquad.png
+  image: images/projects/stopquad.jpg
   repo : #
   group: sdp
   tags:
@@ -135,7 +135,7 @@
 
 - title: FPGA-based Memristor Pattern Generator and Tester
   description: Create a FPGA-based system that can generate and test memristors. The system should be able to generate a pattern, write it to a memristor, read the pattern back, and compare it to the original pattern. 
-  image: images/projects/fpga-mem.png
+  image: images/projects/fpga-mem.jpg
   link: #
   group: active
   tags:
@@ -145,7 +145,7 @@
 
 - title: Converting Scan Dumps to Gold 
   subtitle: Locating regions based on scan dump results
-  image: images/projects/golden-scan.png
+  image: images/projects/golden-scan.jpg
   description: 
   group: active
   tags:
@@ -153,7 +153,7 @@
 
 - title: Attacks on Memristor Devices
   subtitle: Understanding the Security Implications of Memristor Devices
-  image: images/projects/amemristor.png 
+  image: images/projects/amemristor.jpg 
   description: This research project focuses on understanding the security implications of memristor devices. The goal is to identify potential vulnerabilities in memristor devices and develop countermeasures to mitigate these vulnerabilities.
   group: active
   tags:
@@ -163,7 +163,7 @@
 
 - title: Trojan Detection Using Side Channel Analysis
   subtitle: Detecting Hardware Trojans Using Side Channel Analysis
-  image: images/projects/tsc.png
+  image: images/projects/tsc.jpg
   description: This research project focuses on detecting hardware trojans using side channel analysis and machine learning. The goal is to develop a methodology to detect hardware trojans using side channel analysis and evaluate the effectiveness of the methodology on different hardware trojans.
   group: active
   tags:

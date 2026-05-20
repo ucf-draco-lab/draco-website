@@ -1,6 +1,6 @@
 ---
 name: Franco Mezzarapa
-image: images/people/franco-mezzarapa.png
+image: images/people/franco-mezzarapa.jpg
 role: [phd, alumni]
 sponsors: [ucf,leidos]
 

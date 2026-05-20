@@ -1,6 +1,6 @@
 ---
 name: Brendan Rodriguez
-image: images/people/brendan-rodriguez.png
+image: images/people/brendan-rodriguez.jpg
 role: undergrad
 sponsors: [ucf]
 links:

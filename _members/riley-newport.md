@@ -1,7 +1,7 @@
 ---
 name: Riley Newport
-image: images/people/riley-newport.png
-role: undergrad
+image: images/people/riley-newport.jpg
+role: alumni
 sponsors: [ucf]
 links:
   linkedin: riley-newport

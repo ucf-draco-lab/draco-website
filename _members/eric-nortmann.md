@@ -1,6 +1,6 @@
 ---
 name: Eric Nortmann
-image: images/people/eric-nortmann.png
+image: images/people/eric-nortmann.jpg
 role: undergrad
 sponsors: [ucf]
 links:

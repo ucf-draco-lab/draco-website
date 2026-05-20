@@ -1,6 +1,6 @@
 ---
 name: Daniel De Armas
-image: images/people/daniel-de-armas.png
+image: images/people/daniel-de-armas.jpg
 role: ms
 sponsors: [awn]
 links:

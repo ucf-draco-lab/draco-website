@@ -1,6 +1,6 @@
 ---
 name: Katherine Doyle
-image: images/people/katherine-doyle-hd.png
+image: images/people/katherine-doyle-hd.jpg
 role: undergrad
 sponsors: [ucf]
 links:

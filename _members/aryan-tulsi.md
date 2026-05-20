@@ -1,7 +1,7 @@
 ---
 name: Aryan Tulsi
 image: images/people/aryan-tulsi.jpg
-role: undergrad
+role: alumni
 sponsors: []
 links:
   home-page: https://snails.cfd/
