@@ -31,25 +31,25 @@ Our team includes undergraduates through postdoctoral scholars — all gaining h
 {% include section.html %}
 ## PhD Student Researchers
 
-{% include list.html data="members" component="portrait" filters="role: ^phd$" %}
+{% include list.html data="members" component="portrait" filters="role: ^phd$" display_mode="student" %}
 
 {% include section.html %}
 ## Masters Student Researchers
 
-{% include list.html data="members" component="portrait" filters="role: ^ms$" %}
+{% include list.html data="members" component="portrait" filters="role: ^ms$" display_mode="student" %}
 
 {% include section.html %}
 ## Undergraduate Students
 
-{% include list.html data="members" component="portrait" filters="role: undergrad" %}
+{% include list.html data="members" component="portrait" filters="role: undergrad" display_mode="student" %}
 
 
-{% include list.html data="members" component="portrait" filters="role: capstone-senior " %}
+{% include list.html data="members" component="portrait" filters="role: capstone-senior " display_mode="student" %}
 
 {% include section.html %}
 ## Alumni
 
-{% include list.html data="members" component="portrait" filters="role: (ms-alumni|^alumni$)" style="small" %}
+{% include list.html data="members" component="portrait" filters="role: (ms-alumni|^alumni$|phd-alumni)" style="small" display_mode="alumni" %}
 
 {% include section.html %}
 
