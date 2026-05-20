@@ -1,6 +1,6 @@
 ﻿---
 name: Evan Eichholz
-image: ![Headshot image](%22C:%5CUsers%5Ceeich%5CDownloads%5Cheadshot.png%22)
+image: images/people/evan-eichholz.png
 role: undergrad researcher
 sponsors: UCF
 links: 

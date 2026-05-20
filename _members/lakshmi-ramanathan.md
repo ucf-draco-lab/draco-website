@@ -1,5 +1,5 @@
 name: Lakshmi Ramanathan
-image: Lakshmi_Ramanathan.jpg
+image: images/people/lakshmi-ramanathan.jpg
 role: MS
 sponsors: [ucf , others-if-known]
 links:

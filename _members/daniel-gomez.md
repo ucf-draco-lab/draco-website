@@ -1,6 +1,6 @@
 ---
 name: Daniel Gomez
-image: images/people/daniel-gomez.png
+image: images/logo.svg
 role: alumni
 sponsors: [ucf]
 links:
