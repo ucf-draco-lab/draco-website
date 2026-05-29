@@ -34,8 +34,8 @@ If your team is sizing up a research gift, sponsoring directed research, scoping
 
 We tailor each engagement to the partner's timeline, IP needs, and clearance posture. Common models include:
 
-- **Unrestricted gifts.** Lowest friction. Fund a directed thrust (e.g., side-channel of your IP block, ML-driven Trojan detection on your toolchain) without contractual deliverables. Eligible for FL High Tech Corridor 2:1 matching — your dollar can become three.
-- **Directed / sponsored research.** Defined scope, milestones, and IP terms, negotiated through UCF's Office of Research. Examples in flight or recently completed: AI-driven shadow-model risk, automated hardware Trojan benchmarking, superconducting logic synthesis automation.
+- **Unrestricted gifts.** Lowest friction. Fund a directed thrust (e.g., side-channel of your IP block, ML-driven Trojan detection on your toolchain) without contractual deliverables.
+- **Directed / sponsored research.** Defined scope, milestones, and IP terms, negotiated through UCF's Office of Research. Examples in flight or recently completed: AI-driven shadow-model risk, automated hardware Trojan benchmarking, superconducting logic synthesis automation. Eligible for FL High Tech Corridor matching at 2:1 or 1:1 — depending on company size and a business location within the Corridor's region of Florida — so your dollar can go further.
 - **R&D subcontracts and prime contracts.** Multi-year federal and prime-led programs. We routinely team on DoD, DoE, NSF, and NSA-aligned solicitations and can stand up as PI or as a hardware/security subaward.
 - **Red teaming and security assessments.** Independent, university-led red team engagements against hardware, firmware, ML pipelines, or blockchain infrastructure. Deliverables include reproducible findings, mitigations, and a defensible written record.
 - **Capstone / senior design sponsorship.** Scope a real, contained problem; an ECE or CS senior design team builds and delivers it across two semesters with faculty oversight. Low cost, high signal for hiring.
