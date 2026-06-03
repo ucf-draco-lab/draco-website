@@ -2,6 +2,7 @@
 name: Calvin VanWormer
 image: images/people/calvin-vanwormer.jpg
 role: ms-alumni
+date: 2026-05-01
 sponsors: [ucf, leidos]
 links:
   linkedin: calvin-vanwormer
