@@ -2,6 +2,7 @@
 name: Daniel Gomez
 image: images/people/daniel-gomez.png
 role: alumni
+date: 2026-05-01
 sponsors: [ucf]
 links:
 

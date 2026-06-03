@@ -2,6 +2,7 @@
 name: Sagar Srujan Somepalli
 image: images/people/sagar-srujan-somepalli.jpeg
 role: ms-alumni
+date: 2026-05-01
 sponsors: [ucf]
 links:
 

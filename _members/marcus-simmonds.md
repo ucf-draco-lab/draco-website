@@ -2,6 +2,7 @@
 name: Marcus Simmonds
 image: images/people/marcus-simmonds.png
 role: ms-alumni
+date: 2026-05-01
 sponsors: [ucf, ibm, gem]
 links:
   linkedin: marcsimmonds

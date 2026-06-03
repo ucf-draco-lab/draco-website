@@ -2,6 +2,7 @@
 name: Jerrod Eanes
 image: images/people/jerrod-eanes.jpg
 role: alumni
+date: 2026-05-01
 sponsors: [ucf]
 links:
   home-page: https://sites.google.com/view/jerrodeanes

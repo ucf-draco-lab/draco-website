@@ -2,6 +2,7 @@
 name: Brendan Rodriguez
 image: images/people/brendan-rodriguez.jpg
 role: alumni
+date: 2026-05-01
 sponsors: [ucf]
 links:
   home-page: http://URLHERE

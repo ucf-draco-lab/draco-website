@@ -2,6 +2,7 @@
 name: Aryan Tulsi
 image: images/people/aryan-tulsi.jpg
 role: alumni
+date: 2026-05-01
 sponsors: []
 links:
   home-page: https://snails.cfd/

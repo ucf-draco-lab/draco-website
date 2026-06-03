@@ -2,6 +2,7 @@
 name: Alyssa Pinnock
 image: images/people/alyssa-pinnock.jpg
 role: alumni
+date: 2026-05-01
 sponsors: [ucf]
 links:
   linkedin: alyssapinnock

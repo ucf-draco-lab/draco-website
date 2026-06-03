@@ -2,6 +2,7 @@
 name: Destiny Ellenwood
 image: images/people/destiny-ellenwood.jpg
 role: alumni
+date: 2026-05-01
 sponsors: [ucf]
 links:
   linkedin: destinyellenwood

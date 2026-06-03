@@ -2,6 +2,7 @@
 name: Ashley Hanzelka
 image: images/people/ashley-hanzelka.jpg
 role: alumni
+date: 2025-05-01
 sponsors: [ucf]
 links:
   linkedin: www.linkedin.com/in/ashhanz
