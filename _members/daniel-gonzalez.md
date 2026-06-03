@@ -9,4 +9,4 @@ links:
 
 ---
 
-Daniel Gonzalez is an undergraduate Computer Engineer major hoping to gain more skills and experience before graduation. 
+Daniel Gonzalez was an undergraduate Computer Engineer major who hoped to gain more skills and experience before graduation. 

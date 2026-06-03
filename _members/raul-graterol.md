@@ -11,7 +11,7 @@ links:
 
 ---
 
-Raul Graterol is a dedicated computer engineering student at the University of Central Florida, with career aspirations closely tied to the fields of computer architecture, artificial intelligence, high-performance computing, and VLSI circuits and systems. From a young age, Raul has been captivated by the complexities of computing systems, driving him to pursue a degree in computer engineering. His academic journey includes earning the UCF Electrical Engineering Department Awards for inaugural Northrop Grumman undergraduate scholars.
+Raul Graterol was a dedicated computer engineering student at the University of Central Florida, with career aspirations closely tied to the fields of computer architecture, artificial intelligence, high-performance computing, and VLSI circuits and systems. From a young age, Raul has been captivated by the complexities of computing systems, driving him to pursue a degree in computer engineering. His academic journey included earning the UCF Electrical Engineering Department Awards for inaugural Northrop Grumman undergraduate scholars.
 
 Raul's research experience includes his role in developing CASCADE, a Simulation-Based Framework for Design Space Exploration of CNN FPGA-based Accelerators. This project deepened his understanding of VLSI design principles and sparked his interest in creating energy-efficient computing solutions, a critical aspect of contemporary computer architecture.
 
