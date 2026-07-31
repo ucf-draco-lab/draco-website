@@ -1,7 +1,7 @@
 ---
 name: Dylan Wilkins
 image: images/people/dylan-wilkins.jpg
-role: Undergraduate
+role: undergrad
 sponsors: [UCF]
 links:
   home-page: http://URLHERE

@@ -1,9 +1,10 @@
+---
 name: Lakshmi Ramanathan
 image: images/people/lakshmi-ramanathan.jpg
-role: MS
-sponsors: [ucf , others-if-known]
+role: ms
+sponsors: [ucf]
 links:
-  home-page: https://www.linkedin.com/in/lakshmi-ramanathan-981282185/
-  linkedin: Lakshmi Ramanathan
+  linkedin: lakshmi-ramanathan-981282185
   github: Lakshmi-RM
-  orcid: N/A
+
+---
