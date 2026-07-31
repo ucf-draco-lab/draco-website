@@ -1,5 +1,5 @@
 {% if include.lookup %}
-  {% assign member = site.members 
+  {% assign member = site.members
     | where_exp: "member", "member.slug == include.lookup"
     | first
   %}
@@ -9,6 +9,38 @@
 
 {% assign primary_role = member.role | coerce_first %}
 {% assign type = site.data.types[primary_role] %}
+
+{% comment %}
+  Normalize role into an iterable list so we can detect mixed roles like
+  [ms, alumni] (a returning alum) or [ms-alumni, alumni-mentor].
+{% endcomment %}
+{% assign role_list = member.role | join: "," | split: "," %}
+{% assign is_alumni_view = false %}
+{% assign degrees_completed = "" | split: "," %}
+{% assign current_student_label = "" %}
+{% assign current_degree_label = "" %}
+{% for raw_role in role_list %}
+  {% assign r = raw_role | strip %}
+  {% if r == "alumni" %}
+    {% assign is_alumni_view = true %}
+    {% assign degrees_completed = degrees_completed | push: "B.S." %}
+  {% elsif r == "ms-alumni" %}
+    {% assign is_alumni_view = true %}
+    {% assign degrees_completed = degrees_completed | push: "M.S." %}
+  {% elsif r == "phd-alumni" %}
+    {% assign is_alumni_view = true %}
+    {% assign degrees_completed = degrees_completed | push: "Ph.D." %}
+  {% elsif r == "undergrad" %}
+    {% assign current_student_label = "Current B.S. Student" %}
+    {% assign current_degree_label = "Pursuing B.S." %}
+  {% elsif r == "ms" %}
+    {% assign current_student_label = "Current M.S. Student" %}
+    {% assign current_degree_label = "Pursuing M.S." %}
+  {% elsif r == "phd" %}
+    {% assign current_student_label = "Current Ph.D. Student" %}
+    {% assign current_degree_label = "Pursuing Ph.D." %}
+  {% endif %}
+{% endfor %}
 
 <div class="portrait-wrapper">
   <a
@@ -48,16 +80,38 @@
       </span>
     {% endif %}
 
-    {% if member.description or type %}
+    {% if include.display_mode == "alumni" and is_alumni_view %}
+      {% if degrees_completed.size > 0 %}
+        <span class="portrait-description">
+          {{ degrees_completed | join: ", " }}
+        </span>
+      {% endif %}
+      {% if member.affiliation %}
+        <span class="portrait-affiliation">
+          {{ member.affiliation }}
+        </span>
+      {% endif %}
+      {% if current_student_label != "" %}
+        <span class="portrait-affiliation">
+          {{ current_student_label }}
+        </span>
+      {% endif %}
+    {% elsif include.display_mode == "student" and current_degree_label != "" %}
       <span class="portrait-description">
-        {{ member.description | default: type.description }}
+        {{ current_degree_label }}
       </span>
-    {% endif %}
+    {% else %}
+      {% if member.description or type %}
+        <span class="portrait-description">
+          {{ member.description | default: type.description }}
+        </span>
+      {% endif %}
 
-    {% if member.affiliation %}
-      <span class="portrait-affiliation">
-        {{ member.affiliation }}
-      </span>
+      {% if member.affiliation %}
+        <span class="portrait-affiliation">
+          {{ member.affiliation }}
+        </span>
+      {% endif %}
     {% endif %}
   </a>
 </div>
