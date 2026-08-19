@@ -1,0 +1,22 @@
+# Named scholar programs, fellowships, and awards a team member can be tagged
+# with. Reference one from a member's frontmatter by its key here:
+#
+#   awards: [northrop-grumman-scholar]
+#
+# Each award renders as a badge (logo + words) on the member's profile page,
+# and as a compact pill on their team-page portrait.
+#
+#   name     full label, used on the profile page badge
+#   short    abbreviated label, used on the compact portrait pill
+#   image    logo shown alongside the label
+#   sponsor  slug of a sponsor member page to link the badge to (optional)
+#   link     external URL, used only when `sponsor` is unset (optional)
+#   tooltip  hover text (optional)
+
+northrop-grumman-scholar:
+  name: Northrop Grumman Scholar
+  short: NG Scholar
+  image: images/sponsors/ng-square.png
+  sponsor: northrop-grumman
+  link: https://www.northropgrumman.com
+  tooltip: Selected for UCF's Northrop Grumman Scholars Program

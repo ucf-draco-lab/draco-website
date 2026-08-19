@@ -2,7 +2,8 @@
 name: Lina Rahama
 image: images/people/lina-rahama.jpeg
 role: undergrad
-sponsors: [ucf]
+sponsors: [ucf, northrop-grumman]
+awards: [northrop-grumman-scholar]
 links:
 
 

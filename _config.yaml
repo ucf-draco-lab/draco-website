@@ -13,6 +13,13 @@ links:
   orcid: 0000-0001-9409-8245
   google-scholar: h0M0TmsAAAAJ
 
+# privacy-friendly analytics (umami). The website id is also what
+# _analytics/fetch_views.py needs as UMAMI_WEBSITE_ID to read per-profile
+# view counts back out — see _analytics/README.md.
+analytics:
+  umami_website_id: 2176cef2-57af-4fcf-b220-7b2050b694c3
+  umami_script: https://cloud.umami.is/script.js
+
 ### jekyll settings
 
 # front matter defaults

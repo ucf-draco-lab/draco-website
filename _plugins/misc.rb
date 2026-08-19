@@ -44,6 +44,16 @@ module Jekyll
       return data
     end
 
+    # format an integer with thousands separators, e.g. 1234 -> "1,234"
+    def delimit_number(value)
+      begin
+        number = Integer(value)
+      rescue TypeError, ArgumentError
+        return value
+      end
+      return number.to_s.reverse.scan(/\d{1,3}/).join(",").reverse
+    end
+
     # return first element of an array, or the value itself if not an array
     def coerce_first(value)
       if value.is_a?(Array)

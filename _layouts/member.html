@@ -6,12 +6,22 @@ layout: default
 
 {% include portrait.html lookup=page.slug %}
 
+{% if page.awards %}
+<div class="member-awards">
+  {% include awards.html awards=page.awards style="full" %}
+</div>
+{% endif %}
+
 <div>
   {% for link in page.links %}
     {% assign key = link[0] %}
     {% assign value = link[1] %}
     {% include button.html type=key link=value style="bare" %}<br>
   {% endfor %}
+</div>
+
+<div class="member-views">
+  {% include view-counter.html %}
 </div>
 
 {% endcapture %}

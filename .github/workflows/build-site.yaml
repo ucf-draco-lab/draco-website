@@ -52,6 +52,21 @@ jobs:
         run: |
           printf "\n\nurl: ${{ steps.pages.outputs.origin }}" >> _config.yaml
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Reads per-profile pageview totals back out of Umami into
+      # _data/views.yaml so they can render as static HTML. No-ops without the
+      # UMAMI_API_KEY secret, and never blocks a deploy.
+      - name: Fetch profile view counts
+        continue-on-error: true
+        timeout-minutes: 3
+        run: python _analytics/fetch_views.py
+        env:
+          UMAMI_API_KEY: ${{ secrets.UMAMI_API_KEY }}
+
       - name: Build live version of site
         run: |
           JEKYLL_ENV=production bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path || '' }}"
