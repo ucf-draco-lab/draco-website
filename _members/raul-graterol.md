@@ -4,7 +4,7 @@ image: images/people/raul-graterol.jpg
 role: alumni
 date: 2025-05-01
 sponsors: [northrop-grumman]
-awards: [northrop-grumman-scholar]
+former_awards: [northrop-grumman-scholar]
 links:
   linkedin: www.linkedin.com/in/raul-graterol-509716241
   github: raulgrat

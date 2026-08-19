@@ -1,13 +1,20 @@
 {% comment %}
   Renders award / scholar-program badges (logo + words) for a member.
 
-  awards   list of keys into _data/awards.yaml
-  style    "full" (default) for profile pages, "compact" for portrait cards
-  linked   pass false to render plain spans instead of links — required when
-           this include sits inside another <a>, as it does on portraits
+  awards         list of keys into _data/awards.yaml, held currently
+  former_awards  list of keys the member held in the past, labelled as such
+  style          "full" (default) for profile pages, "compact" for portraits
+  linked         pass false to render plain spans instead of links — required
+                 when this include sits inside another <a>, as on portraits
 {% endcomment %}
 
-{% assign award_keys = include.awards
+{% assign current_keys = include.awards
+  | object_items
+  | join: ","
+  | split: ","
+  | array_filter
+%}
+{% assign former_keys = include.former_awards
   | object_items
   | join: ","
   | split: ","
@@ -16,61 +23,82 @@
 
 {% assign style = include.style | default: "full" %}
 
-{% if award_keys.size > 0 %}
+{% if current_keys.size > 0 or former_keys.size > 0 %}
   <div class="awards" data-style="{{ style }}">
-    {% for raw_key in award_keys %}
-      {% assign key = raw_key | strip %}
-      {% assign award = site.data.awards[key] %}
+    {% assign groups = "current,former" | split: "," %}
+    {% for group in groups %}
+      {% if group == "former" %}
+        {% assign keys = former_keys %}
+      {% else %}
+        {% assign keys = current_keys %}
+      {% endif %}
 
-      {% if award %}
-        {% if style == "compact" %}
-          {% assign label = award.short | default: award.name %}
-        {% else %}
-          {% assign label = award.name %}
-        {% endif %}
+      {% for raw_key in keys %}
+        {% assign key = raw_key | strip %}
+        {% assign award = site.data.awards[key] %}
 
-        {% assign href = "" %}
-        {% if include.linked != false %}
-          {% if award.sponsor %}
-            {% assign sponsor_page = site.members
-              | where_exp: "member", "member.slug == award.sponsor"
-              | first
-            %}
-            {% if sponsor_page %}
-              {% assign href = sponsor_page.url | relative_url %}
+        {% if award %}
+          {% if group == "former" %}
+            {% if style == "compact" %}
+              {% assign label = award.former_short | default: award.short | default: award.name %}
+            {% else %}
+              {% assign label = award.former_name | default: award.name %}
+            {% endif %}
+            {% assign tooltip = award.former_tooltip | default: award.tooltip %}
+          {% else %}
+            {% if style == "compact" %}
+              {% assign label = award.short | default: award.name %}
+            {% else %}
+              {% assign label = award.name %}
+            {% endif %}
+            {% assign tooltip = award.tooltip %}
+          {% endif %}
+
+          {% assign href = "" %}
+          {% if include.linked != false %}
+            {% if award.sponsor %}
+              {% assign sponsor_page = site.members
+                | where_exp: "member", "member.slug == award.sponsor"
+                | first
+              %}
+              {% if sponsor_page %}
+                {% assign href = sponsor_page.url | relative_url %}
+              {% endif %}
+            {% endif %}
+            {% if href == "" and award.link %}
+              {% assign href = award.link %}
             {% endif %}
           {% endif %}
-          {% if href == "" and award.link %}
-            {% assign href = award.link %}
+
+          {% capture badge_inner %}
+            {% if award.image %}
+              <img
+                src="{{ award.image | relative_url }}"
+                class="award-logo"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              >
+            {% endif %}
+            <span class="award-label">{{ label }}</span>
+          {% endcapture %}
+
+          {% if href != "" %}
+            <a
+              href="{{ href }}"
+              class="award"
+              {% if group == "former" %}data-former{% endif %}
+              {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %}
+            >{{ badge_inner }}</a>
+          {% else %}
+            <span
+              class="award"
+              {% if group == "former" %}data-former{% endif %}
+              {% if tooltip %}data-tooltip="{{ tooltip }}"{% endif %}
+            >{{ badge_inner }}</span>
           {% endif %}
         {% endif %}
-
-        {% capture badge_inner %}
-          {% if award.image %}
-            <img
-              src="{{ award.image | relative_url }}"
-              class="award-logo"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            >
-          {% endif %}
-          <span class="award-label">{{ label }}</span>
-        {% endcapture %}
-
-        {% if href != "" %}
-          <a
-            href="{{ href }}"
-            class="award"
-            {% if award.tooltip %}data-tooltip="{{ award.tooltip }}"{% endif %}
-          >{{ badge_inner }}</a>
-        {% else %}
-          <span
-            class="award"
-            {% if award.tooltip %}data-tooltip="{{ award.tooltip }}"{% endif %}
-          >{{ badge_inner }}</span>
-        {% endif %}
-      {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
 {% endif %}

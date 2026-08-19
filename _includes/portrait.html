@@ -120,7 +120,7 @@
       this sits inside the portrait's own <a>.
     {% endcomment %}
     {% if page.slug != member.slug %}
-      {% include awards.html awards=member.awards style="compact" linked=false %}
+      {% include awards.html awards=member.awards former_awards=member.former_awards style="compact" linked=false %}
     {% endif %}
   </a>
 </div>

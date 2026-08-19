@@ -6,9 +6,9 @@ layout: default
 
 {% include portrait.html lookup=page.slug %}
 
-{% if page.awards %}
+{% if page.awards or page.former_awards %}
 <div class="member-awards">
-  {% include awards.html awards=page.awards style="full" %}
+  {% include awards.html awards=page.awards former_awards=page.former_awards style="full" %}
 </div>
 {% endif %}
 
