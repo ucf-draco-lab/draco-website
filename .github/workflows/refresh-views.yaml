@@ -1,0 +1,25 @@
+name: refresh-views
+run-name: refresh profile view counts
+
+# Profile view counts are baked into the site at build time by
+# _analytics/fetch_views.py, so they only move when the site is rebuilt.
+# This rebuilds once a day to keep them current between pushes. Nothing is
+# committed — the counts live in Umami, not in git.
+
+on:
+  schedule:
+    # daily, 05:30 UTC
+    - cron: "30 5 * * *"
+
+  # run if user manually requests it
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-site:
+    # only run on user instance of template, not template itself
+    if: github.repository != 'greenelab/lab-website-template'
+    uses: ./.github/workflows/build-site.yaml
+    secrets: inherit

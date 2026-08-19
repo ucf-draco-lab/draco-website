@@ -1,0 +1,22 @@
+---
+---
+
+.view-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: var(--gray);
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.view-counter .icon {
+  font-size: 0.9em;
+}
+
+.view-count {
+  font-family: var(--code);
+  font-weight: var(--semi-bold);
+  color: var(--dark-gray);
+}

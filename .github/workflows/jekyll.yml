@@ -11,6 +11,11 @@ on:
   push:
     branches: ["main"]
 
+  # Rebuilds daily so the profile view counts baked in at build time
+  # (see _analytics/fetch_views.py) don't go stale between pushes
+  schedule:
+    - cron: "30 5 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -49,6 +54,19 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      # Reads per-profile pageview totals back out of Umami into
+      # _data/views.yaml so they render as static HTML. No-ops without the
+      # UMAMI_API_KEY secret, and never blocks a deploy.
+      - name: Fetch profile view counts
+        continue-on-error: true
+        timeout-minutes: 3
+        run: python _analytics/fetch_views.py
+        env:
+          UMAMI_API_KEY: ${{ secrets.UMAMI_API_KEY }}
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"

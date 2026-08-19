@@ -2,7 +2,8 @@
 name: Nicholas McNeill
 image: images/people/nicholas-mcneill.jpg
 role: undergrad
-sponsors: [ucf]
+sponsors: [ucf, northrop-grumman]
+awards: [northrop-grumman-scholar]
 links:
   linkedin: Nicholas McNeill
   github: https://github.com/Doppl-r

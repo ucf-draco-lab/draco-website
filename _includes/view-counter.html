@@ -1,0 +1,29 @@
+{% comment %}
+  Renders the cumulative pageview count for a page, from _data/views.yaml.
+
+  url   path to look up; defaults to the current page
+
+  Renders nothing when the page has no recorded views yet, so the counter
+  never shows a misleading zero and disappears cleanly when view data
+  hasn't been fetched.
+{% endcomment %}
+
+{% assign lookup = include.url | default: page.url %}
+{% assign views = site.data.views.pages[lookup] %}
+
+{% if views and views > 0 %}
+  {% if views == 1 %}
+    {% assign noun = "view" %}
+  {% else %}
+    {% assign noun = "views" %}
+  {% endif %}
+
+  <div
+    class="view-counter"
+    data-tooltip="Profile viewed {{ views | delimit_number }} {{ noun }}{% if site.data.views.range_start %} since {{ site.data.views.range_start | date: '%B %Y' }}{% endif %}"
+  >
+    {% include icon.html icon="fa-solid fa-eye" %}
+    <span class="view-count">{{ views | delimit_number }}</span>
+    <span class="view-count-label">{{ noun }}</span>
+  </div>
+{% endif %}

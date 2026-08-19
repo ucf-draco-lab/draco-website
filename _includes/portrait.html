@@ -113,5 +113,14 @@
         </span>
       {% endif %}
     {% endif %}
+
+    {% comment %}
+      Compact pills only on cards that point elsewhere — a member's own page
+      shows the full badge below the portrait instead. linked=false because
+      this sits inside the portrait's own <a>.
+    {% endcomment %}
+    {% if page.slug != member.slug %}
+      {% include awards.html awards=member.awards style="compact" linked=false %}
+    {% endif %}
   </a>
 </div>
