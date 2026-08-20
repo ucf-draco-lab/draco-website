@@ -3,6 +3,7 @@ name: Joshua Joseph
 image: images/people/joshua-joseph.jpg
 role: ms
 sponsors: [northrop-grumman]
+former_awards: [northrop-grumman-scholar]
 links:
   linkedin: joshua-joseph-a7708a256
   github: JoshInOnePiece

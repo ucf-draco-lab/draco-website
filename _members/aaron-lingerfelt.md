@@ -5,6 +5,7 @@ role: alumni
 date: 2024-05-01
 affiliation: Northrop Grumman
 sponsors: [ucf, northrop-grumman]
+former_awards: [northrop-grumman-scholar]
 links:
   linkedin: aaronlingerfelt
   orcid: 0009-0004-0886-7837

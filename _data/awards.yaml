@@ -12,6 +12,9 @@
 #   sponsor  slug of a sponsor member page to link the badge to (optional)
 #   link     external URL, used only when `sponsor` is unset (optional)
 #   tooltip  hover text (optional)
+#
+# A member who held an award in the past lists it under `former_awards:`
+# instead, and the badge picks up the `former_*` wording below.
 
 northrop-grumman-scholar:
   name: Northrop Grumman Scholar
@@ -20,3 +23,6 @@ northrop-grumman-scholar:
   sponsor: northrop-grumman
   link: https://www.northropgrumman.com
   tooltip: Selected for UCF's Northrop Grumman Scholars Program
+  former_name: Former Northrop Grumman Scholar
+  former_short: Former NG Scholar
+  former_tooltip: Alum of UCF's Northrop Grumman Scholars Program

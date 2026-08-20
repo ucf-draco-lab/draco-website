@@ -48,6 +48,22 @@ a.award:hover {
   white-space: nowrap;
 }
 
+// a former award is a past affiliation — same mark, quieter treatment
+.award[data-former] {
+  background: transparent;
+  color: var(--gray);
+  border-style: dashed;
+}
+
+.award[data-former] .award-logo {
+  opacity: 0.75;
+}
+
+a.award[data-former]:hover {
+  background: var(--background-alt);
+  color: var(--text);
+}
+
 // profile page badges sit under the portrait, so give them room
 .awards[data-style="full"] {
   margin: 15px 0;
@@ -61,6 +77,13 @@ a.award:hover {
 .awards[data-style="compact"] {
   margin-top: 6px;
   gap: 6px;
+  // a pill may be wider than a narrow portrait (the 100px alumni cards);
+  // let it size to its text rather than ellipsing, the card gutters absorb it
+  max-width: none;
+}
+
+.awards[data-style="compact"] .award {
+  max-width: none;
 }
 
 .awards[data-style="compact"] .award {
