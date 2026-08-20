@@ -36,14 +36,14 @@ northrop-grumman-scholar:
 # UCF runs two AMD fellowships — an undergraduate one and a graduate one — and
 # DRACO has had fellows in both. "AMD Research Fellow" is the umbrella the lab's
 # own posts use, so one entry covers both rather than splitting the badge.
-amd-research-fellow:
-  name: AMD Research Fellow
-  short: AMD Fellow
+amd-scholar:
+  name: AMD Scholar
+  short: AMD Scholar
   image: images/sponsors/amd.png
   logo_style: wordmark
   sponsor: amd
   link: https://www.amd.com
-  tooltip: Selected for UCF's AMD Research Fellowship
-  former_name: Former AMD Research Fellow
-  former_short: Former AMD Fellow
-  former_tooltip: Alum of UCF's AMD Research Fellowship
+  tooltip: Selected for UCF's AMD Scholars Program
+  former_name: Former AMD Scholar
+  former_short: Former AMD Scholar
+  former_tooltip: Alum of UCF's AMD Scholars Program

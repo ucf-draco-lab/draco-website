@@ -3,7 +3,7 @@ name: Sebastian Candelaria
 image: images/people/sebastian-candelaria.jpeg
 role: undergrad
 sponsors: [ucf , amd]
-awards: [amd-research-fellow]
+awards: [amd-scholar]
 links:
   linkedin: sebastiancandelaria
   github: github.com/Meowcaroni

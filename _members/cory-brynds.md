@@ -3,7 +3,7 @@ name: Cory Brynds
 image: images/people/cory-brynds.jpg
 role: [ms-alumni, alumni-mentor]
 sponsors: amd
-former_awards: [amd-research-fellow]
+former_awards: [amd-scholar]
 links:
   linkedin: corybrynds
   github: cbrynds

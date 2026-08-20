@@ -3,7 +3,7 @@ name: Michael Castiglia
 image: images/people/michael-castiglia.jpg
 role: ms
 sponsors: [amd]
-former_awards: [amd-research-fellow]
+former_awards: [amd-scholar]
 group: AMD
 links:
   home-page: https://mcastiglia.com

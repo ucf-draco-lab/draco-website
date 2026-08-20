@@ -3,7 +3,8 @@ name: Gabriel Martin
 image: images/people/gabriel-martin.jpg
 role: ms
 group:
-sponsors: [awn] 
+sponsors: [awn, amd]
+awards: [amd-scholar]
 links:
   linkedin: gabriel-martin-161a0121a
   github: gmartin02

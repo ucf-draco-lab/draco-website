@@ -30,12 +30,18 @@ module Jekyll
 
     def generate(site)
       site.config[SITE_CONFIG_KEY] = Set.new
-      return unless defined?(MiniMagick)
+
+      sources = sources_for(site)
+
+      unless defined?(MiniMagick)
+        report(site, sources, "the mini_magick gem is not available")
+        return
+      end
 
       cache_dir = File.join(site.source, CACHE_SUBDIR)
       FileUtils.mkdir_p(cache_dir)
 
-      sources_for(site).each do |relative_source|
+      sources.each do |relative_source|
         absolute_source = File.join(site.source, relative_source)
         next unless File.file?(absolute_source)
 
@@ -60,9 +66,30 @@ module Jekyll
 
         site.config[SITE_CONFIG_KEY].add(relative_source) if all_widths_ready
       end
+
+      report(site, sources)
     end
 
     private
+
+    # This generator used to fail silently: a missing ImageMagick binary makes
+    # every variant raise, the rescue logs one line per image, and the build
+    # carries on serving full-size originals. Summarize the outcome so that
+    # state is legible at a glance instead of buried in per-image warnings.
+    def report(site, sources, reason = "no variants could be generated")
+      ready = site.config[SITE_CONFIG_KEY].size
+      if sources.empty?
+        Jekyll.logger.info "Thumbnails:", "No portraits to resize."
+      elsif ready.zero?
+        Jekyll.logger.error "Thumbnails:",
+          "Generated 0 thumbnails for #{sources.size} portraits because " \
+          "#{reason}. Every portrait will load at full size. ImageMagick " \
+          "must be installed for this generator to work."
+      else
+        Jekyll.logger.info "Thumbnails:",
+          "#{ready}/#{sources.size} portraits have generated thumbnails."
+      end
+    end
 
     # Every image referenced from a member document is a candidate. This keeps
     # the generator zero-config: contributors drop a new portrait into

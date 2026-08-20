@@ -3,7 +3,7 @@ name: Francisco Soriano
 image: images/people/francisco-soriano.jpg
 role: ms
 sponsors: [amd]
-former_awards: [amd-research-fellow]
+former_awards: [amd-scholar]
 links:
   linkedin: www.linkedin.com/in/francisco-e-soriano
   github: https://github.com/Francisco-Soriano
