@@ -33,6 +33,11 @@ a.award:hover {
   background: var(--secondary);
 }
 
+// keeps the <picture> from becoming the flex item in place of the <img>
+.award-logo-wrapper {
+  display: contents;
+}
+
 .award-logo {
   flex-shrink: 0;
   width: 24px;
@@ -46,6 +51,18 @@ a.award:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+// A wordmark logo is wide and dark rather than a square icon, so it gets a
+// light plate and its own aspect. These use object-fit: cover because such
+// logos sit in the centre band of a square canvas — cover crops the empty
+// margins away instead of shrinking the mark to fit them.
+.award-logo[data-logo="wordmark"] {
+  width: 46px;
+  height: 14px;
+  border-radius: 2px;
+  object-fit: cover;
+  background: #fff;
 }
 
 // a former award is a past affiliation — same mark, quieter treatment
@@ -73,6 +90,11 @@ a.award[data-former]:hover {
   font-size: 0.9rem;
 }
 
+.awards[data-style="full"] .award-logo[data-logo="wordmark"] {
+  width: 66px;
+  height: 20px;
+}
+
 // compact pills ride along inside a portrait card, where space is tight
 .awards[data-style="compact"] {
   margin-top: 6px;
@@ -96,6 +118,11 @@ a.award[data-former]:hover {
 .awards[data-style="compact"] .award-logo {
   width: 16px;
   height: 16px;
+}
+
+.awards[data-style="compact"] .award-logo[data-logo="wordmark"] {
+  width: 38px;
+  height: 12px;
 }
 
 // tiny portraits (post bylines) are a single line — no room for badges

@@ -72,13 +72,30 @@
 
           {% capture badge_inner %}
             {% if award.image %}
-              <img
-                src="{{ award.image | relative_url }}"
-                class="award-logo"
-                alt=""
-                loading="lazy"
-                decoding="async"
-              >
+              {% comment %}
+                Serve the generated webp thumbnail where there is one — the
+                source logos are full-size sponsor art, far larger than a
+                badge needs, and the sponsor portraits already load the thumb.
+                Falls back to the original when no thumbnail exists.
+              {% endcomment %}
+              {% assign logo_1x = award.image | thumb_url: 400 %}
+              {% assign logo_2x = award.image | thumb_url: 800 %}
+              <picture class="award-logo-wrapper">
+                {% if logo_1x != "" %}
+                  <source
+                    type="image/webp"
+                    srcset="{{ logo_1x | relative_url }} 1x, {{ logo_2x | relative_url }} 2x"
+                  >
+                {% endif %}
+                <img
+                  src="{{ award.image | relative_url }}"
+                  class="award-logo"
+                  {% if award.logo_style %}data-logo="{{ award.logo_style }}"{% endif %}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                >
+              </picture>
             {% endif %}
             <span class="award-label">{{ label }}</span>
           {% endcapture %}

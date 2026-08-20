@@ -3,6 +3,7 @@ name: Ryan Eng
 image: images/people/ryan-eng.jpg
 role: undergrad
 sponsors: [ucf , amd]
+awards: [amd-research-fellow]
 links:
   linkedin: ryan-eng2020
   github: ryanengphoto

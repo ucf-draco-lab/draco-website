@@ -4,6 +4,7 @@ image: images/people/alicia-thoney.jpg
 role: [ms-alumni, alumni-mentor]
 group:
 sponsors: [amd, ucf, awn] 
+former_awards: [amd-research-fellow]
 links:
   home-page: https://aliciathoney.com
   linkedin: aliciathoney

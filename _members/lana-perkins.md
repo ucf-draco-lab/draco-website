@@ -5,6 +5,7 @@ role: alumni
 date: 2024-05-01
 affiliation: L3Harris
 sponsors: [amd]
+former_awards: [amd-research-fellow]
 group: AMD
 links:
   linkedin: lana-perkins-ucf

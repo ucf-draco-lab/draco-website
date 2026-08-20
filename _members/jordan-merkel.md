@@ -3,6 +3,7 @@ name: Jordan Merkel
 image: images/people/jordan-merkel.jpg
 role: [ms, alumni]
 sponsors: [amd, ucf]
+former_awards: [amd-research-fellow]
 links:
   linkedin: jordanmerkel-
   github: merkeljordan

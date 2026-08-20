@@ -12,6 +12,8 @@
 #   sponsor  slug of a sponsor member page to link the badge to (optional)
 #   link     external URL, used only when `sponsor` is unset (optional)
 #   tooltip  hover text (optional)
+#   logo_style  set to "wordmark" for a wide logo (e.g. AMD) — see
+#               _styles/awards.scss; the default suits a square mark
 #
 # A member who held an award in the past lists it under `former_awards:`
 # instead, and the badge picks up the `former_*` wording below.
@@ -26,3 +28,22 @@ northrop-grumman-scholar:
   former_name: Former Northrop Grumman Scholar
   former_short: Former NG Scholar
   former_tooltip: Alum of UCF's Northrop Grumman Scholars Program
+
+# The AMD logo is a wide black wordmark on a transparent square canvas, so it
+# gets the "wordmark" treatment: a light plate (the mark is black) rendered at
+# its own aspect rather than squeezed into the square badge slot.
+#
+# UCF runs two AMD fellowships — an undergraduate one and a graduate one — and
+# DRACO has had fellows in both. "AMD Research Fellow" is the umbrella the lab's
+# own posts use, so one entry covers both rather than splitting the badge.
+amd-research-fellow:
+  name: AMD Research Fellow
+  short: AMD Fellow
+  image: images/sponsors/amd.png
+  logo_style: wordmark
+  sponsor: amd
+  link: https://www.amd.com
+  tooltip: Selected for UCF's AMD Research Fellowship
+  former_name: Former AMD Research Fellow
+  former_short: Former AMD Fellow
+  former_tooltip: Alum of UCF's AMD Research Fellowship
