@@ -2,7 +2,7 @@
 name: AMD
 image: images/sponsors/amd.png
 role: sponsor
-supporterof : [jordan-merkel, alicia-thoney, michael-castiglia, francisco-soriano, lana-perkins]
+supporterof : [sebastian-candelaria, ryan-eng, gabriel-martin, michael-castiglia, francisco-soriano, jordan-merkel, cory-brynds, alicia-thoney, lana-perkins]
 links:
   home-page: http://amd.com
 

@@ -44,6 +44,22 @@ jobs:
           ruby-version: '3.1' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
+      # ubuntu-24.04 runners no longer ship ImageMagick, which mini_magick
+      # shells out to. Without it _plugins/image_thumbnails.rb generates
+      # nothing and every portrait is served at full size.
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          # Not --no-install-recommends: ImageMagick's WebP delegate ships in
+          # libmagickcore-*-extra, which is only Recommended. Without it the
+          # binary installs fine but cannot write the .webp this plugin needs.
+          sudo apt-get install -y imagemagick
+          if ! convert -list format | grep -qi 'webp'; then
+            echo "::error::ImageMagick installed without a WebP delegate; thumbnails cannot be written."
+            exit 1
+          fi
+          convert -version | head -1
+
       - name: Cache generated portrait thumbnails
         uses: actions/cache@v4
         with:
@@ -72,6 +88,17 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+
+      # The generator degrades quietly when it cannot resize, so assert the
+      # thumbnails actually exist rather than trusting a green build.
+      - name: Verify portrait thumbnails were generated
+        run: |
+          count=$(find _site/images/thumbs -name '*.webp' 2>/dev/null | wc -l)
+          echo "Generated $count portrait thumbnails."
+          if [ "$count" -eq 0 ]; then
+            echo "::error::No portrait thumbnails were generated - every portrait will load at full size. Check that ImageMagick is installed and _plugins/image_thumbnails.rb is working."
+            exit 1
+          fi
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
