@@ -36,7 +36,17 @@ jobs:
       # shells out to. Without it _plugins/image_thumbnails.rb generates
       # nothing and every portrait is served at full size.
       - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends imagemagick
+        run: |
+          sudo apt-get update
+          # Not --no-install-recommends: ImageMagick's WebP delegate ships in
+          # libmagickcore-*-extra, which is only Recommended. Without it the
+          # binary installs fine but cannot write the .webp this plugin needs.
+          sudo apt-get install -y imagemagick
+          if ! convert -list format | grep -qi 'webp'; then
+            echo "::error::ImageMagick installed without a WebP delegate; thumbnails cannot be written."
+            exit 1
+          fi
+          convert -version | head -1
 
       - name: Cache generated portrait thumbnails
         uses: actions/cache@v4
