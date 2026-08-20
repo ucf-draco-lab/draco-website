@@ -30,6 +30,10 @@ a.award:hover {
   background: var(--secondary);
 }
 
+.award-logo-wrapper {
+  display: contents;
+}
+
 .award-logo {
   flex-shrink: 0;
   width: 24px;
@@ -43,6 +47,14 @@ a.award:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.award-logo[data-logo=wordmark] {
+  width: 46px;
+  height: 14px;
+  border-radius: 2px;
+  object-fit: cover;
+  background: #fff;
 }
 
 .award[data-former] {
@@ -68,6 +80,11 @@ a.award[data-former]:hover {
   font-size: 0.9rem;
 }
 
+.awards[data-style=full] .award-logo[data-logo=wordmark] {
+  width: 66px;
+  height: 20px;
+}
+
 .awards[data-style=compact] {
   margin-top: 6px;
   gap: 6px;
@@ -88,6 +105,11 @@ a.award[data-former]:hover {
 .awards[data-style=compact] .award-logo {
   width: 16px;
   height: 16px;
+}
+
+.awards[data-style=compact] .award-logo[data-logo=wordmark] {
+  width: 38px;
+  height: 12px;
 }
 
 .portrait[data-style=tiny] .awards {
