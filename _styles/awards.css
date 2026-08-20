@@ -45,6 +45,21 @@ a.award:hover {
   white-space: nowrap;
 }
 
+.award[data-former] {
+  background: transparent;
+  color: var(--gray);
+  border-style: dashed;
+}
+
+.award[data-former] .award-logo {
+  opacity: 0.75;
+}
+
+a.award[data-former]:hover {
+  background: var(--background-alt);
+  color: var(--text);
+}
+
 .awards[data-style=full] {
   margin: 15px 0;
 }
@@ -56,6 +71,11 @@ a.award:hover {
 .awards[data-style=compact] {
   margin-top: 6px;
   gap: 6px;
+  max-width: none;
+}
+
+.awards[data-style=compact] .award {
+  max-width: none;
 }
 
 .awards[data-style=compact] .award {
