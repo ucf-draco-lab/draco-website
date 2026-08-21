@@ -5,11 +5,32 @@
   | data_filter: include.filters
 %}
 
-{% assign years = data
-  | group_by_exp: "d", "d.date | date: '%Y'"
-  | sort: "name"
-  | reverse
-%}
+{% comment %}
+  Year headings suit dated data (posts, citations, alumni graduation years).
+  Rosters of current members are not chronological, and Jekyll gives every
+  undated doc the build date - so a single dated member would split the
+  section into build-year vs. their-year groups and get reordered to the end.
+  Those callers pass group_years=false and get one group in source order.
+{% endcomment %}
+{% assign group_years = true %}
+{% if include.group_years == false %}
+  {% assign group_years = false %}
+{% endif %}
+
+{% if group_years %}
+  {% assign years = data
+    | group_by_exp: "d", "d.date | date: '%Y'"
+    | sort: "name"
+    | reverse
+  %}
+{% else %}
+  {% comment %}
+    sort: "slug" pins roster order to the filename, which is what an all-undated
+    roster already renders as - without it, Jekyll's own date-then-path sort of
+    the collection shuffles a dated member out of place.
+  {% endcomment %}
+  {% assign years = data | sort: "slug" | group_by_exp: "d", "'all'" %}
+{% endif %}
 
 {% for year in years %}
   {% assign data = year.items %}

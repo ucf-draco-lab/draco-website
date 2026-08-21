@@ -16,13 +16,13 @@ Our team includes undergraduates through postdoctoral scholars — all gaining h
 {% capture lab_pi %}
 ## Lab PI
 
-{% include list.html data="members" component="portrait" filters="role: PI" %}
+{% include list.html data="members" component="portrait" filters="role: PI" group_years=false %}
 {% endcapture %}
 
 {% capture alumni_mentors %}
 ## Alumni Mentors
 
-{% include list.html data="members" component="portrait" filters="role: alumni-mentor" %}
+{% include list.html data="members" component="portrait" filters="role: alumni-mentor" group_years=false %}
 {% endcapture %}
 
 {% include cols.html col1=lab_pi col2=alumni_mentors %}
@@ -31,20 +31,20 @@ Our team includes undergraduates through postdoctoral scholars — all gaining h
 {% include section.html %}
 ## PhD Student Researchers
 
-{% include list.html data="members" component="portrait" filters="role: ^phd$" display_mode="student" %}
+{% include list.html data="members" component="portrait" filters="role: ^phd$" display_mode="student" group_years=false %}
 
 {% include section.html %}
 ## Masters Student Researchers
 
-{% include list.html data="members" component="portrait" filters="role: ^ms$" display_mode="student" %}
+{% include list.html data="members" component="portrait" filters="role: ^ms$" display_mode="student" group_years=false %}
 
 {% include section.html %}
 ## Undergraduate Students
 
-{% include list.html data="members" component="portrait" filters="role: undergrad" display_mode="student" %}
+{% include list.html data="members" component="portrait" filters="role: undergrad" display_mode="student" group_years=false %}
 
 
-{% include list.html data="members" component="portrait" filters="role: capstone-senior " display_mode="student" %}
+{% include list.html data="members" component="portrait" filters="role: capstone-senior " display_mode="student" group_years=false %}
 
 {% include section.html %}
 ## Alumni
@@ -60,7 +60,7 @@ Our research, tools, and student training are made possible through partnerships
 
 ### Sponsors
 A special thank you to our current sponsors — click on the profiles below to see the projects and researchers these entities have sponsored.
-{% include list.html data="members" component="portrait" filters="role: sponsor " %}
+{% include list.html data="members" component="portrait" filters="role: sponsor " group_years=false %}
 
 
 The work shown throughout our website has been sponsored by many agencies and organizations — learn more about them by visiting their web presence.
