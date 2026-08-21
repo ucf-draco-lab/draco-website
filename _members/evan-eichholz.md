@@ -1,14 +1,13 @@
-﻿---
+---
 name: Evan Eichholz
 image: images/people/evan-eichholz.png
-role: undergrad researcher
-sponsors: UCF
-links: 
-  linkedin: https://www.linkedin.com/in/evan-eichholz-b1012b269/
-  github: https://github.com/AirPodsRed
+role: undergrad
+sponsors: [ucf]
+links:
+  linkedin: evan-eichholz-b1012b269
+  github: AirPodsRed
   orcid: 0009-0002-8781-3903
-
 
 ---
 
-Evan Eichholz is a 2nd year undergraduate student at UCF pursuing a degree in Computer Engineering. He is currently a member of IEEE and a sub lead of their CPU design project team. He is passionate about A.I, computer hardware, and general electronics. In his free time he is an avid nature enthusiast and big Terraria fan.
+Evan Eichholz is an undergraduate student at the University of Central Florida, pursuing a degree in Computer Engineering. Currently he's fascinated with the security of embedded systems, particularly how machine learning models running on microcontrollers can be compromised through side channel power analysis and how that same understanding can be used to defend them.

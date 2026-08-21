@@ -1,8 +1,15 @@
 ---
 name: Marcus Simmonds
 image: images/people/marcus-simmonds.png
-role: ms-alumni
+role: [ms-alumni, alumni]
 date: 2026-05-01
+degrees:
+  - level: B.S.
+    major: Computer Science
+    year: 2024
+  - level: M.S.
+    major: Computer Engineering
+    year: 2026
 sponsors: [ucf, ibm, gem]
 links:
   linkedin: marcsimmonds

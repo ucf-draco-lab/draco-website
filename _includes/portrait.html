@@ -81,9 +81,20 @@
     {% endif %}
 
     {% if include.display_mode == "alumni" and is_alumni_view %}
-      {% if degrees_completed.size > 0 %}
+      {% comment %}
+        role order decides the icon, so a dual-degree alum lists ms-alumni
+        first — sort here so the label still reads lowest degree upward.
+      {% endcomment %}
+      {% assign degree_order = "B.S.,M.S.,Ph.D." | split: "," %}
+      {% assign degrees_sorted = "" | split: "," %}
+      {% for d in degree_order %}
+        {% if degrees_completed contains d %}
+          {% assign degrees_sorted = degrees_sorted | push: d %}
+        {% endif %}
+      {% endfor %}
+      {% if degrees_sorted.size > 0 %}
         <span class="portrait-description">
-          {{ degrees_completed | join: ", " }}
+          {{ degrees_sorted | join: ", " }}
         </span>
       {% endif %}
       {% if member.affiliation %}

@@ -4,9 +4,8 @@ image: images/people/yousef-awad.jpg
 role: undergrad
 sponsors: [ucf]
 links:
-  home-page: http://URLHERE
   linkedin: yousefalaaawad
-  github: https://github.com/Quil180
+  github: Quil180
   orcid: 0009-0009-9553-522X
 
 

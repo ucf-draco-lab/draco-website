@@ -3,10 +3,13 @@ name: Ashley Hanzelka
 image: images/people/ashley-hanzelka.jpg
 role: alumni
 date: 2025-05-01
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2025
 sponsors: [ucf]
 links:
-  linkedin: www.linkedin.com/in/ashhanz
-
+  linkedin: ashhanz
 ---
 
 Ashley Hanzelka was a fourth-year undergraduate Computer Engineering student at UCF. Her academic journey began at Florida Institute of Technology where studies included an Electrical Engineering major with a Computer Science minor. While academic interests range from software to hardware development, Ashley finds the most joy within computer programming, embedded systems development, and robotics. 

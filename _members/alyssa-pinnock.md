@@ -3,12 +3,15 @@ name: Alyssa Pinnock
 image: images/people/alyssa-pinnock.jpg
 role: alumni
 date: 2026-05-01
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2026
 sponsors: [ucf]
 links:
   linkedin: alyssapinnock
   github: alyssapinnock
   orcid: 0009-0006-4760-9755
-
 ---
 
 Alyssa Pinnock was a senior Computer Engineering student at the University of Central Florida, specializing in the Digital VLSI Circuits track. She worked as a Digital Firmware Intern at Northrop Grumman in Summer 2025, where she gained hands-on experience in FPGA and digital firmware workflows. Alyssa has also conducted undergraduate research with the Florida Space Institute and expanded her interests in microarchitecture, verification, and hardware security with the DRACO Lab.

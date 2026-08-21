@@ -1,5 +1,5 @@
 ---
-name: Acrtic Wolf Networks
+name: Arctic Wolf Networks
 image: images/sponsors/awn-sq.png
 role: sponsor
 supporterof : [daniel-de-armas, gabriel-martin, alicia-thoney]

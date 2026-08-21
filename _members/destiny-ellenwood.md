@@ -2,11 +2,16 @@
 name: Destiny Ellenwood
 image: images/people/destiny-ellenwood.jpg
 role: alumni
+affiliation: Raytheon
 date: 2026-05-01
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2026
 sponsors: [ucf]
 links:
   linkedin: destinyellenwood
-  github: https://github.com/Destinyellenwood/destiny-ellenwood-portfolio
+  github: Destinyellenwood/destiny-ellenwood-portfolio
 ---
 
 Destiny Ellenwood was a senior undergraduate Computer Engineering student at the University of Central Florida, pursuing the Digital VLSI track. She joined the DRACO Lab in Fall 2025 to gain hands-on research experience in hardware security and embedded systems, with interests in real-time operating systems and FPGA prototyping. Beyond her research, Destiny served as the Secretary for the Women in Electrical Engineering and Computer Science club at UCF, where she helped coordinate workshops, socials, and professional development opportunities that support and engage students in engineering and computing.

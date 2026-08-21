@@ -3,10 +3,13 @@ name: Calvin VanWormer
 image: images/people/calvin-vanwormer.jpg
 role: ms-alumni
 date: 2026-05-01
+degrees:
+  - level: M.S.
+    major: Computer Engineering
+    year: 2026
 sponsors: [ucf, leidos]
 links:
   linkedin: calvin-vanwormer
-
 ---
 
 Calvin VanWormer was a Computer Engineering master’s student at the University of Central Florida, graduating in Spring 2026. He graduated with his Bachelor of Science in Computer Science from the University of Wyoming in Spring 2024. His academic specialization was in computer networks and cybersecurity.

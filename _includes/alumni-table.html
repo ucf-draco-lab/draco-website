@@ -1,0 +1,132 @@
+{%- comment -%}
+  Tabular view of lab alumni, one row per degree awarded.
+
+  Someone who earned both a B.S. and an M.S. with the lab appears twice —
+  once per degree — so that grouping by level and sorting by year of award
+  both stay meaningful. Rows carry data-* attributes; _scripts/alumni-table.js
+  reads those to filter, multi-sort and group without touching the DOM text.
+
+  filters   same "field: regex" string data_filter takes elsewhere, e.g.
+            "role: (ms-alumni|^alumni$|phd-alumni)"
+
+  Degrees come from a member's `degrees:` frontmatter:
+
+    degrees:
+      - level: B.S.          # B.S. / M.S. / Ph.D.
+        major: Computer Engineering
+        year: 2026
+
+  A member with no `degrees:` block is skipped — nothing to put in a row.
+
+  Every Liquid tag below trims its own whitespace. This include is called from
+  a markdown page, and kramdown ends a raw-HTML block at the first blank line —
+  leave the assigns untrimmed and the tail of each row gets escaped into
+  literal "&lt;/a&gt;" text.
+{%- endcomment -%}
+
+{%- assign members = site.members | data_filter: include.filters -%}
+{%- assign level_order = "B.S.,M.S.,Ph.D." | split: "," -%}
+
+{%- comment -%} Every distinct year of award, newest first. {%- endcomment -%}
+{%- assign years = "" | split: "," -%}
+{%- for member in members -%}
+  {%- for degree in member.degrees -%}
+    {%- comment -%} 0 stands in for "year unknown" so sort never sees a nil. {%- endcomment -%}
+    {%- assign degree_year = degree.year | default: 0 -%}
+    {%- assign years = years | push: degree_year -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign years = years | uniq | sort | reverse -%}
+<table class="alumni-table" data-group="level" data-sort="level:asc,year:desc">
+<thead>
+<tr>
+<th scope="col" class="alumni-th-photo"><span class="sr-only">Headshot</span></th>
+<th scope="col" data-col="first" aria-sort="none"><button type="button" class="alumni-sort">First<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="last" aria-sort="none"><button type="button" class="alumni-sort">Last<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="major" aria-sort="none"><button type="button" class="alumni-sort">Major<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="level" aria-sort="none"><button type="button" class="alumni-sort">Level<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="year" aria-sort="none"><button type="button" class="alumni-sort">Year<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="sponsor" aria-sort="none"><button type="button" class="alumni-sort">Sponsor / Scholar<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="company" aria-sort="none"><button type="button" class="alumni-sort">First Company<span class="alumni-sort-marker"></span></button></th>
+</tr>
+</thead>
+<tbody>
+{%- for level in level_order -%}
+{%- assign level_rank = forloop.index -%}
+{%- for year in years -%}
+{%- for member in members -%}
+{%- for degree in member.degrees -%}
+{%- if degree.level != level %}{% continue %}{% endif -%}
+{%- assign degree_year = degree.year | default: 0 -%}
+{%- if degree_year != year %}{% continue %}{% endif -%}
+{%- comment -%}
+  First word is the given name, the rest the family name — which handles
+  "Ilona van der Linden" but not a two-word given name, so a member can
+  override either with first_name: / last_name:.
+{%- endcomment -%}
+{%- assign name_parts = member.name | split: " " -%}
+{%- assign first_name = name_parts | first -%}
+{%- assign last_name = "" -%}
+{%- for part in name_parts -%}
+{%- unless forloop.first -%}
+{%- if last_name == "" -%}{%- assign last_name = part -%}
+{%- else -%}{%- assign last_name = last_name | append: " " | append: part -%}{%- endif -%}
+{%- endunless -%}
+{%- endfor -%}
+{%- assign first_name = member.first_name | default: first_name -%}
+{%- assign last_name = member.last_name | default: last_name -%}
+{%- comment -%}
+  Sponsor / scholar designation: named scholar programs first (those are the
+  designation), then any other sponsor that backed them. UCF is everyone's
+  degree-granting institution, so it only shows when there is nothing more
+  specific to say.
+{%- endcomment -%}
+{%- assign designations = "" | split: "," -%}
+{%- assign current_award_keys = member.awards | object_items | join: "," | split: "," | array_filter -%}
+{%- assign former_award_keys = member.former_awards | object_items | join: "," | split: "," | array_filter -%}
+{%- for raw_key in current_award_keys -%}
+{%- assign award = site.data.awards[raw_key] -%}
+{%- if award -%}{%- assign designations = designations | push: award.name -%}{%- endif -%}
+{%- endfor -%}
+{%- for raw_key in former_award_keys -%}
+{%- assign award = site.data.awards[raw_key] -%}
+{%- if award -%}{%- assign designations = designations | push: award.name -%}{%- endif -%}
+{%- endfor -%}
+{%- assign sponsor_keys = member.sponsors | object_items | join: "," | split: "," | array_filter -%}
+{%- for raw_slug in sponsor_keys -%}
+{%- assign sponsor_slug = raw_slug | strip -%}
+{%- if sponsor_slug == "ucf" and designations.size > 0 %}{% continue %}{% endif -%}
+{%- assign sponsor_page = site.members | where_exp: "m", "m.slug == sponsor_slug" | first -%}
+{%- assign sponsor_name = sponsor_page.name | default: sponsor_slug -%}
+{%- comment -%}
+  "AMD Scholar" already says AMD — don't list the sponsor again next to its
+  own named program.
+{%- endcomment -%}
+{%- assign so_far = designations | join: "|" -%}
+{%- unless so_far contains sponsor_name -%}
+{%- assign designations = designations | push: sponsor_name -%}
+{%- endunless -%}
+{%- endfor -%}
+{%- assign sponsor_text = designations | join: ", " -%}
+{%- assign major_text = degree.major | default: "" -%}
+{%- assign company_text = member.affiliation | default: "" -%}
+{%- assign year_text = "" -%}
+{%- if degree_year != 0 -%}{%- assign year_text = degree_year -%}{%- endif -%}
+{%- assign thumb_1x = member.image | thumb_url: 400 -%}
+{%- assign thumb_2x = member.image | thumb_url: 800 -%}
+<tr data-first="{{ first_name }}" data-last="{{ last_name }}" data-major="{{ major_text }}" data-level="{{ degree.level }}" data-level-rank="{{ level_rank }}" data-year="{{ year_text }}" data-sponsor="{{ sponsor_text }}" data-company="{{ company_text }}">
+<td class="alumni-td-photo"><a href="{{ member.url | relative_url }}" class="alumni-avatar" aria-label="{{ member.name }}"><picture>{% if thumb_1x != "" %}<source type="image/webp" srcset="{{ thumb_1x | relative_url }} 1x, {{ thumb_2x | relative_url }} 2x">{% endif %}<img src="{{ member.image | relative_url }}" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" {% include fallback.html %}></picture></a></td>
+<td><a href="{{ member.url | relative_url }}">{{ first_name }}</a></td>
+<td><a href="{{ member.url | relative_url }}">{{ last_name }}</a></td>
+<td>{% if major_text != "" %}{{ major_text }}{% else %}<span class="alumni-empty">&mdash;</span>{% endif %}</td>
+<td>{{ degree.level }}</td>
+<td>{% if year_text != "" %}{{ year_text }}{% else %}<span class="alumni-empty">&mdash;</span>{% endif %}</td>
+<td>{% if sponsor_text != "" %}{{ sponsor_text }}{% else %}<span class="alumni-empty">&mdash;</span>{% endif %}</td>
+<td>{% if company_text != "" %}{{ company_text }}{% else %}<span class="alumni-empty">&mdash;</span>{% endif %}</td>
+</tr>
+{%- endfor -%}
+{%- endfor -%}
+{%- endfor -%}
+{%- endfor -%}
+</tbody>
+</table>

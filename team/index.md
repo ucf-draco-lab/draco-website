@@ -49,7 +49,9 @@ Our team includes undergraduates through postdoctoral scholars — all gaining h
 {% include section.html %}
 ## Alumni
 
-{% include list.html data="members" component="portrait" filters="role: (ms-alumni|^alumni$|phd-alumni)" style="small" display_mode="alumni" %}
+Every degree our alumni earned while with the lab, with the major, the year it was awarded, any sponsor or scholar designation they held, and where they went first. Sort by any column (shift-click to sort by several), narrow the list with the filters, or switch back to the portrait cards.
+
+{% include alumni-view.html filters="role: (ms-alumni|^alumni$|phd-alumni)" %}
 
 {% include section.html %}
 

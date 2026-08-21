@@ -4,7 +4,6 @@ image: images/people/dylan-wilkins.jpg
 role: undergrad
 sponsors: [UCF]
 links:
-  home-page: http://URLHERE
   linkedin: dylwilks
   github: dylandhw
   orcid: 0009-0002-0085-1510

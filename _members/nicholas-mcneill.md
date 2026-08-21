@@ -6,7 +6,7 @@ sponsors: [ucf, northrop-grumman]
 awards: [northrop-grumman-scholar]
 links:
   linkedin: Nicholas McNeill
-  github: https://github.com/Doppl-r
+  github: Doppl-r
 
 
 ---
