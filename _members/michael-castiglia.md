@@ -1,7 +1,9 @@
 ---
 name: Michael Castiglia
 image: images/people/michael-castiglia.jpg
-role: ms
+role: [ms, alumni]
+date: 2025-05-01
+affiliation: AMD
 sponsors: [amd]
 former_awards: [amd-scholar]
 group: AMD
