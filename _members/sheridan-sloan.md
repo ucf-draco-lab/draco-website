@@ -1,6 +1,6 @@
 ---
 name: Sheridan Sloan
-image: images/people/sheridan-sloan.png
+image: images/people/sheridan-sloan-hd.jpg
 role: alumni
 date: 2024-05-01
 affiliation: Lockheed Martin

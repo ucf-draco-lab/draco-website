@@ -1,6 +1,6 @@
 ---
 name: Jarred Long
-image: images/people/jarred-long.jpg
+image: images/people/jarred-long-hd.jpg
 role: ms 
 sponsors: [ucf]
 links:

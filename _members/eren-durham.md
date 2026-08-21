@@ -10,4 +10,4 @@ sponsors: []
 
 ---
 
-Eren Durham is an undergraduate Computer Engineering student at the University of Central Florida, on track to graduate in 2027. His research interests are in AI, hardware design, and hardware verification and optimization.
+Eren Durham is an undergraduate Computer Engineering student at the University of Central Florida, on track to graduate in 2027. Her research interests are in AI, hardware design, and hardware verification and optimization.

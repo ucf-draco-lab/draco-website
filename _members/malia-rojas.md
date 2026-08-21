@@ -1,6 +1,6 @@
 ---
 name: Malia Rojas 
-image: images/people/malia_rojas.jpg
+image: images/people/malia_rojas-hd.jpg
 role: alumni
 date: 2024-05-01
 affiliation: Lockheed Martin

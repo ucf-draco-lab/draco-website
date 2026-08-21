@@ -1,6 +1,6 @@
 ---
 name: Jenna Goodrich
-image: images/people/jenna-goodrich.jpg
+image: images/people/jenna-goodrich-hd.jpg
 role: ms-alumni
 date: 2025-05-01
 degrees:
