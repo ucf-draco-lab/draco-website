@@ -11,4 +11,4 @@ sponsors: [ucf]
 links:
 ---
 
-Daniel Gomez is an alumnus of the University of Central Florida, where he earned his B.S. in Computer Engineering. During his time in the DRACO Laboratory, he gained experience across hardware design, embedded systems, and applied security research.
+Daniel Gomez earned his B.S. in Computer Engineering on the Comprehensive track at the University of Central Florida in May 2026. His primary technical interests lie in embedded systems, hardware architecture, and low-level systems programming. Building on a diverse research background in robotics and data science, Daniel joined the DRACO Lab to further specialize in embedded hardware. He was a member of the CHIRP team, where he focused on firmware development utilizing the ESP32 platform. Outside of his academic and research pursuits, Daniel enjoys staying active through fitness, following sports, and spending time with his friends and family.
