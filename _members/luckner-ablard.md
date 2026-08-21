@@ -1,6 +1,6 @@
 ---
 name: Luckner Ablard
-image: images/people/luckner-ablard.jpeg
+image: images/people/luckner-ablard-hd.jpeg
 role: alumni
 date: 2024-08-01
 affiliation: Collins Aerospace

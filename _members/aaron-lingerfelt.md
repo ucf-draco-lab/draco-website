@@ -1,6 +1,6 @@
 ---
 name: Aaron Lingerfelt
-image: images/people/aaron-lingerfelt.jpg
+image: images/people/aaron-lingerfelt-hd.jpg
 role: alumni
 date: 2024-05-01
 affiliation: Northrop Grumman

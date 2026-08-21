@@ -1,6 +1,6 @@
 ---
 name: Michael Castiglia
-image: images/people/michael-castiglia.jpg
+image: images/people/michael-castiglia-hd.jpg
 role: [ms, alumni]
 date: 2025-05-01
 affiliation: AMD

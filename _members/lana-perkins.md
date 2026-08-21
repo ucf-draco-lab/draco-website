@@ -1,6 +1,6 @@
 ---
 name: Lana Perkins
-image: images/people/lana-perkins.jpg
+image: images/people/lana-perkins-hd.jpg
 role: alumni
 date: 2024-05-01
 affiliation: L3Harris

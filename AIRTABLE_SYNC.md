@@ -6,31 +6,64 @@ base and `_members/` disagree, or where the base itself has a hole that the site
 then renders as a blank. Nothing below is fixed silently — the fixes that *were*
 applied are in the commit that adds this file; what remains is the next pass.
 
-## 0. Blocked in this session: headshots and bio attachments
+## 0. Headshots — who still needs one
 
 Airtable serves attachments from `v5.airtableusercontent.com`, which the session's
 egress policy refuses (`403` on `CONNECT`). So no `Headshot` or `BiographyMarkdown`
-attachment could be downloaded, and every headshot below still needs pulling by
-hand or from a session that can reach that host.
+attachment could be downloaded, and every headshot in section 0.1 still needs
+pulling by hand or from a session that can reach that host.
 
-Eight researcher records were touched in the last two months. All eight have a
-headshot and a bio-markdown attachment in Airtable:
+The signal used below is Airtable's `headshot-bio-update` field, which is a
+last-modified stamp over exactly two fields — `Headshot` and `BiographyMarkdown`
+(confirmed against the field schema). Compared against the date each member's
+image last changed in git, that gives a reliable "Airtable has something newer"
+flag — though it cannot distinguish a new headshot from a new bio attachment.
 
-| Record | Airtable headshot | In `images/people/` | Note |
+### 0.1 Airtable has a newer headshot or bio than the repo
+
+All five had `headshot-bio-update` bumped on 2026-08-21, after their repo image
+was last committed:
+
+| Member | Airtable updated | Repo image last committed | Corroborating signal |
 | --- | --- | --- | --- |
-| `eren-durham` | `eren-durham.png` | **missing** | new record (2026-08-20); page added with a summary built from Airtable fields only — real bio + headshot still to come |
-| `sebastian-candelaria` | `sebastian-candelaria.png` | `.jpeg` and `.jpg` | extension mismatch — repo copy is probably not the current Airtable one |
-| `ilona-van-der-linden` | `ilona-van-der-linden.png` | `.jpg` | same |
-| `alexei-solonari` | `alexei-solonari.png` | `.png` | may or may not be current |
-| `katelin-shaffer` | `katelin-shaffer.png` | `.png` | may or may not be current |
-| `lakshmi-ramanathan` | `lakshmi-ramanathan.jpg` | `.jpg` | may or may not be current |
-| `cade-chretien` | `cade-chretien.png` | `.png` | may or may not be current |
-| `evan-eichholz` | `evan-eichholz.png` | `.png` | may or may not be current |
+| `sebastian-candelaria` | 2026-08-21 | 2026-05-19 | Airtable holds `.png`, repo references `.jpeg` |
+| `ilona-van-der-linden` | 2026-08-21 | 2026-05-19 | Airtable holds `.png`, repo references `.jpg` |
+| `alexei-solonari` | 2026-08-21 | 2026-05-19 | — |
+| `lakshmi-ramanathan` | 2026-08-21 | 2026-05-20 | — |
+| `evan-eichholz` | 2026-08-21 | 2026-01-30 | repo copy is only 196×212; Airtable holds 1170×1487 |
 
-Of the eight, only `evan-eichholz` had a *text* bio in Airtable that differed from
-the site — that one has been copied across. The other seven keep their bios in the
-markdown attachment, which could not be read, so any prose changes in them are
-still unmerged.
+`cade-chretien` and `katelin-shaffer` were also touched recently (2026-07-08/11)
+but their repo images were committed 2026-07-31, so those are already current.
+
+### 0.2 Missing from the repo entirely
+
+`eren-durham` — record created 2026-08-20 with a headshot and bio attachment.
+The page is live with a summary built from her Airtable fields; the portrait
+falls back to `images/fallback.svg` until `images/people/eren-durham.jpg` lands.
+
+### 0.3 Published, but Airtable has no headshot on file at all
+
+Airtable cannot be the source for these — the photo would have to be collected
+directly. Eight of the twelve are the legacy alumni batch added 2026-05-20.
+
+`aaron-lingerfelt`, `andrea-borowczak`, `donald-doyle`, `jarett-artman`,
+`jarred-long`, `jenna-goodrich`, `lana-perkins`, `luckner-ablard`, `malia-rojas`,
+`nina-tran`, `sheridan-sloan`, `yvan-pierre`
+
+### 0.4 Still below the 400px the site renders at
+
+The portrait slot generates 400px and 800px WebP variants, and the generator only
+downscales — anything smaller than 400px is served upscaled and soft. Eight
+members were pointing at ~175px LinkedIn thumbnails while a full-size copy sat
+unused beside it in the repo; those now reference the `-hd` file. What is left:
+
+| Member | Size | Note |
+| --- | --- | --- |
+| `evan-eichholz` | 196×212 | fixed by pulling the Airtable headshot (0.1) |
+| `andrea-borowczak` | 250×300 | no Airtable headshot (0.3) |
+| `davi-dantas` | 306×506 | both repo copies are this size |
+| `malia-rojas` | 343×372 | best copy in the repo; no Airtable headshot (0.3) |
+| `aidan-bowman` | 389×389 | marginal |
 
 ## 1. Conflicting values
 
@@ -105,9 +138,15 @@ than folded in here.
   from the team page. Airtable has her as active faculty.
 - **`team/index.md` filters on `role: capstone-senior`**, a role no member has and
   that `_data/types.yaml` does not define. That include renders nothing.
-- **Duplicate portraits** in `images/people/` that nothing references:
-  `ash-hanzelka.jpg`, `davi-dantas.png`, `katherine-doyle.jpg`,
-  `sagar-srujan-somepalli.jpg`, `samuel-lane.jpg`, `sebastian-candelaria.jpg`.
+- **Unreferenced portraits** in `images/people/` — mostly the small copy left
+  behind after a member was repointed at their `-hd` file, plus a few plain
+  duplicates: `aaron-lingerfelt.jpg`, `andey-robins-hd.jpg`, `ash-hanzelka.jpg`,
+  `davi-dantas.png`, `jarred-long.jpg`, `jenna-goodrich.jpg`,
+  `joshua-joseph-hd.jpg`, `katherine-doyle.jpg`, `lana-perkins.jpg`,
+  `luckner-ablard.jpeg`, `malia_rojas.jpg`, `michael-castiglia.jpg`,
+  `mike-borowczak-hd.png`, `sagar-srujan-somepalli.jpg`, `samuel-lane.jpg`,
+  `sebastian-candelaria.jpg`, `sheridan-sloan.png`. Safe to delete once the
+  Airtable headshots in section 0.1 have landed.
 
 ## Reproducing this
 
