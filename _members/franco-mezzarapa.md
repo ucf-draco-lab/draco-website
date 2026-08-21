@@ -2,13 +2,16 @@
 name: Franco Mezzarapa
 image: images/people/franco-mezzarapa.jpg
 role: [phd, alumni]
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2026
 sponsors: [ucf,leidos]
 
 links:
   linkedin: franco-mezzarapa-09a16028b
   github: Franco-Mezzarapa
   orcid: 0009-0005-9306-5149
-
 ---
 
 Franco is an undergraduate at the University of Central Florida pursuing a Bachelor’s in Computer Engineering, focusing on hardware, operating system security, and malware development and analysis.

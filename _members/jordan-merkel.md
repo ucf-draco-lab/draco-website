@@ -2,13 +2,15 @@
 name: Jordan Merkel
 image: images/people/jordan-merkel.jpg
 role: [ms, alumni]
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2026
 sponsors: [amd, ucf]
 former_awards: [amd-scholar]
 links:
   linkedin: jordanmerkel-
   github: merkeljordan
-
-
 ---
 
 Jordan Merkel is an undergraduate Computer Engineering student at the University of Central Florida, expected to graduate in Spring 2026. She joined the UCF/AMD Undergraduate Fellowship in January 2025 and completed a successful internship at AMD over the Summer of 2025, where she explored the use of AI for RTL optimization. Her interests include hardware design and optimization, embedded systems, and low-power hardware.

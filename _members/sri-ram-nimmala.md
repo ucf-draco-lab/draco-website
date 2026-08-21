@@ -5,7 +5,7 @@ role: phd
 sponsors: [ucf]
 links:
   linkedin: sri-ram-nimmala-4b593915a
-  github: https://github.com/goatgate
+  github: goatgate
 
 ---
 

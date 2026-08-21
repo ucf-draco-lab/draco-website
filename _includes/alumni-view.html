@@ -1,0 +1,90 @@
+{% comment %}
+  Alumni section with two interchangeable views: a table (default) and the
+  portrait cards the page used before. The toolbar above them drives filtering,
+  multi-column sorting and grouping — see _scripts/alumni-table.js.
+
+  Everything is rendered server-side; the script only shows, hides and reorders
+  what is already here, so with JavaScript off the table still lists every alum
+  grouped by level and ordered newest-first.
+
+  filters   "field: regex" string, passed straight through to data_filter
+{% endcomment %}
+
+<div class="alumni-view" data-view="table">
+  <div class="alumni-toolbar">
+    <div class="alumni-toolbar-row">
+      <div class="alumni-viewswitch" role="group" aria-label="Alumni view">
+        <button type="button" class="alumni-viewbtn" data-view-btn="table" aria-pressed="true">
+          {% include icon.html icon="fa-solid fa-table-list" %}Table
+        </button>
+        <button type="button" class="alumni-viewbtn" data-view-btn="cards" aria-pressed="false">
+          {% include icon.html icon="fa-solid fa-id-badge" %}Cards
+        </button>
+      </div>
+
+      <div class="alumni-searchbox">
+        {% include icon.html icon="fa-solid fa-magnifying-glass" %}
+        <input
+          type="search"
+          class="alumni-search"
+          data-filter="text"
+          placeholder="Filter alumni"
+          aria-label="Filter alumni by name, major, sponsor or company"
+        >
+      </div>
+
+      <label class="alumni-control">
+        <span>Group by</span>
+        <select class="alumni-groupby" aria-label="Group alumni by">
+          <option value="">Nothing</option>
+          <option value="level" selected>Level</option>
+          <option value="year">Year</option>
+          <option value="major">Major</option>
+          <option value="sponsor">Sponsor / Scholar</option>
+          <option value="company">First company</option>
+        </select>
+      </label>
+
+      <button type="button" class="alumni-reset">Reset</button>
+    </div>
+
+    <div class="alumni-toolbar-row alumni-facets">
+      <label class="alumni-control">
+        <span>Level</span>
+        <select class="alumni-facet" data-filter="level"><option value="">All</option></select>
+      </label>
+      <label class="alumni-control">
+        <span>Major</span>
+        <select class="alumni-facet" data-filter="major"><option value="">All</option></select>
+      </label>
+      <label class="alumni-control">
+        <span>Year</span>
+        <select class="alumni-facet" data-filter="year"><option value="">All</option></select>
+      </label>
+      <label class="alumni-control">
+        <span>Sponsor / Scholar</span>
+        <select class="alumni-facet" data-filter="sponsor"><option value="">All</option></select>
+      </label>
+      <label class="alumni-control">
+        <span>First company</span>
+        <select class="alumni-facet" data-filter="company"><option value="">All</option></select>
+      </label>
+    </div>
+
+    <div class="alumni-toolbar-row alumni-sortbar">
+      <span class="alumni-sortbar-label">Sorted by</span>
+      <span class="alumni-sortchips"></span>
+      <span class="alumni-hint">Click a column to sort &middot; Shift-click to add a level</span>
+    </div>
+  </div>
+
+  <div class="alumni-panel" data-panel="table">
+    {% include alumni-table.html filters=include.filters %}
+    <p class="alumni-noresults" hidden>No alumni match those filters.</p>
+    <p class="alumni-count" aria-live="polite"></p>
+  </div>
+
+  <div class="alumni-panel" data-panel="cards" hidden>
+    {% include list.html data="members" component="portrait" filters=include.filters style="small" display_mode="alumni" %}
+  </div>
+</div>

@@ -4,10 +4,8 @@ image: images/people/jaden-yun.jpg
 role: undergrad
 sponsors: [ucf , DRACO Lab]
 links:
-  home-page: http://URLHERE
-  linkedin: www.linkedin.com/in/jaden-yun-21817725b
-  github: https://github.com/JadenFullStack
-  orcid: JUST-NUMBERS-AND-DASHES
+  linkedin: jaden-yun-21817725b
+  github: JadenFullStack
 
 
 ---

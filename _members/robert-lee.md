@@ -2,6 +2,10 @@
 name: Robert Lee
 image: images/people/robert-lee.jpg
 role: [ms, alumni]
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2026
 sponsors: [ucf]
 links:
   linkedin: 2020robertlee

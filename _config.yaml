@@ -85,3 +85,5 @@ exclude:
   - LICENSE.md
   - CITATION.cff
   - _bibliography
+  # internal working notes, not site content
+  - AIRTABLE_SYNC.md

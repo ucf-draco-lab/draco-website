@@ -6,7 +6,7 @@ sponsors: [ucf , amd]
 awards: [amd-scholar]
 links:
   linkedin: sebastiancandelaria
-  github: github.com/Meowcaroni
+  github: Meowcaroni
 
 
 ---

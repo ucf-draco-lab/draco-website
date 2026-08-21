@@ -2,14 +2,18 @@
 name: Raul Graterol
 image: images/people/raul-graterol.jpg
 role: alumni
+affiliation: Chalice AI
 date: 2025-05-01
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2025
 sponsors: [northrop-grumman]
 former_awards: [northrop-grumman-scholar]
 links:
-  linkedin: www.linkedin.com/in/raul-graterol-509716241
+  linkedin: raul-graterol-509716241
   github: raulgrat
   orcid: 0009-0004-0311-9995
-
 ---
 
 Raul Graterol was a dedicated computer engineering student at the University of Central Florida, with career aspirations closely tied to the fields of computer architecture, artificial intelligence, high-performance computing, and VLSI circuits and systems. From a young age, Raul has been captivated by the complexities of computing systems, driving him to pursue a degree in computer engineering. His academic journey included earning the UCF Electrical Engineering Department Awards for inaugural Northrop Grumman undergraduate scholars.

@@ -4,6 +4,10 @@ image: images/people/michael-castiglia.jpg
 role: [ms, alumni]
 date: 2025-05-01
 affiliation: AMD
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2025
 sponsors: [amd]
 former_awards: [amd-scholar]
 group: AMD
@@ -12,8 +16,6 @@ links:
   linkedin: michael-castiglia
   github: mcastiglia
   orcid: 0009-0001-5169-2567
-
-
 ---
 
 Michael Castiglia is a part-time Computer Engineering Master's student at the University of Central Florida (UCF), having graduated with his Bachelor's of Science in Computer Engineering from UCF in 2025. Michael is working full-time at AMD's Orlando Research and Design Center, having previously been one of the university's [AMD Research Fellows](https://www.ece.ucf.edu/new-amd-partnership-provides-undergraduate-research-fellowship-to-ece-students/) for two years prior to his graduation. 

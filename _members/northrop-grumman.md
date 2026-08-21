@@ -5,7 +5,7 @@ role: sponsor
 supporterof : [aaron-lingerfelt, joshua-joseph, raul-graterol, nicholas-mcneill, lina-rahama]
 
 links:
-  home-page: http://ng.com
+  home-page: https://www.northropgrumman.com
 
 
 ---

@@ -1,8 +1,16 @@
 ---
 name: Victoria Moreno
 image: images/people/victoria-moreno.jpg
-role: ms-alumni
+role: [ms-alumni, alumni]
+affiliation: Bloomberg
 date: 2025-12-01
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2024
+  - level: M.S.
+    major: Computer Engineering
+    year: 2025
 sponsors: [ucf]
 links:
   linkedin: vicmorenoo
