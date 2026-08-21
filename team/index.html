@@ -114,6 +114,10 @@
   
 
   
+    <link href="/_styles/alumni-table.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/anchor.css" rel="stylesheet">
   
 
@@ -353,6 +357,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -365,6 +371,8 @@
 
 <!-- include all js in scripts folder -->
 
+
+  <script src="/_scripts/alumni-table.js"></script>
 
   <script src="/_scripts/anchors.js"></script>
 
@@ -984,6 +992,10 @@
       
 
       
+        <span class="portrait-affiliation">
+          AMD
+        </span>
+      
     
 
     
@@ -1071,6 +1083,10 @@
         </span>
       
 
+      
+        <span class="portrait-affiliation">
+          AMD
+        </span>
       
     
 
@@ -2606,6 +2622,88 @@
 </div>
 
 <div class="portrait-wrapper">
+  <a href="/members/eren-durham.html" class="portrait" data-style="" aria-label="Eren Durham">
+    
+      <i class="icon fa-solid fa-chess-knight"></i>
+    
+
+    
+    
+    <picture>
+      
+      <img src="/images/people/eren-durham.jpg" class="portrait-image" alt="member portrait" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    </picture>
+
+    
+      <span class="portrait-name">
+        Eren Durham
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Pursuing B.S.
+      </span>
+    
+
+    
+    
+      
+
+
+
+
+
+
+
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/evan-eichholz.html" class="portrait" data-style="" aria-label="Evan Eichholz">
+    
+      <i class="icon fa-solid fa-chess-knight"></i>
+    
+
+    
+    
+    <picture>
+      
+        <source type="image/webp" srcset="/images/thumbs/evan-eichholz-400.webp 1x, /images/thumbs/evan-eichholz-800.webp 2x"></source>
+      
+      <img src="/images/people/evan-eichholz.png" class="portrait-image" alt="member portrait" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    </picture>
+
+    
+      <span class="portrait-name">
+        Evan Eichholz
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Pursuing B.S.
+      </span>
+    
+
+    
+    
+      
+
+
+
+
+
+
+
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
   <a href="/members/jaden-yun.html" class="portrait" data-style="" aria-label="Jaden Yun">
     
       <i class="icon fa-solid fa-chess-knight"></i>
@@ -2809,6 +2907,48 @@
       
     
   </div>
+
+
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/matthew-wilbanks.html" class="portrait" data-style="" aria-label="Matthew Wilbanks">
+    
+      <i class="icon fa-solid fa-chess-knight"></i>
+    
+
+    
+    
+    <picture>
+      
+        <source type="image/webp" srcset="/images/thumbs/matthew-wilbanks-400.webp 1x, /images/thumbs/matthew-wilbanks-800.webp 2x"></source>
+      
+      <img src="/images/people/matthew-wilbanks.jpg" class="portrait-image" alt="member portrait" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    </picture>
+
+    
+      <span class="portrait-name">
+        Matthew Wilbanks
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Pursuing B.S.
+      </span>
+    
+
+    
+    
+      
+
+
+
+
+
+
 
 
     
@@ -3459,7 +3599,464 @@
 
 <h2 id="alumni">Alumni</h2>
 
-<h3 id="2026">2026</h3>
+<p>Every degree our alumni earned while with the lab, with the major, the year it was awarded, any sponsor or scholar designation they held, and where they went first. Sort by any column (shift-click to sort by several), narrow the list with the filters, or switch back to the portrait cards.</p>
+
+<div class="alumni-view" data-view="table">
+  <div class="alumni-toolbar">
+    <div class="alumni-toolbar-row">
+      <div class="alumni-viewswitch" role="group" aria-label="Alumni view">
+        <button type="button" class="alumni-viewbtn" data-view-btn="table" aria-pressed="true">
+          <i class="icon fa-solid fa-table-list"></i>Table
+        </button>
+        <button type="button" class="alumni-viewbtn" data-view-btn="cards" aria-pressed="false">
+          <i class="icon fa-solid fa-id-badge"></i>Cards
+        </button>
+      </div>
+
+      <div class="alumni-searchbox">
+        <i class="icon fa-solid fa-magnifying-glass"></i>
+        <input type="search" class="alumni-search" data-filter="text" placeholder="Filter alumni" aria-label="Filter alumni by name, major, sponsor or company">
+      </div>
+
+      <label class="alumni-control">
+        <span>Group by</span>
+        <select class="alumni-groupby" aria-label="Group alumni by">
+          <option value="">Nothing</option>
+          <option value="level" selected>Level</option>
+          <option value="year">Year</option>
+          <option value="major">Major</option>
+          <option value="sponsor">Sponsor / Scholar</option>
+          <option value="company">First company</option>
+        </select>
+      </label>
+
+      <button type="button" class="alumni-reset">Reset</button>
+    </div>
+
+    <div class="alumni-toolbar-row alumni-facets">
+      <label class="alumni-control">
+        <span>Level</span>
+        <select class="alumni-facet" data-filter="level"><option value="">All</option></select>
+      </label>
+      <label class="alumni-control">
+        <span>Major</span>
+        <select class="alumni-facet" data-filter="major"><option value="">All</option></select>
+      </label>
+      <label class="alumni-control">
+        <span>Year</span>
+        <select class="alumni-facet" data-filter="year"><option value="">All</option></select>
+      </label>
+      <label class="alumni-control">
+        <span>Sponsor / Scholar</span>
+        <select class="alumni-facet" data-filter="sponsor"><option value="">All</option></select>
+      </label>
+      <label class="alumni-control">
+        <span>First company</span>
+        <select class="alumni-facet" data-filter="company"><option value="">All</option></select>
+      </label>
+    </div>
+
+    <div class="alumni-toolbar-row alumni-sortbar">
+      <span class="alumni-sortbar-label">Sorted by</span>
+      <span class="alumni-sortchips"></span>
+      <span class="alumni-hint">Click a column to sort · Shift-click to add a level</span>
+    </div>
+  </div>
+
+  <div class="alumni-panel" data-panel="table">
+    <table class="alumni-table" data-group="level" data-sort="level:asc,year:desc">
+<thead>
+<tr>
+<th scope="col" class="alumni-th-photo"><span class="sr-only">Headshot</span></th>
+<th scope="col" data-col="first" aria-sort="none"><button type="button" class="alumni-sort">First<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="last" aria-sort="none"><button type="button" class="alumni-sort">Last<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="major" aria-sort="none"><button type="button" class="alumni-sort">Major<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="level" aria-sort="none"><button type="button" class="alumni-sort">Level<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="year" aria-sort="none"><button type="button" class="alumni-sort">Year<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="sponsor" aria-sort="none"><button type="button" class="alumni-sort">Sponsor / Scholar<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="company" aria-sort="none"><button type="button" class="alumni-sort">First Company<span class="alumni-sort-marker"></span></button></th>
+</tr>
+</thead>
+<tbody>
+<tr data-first="Alyssa" data-last="Pinnock" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/alyssa-pinnock.html" class="alumni-avatar" aria-label="Alyssa Pinnock"><picture><source type="image/webp" srcset="/images/thumbs/alyssa-pinnock-400.webp 1x, /images/thumbs/alyssa-pinnock-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/alyssa-pinnock.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/alyssa-pinnock.html">Alyssa</a></td>
+<td><a href="/members/alyssa-pinnock.html">Pinnock</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Aryan" data-last="Tulsi" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="" data-company="">
+<td class="alumni-td-photo"><a href="/members/aryan-tulsi.html" class="alumni-avatar" aria-label="Aryan Tulsi"><picture><source type="image/webp" srcset="/images/thumbs/aryan-tulsi-400.webp 1x, /images/thumbs/aryan-tulsi-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/aryan-tulsi.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/aryan-tulsi.html">Aryan</a></td>
+<td><a href="/members/aryan-tulsi.html">Tulsi</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td><span class="alumni-empty">—</span></td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Brendan" data-last="Rodriguez" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/brendan-rodriguez.html" class="alumni-avatar" aria-label="Brendan Rodriguez"><picture><source type="image/webp" srcset="/images/thumbs/brendan-rodriguez-400.webp 1x, /images/thumbs/brendan-rodriguez-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/brendan-rodriguez.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/brendan-rodriguez.html">Brendan</a></td>
+<td><a href="/members/brendan-rodriguez.html">Rodriguez</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Daniel" data-last="Gomez" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/daniel-gomez.html" class="alumni-avatar" aria-label="Daniel Gomez"><picture><source type="image/webp" srcset="/images/thumbs/daniel-gomez-400.webp 1x, /images/thumbs/daniel-gomez-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/daniel-gomez.png" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/daniel-gomez.html">Daniel</a></td>
+<td><a href="/members/daniel-gomez.html">Gomez</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Daniel" data-last="Gonzalez" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/daniel-gonzalez.html" class="alumni-avatar" aria-label="Daniel Gonzalez"><picture><source type="image/webp" srcset="/images/thumbs/daniel-gonzalez-400.webp 1x, /images/thumbs/daniel-gonzalez-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/daniel-gonzalez.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/daniel-gonzalez.html">Daniel</a></td>
+<td><a href="/members/daniel-gonzalez.html">Gonzalez</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Destiny" data-last="Ellenwood" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="UCF" data-company="Raytheon">
+<td class="alumni-td-photo"><a href="/members/destiny-ellenwood.html" class="alumni-avatar" aria-label="Destiny Ellenwood"><picture><source type="image/webp" srcset="/images/thumbs/destiny-ellenwood-400.webp 1x, /images/thumbs/destiny-ellenwood-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/destiny-ellenwood.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/destiny-ellenwood.html">Destiny</a></td>
+<td><a href="/members/destiny-ellenwood.html">Ellenwood</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>UCF</td>
+<td>Raytheon</td>
+</tr>
+<tr data-first="Franco" data-last="Mezzarapa" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="UCF, Leidos" data-company="">
+<td class="alumni-td-photo"><a href="/members/franco-mezzarapa.html" class="alumni-avatar" aria-label="Franco Mezzarapa"><picture><source type="image/webp" srcset="/images/thumbs/franco-mezzarapa-400.webp 1x, /images/thumbs/franco-mezzarapa-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/franco-mezzarapa.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/franco-mezzarapa.html">Franco</a></td>
+<td><a href="/members/franco-mezzarapa.html">Mezzarapa</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>UCF, Leidos</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Jerrod" data-last="Eanes" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/jerrod-eanes.html" class="alumni-avatar" aria-label="Jerrod Eanes"><picture><source type="image/webp" srcset="/images/thumbs/jerrod-eanes-400.webp 1x, /images/thumbs/jerrod-eanes-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/jerrod-eanes.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/jerrod-eanes.html">Jerrod</a></td>
+<td><a href="/members/jerrod-eanes.html">Eanes</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Jordan" data-last="Merkel" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="AMD Scholar" data-company="">
+<td class="alumni-td-photo"><a href="/members/jordan-merkel.html" class="alumni-avatar" aria-label="Jordan Merkel"><picture><source type="image/webp" srcset="/images/thumbs/jordan-merkel-400.webp 1x, /images/thumbs/jordan-merkel-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/jordan-merkel.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/jordan-merkel.html">Jordan</a></td>
+<td><a href="/members/jordan-merkel.html">Merkel</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>AMD Scholar</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Joshua" data-last="Joseph" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="Northrop Grumman Scholar" data-company="Snowcap">
+<td class="alumni-td-photo"><a href="/members/joshua-joseph.html" class="alumni-avatar" aria-label="Joshua Joseph"><picture><source type="image/webp" srcset="/images/thumbs/joshua-joseph-400.webp 1x, /images/thumbs/joshua-joseph-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/joshua-joseph.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/joshua-joseph.html">Joshua</a></td>
+<td><a href="/members/joshua-joseph.html">Joseph</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>Northrop Grumman Scholar</td>
+<td>Snowcap</td>
+</tr>
+<tr data-first="Leo" data-last="Melson" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="AMD" data-company="">
+<td class="alumni-td-photo"><a href="/members/leo-melson.html" class="alumni-avatar" aria-label="Leo Melson"><picture><source type="image/webp" srcset="/images/thumbs/leo-melson-400.webp 1x, /images/thumbs/leo-melson-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/leo-melson.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/leo-melson.html">Leo</a></td>
+<td><a href="/members/leo-melson.html">Melson</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>AMD</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Robert" data-last="Lee" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2026" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/robert-lee.html" class="alumni-avatar" aria-label="Robert Lee"><picture><source type="image/webp" srcset="/images/thumbs/robert-lee-400.webp 1x, /images/thumbs/robert-lee-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/robert-lee.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/robert-lee.html">Robert</a></td>
+<td><a href="/members/robert-lee.html">Lee</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2026</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Ashley" data-last="Hanzelka" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2025" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/ash-hanzelka.html" class="alumni-avatar" aria-label="Ashley Hanzelka"><picture><source type="image/webp" srcset="/images/thumbs/ashley-hanzelka-400.webp 1x, /images/thumbs/ashley-hanzelka-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/ashley-hanzelka.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/ash-hanzelka.html">Ashley</a></td>
+<td><a href="/members/ash-hanzelka.html">Hanzelka</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2025</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Davi" data-last="Dantas" data-major="Electrical Engineering" data-level="B.S." data-level-rank="1" data-year="2025" data-sponsor="" data-company="BAE Systems">
+<td class="alumni-td-photo"><a href="/members/davi-dantas.html" class="alumni-avatar" aria-label="Davi Dantas"><picture><source type="image/webp" srcset="/images/thumbs/davi-dantas-hd-400.webp 1x, /images/thumbs/davi-dantas-hd-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/davi-dantas-hd.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/davi-dantas.html">Davi</a></td>
+<td><a href="/members/davi-dantas.html">Dantas</a></td>
+<td>Electrical Engineering</td>
+<td>B.S.</td>
+<td>2025</td>
+<td><span class="alumni-empty">—</span></td>
+<td>BAE Systems</td>
+</tr>
+<tr data-first="Michael" data-last="Castiglia" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2025" data-sponsor="AMD Scholar" data-company="AMD">
+<td class="alumni-td-photo"><a href="/members/michael-castiglia.html" class="alumni-avatar" aria-label="Michael Castiglia"><picture><source type="image/webp" srcset="/images/thumbs/michael-castiglia-400.webp 1x, /images/thumbs/michael-castiglia-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/michael-castiglia.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/michael-castiglia.html">Michael</a></td>
+<td><a href="/members/michael-castiglia.html">Castiglia</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2025</td>
+<td>AMD Scholar</td>
+<td>AMD</td>
+</tr>
+<tr data-first="Raul" data-last="Graterol" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2025" data-sponsor="Northrop Grumman Scholar" data-company="Chalice AI">
+<td class="alumni-td-photo"><a href="/members/raul-graterol.html" class="alumni-avatar" aria-label="Raul Graterol"><picture><source type="image/webp" srcset="/images/thumbs/raul-graterol-400.webp 1x, /images/thumbs/raul-graterol-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/raul-graterol.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/raul-graterol.html">Raul</a></td>
+<td><a href="/members/raul-graterol.html">Graterol</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2025</td>
+<td>Northrop Grumman Scholar</td>
+<td>Chalice AI</td>
+</tr>
+<tr data-first="Riley" data-last="Newport" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2025" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/riley-newport.html" class="alumni-avatar" aria-label="Riley Newport"><picture><source type="image/webp" srcset="/images/thumbs/riley-newport-400.webp 1x, /images/thumbs/riley-newport-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/riley-newport.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/riley-newport.html">Riley</a></td>
+<td><a href="/members/riley-newport.html">Newport</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2025</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Aaron" data-last="Lingerfelt" data-major="" data-level="B.S." data-level-rank="1" data-year="2024" data-sponsor="Northrop Grumman Scholar" data-company="Northrop Grumman">
+<td class="alumni-td-photo"><a href="/members/aaron-lingerfelt.html" class="alumni-avatar" aria-label="Aaron Lingerfelt"><picture><source type="image/webp" srcset="/images/thumbs/aaron-lingerfelt-400.webp 1x, /images/thumbs/aaron-lingerfelt-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/aaron-lingerfelt.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/aaron-lingerfelt.html">Aaron</a></td>
+<td><a href="/members/aaron-lingerfelt.html">Lingerfelt</a></td>
+<td><span class="alumni-empty">—</span></td>
+<td>B.S.</td>
+<td>2024</td>
+<td>Northrop Grumman Scholar</td>
+<td>Northrop Grumman</td>
+</tr>
+<tr data-first="Alicia" data-last="Thoney" data-major="Computer Science" data-level="B.S." data-level-rank="1" data-year="2024" data-sponsor="AMD Scholar, Arctic Wolf Networks" data-company="AMD">
+<td class="alumni-td-photo"><a href="/members/alicia-thoney.html" class="alumni-avatar" aria-label="Alicia Thoney"><picture><source type="image/webp" srcset="/images/thumbs/alicia-thoney-400.webp 1x, /images/thumbs/alicia-thoney-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/alicia-thoney.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/alicia-thoney.html">Alicia</a></td>
+<td><a href="/members/alicia-thoney.html">Thoney</a></td>
+<td>Computer Science</td>
+<td>B.S.</td>
+<td>2024</td>
+<td>AMD Scholar, Arctic Wolf Networks</td>
+<td>AMD</td>
+</tr>
+<tr data-first="Lana" data-last="Perkins" data-major="" data-level="B.S." data-level-rank="1" data-year="2024" data-sponsor="AMD Scholar" data-company="L3Harris">
+<td class="alumni-td-photo"><a href="/members/lana-perkins.html" class="alumni-avatar" aria-label="Lana Perkins"><picture><source type="image/webp" srcset="/images/thumbs/lana-perkins-400.webp 1x, /images/thumbs/lana-perkins-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/lana-perkins.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/lana-perkins.html">Lana</a></td>
+<td><a href="/members/lana-perkins.html">Perkins</a></td>
+<td><span class="alumni-empty">—</span></td>
+<td>B.S.</td>
+<td>2024</td>
+<td>AMD Scholar</td>
+<td>L3Harris</td>
+</tr>
+<tr data-first="Malia" data-last="Rojas" data-major="" data-level="B.S." data-level-rank="1" data-year="2024" data-sponsor="UCF" data-company="Lockheed Martin">
+<td class="alumni-td-photo"><a href="/members/malia-rojas.html" class="alumni-avatar" aria-label="Malia Rojas"><picture><source type="image/webp" srcset="/images/thumbs/malia_rojas-400.webp 1x, /images/thumbs/malia_rojas-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/malia_rojas.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/malia-rojas.html">Malia</a></td>
+<td><a href="/members/malia-rojas.html">Rojas</a></td>
+<td><span class="alumni-empty">—</span></td>
+<td>B.S.</td>
+<td>2024</td>
+<td>UCF</td>
+<td>Lockheed Martin</td>
+</tr>
+<tr data-first="Luckner" data-last="Ablard" data-major="" data-level="B.S." data-level-rank="1" data-year="2024" data-sponsor="UCF" data-company="Collins Aerospace">
+<td class="alumni-td-photo"><a href="/members/luckner-ablard.html" class="alumni-avatar" aria-label="Luckner Ablard"><picture><source type="image/webp" srcset="/images/thumbs/luckner-ablard-400.webp 1x, /images/thumbs/luckner-ablard-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/luckner-ablard.jpeg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/luckner-ablard.html">Luckner</a></td>
+<td><a href="/members/luckner-ablard.html">Ablard</a></td>
+<td><span class="alumni-empty">—</span></td>
+<td>B.S.</td>
+<td>2024</td>
+<td>UCF</td>
+<td>Collins Aerospace</td>
+</tr>
+<tr data-first="Marcus" data-last="Simmonds" data-major="Computer Science" data-level="B.S." data-level-rank="1" data-year="2024" data-sponsor="UCF, IBM, GEM Fellowship" data-company="">
+<td class="alumni-td-photo"><a href="/members/marcus-simmonds.html" class="alumni-avatar" aria-label="Marcus Simmonds"><picture><source type="image/webp" srcset="/images/thumbs/marcus-simmonds-400.webp 1x, /images/thumbs/marcus-simmonds-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/marcus-simmonds.png" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/marcus-simmonds.html">Marcus</a></td>
+<td><a href="/members/marcus-simmonds.html">Simmonds</a></td>
+<td>Computer Science</td>
+<td>B.S.</td>
+<td>2024</td>
+<td>UCF, IBM, GEM Fellowship</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Sheridan" data-last="Sloan" data-major="" data-level="B.S." data-level-rank="1" data-year="2024" data-sponsor="UCF" data-company="Lockheed Martin">
+<td class="alumni-td-photo"><a href="/members/sheridan-sloan.html" class="alumni-avatar" aria-label="Sheridan Sloan"><picture><source type="image/webp" srcset="/images/thumbs/sheridan-sloan-400.webp 1x, /images/thumbs/sheridan-sloan-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/sheridan-sloan.png" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/sheridan-sloan.html">Sheridan</a></td>
+<td><a href="/members/sheridan-sloan.html">Sloan</a></td>
+<td><span class="alumni-empty">—</span></td>
+<td>B.S.</td>
+<td>2024</td>
+<td>UCF</td>
+<td>Lockheed Martin</td>
+</tr>
+<tr data-first="Victoria" data-last="Moreno" data-major="Computer Engineering" data-level="B.S." data-level-rank="1" data-year="2024" data-sponsor="UCF" data-company="Bloomberg">
+<td class="alumni-td-photo"><a href="/members/victoria-moreno.html" class="alumni-avatar" aria-label="Victoria Moreno"><picture><source type="image/webp" srcset="/images/thumbs/victoria-moreno-400.webp 1x, /images/thumbs/victoria-moreno-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/victoria-moreno.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/victoria-moreno.html">Victoria</a></td>
+<td><a href="/members/victoria-moreno.html">Moreno</a></td>
+<td>Computer Engineering</td>
+<td>B.S.</td>
+<td>2024</td>
+<td>UCF</td>
+<td>Bloomberg</td>
+</tr>
+<tr data-first="Yvan" data-last="Pierre" data-major="" data-level="B.S." data-level-rank="1" data-year="2024" data-sponsor="UCF" data-company="Honeywell">
+<td class="alumni-td-photo"><a href="/members/yvan-pierre.html" class="alumni-avatar" aria-label="Yvan Pierre"><picture><source type="image/webp" srcset="/images/thumbs/yvan-pierre-400.webp 1x, /images/thumbs/yvan-pierre-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/yvan-pierre.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/yvan-pierre.html">Yvan</a></td>
+<td><a href="/members/yvan-pierre.html">Pierre</a></td>
+<td><span class="alumni-empty">—</span></td>
+<td>B.S.</td>
+<td>2024</td>
+<td>UCF</td>
+<td>Honeywell</td>
+</tr>
+<tr data-first="Alicia" data-last="Thoney" data-major="Computer Engineering" data-level="M.S." data-level-rank="2" data-year="2026" data-sponsor="AMD Scholar, Arctic Wolf Networks" data-company="AMD">
+<td class="alumni-td-photo"><a href="/members/alicia-thoney.html" class="alumni-avatar" aria-label="Alicia Thoney"><picture><source type="image/webp" srcset="/images/thumbs/alicia-thoney-400.webp 1x, /images/thumbs/alicia-thoney-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/alicia-thoney.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/alicia-thoney.html">Alicia</a></td>
+<td><a href="/members/alicia-thoney.html">Thoney</a></td>
+<td>Computer Engineering</td>
+<td>M.S.</td>
+<td>2026</td>
+<td>AMD Scholar, Arctic Wolf Networks</td>
+<td>AMD</td>
+</tr>
+<tr data-first="Calvin" data-last="VanWormer" data-major="Computer Engineering" data-level="M.S." data-level-rank="2" data-year="2026" data-sponsor="UCF, Leidos" data-company="">
+<td class="alumni-td-photo"><a href="/members/calvin-vanwormer.html" class="alumni-avatar" aria-label="Calvin VanWormer"><picture><source type="image/webp" srcset="/images/thumbs/calvin-vanwormer-400.webp 1x, /images/thumbs/calvin-vanwormer-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/calvin-vanwormer.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/calvin-vanwormer.html">Calvin</a></td>
+<td><a href="/members/calvin-vanwormer.html">VanWormer</a></td>
+<td>Computer Engineering</td>
+<td>M.S.</td>
+<td>2026</td>
+<td>UCF, Leidos</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Cory" data-last="Brynds" data-major="Computer Engineering" data-level="M.S." data-level-rank="2" data-year="2026" data-sponsor="AMD Scholar" data-company="AMD">
+<td class="alumni-td-photo"><a href="/members/cory-brynds.html" class="alumni-avatar" aria-label="Cory Brynds"><picture><source type="image/webp" srcset="/images/thumbs/cory-brynds-400.webp 1x, /images/thumbs/cory-brynds-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/cory-brynds.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/cory-brynds.html">Cory</a></td>
+<td><a href="/members/cory-brynds.html">Brynds</a></td>
+<td>Computer Engineering</td>
+<td>M.S.</td>
+<td>2026</td>
+<td>AMD Scholar</td>
+<td>AMD</td>
+</tr>
+<tr data-first="Marcus" data-last="Simmonds" data-major="Computer Engineering" data-level="M.S." data-level-rank="2" data-year="2026" data-sponsor="UCF, IBM, GEM Fellowship" data-company="">
+<td class="alumni-td-photo"><a href="/members/marcus-simmonds.html" class="alumni-avatar" aria-label="Marcus Simmonds"><picture><source type="image/webp" srcset="/images/thumbs/marcus-simmonds-400.webp 1x, /images/thumbs/marcus-simmonds-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/marcus-simmonds.png" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/marcus-simmonds.html">Marcus</a></td>
+<td><a href="/members/marcus-simmonds.html">Simmonds</a></td>
+<td>Computer Engineering</td>
+<td>M.S.</td>
+<td>2026</td>
+<td>UCF, IBM, GEM Fellowship</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Sagar Srujan" data-last="Somepalli" data-major="Computer Science" data-level="M.S." data-level-rank="2" data-year="2026" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/sagar-srujan-somepalli.html" class="alumni-avatar" aria-label="Sagar Srujan Somepalli"><picture><source type="image/webp" srcset="/images/thumbs/sagar-srujan-somepalli-400.webp 1x, /images/thumbs/sagar-srujan-somepalli-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/sagar-srujan-somepalli.jpeg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/sagar-srujan-somepalli.html">Sagar Srujan</a></td>
+<td><a href="/members/sagar-srujan-somepalli.html">Somepalli</a></td>
+<td>Computer Science</td>
+<td>M.S.</td>
+<td>2026</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Jarett" data-last="Artman" data-major="" data-level="M.S." data-level-rank="2" data-year="2025" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/jarett-artman.html" class="alumni-avatar" aria-label="Jarett Artman"><picture><source type="image/webp" srcset="/images/thumbs/jarett-artman-400.webp 1x, /images/thumbs/jarett-artman-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/jarett-artman.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/jarett-artman.html">Jarett</a></td>
+<td><a href="/members/jarett-artman.html">Artman</a></td>
+<td><span class="alumni-empty">—</span></td>
+<td>M.S.</td>
+<td>2025</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Jenna" data-last="Goodrich" data-major="" data-level="M.S." data-level-rank="2" data-year="2025" data-sponsor="UCF" data-company="">
+<td class="alumni-td-photo"><a href="/members/jenna-goodrich.html" class="alumni-avatar" aria-label="Jenna Goodrich"><picture><source type="image/webp" srcset="/images/thumbs/jenna-goodrich-400.webp 1x, /images/thumbs/jenna-goodrich-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/jenna-goodrich.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/jenna-goodrich.html">Jenna</a></td>
+<td><a href="/members/jenna-goodrich.html">Goodrich</a></td>
+<td><span class="alumni-empty">—</span></td>
+<td>M.S.</td>
+<td>2025</td>
+<td>UCF</td>
+<td><span class="alumni-empty">—</span></td>
+</tr>
+<tr data-first="Victoria" data-last="Moreno" data-major="Computer Engineering" data-level="M.S." data-level-rank="2" data-year="2025" data-sponsor="UCF" data-company="Bloomberg">
+<td class="alumni-td-photo"><a href="/members/victoria-moreno.html" class="alumni-avatar" aria-label="Victoria Moreno"><picture><source type="image/webp" srcset="/images/thumbs/victoria-moreno-400.webp 1x, /images/thumbs/victoria-moreno-800.webp 2x"></source>&lt;/source&gt;<img src="/images/people/victoria-moreno.jpg" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></picture></a></td>
+<td><a href="/members/victoria-moreno.html">Victoria</a></td>
+<td><a href="/members/victoria-moreno.html">Moreno</a></td>
+<td>Computer Engineering</td>
+<td>M.S.</td>
+<td>2025</td>
+<td>UCF</td>
+<td>Bloomberg</td>
+</tr>
+</tbody>
+</table>
+
+    <p class="alumni-noresults" hidden="">No alumni match those filters.</p>
+    <p class="alumni-count" aria-live="polite"></p>
+  </div>
+
+  <div class="alumni-panel" data-panel="cards" hidden="">
+    
+
+
+
+
+
+
+
+
+
+  
+
+  <h3 id="2026">2026</h3>
+    
+  
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/robert-lee.html" class="portrait" data-style="small" aria-label="Robert Lee">
@@ -3484,6 +4081,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
@@ -3510,6 +4111,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/leo-melson.html" class="portrait" data-style="small" aria-label="Leo Melson">
@@ -3534,6 +4151,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
@@ -3561,6 +4182,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/jordan-merkel.html" class="portrait" data-style="small" aria-label="Jordan Merkel">
     
@@ -3583,6 +4220,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -3653,6 +4294,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/franco-mezzarapa.html" class="portrait" data-style="small" aria-label="Franco Mezzarapa">
     
@@ -3675,6 +4332,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -3703,6 +4364,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/cory-brynds.html" class="portrait" data-style="small" aria-label="Cory Brynds">
     
@@ -3726,10 +4403,18 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           M.S.
         </span>
       
+      
+        <span class="portrait-affiliation">
+          AMD
+        </span>
       
       
     
@@ -3790,6 +4475,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/alicia-thoney.html" class="portrait" data-style="small" aria-label="Alicia Thoney">
@@ -3814,10 +4515,18 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
-          M.S.
+          B.S., M.S.
         </span>
       
+      
+        <span class="portrait-affiliation">
+          AMD
+        </span>
       
       
     
@@ -3879,6 +4588,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/joshua-joseph.html" class="portrait" data-style="small" aria-label="Joshua Joseph">
     
@@ -3901,6 +4626,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -3971,6 +4700,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/sagar-srujan-somepalli.html" class="portrait" data-style="small" aria-label="Sagar Srujan Somepalli">
     
@@ -3994,6 +4739,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           M.S.
         </span>
@@ -4016,6 +4765,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/marcus-simmonds.html" class="portrait" data-style="small" aria-label="Marcus Simmonds">
@@ -4040,8 +4805,12 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
-          M.S.
+          B.S., M.S.
         </span>
       
       
@@ -4062,6 +4831,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/jerrod-eanes.html" class="portrait" data-style="small" aria-label="Jerrod Eanes">
@@ -4086,6 +4871,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
@@ -4108,6 +4897,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/destiny-ellenwood.html" class="portrait" data-style="small" aria-label="Destiny Ellenwood">
@@ -4132,10 +4937,18 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
       
+      
+        <span class="portrait-affiliation">
+          Raytheon
+        </span>
       
       
     
@@ -4154,6 +4967,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/daniel-gonzalez.html" class="portrait" data-style="small" aria-label="Daniel Gonzalez">
@@ -4178,6 +5007,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
@@ -4200,6 +5033,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/daniel-gomez.html" class="portrait" data-style="small" aria-label="Daniel Gomez">
@@ -4224,6 +5073,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
@@ -4246,6 +5099,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/calvin-vanwormer.html" class="portrait" data-style="small" aria-label="Calvin VanWormer">
@@ -4270,6 +5139,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           M.S.
         </span>
@@ -4292,6 +5165,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/brendan-rodriguez.html" class="portrait" data-style="small" aria-label="Brendan Rodriguez">
@@ -4316,6 +5205,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
@@ -4338,6 +5231,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/aryan-tulsi.html" class="portrait" data-style="small" aria-label="Aryan Tulsi">
@@ -4362,6 +5271,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
@@ -4384,6 +5297,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/alyssa-pinnock.html" class="portrait" data-style="small" aria-label="Alyssa Pinnock">
@@ -4408,6 +5337,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
@@ -4431,7 +5364,29 @@
   </a>
 </div>
 
-<h3 id="2025">2025</h3>
+  
+
+  
+
+  <h3 id="2025">2025</h3>
+    
+  
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/victoria-moreno.html" class="portrait" data-style="small" aria-label="Victoria Moreno">
@@ -4456,10 +5411,18 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
-          M.S.
+          B.S., M.S.
         </span>
       
+      
+        <span class="portrait-affiliation">
+          Bloomberg
+        </span>
       
       
     
@@ -4478,6 +5441,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/riley-newport.html" class="portrait" data-style="small" aria-label="Riley Newport">
@@ -4502,6 +5481,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
@@ -4524,6 +5507,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/raul-graterol.html" class="portrait" data-style="small" aria-label="Raul Graterol">
@@ -4548,10 +5547,18 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
       
+      
+        <span class="portrait-affiliation">
+          Chalice AI
+        </span>
       
       
     
@@ -4613,6 +5620,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/michael-castiglia.html" class="portrait" data-style="small" aria-label="Michael Castiglia">
     
@@ -4635,6 +5658,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -4709,6 +5736,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/jenna-goodrich.html" class="portrait" data-style="small" aria-label="Jenna Goodrich">
     
@@ -4732,6 +5775,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           M.S.
         </span>
@@ -4754,6 +5801,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/jarett-artman.html" class="portrait" data-style="small" aria-label="Jarett Artman">
@@ -4778,6 +5841,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           M.S.
         </span>
@@ -4801,6 +5868,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/davi-dantas.html" class="portrait" data-style="small" aria-label="Davi Dantas">
     
@@ -4823,6 +5906,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -4851,6 +5938,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/ash-hanzelka.html" class="portrait" data-style="small" aria-label="Ashley Hanzelka">
     
@@ -4873,6 +5976,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -4897,7 +6004,29 @@
   </a>
 </div>
 
-<h3 id="2024">2024</h3>
+  
+
+  
+
+  <h3 id="2024">2024</h3>
+    
+  
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/luckner-ablard.html" class="portrait" data-style="small" aria-label="Luckner Ablard">
@@ -4921,6 +6050,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -4949,6 +6082,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/yvan-pierre.html" class="portrait" data-style="small" aria-label="Yvan Pierre">
     
@@ -4971,6 +6120,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -4999,6 +6152,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/sheridan-sloan.html" class="portrait" data-style="small" aria-label="Sheridan Sloan">
     
@@ -5021,6 +6190,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -5048,6 +6221,22 @@
     
   </a>
 </div>
+
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 <div class="portrait-wrapper">
   <a href="/members/malia-rojas.html" class="portrait" data-style="small" aria-label="Malia Rojas">
@@ -5072,6 +6261,10 @@
 
     
       
+      
+      
+      
+      
         <span class="portrait-description">
           B.S.
         </span>
@@ -5099,6 +6292,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/lana-perkins.html" class="portrait" data-style="small" aria-label="Lana Perkins">
     
@@ -5121,6 +6330,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -5191,6 +6404,22 @@
   </a>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="portrait-wrapper">
   <a href="/members/aaron-lingerfelt.html" class="portrait" data-style="small" aria-label="Aaron Lingerfelt">
     
@@ -5213,6 +6442,10 @@
     
 
     
+      
+      
+      
+      
       
         <span class="portrait-description">
           B.S.
@@ -5282,6 +6515,12 @@
     
   </a>
 </div>
+
+  
+
+
+  </div>
+</div>
   </section>
 
   
@@ -5349,7 +6588,7 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/awn.html" class="portrait" data-style="" aria-label="Acrtic Wolf Networks">
+  <a href="/members/awn.html" class="portrait" data-style="" aria-label="Arctic Wolf Networks">
     
       <i class="icon fa-solid fa-meteor"></i>
     
@@ -5365,7 +6604,7 @@
 
     
       <span class="portrait-name">
-        Acrtic Wolf Networks
+        Arctic Wolf Networks
       </span>
     
 
