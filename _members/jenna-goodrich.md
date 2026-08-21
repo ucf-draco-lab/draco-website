@@ -12,4 +12,4 @@ links:
 aliases:
 ---
 
-
+Jenna Goodrich is an alumna of the University of Central Florida, where she completed her M.S. in 2025 with the DRACO Laboratory.

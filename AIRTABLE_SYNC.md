@@ -9,9 +9,11 @@ applied are in the commit that adds this file; what remains is the next pass.
 ## 0. Headshots — who still needs one
 
 Airtable serves attachments from `v5.airtableusercontent.com`, which the session's
-egress policy refuses (`403` on `CONNECT`). So no `Headshot` or `BiographyMarkdown`
-attachment could be downloaded, and every headshot in section 0.1 still needs
-pulling by hand or from a session that can reach that host.
+egress policy refuses (`403` on `CONNECT`). So neither `Headshot` nor
+`BiographyMarkdown` could be downloaded from here. The `BiographyMarkdown` set was
+since delivered out of band (70 files) and applied — see "Where a bio comes from"
+below. Every headshot in section 0.1 still needs pulling by hand or from a session
+that can reach that host.
 
 The signal used below is Airtable's `headshot-bio-update` field, which is a
 last-modified stamp over exactly two fields — `Headshot` and `BiographyMarkdown`
@@ -38,8 +40,9 @@ but their repo images were committed 2026-07-31, so those are already current.
 ### 0.2 Missing from the repo entirely
 
 `eren-durham` — record created 2026-08-20 with a headshot and bio attachment.
-The page is live with a summary built from her Airtable fields; the portrait
-falls back to `images/fallback.svg` until `images/people/eren-durham.jpg` lands.
+Her bio attachment has landed and now backs the page, along with the sponsor and
+links her submission carried. The portrait still falls back to
+`images/fallback.svg` until `images/people/eren-durham.jpg` lands.
 
 ### 0.3 Published, but Airtable has no headshot on file at all
 
@@ -95,9 +98,11 @@ unused beside it in the repo; those now reference the `-hd` file. What is left:
 - **`ash-hanzelka` — *Company Post Graduation* is the literal string `TBD`.**
   Left out of the site rather than published as-is.
 - **`nicole-baez-espinosa`** has no graduation year of any kind.
-- **`lakshmi-ramanathan`** has no bio anywhere: her site page body is empty, her
-  Airtable *Biography* field holds pasted YAML front matter instead of prose, and
-  the bio attachment is 248 bytes (front matter again).
+- **`lakshmi-ramanathan`** has no bio anywhere: her *Biography* field holds pasted
+  YAML front matter instead of prose, and the bio attachment is 248 bytes (front
+  matter again). Her page body was empty and now carries a one-line stub built
+  from her Airtable record — the last resort in the precedence below. It should be
+  replaced the moment she writes something.
 - **`matthew-wilbanks`** listed his LinkedIn as a display name (`Matthew Wilbanks`)
   rather than a handle, so it could not be turned into a URL and was dropped. His
   real handle needs adding.
@@ -148,6 +153,35 @@ than folded in here.
   `sebastian-candelaria.jpg`, `sheridan-sloan.png`. Safe to delete once the
   Airtable headshots in section 0.1 have landed.
 
+## Where a bio comes from
+
+Bios are not written for a member while any source of their own words exists. In
+precedence order:
+
+1. **`BiographyMarkdown`** — the markdown file the member submitted. Used even when
+   it is malformed, which it often is: bare front matter with no `---` fences, a BOM,
+   CRLF, escaped `\---`, an `## Name` heading the member layout already renders, or
+   a second stale attachment on the same record. Take the prose, drop the front
+   matter (the repo's own front matter is the curated one), repair the source's
+   formatting slips, and leave the wording alone.
+2. **`Biography`** — the rich-text field, when it holds prose rather than pasted
+   front matter or the `Third person bio goes here!` template line. Note that
+   `BioSummary` and `Summary (Biography)` are `aiText` fields computed *from* this
+   one, so they are generated, not input, and are never a source.
+3. **Generated** — only when 1 and 2 are both empty, and then built from the record's
+   structured fields rather than invented.
+
+Two wrinkles the 2026-08-21 pass hit:
+
+- **`Biography` can be newer than `BiographyMarkdown`.** `evan-eichholz` has an
+  attachment describing a 2nd-year IEEE member and a `Biography` field describing
+  side-channel work on embedded ML; the field is the later submission and is what
+  the site carries. Prefer the markdown attachment, but check the field before
+  overwriting a bio that is already more current.
+- **Alumni tense.** An authored bio written while the member was enrolled reads
+  wrong once they graduate. Follow `03b29e1`: past-tense only enrollment status and
+  lab involvement, and leave interests, motivations and hobbies as written.
+
 ## Reproducing this
 
 Airtable side:
@@ -160,3 +194,6 @@ Airtable side:
 Site side: `_members/*.md`, where a leading `_` on the filename hides the member
 from Jekyll — that convention lines up exactly with Airtable's `Lab Status:
 Inactive`, and did so for all 15 hidden files at the time of this snapshot.
+`lakshmi-katravulapalli` was the one `Inactive` record still published, and has
+since been hidden the same way; her portrait stays in `images/people/`, as every
+other hidden member's does.

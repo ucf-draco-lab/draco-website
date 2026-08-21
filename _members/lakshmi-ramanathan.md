@@ -8,3 +8,5 @@ links:
   github: Lakshmi-RM
 
 ---
+
+Lakshmi Ramanathan is a Computer Engineering master's student at the University of Central Florida, enrolled on the non-thesis track and expected to graduate in 2027.
