@@ -64,6 +64,24 @@ plugins:
   - jekyll-feed
   - jekyll-last-modified-at
 
+# jekyll-spaceship processors.
+#
+# table-processor is left out deliberately. It re-parses and re-serialises every
+# <table> on a page, and it mangles void elements while doing so: the <source>
+# inside the alumni table's <picture> came back out as
+# "<source ...></source>&lt;/source&gt;", rendering a literal "</source>" in each
+# row. Nothing here uses its extended table syntax (rowspan/colspan/multiline);
+# ordinary markdown tables are kramdown's job and are unaffected.
+jekyll-spaceship:
+  processors:
+    - mathjax-processor
+    - plantuml-processor
+    - mermaid-processor
+    - polyfill-processor
+    - media-processor
+    - emoji-processor
+    - element-processor
+
 # code block syntax highlighting
 highlighter: rouge
 
