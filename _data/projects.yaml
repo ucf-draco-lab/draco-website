@@ -16,10 +16,10 @@
 # ------------------------------------------------------------------ active
 
 - title: SHARKS
-  subtitle: Decentralized Coordination for Multi-Agent Swarms
+  subtitle: Bio-Inspired Swarm Coordination for Contested Missions
   image: images/projects/sharks.jpg
   link: projects/sharks.html
-  description: Stable multi-agent coordination for target encirclement under uncertainty. We build decentralized algorithms that hold formation when agents drop out, links degrade, or the target maneuvers — and that are cheap enough to run on the hardware actually flying.
+  description: Biology coordinates groups with no leader, no clock, and no reliable channel — and it does it while under attack. SHARKS translates those mechanisms into swarm algorithms, tests them across a portfolio of missions rather than a single task, and measures what an adversary inside the group can do to each one.
   sponsor: [ucf]
   group: active
   tags:
