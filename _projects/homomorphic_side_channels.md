@@ -1,15 +1,15 @@
 ---
 title: Homomorphic Acceleration Side-Channel Attacks
 subtitle: Finding information leakage in homomorphic acceleration platforms.
-image: images/project/default.jpg
+image: images/projects/default.jpg
 projectmembers:
 -
   id: aaron-lingerfelt
   name: "Aaron Lingerfelt"
   role: "Project Lead"
   start-date: "2023-10-10"
+archived: true
 tags: 
-  - active
   - encryption
   - side-channel
 prq: Do proposed homomorphic acceleration platforms leak information about their cryptographic keys?

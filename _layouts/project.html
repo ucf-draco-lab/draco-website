@@ -11,8 +11,27 @@ layout: default
   published=page.date
   updated=page.last_modified_at
   prq=page.prq
+  sponsor=page.sponsor
   tags=page.tags
 %}
+
+{% if page.archived %}
+  {% capture archived_note %}
+    This project has concluded. It is kept here as a record of the work and of
+    the students who did it — see [Projects]({{ site.baseurl }}/projects) for
+    what the lab is running now.
+  {% endcapture %}
+  {% include alert.html type="info" content=archived_note %}
+{% endif %}
+
+{% if page.poster %}
+  {%
+    include figure.html
+    image=page.poster
+    caption=page.poster_caption
+    link=page.poster
+  %}
+{% endif %}
 
 {% include section.html %}
 

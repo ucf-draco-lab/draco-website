@@ -1,15 +1,15 @@
 ---
 title: Security in Automobile Systems
 subtitle: Testing the Security of STM32 MCU Against Side-Channel Attacks
-image: images/project/default.jpg
+image: images/projects/default.jpg
 projectmembers:
 -
   id: sheridan-sloan
   name: "Sheridan Sloan"
   role: "Project Lead"
   start-date: "2023-10-10"
+archived: true
 tags: 
-  - active
   - side-channel
   - autonomous vehicles
   - Fault Injection Attack

@@ -20,7 +20,7 @@ With over a dozen active researchers and nationally recognized cybersecurity edu
 ## Research Areas
 
 {% capture text %}
-Power analysis, electromagnetic analysis, and ML-based classification of hardware vulnerabilities. Our ethos — assessing and hardening devices from design time through deployment.
+Power and electromagnetic analysis, and machine learning over the traces it produces. [Shadow AI]({{ site.baseurl }}/projects/shadow-ai.html) fingerprints workloads on machines we do not control; [Trace-AI]({{ site.baseurl }}/projects/trace-ai.html) carries that from detection to attribution; [Aegis]({{ site.baseurl }}/projects/aegis.html) measures what an edge ML accelerator gives up about its own model, and builds what closes the leak.
 {% endcapture %}
 {%
   include feature.html
@@ -30,18 +30,18 @@ Power analysis, electromagnetic analysis, and ML-based classification of hardwar
 %}
 
 {% capture text %}
-AI-driven generation and detection of malicious logic in RTL designs and FPGA bitstreams. Projects include Dark Logic (RTL Trojans), Dark Fabric (FPGA Trojans), and TRIDENT (ML-based detection).
+Malicious logic, and the verification that is supposed to catch it. [Dark Matter]({{ site.baseurl }}/projects/dark-matter.html) works the analog and mixed-signal blocks that digital verification never examines, following earlier lab work on FPGA bitstream Trojans. On the defense side, [Dark Logic]({{ site.baseurl }}/projects/dark-logic.html) attacks the state explosion that keeps formal methods off production-scale designs, and [RTL Insight]({{ site.baseurl }}/projects/rtl-insight.html) builds the static analysis that makes large RTL legible in the first place.
 {% endcapture %}
 {%
   include feature.html
-  image="images/projects/dark_logic.webp"
-  title="Hardware Trojans"
+  image="images/projects/dark-matter.jpg"
+  title="Hardware Trojans & Trust"
   flip=true
   text=text
 %}
 
 {% capture text %}
-Encrypted processor frameworks, polymorphic logic primitives, side-channel-resistant architectures, and lattice-based compression functions for post-quantum readiness.
+Architectures that keep their secrets. [Encrypted processor frameworks]({{ site.baseurl }}/projects/encrypted-processor.html) and [partially homomorphic execution in real hardware]({{ site.baseurl }}/projects/side-channel-resistant-architecture.html) aim at computation that never exposes a plaintext operand; [polymorphic components]({{ site.baseurl }}/projects/polymorphic-components.html) break the trace accumulation every side-channel attack depends on; [Signal Insight]({{ site.baseurl }}/projects/signal-insight.html) asks what information theory can tell us about power before the simulator can.
 {% endcapture %}
 {%
   include feature.html
@@ -51,7 +51,7 @@ Encrypted processor frameworks, polymorphic logic primitives, side-channel-resis
 %}
 
 {% capture text %}
-Secure coordination protocols for heterogeneous autonomous swarms (SHARKS), adversarial resilience of multi-agent systems, and lightweight IoT communication (CHIRP/S-CHIRP).
+Coordination that survives contact with the field. [SHARKS]({{ site.baseurl }}/projects/sharks.html) develops decentralized multi-agent encirclement that holds under agent loss and degraded communication, and [PUPS]({{ site.baseurl }}/projects/pups.html) is the untethered platform that keeps those claims honest. [CHIRP]({{ site.baseurl }}/projects/chirp.html) targets the other end of the scale — peer-to-peer networking on devices too small for a conventional stack.
 {% endcapture %}
 {%
   include feature.html

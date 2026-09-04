@@ -1,15 +1,15 @@
 ---
 title: Router Canaries for Home Networks
 subtitle: Fortifying Home Networks- Advanced Cybersecurity Strategies for Proactive Defense.
-image: images/project/default.jpg
+image: images/projects/default.jpg
 projectmembers:
 -
   id: malia-rojas
   name: "Malia Rojas"
   role: "Project Lead"
   start-date: "2023-10-10"
+archived: true
 tags: 
-  - active
   - Cybersecurity
   - Home Network Protection
   - IoT Security
