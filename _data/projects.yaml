@@ -1,9 +1,13 @@
 # DRACO research projects.
 #
 # This file is the card index for /projects. Every entry in `group: active`
-# has a matching page in _projects/, and `link` points at it — the poster
-# image, where one exists, is embedded on that page rather than being the
-# thing the card links to.
+# has a matching page in _projects/, and `link` points at it.
+#
+# Six pages carry `poster` and `poster_caption` in their front matter. Nothing
+# renders them any more — the layout used to embed the figure at the top of the
+# page and no longer does. The keys are kept as the record of which poster
+# belongs to which project, and of what a couple of the captions say about a
+# project's earlier phase.
 #
 # `group: completed` entries render under "Past Projects". Some of those still
 # have pages (the ones a student wrote up); the rest are card-only.
