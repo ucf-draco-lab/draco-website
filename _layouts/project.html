@@ -24,15 +24,6 @@ layout: default
   {% include alert.html type="info" content=archived_note %}
 {% endif %}
 
-{% if page.poster %}
-  {%
-    include figure.html
-    image=page.poster
-    caption=page.poster_caption
-    link=page.poster
-  %}
-{% endif %}
-
 {% include section.html %}
 
 {{ content }}
