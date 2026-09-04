@@ -2,14 +2,16 @@
 title: Projects
 nav:
   order: 2
-  tooltip: Research and Senior Design Projects
+  tooltip: Active research projects
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-Our research spans hardware security, side channel analysis, AI-assisted vulnerability assessment, secure autonomous systems, and cryptographic design. Each project below is backed by real partnerships, produces open deliverables, and trains the next generation of security engineers. Browse active research and applied project ideas for senior design teams.
+Our research spans hardware security, side channel analysis, AI-assisted vulnerability assessment, secure autonomous systems, and cryptographic design. Each project below is backed by real partnerships, produces open deliverables, and trains the next generation of security engineers.
 
-{% include tags.html tags="research, senior-design, available, undergraduate-research-spots, graduate-research-spots" %}
+Every active project takes undergraduate and graduate researchers. Pick the one whose question you want to answer, then [get in touch]({{ site.baseurl }}/contact) — and if you are after a two-semester capstone instead, see [Senior Design]({{ site.baseurl }}/senior-design).
+
+{% include tags.html tags="research, available, undergraduate-research-spots, graduate-research-spots" %}
 
 {% include search-box.html %}
 
@@ -17,8 +19,14 @@ Our research spans hardware security, side channel analysis, AI-assisted vulnera
 
 {% include section.html %}
 
-{% include list.html component="card" data="projects" %}
+{% include list.html component="card" data="projects" filters="group: ^active$" %}
 
 {% include section.html %}
 
+## {% include icon.html icon="fa-solid fa-box-archive" %}Past Projects
 
+Work that has run its course. The questions are answered, the students have graduated, and the results live on in publications and in the people who did them.
+
+{% include list.html component="card" data="projects" filters="group: ^completed$" %}
+
+{% include section.html %}

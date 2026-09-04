@@ -1,219 +1,268 @@
+# DRACO research projects.
+#
+# This file is the card index for /projects. Every entry in `group: active`
+# has a matching page in _projects/, and `link` points at it — the poster
+# image, where one exists, is embedded on that page rather than being the
+# thing the card links to.
+#
+# `group: completed` entries render under "Past Projects". Some of those still
+# have pages (the ones a student wrote up); the rest are card-only.
+#
+# Senior design lives in _data/senior_design.yaml and renders on /senior-design.
+#
+# `sponsor` holds member slugs from _members/ (amd, awn, leidos, ucf, ...).
+# Corridor matching funds are described in the project's page, not here.
+
+# ------------------------------------------------------------------ active
+
 - title: SHARKS
-  subtitle: Secure, Heterogeneous, Autonomous, and Rotational Knowledge for Swarms
+  subtitle: Decentralized Coordination for Multi-Agent Swarms
   image: images/projects/sharks.jpg
-  link: images/projects/2025/sharks.jpg
-  description: This project focuses on developing stable multi-agent coordination methods for target encirclement under uncertainty, emphasizing computational efficiency, resilience, and deployment on edge hardware to enable robust, real-time swarm autonomy.
+  link: projects/sharks.html
+  description: Stable multi-agent coordination for target encirclement under uncertainty. We build decentralized algorithms that hold formation when agents drop out, links degrade, or the target maneuvers — and that are cheap enough to run on the hardware actually flying.
+  sponsor: [ucf]
   group: active
   tags:
     - research
-    - undergraduate-research-spots 
+    - available
+    - undergraduate-research-spots
+    - graduate-research-spots
+
+- title: PUPS
+  subtitle: Platform for Untethered Payload Swarms
+  image: images/projects/pups.jpg
+  link: projects/pups.html
+  description: The airframe and edge-compute platform the swarm algorithms fly on. PUPS trades payload against endurance and onboard compute to give SHARKS a real testbed instead of a simulator, with telemetry good enough to reproduce a run.
+  sponsor: [ucf]
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots
+    - graduate-research-spots
+
+- title: Shadow AI
+  subtitle: Workload Detection Through Side Channel Analysis
+  image: images/projects/shadow_ai.jpg
+  link: projects/shadow-ai.html
+  description: Hardware leaks what software is doing. Shadow AI fingerprints workloads from power and electromagnetic side channels alone, without instrumenting the host — identifying what is running on a machine you do not control.
+  sponsor: [awn]
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots
+    - graduate-research-spots
+
+- title: Trace-AI
+  subtitle: Provenance and Attribution for AI Workloads
+  image: images/projects/trace-ai.jpg
+  link: projects/trace-ai.html
+  description: Given an observed artifact or signal, which model produced it? Trace-AI carries Shadow AI's fingerprinting from what is running to what ran, building attribution evidence that survives the gap between execution and observation.
+  sponsor: [awn]
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots
+    - graduate-research-spots
+
+- title: Aegis
+  subtitle: AI Model Exfiltration and Protection Through Side Channel Analysis
+  image: images/projects/aegis.jpg
+  link: projects/aegis.html
+  description: Edge ML accelerators leak their models. Aegis measures how much of a deployed network — architecture, weights, inputs — an attacker can recover from side channels alone, then builds the countermeasures that close the gap.
+  sponsor: [leidos]
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots
+    - graduate-research-spots
+
+- title: RTL Insight
+  subtitle: Static Analysis for RTL
+  image: images/projects/rtl-insight.jpg
+  link: projects/rtl-insight.html
+  description: Verilog hides its own dataflow. RTL Insight builds on Yosys to extract, analyze, and visualize the structure of large designs, giving engineers a way to reason about logic that has outgrown what anyone can read top to bottom.
+  sponsor: [amd]
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots
     - graduate-research-spots
 
 - title: Dark Logic
-  subtitle:  Malicious RTL Generation and Insertion
+  subtitle: Complexity Reduction for Formal Verification
   image: images/projects/dark_logic.webp
-  link: images/projects/2025/dark-logic.jpg
-  description: We aim to test whether generative AI can insert malicious RTL into hardware designs and evade detection by verification. Our experiments will use a large RISC-V processor on an FPGA and smaller modular designs, all with existing formal verification in place.
+  link: projects/dark-logic.html
+  description: Formal verification stalls on state explosion long before it reaches production-scale RTL. Dark Logic attacks that cost directly — abstraction, decomposition, and invariant discovery that shrink what model checkers and theorem provers must actually prove.
+  sponsor: [ucf]
   group: active
   tags:
     - research
+    - available
     - undergraduate-research-spots
+    - graduate-research-spots
+
+- title: Dark Matter
+  subtitle: Analog and Mixed-Signal Trojans
+  image: images/projects/dark-matter.jpg
+  link: projects/dark-matter.html
+  description: Digital verification never looks at the PLL. Dark Matter studies malicious modification hidden in analog and mixed-signal blocks — clocking, data conversion, power management — where the digital toolchain is structurally blind.
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots
+    - graduate-research-spots
 
 - title: CHIRP
-  subtitle: Ultra Lightweight IoT Communication
+  subtitle: Ultra-Lightweight IoT Communication
   image: images/projects/chirp.webp
-  link: images/projects/2025/chirp.jpg
-  description: We aim to implement an ultra light-weight peer-to-peer IoT network using the CHIRP communication algorithm.
+  link: projects/chirp.html
+  description: A peer-to-peer IoT network built on the CHIRP communication algorithm, aimed at devices too small for a conventional stack. We are measuring what the protocol costs in power, memory, and latency once it leaves simulation and lands on real radios.
+  sponsor: [ucf]
   group: active
   tags:
     - research
-    - undergraduate-research-spots
-
-- title: Shadow AI
-  subtitle:  Workload Detection Through Side Channel Analysis
-  image: images/projects/shadow_ai.jpg
-  link: images/projects/2025/shadow-ai.jpg
-  description: Focused on detecting unique software behavior by monitoring hardware-level signals.
-  repo: 
-  group: active
-  tags:
-    - research
-    - undergraduate-research-spots
-
-- title: Dark Fabric
-  subtitle: AI Based FPGA Trojan
-  image: images/projects/dark_fabric.webp
-  link: images/projects/2025/dark-fabric.jpg
-  description: Researching AI based Trojan Attack on different parts of the FPGA development lifecycle. From HDL to Bitstream, how can AI developed trojan attackers affect FPGAs performance and efficiency while remaining unknown until attack.
-  group: active
-  tags:
-    - research
+    - available
     - undergraduate-research-spots
     - graduate-research-spots
 
 - title: Encrypted Processor Framework & Accelerator
   subtitle: A Framework for Fast, Secure Processing
   image: images/projects/epfa.webp
-  link: images/projects/2025/encrypted-processor.jpg
-  description: We aim to implement a novel modification to a well known cryptosystem to build a framework and accelerator that enable secure computation by allowing operations on encrypted data. We aim to be more secure than traditional computation while faster than FHE. 
+  link: projects/encrypted-processor.html
+  description: A modified cryptosystem that permits computation directly on encrypted data, paired with the accelerator that makes it practical. The target is stronger than computing on plaintext and fast enough that fully homomorphic encryption is not the only option.
   group: active
   tags:
     - research
     - available
-    - undergraduate-research-spots 
+    - undergraduate-research-spots
+    - graduate-research-spots
+
+- title: Side-Channel-Resistant Computer Architecture
+  subtitle: Partially Homomorphic Execution in Real Hardware
+  image: images/projects/SHARE.jpeg
+  link: projects/side-channel-resistant-architecture.html
+  description: Building on the E3X ISA for partially homomorphic execution, we are moving side-channel-resistant architecture off the simulator and into hardware — where timing, power, and area decide whether the guarantees survive contact with silicon.
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots
     - graduate-research-spots
 
 - title: Signal Insight
-  subtitle:  Applying Information Theory to Power Estimation and Optimization
+  subtitle: Information Theory for Power Estimation and Optimization
   image: images/projects/signal_insight.png
-  link: images/projects/2025/signal-insights.jpg
-  description: We aim to explore how information theory concepts, such as entropy, can be applied to improve power estimation and guide power-driven optimization in hardware designs. The project will investigate both the accuracy of entropy-based estimation methods and their effectiveness in reducing power through optimization strategies.
+  link: projects/signal-insight.html
+  description: Entropy is a cheap proxy for switching activity. Signal Insight tests how far information-theoretic measures can substitute for simulation in estimating power, and whether the same measures can steer optimization rather than only report on it.
   group: active
   tags:
     - research
+    - available
     - undergraduate-research-spots
-
-- title: Polymorphic Encrypted Components
-  subtitle: Design Fundamental Building Blocks with Polymorphic Properties 
-  image: images/projects/poly.jpg
-  link: #
-  description: Using techniques common in malware detection evasion create encrypted components that perform standard operations with a constantly changing key.
-  repo: 
-  group: active
-  tags:
-    - research
-
-- title: Blocks of Code (v3)
-  subtitle: Physical block programming.
-  image: images/projects/block-o-code.png
-  link: #
-  description: Create a block that based on orientation and manipulations performs one of several fundamental operations. When blocks are placed together they form more complex actions. Blocks should be ultra low-power and cost under five dollar per unit. End product should contain at least 25 blocks. See results from V1 completed by [PDX Senior Capstone team circa 2015](https://github.com/erebus-labs/blocks-o-code) and V2 completed by [UCF 2024 team]().
-  repo: 
-  group: sdp
-  tags:
-    - senior-design
-    - available
-
-- title: OpenSense Platform (v3)
-  subtitle: Unmask the secrets of data collection and logging
-  image: images/projects/sense.jpg
-  link: #
-  description: Create a data collection platform that allows for basic environmental data collection for at least three different properties (e.g., temperature, weight/pressure, brightness). Trading off sensor accuracy for simplicity is critical. Platform should allow end user to input the model that converts raw data measurements into known units. See results from V1 completed by [PDX Senior Capstone team circa 2015](https://github.com/erebus-labs/sense_platform) and V2 completed by [UCF 2024 team]().
-  repo: 
-  group: sdp
-  tags:
-    - senior-design
-    - available
-
-- title: 3D Projection Title
-  description: Develop a 2^n x 2^n Grid of RGBW+ LEDs that is fed from the simulation output of a cycle/turn-based multi-agent simulator. Enable connectable components to increase the grid-size. Basic version should feature fixed 3D printed topology with each unit square being illuminated via an RGB+ led - stretch goal should feature pneumatically controlled tube structures and a flexible membrane.
-  image: images/projects/tile.jpg
-  link: #
-  repo :
-  group: sdp
-  tags:
-    - available
-    - senior-design
-
-- title: Dizzy Quadcopter
-  description: Develop a micro-drone (<250g) with main-body continuously spinning at specific RPM; drone must still be fully controllable in XYZ. Preference toward hardware (PID) control system approach to spin correction. Spinning main body must be able to hold distance sensor.Telemetry and sensor data should be reported back to base controller. 
-  image: images/projects/stopquad.jpg
-  repo : #
-  group: sdp
-  tags:
-    - available
-    - senior-design
-
-# - title: WiFi Jammer Detector and Audible Peer-to-Peer Backup
-#   description: Create a co-processor unit that detects WiFi jamming activities and then broadcasts and establishes an audible frequency link between mesh of devices.
-#   image: images/photo.jpg
-#   link: #
-#   group: featured
-#   tags:
-#     - available
-#     - senior-design
-
-- title: FPGA-based Memristor Pattern Generator and Tester
-  description: Create a FPGA-based system that can generate and test memristors. The system should be able to generate a pattern, write it to a memristor, read the pattern back, and compare it to the original pattern. 
-  image: images/projects/fpga-mem.jpg
-  link: #
-  group: active
-  tags:
-    - available
-    - research 
-    - undergraduate-research-spots 
-
-- title: Converting Scan Dumps to Gold 
-  subtitle: Locating regions based on scan dump results
-  image: images/projects/golden-scan.jpg
-  description: 
-  group: active
-  tags:
-    - research
-
-- title: Attacks on Memristor Devices
-  subtitle: Understanding the Security Implications of Memristor Devices
-  image: images/projects/amemristor.jpg 
-  description: This research project focuses on understanding the security implications of memristor devices. The goal is to identify potential vulnerabilities in memristor devices and develop countermeasures to mitigate these vulnerabilities.
-  group: active
-  tags:
-    - research
-    - undergraduate-research-spots
-
-
-- title: Trojan Detection Using Side Channel Analysis
-  subtitle: Detecting Hardware Trojans Using Side Channel Analysis
-  image: images/projects/tsc.jpg
-  description: This research project focuses on detecting hardware trojans using side channel analysis and machine learning. The goal is to develop a methodology to detect hardware trojans using side channel analysis and evaluate the effectiveness of the methodology on different hardware trojans.
-  group: active
-  tags:
-    - research
-
-- title: Side-Channel-Resistant Computer Architecture
-  subtitle: Analyzing and testing methods for computation that are resistant to side-channel attacks.
-  group: active
-  image: images/projects/SHARE.jpeg
-  description: The current focus of this research project is to build upon existing research on side-channel-resistant architectures using partially homomorphic encryption. Our goal is to test and analyze how these systems will work in hardware, rather than just in simulation  
-  tags:
-    - research
-    - available
-    - undergraduate-research-spots 
     - graduate-research-spots
 
-# - title: Cool Package
-#   subtitle: a subtitle
-#   group: featured
-#   image: images/photo.jpg
-#   link: https://github.com/
-#   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   repo: greenelab/lab-website-template
-#   tags:
-#     - resource
+- title: Polymorphic Encrypted Components
+  subtitle: Building Blocks That Never Look the Same Twice
+  image: images/projects/poly.jpg
+  link: projects/polymorphic-components.html
+  description: Borrowed from malware evasion — fundamental logic components that compute standard operations under a continuously changing key, so the implementation an attacker profiles is never the implementation that runs next.
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots
+    - graduate-research-spots
 
-# - title: Cool Tutorial
-#   subtitle: a subtitle
-#   image: images/photo.jpg
-#   link: https://github.com/
-#   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   repo: greenelab/lab-website-template
-#   tags:
-#     - resource
-#     - publication
+# --------------------------------------------------------------- completed
 
-# - title: Cool Web App
-#   subtitle: a subtitle
-#   image: images/photo.jpg
-#   link: https://github.com/
-#   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   repo: greenelab/lab-website-template
-#   tags:
-#     - software
+- title: Dark Fabric
+  subtitle: AI-Based FPGA Trojans
+  image: images/projects/dark_fabric.webp
+  description: Trojan insertion across the FPGA development lifecycle, from HDL through bitstream, asking how far an AI-generated attacker could degrade performance and efficiency while staying invisible until it fires.
+  group: completed
+  tags:
+    - research
+    - completed
 
-# - title: Cool Web Server
-#   subtitle: a subtitle
-#   image: images/photo.jpg
-#   link: https://github.com/
-#   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#   repo: greenelab/lab-website-template
-#   tags:
-#     - software
+- title: Trojan Detection Using Side Channel Analysis
+  subtitle: Detecting Hardware Trojans With Machine Learning
+  image: images/projects/tsc.jpg
+  description: A methodology for detecting hardware Trojans from side-channel measurements using machine learning, evaluated across a range of Trojan designs and trigger conditions.
+  group: completed
+  tags:
+    - research
+    - completed
+
+- title: Attacks on Memristor Devices
+  subtitle: Security Implications of Emerging Memory
+  image: images/projects/amemristor.jpg
+  description: An assessment of where memristor-based devices are vulnerable, and what countermeasures are available to a designer building on them.
+  group: completed
+  tags:
+    - research
+    - completed
+
+- title: FPGA-based Memristor Pattern Generator and Tester
+  subtitle: Characterizing Memristors in Hardware
+  image: images/projects/fpga-mem.jpg
+  description: An FPGA system that writes a pattern to a memristor, reads it back, and compares the two — the test harness the memristor security work depended on.
+  group: completed
+  tags:
+    - research
+    - completed
+
+- title: Converting Scan Dumps to Gold
+  subtitle: Locating Regions of Interest in Scan Data
+  image: images/projects/golden-scan.jpg
+  description: Recovering structure from raw scan-chain dumps, so that regions worth attention can be located without a golden reference model of the whole design.
+  group: completed
+  tags:
+    - research
+    - completed
+
+- title: Formal Verification of a RISC-V Processor
+  subtitle: Understanding Formal Verification Through Application
+  image: images/projects/default.jpg
+  link: projects/formal_verification_of_processors.html
+  description: Formal equivalence checking between a verified and an unverified RISC-V processor, run by undergraduate researchers as both a verification exercise and a teaching one.
+  sponsor: [amd]
+  group: completed
+  tags:
+    - research
+    - completed
+
+- title: Homomorphic Acceleration Side-Channel Attacks
+  subtitle: Information Leakage in Homomorphic Accelerators
+  image: images/projects/default.jpg
+  link: projects/homomorphic_side_channels.html
+  description: Whether the edge-side hardware that accelerates homomorphic encryption leaks its own cryptographic keys through the side channels the scheme was meant to make irrelevant.
+  group: completed
+  tags:
+    - research
+    - completed
+
+- title: Security in Automobile Systems
+  subtitle: Fault Injection Against STM32 Microcontrollers
+  image: images/projects/default.jpg
+  link: projects/fault_injection_stm32.html
+  description: Whether an STM32 microcontroller running a real-time operating system holds both data integrity and real-time guarantees under a clock glitching attack.
+  group: completed
+  tags:
+    - research
+    - completed
+
+- title: Router Canaries for Home Networks
+  subtitle: Proactive Defense at the Edge of the Home
+  image: images/projects/default.jpg
+  link: projects/router_canaries.html
+  description: Canaries embedded in a home router that identify targeted hardware, surface the addresses involved, and isolate a compromised IoT device before it can be used further.
+  group: completed
+  tags:
+    - research
+    - completed

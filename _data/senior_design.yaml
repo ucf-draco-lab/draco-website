@@ -1,0 +1,44 @@
+# Senior design / capstone project ideas, rendered on /senior-design.
+#
+# These are scoped for a two-semester ECE or CS capstone team, not for lab
+# research assistants — research projects live in _data/projects.yaml.
+#
+# Version numbers track how many capstone teams have taken a run at the idea.
+# When a team completes one, link their repo in `description` and bump the
+# version for the next cycle.
+
+- title: Blocks of Code (v4)
+  subtitle: Physical block programming
+  image: images/projects/block-o-code.png
+  description: Build a block that performs one of several fundamental operations depending on its orientation and how it is manipulated; placed together, blocks compose into more complex programs. Blocks must be ultra-low-power and cost under five dollars per unit, and the delivered set should contain at least 25 of them. Prior attempts — [v1, PDX capstone, 2015](https://github.com/erebus-labs/blocks-o-code) and a UCF capstone team in 2024 — are worth reading before you start.
+  group: sdp
+  tags:
+    - senior-design
+    - available
+
+- title: OpenSense Platform (v4)
+  subtitle: Unmask the secrets of data collection and logging
+  image: images/projects/sense.jpg
+  description: Build a data collection platform covering at least three environmental properties (temperature, weight or pressure, brightness). Trading sensor accuracy for simplicity is the point, not a compromise. The end user must be able to supply the model that converts raw measurements into known units. Prior attempts — [v1, PDX capstone, 2015](https://github.com/erebus-labs/sense_platform) and a UCF capstone team in 2024, who built the ESP32-based modular sensor platform — are worth reading before you start.
+  group: sdp
+  tags:
+    - senior-design
+    - available
+
+- title: 3D Projection Tile
+  subtitle: A physical display driven by a multi-agent simulator
+  image: images/projects/tile.jpg
+  description: Develop a 2^n × 2^n grid of RGBW+ LEDs fed from the output of a cycle- or turn-based multi-agent simulator, with connectable segments so the grid can grow. The basic version uses a fixed 3D-printed topology lighting each unit square; the stretch goal replaces it with pneumatically controlled tubes under a flexible membrane.
+  group: sdp
+  tags:
+    - senior-design
+    - available
+
+- title: Dizzy Quadcopter
+  subtitle: A drone that flies while its body spins
+  image: images/projects/stopquad.jpg
+  description: Develop a micro-drone under 250g whose main body spins continuously at a specified RPM while remaining fully controllable in XYZ. A hardware PID approach to spin correction is preferred over a software one. The spinning body must carry a distance sensor, and telemetry plus sensor data must reach the base controller.
+  group: sdp
+  tags:
+    - senior-design
+    - available

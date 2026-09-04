@@ -30,6 +30,10 @@
 </div>
 {% endif %}
 
+{% if include.sponsor %}
+  {% include sponsors.html sponsor=include.sponsor %}
+{% endif %}
+
 </div>
 
 {% if include.tags %}

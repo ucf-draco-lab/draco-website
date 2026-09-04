@@ -1,7 +1,7 @@
 ---
 title: Formal Verification of a RISC-V Processor
 subtitle: Understanding Formal Verification Through Application
-image: images/project/default.jpg
+image: images/projects/default.jpg
 projectmembers:
 -
   id: lana-perkins
@@ -15,6 +15,8 @@ projectmembers:
   email: michaelc@ucf.edu
   role: "AMD Undergraduate Researcher"
   start-date: "2023-09-27"
+archived: true
+sponsor: [amd]
 tags: 
   - Formal Verification
   - Verilog

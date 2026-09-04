@@ -102,4 +102,4 @@ We periodically open **funded** positions tied to active sponsored projects. Are
 
 ## Undergraduate Research & Senior Design
 
-Paid and experiential (course-credit) undergraduate roles open as projects allow. Senior design / capstone teams should browse the [Projects]({{ site.baseurl }}/projects) page and filter by **senior-design** or **undergraduate-research-spots** for currently scoped ideas. Industry sponsors interested in *funding* a capstone team should reach out via the partnership contact above.
+Paid and experiential (course-credit) undergraduate roles open as projects allow. Senior design / capstone teams should browse the [Senior Design]({{ site.baseurl }}/senior-design) page for currently scoped ideas; students looking to join a research project should start on [Projects]({{ site.baseurl }}/projects). Industry sponsors interested in *funding* a capstone team should reach out via the partnership contact above.

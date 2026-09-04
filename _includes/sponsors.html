@@ -1,0 +1,38 @@
+{% comment %}
+  Render a project's sponsors from a list of _members slugs.
+
+  Slugs that have no matching member page are printed as plain text rather
+  than dropped, so a sponsor without a page still shows up instead of
+  silently disappearing from the card.
+
+  Params:
+    sponsor — list of member slugs, e.g. [awn, ucf]
+    style   — "card" for the compact card line, omit for the fuller form
+{% endcomment %}
+
+{% assign sponsor_list = include.sponsor | object_items %}
+
+{% if sponsor_list and sponsor_list.size > 0 %}
+  <div class="sponsors" data-style="{{ include.style }}">
+    {% include icon.html icon="fa-solid fa-hand-holding-dollar" %}
+    <span class="sponsors-label">Sponsored by</span>
+    {% for slug in sponsor_list %}
+      {% assign sponsor = site.members
+        | where_exp: "member", "member.slug == slug"
+        | first
+      %}
+      {% if sponsor %}
+        <a
+          href="{{ sponsor.url | relative_url }}"
+          class="sponsor"
+          data-tooltip="{{ sponsor.name }}"
+        >
+          {{ sponsor.name }}
+        </a>
+      {% else %}
+        <span class="sponsor">{{ slug }}</span>
+      {% endif %}
+      {% unless forloop.last %}<span class="sponsor-sep">·</span>{% endunless %}
+    {% endfor %}
+  </div>
+{% endif %}

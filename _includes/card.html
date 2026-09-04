@@ -40,6 +40,10 @@
       </p>
     {% endif %}
 
+    {% if include.sponsor %}
+      {% include sponsors.html sponsor=include.sponsor style="card" %}
+    {% endif %}
+
     {% if include.tags or include.repo %}
       {% include tags.html tags=include.tags repo=include.repo %}
     {% endif %}
