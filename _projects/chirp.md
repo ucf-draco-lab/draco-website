@@ -7,9 +7,14 @@ poster_caption: CHIRP research poster.
 sponsor: [ucf]
 projectmembers:
 -
+  id: cade-chretien
+  name: "Cade Chretien"
+  role: "Project Lead"
+  start-date: "2026-08-17"
+-
   id: calvin-vanwormer
   name: "Calvin VanWormer"
-  role: "Project Lead"
+  role: "Alumni Mentor — prior project lead"
   start-date: "2026-01-06"
 tags:
   - active
