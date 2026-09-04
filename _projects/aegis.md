@@ -5,14 +5,19 @@ image: images/projects/aegis.jpg
 sponsor: [leidos]
 projectmembers:
 -
-  id: calvin-vanwormer
-  name: "Calvin VanWormer"
+  id: alexei-solonari
+  name: "Alexei Solonari"
   role: "Project Lead"
-  start-date: "2026-01-01"
+  start-date: "2026-08-17"
 -
   id: franco-mezzarapa
   name: "Franco Mezzarapa"
-  role: "Project Lead"
+  role: "Prior project lead"
+  start-date: "2026-01-01"
+-
+  id: calvin-vanwormer
+  name: "Calvin VanWormer"
+  role: "Alumni Mentor — prior project lead"
   start-date: "2026-01-01"
 tags:
   - active

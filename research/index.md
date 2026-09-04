@@ -51,7 +51,7 @@ Architectures that keep their secrets. [Encrypted processor frameworks]({{ site.
 %}
 
 {% capture text %}
-Coordination that survives contact with the field. [SHARKS]({{ site.baseurl }}/projects/sharks.html) develops decentralized multi-agent encirclement that holds under agent loss and degraded communication, and [PUPS]({{ site.baseurl }}/projects/pups.html) is the untethered platform that keeps those claims honest. [CHIRP]({{ site.baseurl }}/projects/chirp.html) targets the other end of the scale — peer-to-peer networking on devices too small for a conventional stack.
+Coordination that survives contact with the field. [SHARKS]({{ site.baseurl }}/projects/sharks.html) draws its coordination mechanisms from biology — collective behaviors that already evolved under predation and deception — and asks which missions each one can carry and what an adversary inside the group does to it. [PUPS]({{ site.baseurl }}/projects/pups.html) is the untethered platform that keeps those claims honest. [CHIRP]({{ site.baseurl }}/projects/chirp.html) targets the other end of the scale — peer-to-peer networking on devices too small for a conventional stack.
 {% endcapture %}
 {%
   include feature.html
