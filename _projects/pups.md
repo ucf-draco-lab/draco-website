@@ -7,7 +7,7 @@ projectmembers:
 -
   id: marcus-simmonds
   name: "Marcus Simmonds"
-  role: "Project Lead"
+  role: "Alumni Mentor — prior project lead"
   start-date: "2026-01-06"
 tags:
   - active
