@@ -240,6 +240,13 @@ table.alumni-table tbody tr:hover td {
   color: var(--gray);
 }
 
+.alumni-institution {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--gray);
+  cursor: help;
+  white-space: nowrap;
+}
+
 .alumni-count,
 .alumni-noresults {
   margin: 10px 0 0 0;
