@@ -7,6 +7,7 @@ affiliation: Lockheed Martin
 degrees:
   - level: B.S.
     year: 2024
+    institution: ucf
 sponsors: [ucf]
 links:
   linkedin: malia-rojas  

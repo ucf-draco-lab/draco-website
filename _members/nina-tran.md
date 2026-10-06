@@ -1,7 +1,13 @@
 ---
 name: Nina Tran
 image: images/people/nina-tran.jpg
-role: ms
+role: [ms, alumni]
+date: 2024-05-01
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2024
+    institution: ucf
 group:
 sponsors: [ucf] 
 

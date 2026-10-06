@@ -6,6 +6,7 @@ date: 2025-05-01
 degrees:
   - level: M.S.
     year: 2025
+    institution: ucf
 sponsors: [ucf]
 group: 
 links:

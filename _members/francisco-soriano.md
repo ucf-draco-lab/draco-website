@@ -1,7 +1,13 @@
 ---
 name: Francisco Soriano
 image: images/people/francisco-soriano.jpg
-role: ms
+role: [ms, alumni]
+date: 2024-12-01
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2024
+    institution: ucf
 sponsors: [amd]
 former_awards: [amd-scholar]
 links:

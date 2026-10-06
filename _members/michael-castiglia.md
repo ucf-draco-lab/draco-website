@@ -8,6 +8,7 @@ degrees:
   - level: B.S.
     major: Computer Engineering
     year: 2025
+    institution: ucf
 sponsors: [amd]
 former_awards: [amd-scholar]
 group: AMD

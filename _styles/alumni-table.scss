@@ -262,6 +262,16 @@ table.alumni-table {
   color: var(--gray);
 }
 
+// The institution cell shows an abbreviation ("UCF", "UWyo") with the full
+// name as its title, so the column stays narrow. Browsers underline <abbr>
+// inconsistently; a help cursor is the clearer hint that there is a tooltip.
+.alumni-institution {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--gray);
+  cursor: help;
+  white-space: nowrap;
+}
+
 .alumni-count,
 .alumni-noresults {
   margin: 10px 0 0 0;

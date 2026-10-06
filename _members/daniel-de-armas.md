@@ -1,7 +1,13 @@
 ---
 name: Daniel De Armas
 image: images/people/daniel-de-armas.jpg
-role: ms
+role: [ms, alumni]
+date: 2023-05-01
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2023
+    institution: ucf
 sponsors: [awn]
 links:
   linkedin: daniel-d-b92589145

@@ -1,7 +1,14 @@
 ---
 name: Jarred Long
 image: images/people/jarred-long-hd.jpg
-role: ms 
+role: [ms, alumni]
+affiliation: Apple
+date: 2024-05-01
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2024
+    institution: ucf
 sponsors: [ucf]
 links:
   linkedin: jlong1221

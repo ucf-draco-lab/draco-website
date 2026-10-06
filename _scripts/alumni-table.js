@@ -17,6 +17,10 @@
     // years read best newest-first, so that's the direction a click or a
     // group-by promotion starts from
     year: { label: "Year", type: "number", firstDir: "desc" },
+    // data-institution carries the full institution name, not the
+    // abbreviation shown in the cell, so filtering and the search box both
+    // match on "Wyoming" as well as "UWyo"
+    institution: { label: "Institution", type: "text" },
     sponsor: { label: "Sponsor / Scholar", type: "text" },
     company: { label: "First Company", type: "text" },
   };

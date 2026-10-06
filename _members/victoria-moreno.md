@@ -8,9 +8,11 @@ degrees:
   - level: B.S.
     major: Computer Engineering
     year: 2024
+    institution: ucf
   - level: M.S.
     major: Computer Engineering
     year: 2025
+    institution: ucf
 sponsors: [ucf]
 links:
   linkedin: vicmorenoo

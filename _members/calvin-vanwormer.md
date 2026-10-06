@@ -7,6 +7,7 @@ degrees:
   - level: M.S.
     major: Computer Engineering
     year: 2026
+    institution: ucf
 sponsors: [ucf, leidos]
 links:
   linkedin: calvin-vanwormer

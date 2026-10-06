@@ -7,6 +7,7 @@ affiliation: Collins Aerospace
 degrees:
   - level: B.S.
     year: 2024
+    institution: ucf
 sponsors: [ucf]
 links:
   linkedin: luckner-ablard

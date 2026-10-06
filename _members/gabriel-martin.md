@@ -1,7 +1,14 @@
 ---
 name: Gabriel Martin
 image: images/people/gabriel-martin.jpg
-role: ms
+role: [ms, alumni]
+affiliation: AMD
+date: 2024-05-01
+degrees:
+  - level: B.S.
+    major: Computer Engineering
+    year: 2024
+    institution: ucf
 group:
 sponsors: [awn, amd]
 awards: [amd-scholar]

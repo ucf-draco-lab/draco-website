@@ -8,6 +8,7 @@ degrees:
   - level: B.S.
     major: Electrical Engineering
     year: 2025
+    institution: ucf
 sponsors: []
 links:
   linkedin: davi-dantas-07806979

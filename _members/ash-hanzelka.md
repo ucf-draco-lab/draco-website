@@ -7,6 +7,7 @@ degrees:
   - level: B.S.
     major: Computer Engineering
     year: 2025
+    institution: ucf
 sponsors: [ucf]
 links:
   linkedin: ashhanz

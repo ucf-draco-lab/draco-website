@@ -1,0 +1,40 @@
+# Degree-granting institutions, mirroring the "Academic Institutions" table of
+# the DRACO Airtable base (tbllTiwXQmSFew1wY).
+#
+# Reference one from a `degrees:` entry in a member's frontmatter by its key:
+#
+#   degrees:
+#     - level: B.S.
+#       major: Computer Science
+#       year: 2024
+#       institution: uwyo
+#
+#   name      full institution name, used as the cell's hover text
+#   short     abbreviation, used as the alumni-table cell text
+#   location  city, state, country (optional)
+#   link      institution home page (optional)
+#
+# The lab is at UCF, but not every degree its people hold was awarded by UCF —
+# several members earned a B.S. elsewhere before joining. So `institution:` is
+# never inferred: a degree that does not name one renders as an em dash in the
+# alumni table rather than defaulting to UCF. An `institution:` value with no
+# key here still renders, as its own literal text, so a one-off does not need
+# an entry.
+
+ucf:
+  name: University of Central Florida
+  short: UCF
+  location: Orlando, Florida, USA
+  link: https://ucf.edu
+
+uwyo:
+  name: University of Wyoming
+  short: UWyo
+  location: Laramie, Wyoming, USA
+  link: https://uwyo.edu
+
+fsu:
+  name: Florida State University
+  short: FSU
+  location: Tallahassee, Florida, USA
+  link: https://fsu.edu
