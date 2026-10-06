@@ -1,0 +1,24 @@
+# Normalise line endings to LF in the repository.
+#
+# This exists because of a silent failure mode: a CRLF line ending inside a
+# frontmatter value makes Jekyll read `image: images/people/ryan-eng.jpg\r`,
+# which matches no file on disk, so the portrait falls back to
+# images/fallback.svg and no thumbnail is generated. Nothing warns — the page
+# just shows the placeholder. Four member pages were broken this way.
+#
+# text=auto lets git decide what is text, and eol=lf stores it with Unix
+# endings regardless of the editor that wrote it.
+* text=auto eol=lf
+
+# Portraits and other binaries must never be line-ending converted.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary

@@ -5,7 +5,7 @@
 # The bio is generated from the record's structured fields and should be
 # replaced as soon as they submit one of their own.
 name: Lawson Heard
-image: images/people/lawson-heard.jpg
+image: images/people/lawson-heard.png
 role: undergrad
 sponsors: [ucf]
 links:

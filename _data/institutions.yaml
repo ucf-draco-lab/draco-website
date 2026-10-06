@@ -38,3 +38,9 @@ fsu:
   short: FSU
   location: Tallahassee, Florida, USA
   link: https://fsu.edu
+
+villanova:
+  name: Villanova University
+  short: Villanova
+  location: Villanova, Pennsylvania, USA
+  link: https://villanova.edu

@@ -5,7 +5,7 @@
 # The bio is generated from the record's structured fields and should be
 # replaced as soon as they submit one of their own.
 name: Osmand Arburua
-image: images/people/osmand-arburua.jpg
+image: images/people/osmand-arburua.png
 role: undergrad
 sponsors: [ucf]
 links:

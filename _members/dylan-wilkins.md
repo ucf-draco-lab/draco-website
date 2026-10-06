@@ -1,6 +1,6 @@
 ---
 name: Dylan Wilkins
-image: images/people/dylan-wilkins.jpg
+image: images/people/dylan-wilkins.png
 role: undergrad
 sponsors: [UCF]
 links:

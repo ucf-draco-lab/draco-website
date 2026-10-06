@@ -1,6 +1,6 @@
 ---
 name: Robert Lee
-image: images/people/robert-lee.jpg
+image: images/people/robert-lee.png
 role: [ms, alumni]
 date: 2026-05-01
 degrees:

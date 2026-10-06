@@ -1,6 +1,6 @@
 ---
 name: Aidan Gannon
-image: images/people/aidan-gannon.jpg
+image: images/people/aidan-gannon.png
 role: undergrad
 sponsors: [ucf]
 links:
