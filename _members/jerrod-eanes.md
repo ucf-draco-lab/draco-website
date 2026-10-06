@@ -1,6 +1,6 @@
 ---
 name: Jerrod Eanes
-image: images/people/jerrod-eanes.png
+image: images/people/jerrod-eanes.jpg
 role: alumni
 date: 2026-05-01
 degrees:

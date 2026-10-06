@@ -1,6 +1,6 @@
 ---
 name: Jordan Merkel
-image: images/people/jordan-merkel.png
+image: images/people/jordan-merkel.jpg
 role: [ms, alumni]
 date: 2026-05-01
 degrees:

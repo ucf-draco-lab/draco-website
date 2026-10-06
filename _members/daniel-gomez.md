@@ -1,6 +1,6 @@
 ---
 name: Daniel Gomez
-image: images/people/daniel-gomez.png
+image: images/people/daniel-gomez.jpg
 role: alumni
 date: 2026-05-01
 degrees:

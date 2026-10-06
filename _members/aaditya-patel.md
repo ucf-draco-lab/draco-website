@@ -5,7 +5,7 @@
 # The bio is generated from the record's structured fields and should be
 # replaced as soon as they submit one of their own.
 name: Aaditya Patel
-image: images/people/aaditya-patel.png
+image: images/people/aaditya-patel.jpg
 role: undergrad
 sponsors: [ucf]
 links:
