@@ -1,7 +1,9 @@
 # Airtable ↔ website disconnects
 
 Snapshot taken **2026-10-06** against the `Researchers` table of the **DRACO**
-Airtable base (`appnKGo7NspWFrwcx`), superseding the 2026-08-21 pass. Everything
+Airtable base (`appnKGo7NspWFrwcx`), superseding the 2026-08-21 pass. Revised the
+same day after the portraits landed and after writing institutions back to
+Airtable — see "Written back to Airtable" below. Everything
 listed here is a place where the base and `_members/` disagree, or where the
 base itself has a hole that the site then renders as a blank. Nothing below is
 fixed silently — the fixes that *were* applied are in the commit that updates
@@ -27,6 +29,33 @@ this file; what remains is the next pass.
   with generated stubs; they need real bios and headshots (§0).
 - `sriram-nimmala`'s display name was lower-cased (`sri ram nimmala`) and his
   bio was missing a verb. Both fixed.
+
+## Written back to Airtable
+
+This pass is the first to edit the base rather than only read it. With the PI's
+go-ahead, `Undergraduate Institution` was filled in on 13 records that had it
+blank:
+
+| Institution | Records |
+| --- | --- |
+| University of Wyoming | `alicia-thoney`, `calvin-vanwormer`, `ilona-van-der-linden` |
+| Villanova University | `christina-till` |
+| University of Central Florida | `aaditya--patel`, `cory-brynds`, `eren-durham`, `lakshmi-katravulapalli`, `lawson-heard`, `marcus-simmonds`, `matthew-edun`, `matthew-saintilus`, `osmand-arburua` |
+
+The Wyoming and Villanova values come from each member's own bio; the UCF ones
+are either corroborated by a bio ("at UCF, where he also earned his B.S.") or
+are current UCF undergraduates whose in-progress degree will be UCF's.
+
+`Villanova University` (`rec0hwBEBY5PxEWrQ`) was created in `Academic
+Institutions` for Christina, and mirrored into `_data/institutions.yaml`.
+
+**Five records were deliberately left blank** — their undergraduate institution
+is genuinely unknown and guessing it is the error this whole pass exists to
+prevent: `katelin-shaffer` (a B.A.S. in Information Technology, institution
+unnamed in her bio), `lakshmi-ramanathan` (no bio at all), `sagar-srujan-somepalli`
+("a Bachelor's degree in Computer Science", no institution), `sarayu-panditi`
+(no bio detail), `sriram-nimmala` (his M.S. is UT Dallas; his B.S. is unstated).
+Each needs asking the person.
 
 ## The institution model
 
@@ -67,6 +96,8 @@ replaces. All 40 current rows name one: 39 UCF and one Wyoming.
 | `jenna-goodrich` | B.S. (no major or year on file) | University of Wyoming | no — she has no B.S. row | Airtable `Undergraduate Institution` |
 | `ilona-van-der-linden` | B.S. Computer Science | University of Wyoming | no — no `degrees:` block | her bio |
 | `ilona-van-der-linden` | M.S. Computer Science | Santa Clara University | no — no `degrees:` block | her bio |
+| `christina-till` | B.S. Mechanical Engineering 2022 | Villanova University | no — no `degrees:` block | her bio |
+| `christina-till` | M.S. Electrical Engineering 2023 | Villanova University | no — no `degrees:` block | her bio |
 | `sriram-nimmala` | M.S. Electrical Engineering 2024 | UT Dallas | no — no `degrees:` block | his bio |
 | `_andey-robins` | B.S. Computer Science | University of Wyoming | no — member is hidden | his bio |
 
@@ -79,44 +110,40 @@ without reading this table would publish a Wyoming B.S. as a UCF one.
 
 Santa Clara University and UT Dallas are *not* in Airtable's `Academic
 Institutions` table and so are not in `_data/institutions.yaml` either. They
-need adding to Airtable before either member's degrees can be synced.
+need adding to Airtable before either member's degrees can be synced. Villanova
+now exists, added this pass for Christina Till.
 
 ## 0. Headshots — who still needs one
 
-Airtable serves attachments from `v5.airtableusercontent.com`, which this
-environment's network policy still refuses (`403` on `CONNECT`, re-tested
-2026-10-06). So no headshot can be pulled from a session configured like this
-one; they have to come from a session whose environment allows that host, or by
-hand.
+33 portraits were pulled out of Airtable by hand and committed in `500bb55`,
+which closes most of what this section used to list. They did not render on
+arrival: no member page referenced any of them. Three separate causes, all
+fixed in the commit that revises this file — see "Portrait paths" in §4.
+
+Airtable still serves attachments from `v5.airtableusercontent.com`, which this
+environment's network policy refuses (`403` on `CONNECT`, re-tested
+2026-10-06), so a session configured like this one still cannot pull one
+itself.
 
 ### 0.1 Rendering the fallback portrait right now
 
-Ten published members have an `image:` path with no file behind it, so they
-render `images/fallback.svg`. Nine of the ten have a headshot sitting in
-Airtable, unreachable from here:
-
-| Member | Airtable headshot | Note |
-| --- | --- | --- |
-| `kathlyn-buckley` | yes | not flagged by the last pass |
-| `rebecca-smith` | yes | not flagged by the last pass |
-| `ryan-eng` | yes | not flagged by the last pass |
-| `yuliia-plysiuk` | yes | not flagged by the last pass |
-| `eren-durham` | yes, 2472×2160 | outstanding since the last pass |
-| `lawson-heard` | yes, 1206×1310 | added this pass |
-| `matthew-edun` | yes, 1084×1295 | added this pass |
-| `osmand-arburua` | yes, 1179×2556 | added this pass |
-| `aaditya-patel` | yes, 1897×2386 | added this pass |
-| `matthew-saintilus` | **no** | must be collected directly |
+One member: **`matthew-saintilus`**. He has no image in the repo and no
+`Headshot` in Airtable either, so the photo has to be collected from him
+directly. Every other published member now resolves a real portrait, and
+thumbnail coverage is 87/88.
 
 ### 0.2 Airtable has a newer headshot or bio than the repo
 
-Unchanged from the last pass — all five still pending, for the same reason:
+`sebastian-candelaria` is resolved — the 2189×3292 `.png` landed and his page
+now points at it instead of the 800×1200 `.jpeg`. Four are still pending,
+because no upload arrived for them:
 
-`sebastian-candelaria` (Airtable holds `.png` at 2189×3292, repo references
-`.jpeg`), `ilona-van-der-linden` (Airtable `.png` 2160×2880, repo `.jpg`; the
-attachment filename is the literal `-.png`), `alexei-solonari` (444×451),
-`lakshmi-ramanathan` (456×540), `evan-eichholz` (Airtable 1170×1487 against a
-196×212 repo copy).
+| Member | Live portrait | Airtable holds |
+| --- | --- | --- |
+| `evan-eichholz` | 196×212 | 1170×1487 — the worst gap on the site |
+| `alexei-solonari` | 444×451 | 444×451 (same; only the bio may be newer) |
+| `lakshmi-ramanathan` | 456×540 | 456×540 (same; she still has no bio) |
+| `ilona-van-der-linden` | 917×1200 `.jpg` | a `.png`, filename the literal `-.png` |
 
 The signal is Airtable's `headshot-bio-update` field, a last-modified stamp over
 exactly two fields — `Headshot` and `BiographyMarkdown`. Compared against the
@@ -137,16 +164,17 @@ he is actually broken.
 ### 0.4 Still below the 400px the site renders at
 
 The portrait slot generates 400px and 800px WebP variants and the generator only
-downscales, so anything smaller is served upscaled and soft.
+downscales, so anything smaller is served upscaled and soft. The uploads fixed
+most of these; what is left:
 
 | Member | Size | Note |
 | --- | --- | --- |
-| `evan-eichholz` | 196×212 | fixed by pulling the Airtable headshot (§0.2) |
+| `evan-eichholz` | 196×212 | Airtable has 1170×1487 (§0.2) — the one worth chasing |
 | `andrea-borowczak` | 250×300 | no Airtable headshot (§0.3) |
 | `davi-dantas` | 306×506 | both repo copies are this size |
 | `malia-rojas` | 343×372 | best copy in the repo; no Airtable headshot |
 | `aidan-bowman` | 389×389 | marginal |
-| `_arturo-lara` | 175×174 | member is hidden |
+| `_andey-robins`, `_arturo-lara` | 175×174 | both members are hidden |
 
 ## 1. Conflicting values
 
@@ -174,14 +202,11 @@ downscales, so anything smaller is served upscaled and soft.
 
 ## 2. Holes in Airtable that the site renders as blanks
 
-- **No *Undergraduate Institution*** — 18 records, now the field that matters
-  most: `aaditya--patel`, `alicia-thoney`, `calvin-vanwormer`, `christina-till`,
-  `cory-brynds`, `eren-durham`, `ilona-van-der-linden`, `katelin-shaffer`,
-  `lakshmi-katravulapalli`, `lakshmi-ramanathan`, `lawson-heard`,
-  `marcus-simmonds`, `matthew-edun`, `matthew-saintilus`, `osmand-arburua`,
-  `sagar-srujan-somepalli`, `sarayu-panditi`, `sriram-nimmala`. Filling these in
-  is the single highest-value edit on the Airtable side: it is what lets the
-  undergraduate record of anyone in this list be synced without guessing.
+- **No *Undergraduate Institution*** — down from 18 records to **5**, all of
+  them genuinely unknown rather than merely unentered: `katelin-shaffer`,
+  `lakshmi-ramanathan`, `sagar-srujan-somepalli`, `sarayu-panditi`,
+  `sriram-nimmala`. See "Written back to Airtable" above. These five can only be
+  closed by asking the people themselves.
 - **No *Masters Institution*** where an MS year is set — `alicia-thoney`,
   `calvin-vanwormer`, `christina-till`, `cory-brynds`,
   `ilona-van-der-linden`, `sriram-nimmala`, `victoria-moreno`. The seven
@@ -237,6 +262,39 @@ rather than a defect:
   as an alumni signal until the two agree.
 
 ## 4. Site-only problems, unrelated to Airtable
+
+### Portrait paths — three ways an image silently does not render
+
+All three bit this repo at once when the 33 uploads landed, and all three fail
+*silently*: the portrait include has an `onerror` that swaps in
+`images/fallback.svg`, so a broken path looks like "no photo yet" rather than a
+bug.
+
+1. **CRLF in frontmatter.** `kathlyn-buckley`, `rebecca-smith`, `ryan-eng` and
+   `yuliia-plysiuk` had their image on disk the whole time, but the `image:`
+   line ended in CRLF, so Jekyll looked up `…/ryan-eng.jpg\r` and found
+   nothing. `.gitattributes` now forces LF on commit so this cannot recur.
+2. **Extension mismatch.** A member page naming `.jpg` while the file is `.png`
+   resolves to nothing. Four of the five pages added earlier in this pass had
+   guessed `.jpg`.
+3. **A filename the site cannot use.** `alyssa-pinnock.PNG` (uppercase
+   extension — a case-sensitivity trap on Pages), `aaditya--patel.png` and
+   `sriram-nimmala.png` (neither matches its member slug), and
+   `kathlyn-buckley` with no extension at all. All four were renamed.
+
+Two things worth knowing for the next upload batch:
+
+- **An upload is not automatically an upgrade.** `gabriel-martin.png` is
+  400×450 against the 1067×1200 already live, so repointing him would have been
+  a downgrade. Nine of the 33 are the same pixel size as what was already
+  there, or smaller, and are left unreferenced. Check dimensions before
+  repointing.
+- **`images/people/` is now 219 MB**, of which 206 MB is referenced.
+  `jordan-merkel.png` alone is 45 MB, `daniel-gomez.png` 15 MB,
+  `riley-newport.png` 12 MB, `ash-hanzelka.png` 11 MB. The thumbnail generator
+  means browsers normally fetch a 400/800px WebP, so pages stay fast, but every
+  clone and every `gh-pages` deploy carries the full weight. Downscaling the
+  originals to ~1600px would cut this by well over 90% with no visible change.
 
 - **`andrea-borowczak` has `role: Collaborator`**, which is not a key in
   `_data/types.yaml`. She gets no icon and no description, and no section on
