@@ -1,6 +1,6 @@
 ---
 name: Nickie Sethi
-image: images/people/nickie-sethi.png
+image: images/people/nickie-sethi.jpg
 role: undergrad
 sponsors: [ucf]
 links:

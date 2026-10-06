@@ -289,12 +289,16 @@ Two things worth knowing for the next upload batch:
   a downgrade. Nine of the 33 are the same pixel size as what was already
   there, or smaller, and are left unreferenced. Check dimensions before
   repointing.
-- **`images/people/` is now 219 MB**, of which 206 MB is referenced.
-  `jordan-merkel.png` alone is 45 MB, `daniel-gomez.png` 15 MB,
-  `riley-newport.png` 12 MB, `ash-hanzelka.png` 11 MB. The thumbnail generator
-  means browsers normally fetch a 400/800px WebP, so pages stay fast, but every
-  clone and every `gh-pages` deploy carries the full weight. Downscaling the
-  originals to ~1600px would cut this by well over 90% with no visible change.
+- **Portrait originals are capped at 1600px.** The uploads arrived at camera
+  resolution — `jordan-merkel.png` was 4472×7952 and 45 MB — which cost every
+  clone and every `gh-pages` deploy, for pixels no visitor ever receives: the
+  thumbnail generator serves 400px and 800px WebP. 22 oversized portraits were
+  downscaled to 1600px (2× the largest variant) and, where the PNG was fully
+  opaque, written as JPEG at quality 88, since a lossless PNG of a photograph
+  is simply the wrong format. `osmand-arburua.png` has real transparency and
+  stayed a PNG. **`images/people/` went from 219 MB to 34 MB; the referenced
+  portraits from 206 MB to 24.5 MB, a 96% cut** with no change to what the site
+  renders. Keep new portraits at or under 1600px.
 
 - **`andrea-borowczak` has `role: Collaborator`**, which is not a key in
   `_data/types.yaml`. She gets no icon and no description, and no section on

@@ -1,6 +1,6 @@
 ---
 name: Christina Till
-image: images/people/christina-till.png
+image: images/people/christina-till.jpg
 role: phd
 sponsors: [ucf]
 links:

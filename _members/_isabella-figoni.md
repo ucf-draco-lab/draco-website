@@ -1,6 +1,6 @@
 ---
 name: Isabella Figoni
-image: images/people/isabella-figoni.png
+image: images/people/isabella-figoni.jpg
 role: undergrad
 sponsors: [ucf]
 links:

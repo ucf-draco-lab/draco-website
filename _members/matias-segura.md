@@ -1,6 +1,6 @@
 ---
 name: Matias Segura
-image: images/people/matias-segura.png
+image: images/people/matias-segura.jpg
 role: ms
 sponsors: [ucf]
 links:

@@ -1,6 +1,6 @@
 ---
 name: Shivram Sundar
-image: images/people/shivram-sundar.png
+image: images/people/shivram-sundar.jpg
 role: undergrad
 sponsors: [ucf]
 
