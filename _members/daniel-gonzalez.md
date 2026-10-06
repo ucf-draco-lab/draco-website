@@ -7,6 +7,7 @@ degrees:
   - level: B.S.
     major: Computer Engineering
     year: 2026
+    institution: ucf
 sponsors: ucf 
 links:
   linkedin: Daniel-Gonzalez-5b8005624

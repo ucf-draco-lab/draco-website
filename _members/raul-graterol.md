@@ -8,6 +8,7 @@ degrees:
   - level: B.S.
     major: Computer Engineering
     year: 2025
+    institution: ucf
 sponsors: [northrop-grumman]
 former_awards: [northrop-grumman-scholar]
 links:

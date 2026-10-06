@@ -1,5 +1,5 @@
 ---
-name: sri ram nimmala
+name: Sriram Nimmala
 image: images/people/sri-ram-nimmala.png
 role: phd
 sponsors: [ucf]
@@ -10,6 +10,6 @@ links:
 ---
 
 
-Sriram Nimmala is his Ph.D. in Electrical Engineering at the University of Central Florida. He earned his Master's degree in Electrical Engineering with a focus on Digital Systems from University of Texas at Dallas in 2024.
+Sriram Nimmala is pursuing his Ph.D. in Electrical Engineering at the University of Central Florida. He earned his Master's degree in Electrical Engineering with a focus on Digital Systems from University of Texas at Dallas in 2024.
 
-Sriram has a passion in developing solutions to address real-world challenges, with a particular focus on hardware security and Domain specific accelerators. Outside of his academic pursuits, sriram enjoys playing badminton, running and cooking. 
+Sriram has a passion in developing solutions to address real-world challenges, with a particular focus on hardware security and Domain specific accelerators. Outside of his academic pursuits, Sriram enjoys playing badminton, running and cooking. 

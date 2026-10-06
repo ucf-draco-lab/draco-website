@@ -2,10 +2,12 @@
 name: Jordan Merkel
 image: images/people/jordan-merkel.jpg
 role: [ms, alumni]
+date: 2026-05-01
 degrees:
   - level: B.S.
     major: Computer Engineering
     year: 2026
+    institution: ucf
 sponsors: [amd, ucf]
 former_awards: [amd-scholar]
 links:

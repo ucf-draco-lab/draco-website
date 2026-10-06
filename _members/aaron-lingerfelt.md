@@ -7,6 +7,7 @@ affiliation: Northrop Grumman
 degrees:
   - level: B.S.
     year: 2024
+    institution: ucf
 sponsors: [ucf, northrop-grumman]
 former_awards: [northrop-grumman-scholar]
 links:

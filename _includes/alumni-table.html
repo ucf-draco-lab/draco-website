@@ -15,8 +15,13 @@
       - level: B.S.          # B.S. / M.S. / Ph.D.
         major: Computer Engineering
         year: 2026
+        institution: ucf     # key in _data/institutions.yaml
 
   A member with no `degrees:` block is skipped — nothing to put in a row.
+
+  The lab is at UCF, but several members earned a degree elsewhere before
+  joining it, so the institution is shown per degree and never inferred: a
+  degree that names none renders as an em dash rather than reading as UCF.
 
   Every Liquid tag below trims its own whitespace. This include is called from
   a markdown page, and kramdown ends a raw-HTML block at the first blank line —
@@ -46,6 +51,7 @@
 <th scope="col" data-col="major" aria-sort="none"><button type="button" class="alumni-sort">Major<span class="alumni-sort-marker"></span></button></th>
 <th scope="col" data-col="level" aria-sort="none"><button type="button" class="alumni-sort">Level<span class="alumni-sort-marker"></span></button></th>
 <th scope="col" data-col="year" aria-sort="none"><button type="button" class="alumni-sort">Year<span class="alumni-sort-marker"></span></button></th>
+<th scope="col" data-col="institution" aria-sort="none"><button type="button" class="alumni-sort">Institution<span class="alumni-sort-marker"></span></button></th>
 <th scope="col" data-col="sponsor" aria-sort="none"><button type="button" class="alumni-sort">Sponsor / Scholar<span class="alumni-sort-marker"></span></button></th>
 <th scope="col" data-col="company" aria-sort="none"><button type="button" class="alumni-sort">First Company<span class="alumni-sort-marker"></span></button></th>
 </tr>
@@ -108,19 +114,30 @@
 {%- endunless -%}
 {%- endfor -%}
 {%- assign sponsor_text = designations | join: ", " -%}
+{%- comment -%}
+  Institution is looked up in _data/institutions.yaml: the cell shows the
+  abbreviation, the data-* attribute (what sorting, filtering, grouping and
+  the search box all read) carries the full name, so "Wyoming" matches. An
+  institution with no entry there falls through as its own literal text.
+{%- endcomment -%}
+{%- assign institution_key = degree.institution | default: "" -%}
+{%- assign institution = site.data.institutions[institution_key] -%}
+{%- assign institution_name = institution.name | default: institution_key -%}
+{%- assign institution_short = institution.short | default: institution_name -%}
 {%- assign major_text = degree.major | default: "" -%}
 {%- assign company_text = member.affiliation | default: "" -%}
 {%- assign year_text = "" -%}
 {%- if degree_year != 0 -%}{%- assign year_text = degree_year -%}{%- endif -%}
 {%- assign thumb_1x = member.image | thumb_url: 400 -%}
 {%- assign thumb_2x = member.image | thumb_url: 800 -%}
-<tr data-first="{{ first_name }}" data-last="{{ last_name }}" data-major="{{ major_text }}" data-level="{{ degree.level }}" data-level-rank="{{ level_rank }}" data-year="{{ year_text }}" data-sponsor="{{ sponsor_text }}" data-company="{{ company_text }}">
+<tr data-first="{{ first_name }}" data-last="{{ last_name }}" data-major="{{ major_text }}" data-level="{{ degree.level }}" data-level-rank="{{ level_rank }}" data-year="{{ year_text }}" data-institution="{{ institution_name }}" data-sponsor="{{ sponsor_text }}" data-company="{{ company_text }}">
 <td class="alumni-td-photo"><a href="{{ member.url | relative_url }}" class="alumni-avatar" aria-label="{{ member.name }}"><picture>{% if thumb_1x != "" %}<source type="image/webp" srcset="{{ thumb_1x | relative_url }} 1x, {{ thumb_2x | relative_url }} 2x">{% endif %}<img src="{{ member.image | relative_url }}" class="alumni-avatar-image" alt="" loading="lazy" decoding="async" {% include fallback.html %}></picture></a></td>
 <td><a href="{{ member.url | relative_url }}">{{ first_name }}</a></td>
 <td><a href="{{ member.url | relative_url }}">{{ last_name }}</a></td>
 <td>{% if major_text != "" %}{{ major_text }}{% else %}<span class="alumni-empty">&mdash;</span>{% endif %}</td>
 <td>{{ degree.level }}</td>
 <td>{% if year_text != "" %}{{ year_text }}{% else %}<span class="alumni-empty">&mdash;</span>{% endif %}</td>
+<td>{% if institution_name != "" %}<abbr class="alumni-institution" title="{{ institution_name }}">{{ institution_short }}</abbr>{% else %}<span class="alumni-empty">&mdash;</span>{% endif %}</td>
 <td>{% if sponsor_text != "" %}{{ sponsor_text }}{% else %}<span class="alumni-empty">&mdash;</span>{% endif %}</td>
 <td>{% if company_text != "" %}{{ company_text }}{% else %}<span class="alumni-empty">&mdash;</span>{% endif %}</td>
 </tr>

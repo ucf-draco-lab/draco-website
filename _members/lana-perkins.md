@@ -7,6 +7,7 @@ affiliation: L3Harris
 degrees:
   - level: B.S.
     year: 2024
+    institution: ucf
 sponsors: [amd]
 former_awards: [amd-scholar]
 group: AMD

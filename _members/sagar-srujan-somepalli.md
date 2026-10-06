@@ -9,6 +9,7 @@ degrees:
   - level: M.S.
     major: Computer Science
     year: 2026
+    institution: ucf
 sponsors: [ucf]
 links:
 ---

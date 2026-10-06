@@ -29,7 +29,7 @@
           class="alumni-search"
           data-filter="text"
           placeholder="Filter alumni"
-          aria-label="Filter alumni by name, major, sponsor or company"
+          aria-label="Filter alumni by name, major, institution, sponsor or company"
         >
       </div>
 
@@ -40,6 +40,7 @@
           <option value="level" selected>Level</option>
           <option value="year">Year</option>
           <option value="major">Major</option>
+          <option value="institution">Institution</option>
           <option value="sponsor">Sponsor / Scholar</option>
           <option value="company">First company</option>
         </select>
@@ -60,6 +61,10 @@
       <label class="alumni-control">
         <span>Year</span>
         <select class="alumni-facet" data-filter="year"><option value="">All</option></select>
+      </label>
+      <label class="alumni-control">
+        <span>Institution</span>
+        <select class="alumni-facet" data-filter="institution"><option value="">All</option></select>
       </label>
       <label class="alumni-control">
         <span>Sponsor / Scholar</span>

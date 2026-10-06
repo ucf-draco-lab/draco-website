@@ -7,9 +7,11 @@ degrees:
   - level: B.S.
     major: Computer Science
     year: 2024
+    institution: ucf
   - level: M.S.
     major: Computer Engineering
     year: 2026
+    institution: ucf
 sponsors: [ucf, ibm, gem]
 links:
   linkedin: marcsimmonds

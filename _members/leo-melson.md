@@ -2,10 +2,12 @@
 name: Leo Melson
 image: images/people/leo-melson.jpg
 role: [ms, alumni]
+date: 2026-05-01
 degrees:
   - level: B.S.
     major: Computer Engineering
     year: 2026
+    institution: ucf
 sponsors: [amd]
 links:
   linkedin: leomelson

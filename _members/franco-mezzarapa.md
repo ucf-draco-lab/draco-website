@@ -2,10 +2,12 @@
 name: Franco Mezzarapa
 image: images/people/franco-mezzarapa.jpg
 role: [phd, alumni]
+date: 2026-05-01
 degrees:
   - level: B.S.
     major: Computer Engineering
     year: 2026
+    institution: ucf
 sponsors: [ucf,leidos]
 
 links:
