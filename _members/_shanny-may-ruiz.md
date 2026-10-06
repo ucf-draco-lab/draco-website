@@ -1,6 +1,6 @@
 ---
 name: Shanny May Ruiz
-image: images/people/shanny-may-ruiz.jpg
+image: images/people/shanny-may-ruiz.png
 role: undergrad
 sponsors: [ucf]
 links:

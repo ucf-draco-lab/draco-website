@@ -1,6 +1,6 @@
 ---
 name: Riley Newport
-image: images/people/riley-newport.jpg
+image: images/people/riley-newport.png
 role: alumni
 date: 2025-12-01
 degrees:

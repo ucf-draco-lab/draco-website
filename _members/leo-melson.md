@@ -1,6 +1,6 @@
 ---
 name: Leo Melson
-image: images/people/leo-melson.jpg
+image: images/people/leo-melson.png
 role: [ms, alumni]
 date: 2026-05-01
 degrees:

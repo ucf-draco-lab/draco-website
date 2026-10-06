@@ -1,6 +1,6 @@
 ---
 name: Daniel Gonzalez
-image: images/people/daniel-gonzalez.jpg
+image: images/people/daniel-gonzalez.png
 role: alumni
 date: 2026-05-01
 degrees:

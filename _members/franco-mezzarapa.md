@@ -1,6 +1,6 @@
 ---
 name: Franco Mezzarapa
-image: images/people/franco-mezzarapa.jpg
+image: images/people/franco-mezzarapa.png
 role: [phd, alumni]
 date: 2026-05-01
 degrees:

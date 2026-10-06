@@ -1,6 +1,6 @@
 ---
 name: Ashley Hanzelka
-image: images/people/ashley-hanzelka.jpg
+image: images/people/ash-hanzelka.png
 role: alumni
 date: 2025-05-01
 degrees:

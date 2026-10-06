@@ -4,7 +4,7 @@
 # down, so the portrait falls back to images/fallback.svg until it lands at
 # the path below.
 name: Eren Durham
-image: images/people/eren-durham.jpg
+image: images/people/eren-durham.png
 role: undergrad
 sponsors: [ucf]
 links:

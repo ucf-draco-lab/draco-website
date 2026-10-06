@@ -1,6 +1,6 @@
 ---
 name: Destiny Ellenwood
-image: images/people/destiny-ellenwood.jpg
+image: images/people/destiny-ellenwood.png
 role: alumni
 affiliation: Raytheon
 date: 2026-05-01

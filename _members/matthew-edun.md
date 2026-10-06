@@ -5,7 +5,7 @@
 # The bio is generated from the record's structured fields and should be
 # replaced as soon as they submit one of their own.
 name: Matthew Edun
-image: images/people/matthew-edun.jpg
+image: images/people/matthew-edun.png
 role: undergrad
 sponsors: [ucf]
 links:
