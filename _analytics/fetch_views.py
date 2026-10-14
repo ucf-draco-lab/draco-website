@@ -14,8 +14,10 @@ Configuration comes from the environment:
                      already uses
   UMAMI_API_URL      optional; defaults to Umami Cloud. For a self-hosted
                      instance use https://your-host/api
-  UMAMI_START_DATE   optional; YYYY-MM-DD, defaults to 2020-01-01. Counts are
-                     cumulative from this date forward.
+  UMAMI_START_DATE   optional; YYYY-MM-DD, defaults to
+                     `analytics.umami_start_date` in _config.yaml (the day
+                     tracking went live). Counts are cumulative from this
+                     date forward.
 
 So in practice UMAMI_API_KEY is the only thing that needs configuring, as a
 repository secret. Without it the script is a no-op and exits 0, so builds on
@@ -43,13 +45,12 @@ OUTPUT = REPO / "_data" / "views.yaml"
 CONFIG = REPO / "_config.yaml"
 
 DEFAULT_API_URL = "https://api.umami.is/v1"
-DEFAULT_START_DATE = "2020-01-01"
 MEMBER_URL_PREFIX = "/members/"
 TIMEOUT = 30
 
 
-def website_id_from_config():
-    """Read analytics.umami_website_id out of _config.yaml.
+def analytics_setting(key):
+    """Read analytics.<key> out of _config.yaml.
 
     A deliberately small scan rather than a YAML parse, so this script keeps
     to the standard library and needs no install step in CI.
@@ -58,7 +59,7 @@ def website_id_from_config():
         text = CONFIG.read_text()
     except OSError:
         return ""
-    match = re.search(r"^\s+umami_website_id:\s*(\S+)\s*$", text, re.MULTILINE)
+    match = re.search(rf"^\s+{key}:\s*(\S+)\s*$", text, re.MULTILINE)
     return match.group(1).strip("\"'") if match else ""
 
 
@@ -146,7 +147,7 @@ def write_yaml(counts, start_date, total):
 
 def main():
     api_key = os.environ.get("UMAMI_API_KEY", "").strip()
-    website_id = os.environ.get("UMAMI_WEBSITE_ID", "").strip() or website_id_from_config()
+    website_id = os.environ.get("UMAMI_WEBSITE_ID", "").strip() or analytics_setting("umami_website_id")
 
     if not api_key:
         print(f"UMAMI_API_KEY not set — leaving {OUTPUT.relative_to(REPO)} untouched.")
@@ -161,7 +162,17 @@ def main():
         return 1
 
     api_url = os.environ.get("UMAMI_API_URL", "").strip() or DEFAULT_API_URL
-    start_date = os.environ.get("UMAMI_START_DATE", "").strip() or DEFAULT_START_DATE
+    start_date = (
+        os.environ.get("UMAMI_START_DATE", "").strip()
+        or analytics_setting("umami_start_date")
+    )
+    if not start_date:
+        print(
+            "No start date: set UMAMI_START_DATE or analytics.umami_start_date "
+            "in _config.yaml.",
+            file=sys.stderr,
+        )
+        return 1
 
     try:
         start_day = date.fromisoformat(start_date)
