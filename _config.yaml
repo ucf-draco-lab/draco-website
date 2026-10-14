@@ -19,6 +19,9 @@ links:
 analytics:
   umami_website_id: 2176cef2-57af-4fcf-b220-7b2050b694c3
   umami_script: https://cloud.umami.is/script.js
+  # the day the Umami script went live; profile view counts are cumulative
+  # from here, and the counter's "since" tooltip shows this month
+  umami_start_date: 2026-05-09
 
 ### jekyll settings
 

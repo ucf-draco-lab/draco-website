@@ -20,7 +20,10 @@ One repository secret is all that's needed.
    and add a secret named `UMAMI_API_KEY` with that value.
 
 That's it. The website id is read from `analytics.umami_website_id` in
-`_config.yaml`, which is the same id the tracking script already uses.
+`_config.yaml`, which is the same id the tracking script already uses, and
+the counting window starts at `analytics.umami_start_date` — the day the
+tracking script went live (2026-05-09). Umami has no data before that, so an
+earlier date would only make the "since …" tooltip wrong.
 
 Until the secret exists the counter simply doesn't render — no errors, no
 zeroes, no broken layout. That's also what happens on pull request previews
@@ -49,7 +52,7 @@ Other environment variables, all optional:
 | --- | --- | --- |
 | `UMAMI_WEBSITE_ID` | `analytics.umami_website_id` from `_config.yaml` | Which site to read |
 | `UMAMI_API_URL` | `https://api.umami.is/v1` | Point at a self-hosted Umami with `https://your-host/api` |
-| `UMAMI_START_DATE` | `2020-01-01` | Counts are cumulative from this date |
+| `UMAMI_START_DATE` | `analytics.umami_start_date` from `_config.yaml` | Counts are cumulative from this date |
 
 Remember to `git checkout _data/views.yaml` afterwards if you don't want your
 local pull showing up in a commit.
