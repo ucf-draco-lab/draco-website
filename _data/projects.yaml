@@ -97,6 +97,18 @@
     - undergraduate-research-spots
     - graduate-research-spots
 
+- title: Circe
+  subtitle: Cross-Model Identification of Robustness, Correctness & Errors in LLM-Generated RTL Assertions
+  image: images/projects/circe.jpg
+  link: projects/circe.html
+  description: Language models will write your assertions, and the usual benchmarks grade them on a complete spec and a golden model. CIRCE grades them where real verification happens — ambiguous, incomplete, and inconsistent specs — and asks which failures hide in plain sight and what recovers correctness when they do.
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots
+    - graduate-research-spots
+
 - title: Dark Logic
   subtitle: Complexity Reduction for Formal Verification
   image: images/projects/dark_logic.webp
