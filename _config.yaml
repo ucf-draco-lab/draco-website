@@ -47,6 +47,11 @@ defaults:
       type: "projects"
     values:
       layout: project
+  # unlisted pages: reachable by direct link only, kept out of sitemap.xml
+  - scope:
+      path: "red-team-day"
+    values:
+      sitemap: false
 
 collections:
   # generate page for each member
