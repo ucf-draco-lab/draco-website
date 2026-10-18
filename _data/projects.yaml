@@ -14,6 +14,10 @@
 #
 # Senior design lives in _data/senior_design.yaml and renders on /senior-design.
 #
+# A project without artwork of its own points `image` at
+# images/projects/icons/<page>.svg; _cite/paper_icons.py draws that card image
+# from the title, subtitle and description.
+#
 # `sponsor` holds member slugs from _members/ (amd, awn, leidos, ucf, ...).
 # Corridor matching funds are described in the project's page, not here.
 
@@ -244,7 +248,7 @@
 
 - title: Formal Verification of a RISC-V Processor
   subtitle: Understanding Formal Verification Through Application
-  image: images/projects/default.jpg
+  image: images/projects/icons/formal_verification_of_processors.svg
   link: projects/formal_verification_of_processors.html
   description: Formal equivalence checking between a verified and an unverified RISC-V processor, run by undergraduate researchers as both a verification exercise and a teaching one.
   sponsor: [amd]
@@ -255,7 +259,7 @@
 
 - title: Homomorphic Acceleration Side-Channel Attacks
   subtitle: Information Leakage in Homomorphic Accelerators
-  image: images/projects/default.jpg
+  image: images/projects/icons/homomorphic_side_channels.svg
   link: projects/homomorphic_side_channels.html
   description: Whether the edge-side hardware that accelerates homomorphic encryption leaks its own cryptographic keys through the side channels the scheme was meant to make irrelevant.
   group: completed
@@ -265,7 +269,7 @@
 
 - title: Security in Automobile Systems
   subtitle: Fault Injection Against STM32 Microcontrollers
-  image: images/projects/default.jpg
+  image: images/projects/icons/fault_injection_stm32.svg
   link: projects/fault_injection_stm32.html
   description: Whether an STM32 microcontroller running a real-time operating system holds both data integrity and real-time guarantees under a clock glitching attack.
   group: completed
@@ -275,7 +279,7 @@
 
 - title: Router Canaries for Home Networks
   subtitle: Proactive Defense at the Edge of the Home
-  image: images/projects/default.jpg
+  image: images/projects/icons/router_canaries.svg
   link: projects/router_canaries.html
   description: Canaries embedded in a home router that identify targeted hardware, surface the addresses involved, and isolate a compromised IoT device before it can be used further.
   group: completed

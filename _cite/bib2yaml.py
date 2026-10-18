@@ -15,7 +15,7 @@ from pathlib import Path
 from pybtex.database import parse_string
 
 sys.path.insert(0, str(Path(__file__).parent))
-from paper_icons import icon_for
+from paper_icons import icon_for, generate_site_icons
 
 # ─── Configuration ───────────────────────────────────────────────────────────
 
@@ -326,6 +326,9 @@ def main():
         )
 
     log(f"Wrote {OUTPUT_FILE}")
+
+    # project card images and interactive-paper icons share the generator
+    generate_site_icons()
 
     if errors:
         log("Completed with errors", tag="ERROR")

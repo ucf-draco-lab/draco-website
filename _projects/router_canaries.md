@@ -1,7 +1,7 @@
 ---
 title: Router Canaries for Home Networks
 subtitle: Fortifying Home Networks- Advanced Cybersecurity Strategies for Proactive Defense.
-image: images/projects/default.jpg
+image: images/projects/icons/router_canaries.svg
 projectmembers:
 -
   id: malia-rojas

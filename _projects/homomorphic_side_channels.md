@@ -1,7 +1,7 @@
 ---
 title: Homomorphic Acceleration Side-Channel Attacks
 subtitle: Finding information leakage in homomorphic acceleration platforms.
-image: images/projects/default.jpg
+image: images/projects/icons/homomorphic_side_channels.svg
 projectmembers:
 -
   id: aaron-lingerfelt
