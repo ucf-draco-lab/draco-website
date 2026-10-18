@@ -43,7 +43,7 @@ widget:
     - /papers/saga-in-memory/go-compat.js
     - /papers/saga-in-memory/saga-engine.js
     - /papers/saga-in-memory/widget.js
-credit: "Interactive page by the [DRACO Lab](/). The browser engine is a JavaScript port of the authors' SAGA tool (GPLv3, as is the port), with Go's random number generator and sort carried over so that a seed gives the same run in both. Against the Go tool it matches 800 random orders, 800 mutations, and 16 small evolutionary runs generation by generation, and full runs at the paper's settings (population 2,000, ε = 50) return identical orders on cm150a (five seeds), 5xp1, and clip. The four benchmark netlists come from the SAGA repository; their gate counts equal the cycle counts in the paper's Table I. Everything runs on your device."
+credit: "Interactive page by the [DRACO Lab](/). The browser engine is a JavaScript port of the authors' SAGA tool (GPLv3, as is the port), with Go's random number generator and sort carried over so that a seed gives the same run in both. Against the Go tool it matches 800 random orders, 800 mutations, and 16 small evolutionary runs generation by generation, and full runs at the paper's settings (population 2,000, ε = 50) return identical orders on cm150a (five seeds), 5xp1, clip, and 9symml. The four benchmark netlists come from the SAGA repository; their gate counts equal the cycle counts in the paper's Table I. Everything runs on your device."
 bibtex: |
   @inproceedings{robins2024saga,
     author    = {Robins, Andey and Borowczak, Mike},
@@ -131,7 +131,7 @@ Each "generation" scores every order by simulating it and counting cells, so low
 </div>
 
 <div data-levels="ug" markdown="1">
-Crossover keeps the first part of one parent and appends the remaining gates in the other parent's order, which always yields a valid topological sort. Mutation picks a gate, rules out its ancestors and descendants, and swaps it with a remaining candidate until the result is valid. The seed makes a run repeatable: with the paper's settings and seed 1, the browser and the authors' Go tool return the identical order, needing 22 cells on cm150a, 38 on 5xp1, and 52 on clip.
+Crossover keeps the first part of one parent and appends the remaining gates in the other parent's order, which always yields a valid topological sort. Mutation picks a gate, rules out its ancestors and descendants, and swaps it with a remaining candidate until the result is valid. The seed makes a run repeatable: with the paper's settings and seed 1, the browser and the authors' Go tool return the identical order, needing 22 cells on cm150a, 38 on 5xp1, 52 on clip, and 64 on 9symml.
 </div>
 
 <div data-levels="grad res" markdown="1">
