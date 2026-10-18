@@ -13,7 +13,11 @@ With over a dozen active researchers and nationally recognized cybersecurity edu
 
 {% include section.html size="full" %}
 
-{% youtube hXAL-cSkj1w /img/placeholder.jpg %}
+<div class="video-hero">
+  <div class="video-hero-inner">
+    {% youtube hXAL-cSkj1w %}
+  </div>
+</div>
 
 {% include section.html %}
 
