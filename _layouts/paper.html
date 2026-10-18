@@ -11,7 +11,7 @@ layout: default
 {% assign levels = site.data.paper_levels %}
 {% assign default_level = page.default_level | default: levels.first.id %}
 
-<link rel="stylesheet" href="{{ "/papers/kit/paper-kit.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/papers/kit/paper-kit.css" | relative_url }}?v={{ site.time | date: "%s" }}">
 {% for css in page.widget.css %}
   <link rel="stylesheet" href="{{ css | relative_url }}">
 {% endfor %}
