@@ -161,10 +161,15 @@
   outline-offset: 2px;
 }
 
+.level-short { display: none; }
+
 @media (max-width: 560px) {
-  .level-bar { gap: 6px; padding: 8px 0; }
+  .level-bar { gap: 6px; padding: 6px 0; margin-top: 14px; }
+  .level-bar-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
   .level-options { width: 100%; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
-  .level-option { padding: 7px 2px; font-size: 0.74rem; line-height: 1.15; }
+  .level-option { padding: 8px 2px; font-size: 0.78rem; line-height: 1.15; }
+  .level-long { display: none; }
+  .level-short { display: inline; }
   .paper-subtitle { font-size: 1rem; }
 }
 

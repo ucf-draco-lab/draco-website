@@ -82,8 +82,9 @@ layout: default
           class="level-option"
           data-set-level="{{ level.id }}"
           aria-checked="{% if level.id == default_level %}true{% else %}false{% endif %}"
-          title="{{ level.hint }}"
-        >{{ level.label }}</button>
+          aria-label="{{ level.label }}"
+          title="{{ level.label }}: {{ level.hint }}"
+        ><span class="level-long">{{ level.label }}</span><span class="level-short" aria-hidden="true">{{ level.short | default: level.label }}</span></button>
       {% endfor %}
     </div>
   </div>
