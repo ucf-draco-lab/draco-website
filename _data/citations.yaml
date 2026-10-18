@@ -1,6 +1,19 @@
 # DO NOT EDIT — generated automatically by bib2yaml.py
-# Source: _bibliography/*.bib (153 entries)
+# Source: _bibliography/*.bib (154 entries)
 
+- id: borowczak2026trust
+  title: 'Trust but Verify: Engineering Students'' Adoption of Generative AI and Pedagogical Implications Across Disciplines'
+  authors:
+  - Mike Borowczak
+  - Andrea Carneal-Burrows Borowczak
+  publisher: 2026 ASEE Southeastern Section Conference
+  date: '2026-03-01'
+  link: https://doi.org/10.18260/1-2--58017
+  type: conference
+  source: proceedings.bib
+  image: images/papers/borowczak2026trust.svg
+  tags:
+  - conference
 - id: cryptography10030032
   title: Relaxation of Strict Avalanche Criterion on All SHA-256 Sub-Function Combinations
   authors:
