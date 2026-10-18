@@ -1,6 +1,18 @@
 # DO NOT EDIT — generated automatically by bib2yaml.py
-# Source: _bibliography/*.bib (152 entries)
+# Source: _bibliography/*.bib (153 entries)
 
+- id: cryptography10030032
+  title: Relaxation of Strict Avalanche Criterion on All SHA-256 Sub-Function Combinations
+  authors:
+  - Riley Vaughn
+  - Mike Borowczak
+  publisher: Cryptography
+  date: '2026-01-01'
+  link: https://doi.org/10.3390/cryptography10030032
+  type: journal
+  source: pubs.bib
+  tags:
+  - journal
 - id: '11414067'
   title: 'MiNTT: A Family of Module Lattice-based Cryptographic Compression Functions'
   authors:

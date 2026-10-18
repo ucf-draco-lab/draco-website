@@ -47,6 +47,11 @@ defaults:
       type: "projects"
     values:
       layout: project
+  # markdown files in /_papers (interactive paper pages)
+  - scope:
+      type: "papers"
+    values:
+      layout: paper
   # unlisted pages: reachable by direct link only, kept out of sitemap.xml
   - scope:
       path: "red-team-day"
@@ -63,6 +68,10 @@ collections:
   # generate page for each post
   projects:
     output: true
+  # generate an interactive page for each paper, at /papers/<file name>/
+  papers:
+    output: true
+    permalink: /papers/:name/
 
 # jekyll plugins
 plugins:
@@ -113,3 +122,4 @@ exclude:
   - _bibliography
   # internal working notes, not site content
   - AIRTABLE_SYNC.md
+  - papers/AUTHORING.md

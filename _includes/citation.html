@@ -85,6 +85,22 @@
           </div>
         {% endif %}
 
+        {% assign interactive = site.papers
+          | where_exp: "p", "p.citations contains citation.id"
+          | first
+        %}
+        {% if interactive %}
+          <div class="citation-buttons">
+            {%
+              include button.html
+              icon="fa-solid fa-flask-vial"
+              text="Try it in your browser"
+              link=interactive.url
+              style="bare"
+            %}
+          </div>
+        {% endif %}
+
         {% if citation.buttons.size > 0 %}
           <div class="citation-buttons">
             {% for button in citation.buttons %}

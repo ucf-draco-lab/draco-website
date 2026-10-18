@@ -1,0 +1,17 @@
+# Reading levels for interactive paper pages (_papers). Order is shallow to deep.
+# Content opts in per level with data-levels="public hs ..." on any element.
+- id: public
+  label: Public
+  hint: No background needed
+- id: hs
+  label: High school
+  hint: Bits, bytes, and a little algebra
+- id: ug
+  label: Undergrad
+  hint: Digital logic and intro programming
+- id: grad
+  label: Graduate
+  hint: Probability, statistics, and cryptography basics
+- id: res
+  label: Researcher
+  hint: Full method, statistics, and open questions
