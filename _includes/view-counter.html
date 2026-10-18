@@ -1,7 +1,10 @@
 {% comment %}
   Renders the cumulative pageview count for a page, from _data/views.yaml.
 
-  url   path to look up; defaults to the current page
+  url     path to look up; defaults to the current page
+  label   start of the tooltip; defaults to "Profile viewed"
+  since   "false" drops the "since <month>" end of the tooltip, for pages
+          that went live after counting began
 
   Renders nothing when the page has no recorded views yet, so the counter
   never shows a misleading zero and disappears cleanly when view data
@@ -10,6 +13,7 @@
 
 {% assign lookup = include.url | default: page.url %}
 {% assign views = site.data.views.pages[lookup] %}
+{% assign label = include.label | default: "Profile viewed" %}
 
 {% if views and views > 0 %}
   {% if views == 1 %}
@@ -20,7 +24,7 @@
 
   <div
     class="view-counter"
-    data-tooltip="Profile viewed {{ views | delimit_number }} {{ noun }}{% if site.data.views.range_start %} since {{ site.data.views.range_start | date: '%B %Y' }}{% endif %}"
+    data-tooltip="{{ label }} {{ views | delimit_number }} {{ noun }}{% if site.data.views.range_start and include.since != "false" %} since {{ site.data.views.range_start | date: '%B %Y' }}{% endif %}"
   >
     {% include icon.html icon="fa-solid fa-eye" %}
     <span class="view-count">{{ views | delimit_number }}</span>
