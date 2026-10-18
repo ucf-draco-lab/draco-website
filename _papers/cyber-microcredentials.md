@@ -32,7 +32,7 @@ sources:
   - venue: "ASEE Virtual Annual Conference · 2021"
     title: "Designing a Creative Cybersecurity Microcredential for Educators: Challenges and Successes of K-12 Teacher Professional Development"
     url: https://peer.asee.org/36927
-    access: Earlier study of Pilots 1 and 2, free to read
+    access: Free to read
 citations:
   - educsci12010004
   - asee-Bekir
