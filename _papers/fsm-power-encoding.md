@@ -84,7 +84,7 @@ A secure state assignment method for small controllers that cannot afford dual-r
 </div>
 
 <div class="lede" data-levels="res" markdown="1">
-Agrawal, Vemuri, and Borowczak (J. Electronic Testing, 2019) consolidate a HOST 2018 restructuring method and the VLSID 2019 low-power extension into one methodology with three variants: restructured secure FSMs (self-loops split into state pairs, then all three Hamming models equalized), secure original FSMs (self-loops kept), and secure low-power original FSMs (an added switching-activity objective). This page ports the STP computation, Algorithm 1, the switching activity estimate (Eq. 9 and 11), and the constraint model of Section 5 to JavaScript, runs them on the LGSynth'91 KISS2 benchmarks, and checks the results against Tables 2, 3, 4, and 7 and Figures 5, 6, and 13. Gate-level power simulation and the mutual information study (Tables 5, 6, and 8) are out of reach in a browser; the page reports them from the paper.
+Agrawal, Vemuri, and Borowczak (J. Electronic Testing, 2019) consolidate a HOST 2018 restructuring method and the VLSID 2019 low-power extension into one methodology with three variants: restructured secure FSMs (self-loops split into state pairs, then all three Hamming models equalized), secure original FSMs (self-loops kept), and secure low-power original FSMs (an added switching-activity objective). This page ports the STP computation, Algorithm 1, the switching activity estimate (Eq. 9 and 11), and the constraint model of Section 5 to JavaScript, runs them on the LGSynth'91 KISS2 benchmarks, and checks the results against Tables 2, 3, 4, and 7 and Figures 5, 6, and 13, for original and restructured machines. Gate-level power simulation and the mutual information study (Tables 5, 6, and 8) are out of reach in a browser; the page reports them from the paper.
 </div>
 
 ## What the power meter sees
@@ -149,6 +149,26 @@ The constraints are those of Section 4.4: distinct codes, equal HW within each s
 
 <div data-levels="grad res" markdown="1">
 The switching distance row uses the paper's model: a rising bit costs 1 and a falling bit 1 − δ, with δ = 0.17. Equal weights and equal distances force equal switching distances within a transition set, since rises equal (D + W₂ − W₁)/2 and falls (D − W₂ + W₁)/2 (Eq. 1 to 3). The last row is this page's own leakage measure, not the paper's: with inputs uniform, a reading is a deterministic function of the state (or transition), so the mutual information between state and reading equals the entropy of the reading under the stationary distribution (or the STPs). It falls to zero for the weight model at *l* = 1 and stays at the self-loop entropy for distances, mirroring the paper's finding that original FSMs can reach zero leakage only under the weight model.
+</div>
+
+## Hiding the pauses too
+
+<div id="fp-split" class="w-demo"></div>
+
+<div data-levels="public" markdown="1">
+Most ticks, BBARA stays where it is (about 78 percent of them under random inputs), and staying put flips no bits. Even with secure codes, a power meter can see those quiet ticks. The paper's stronger option replaces every state that can stay put with a pair of twin states that pass the job back and forth, so staying put still flips bits. At *l* = 1, every tick then looks the same to every model the attacker uses. The price shows in the table: twice the states for BBARA, one more storage bit, and about four and a half times as many bit flips per tick.
+</div>
+
+<div data-levels="hs" markdown="1">
+The drawing shows the trick (the paper's Figure 4): a state *s* that can stay put becomes *s*A and *s*B. The input that used to keep the machine in *s* now moves it from *s*A to *s*B or back, and every other input leaves from either twin to the same place as before. BBARA grows from 10 states and 37 transitions to 20 states and 74 transitions, the same counts the paper reports. With one group, every split BBARA state holds three ones and every tick flips exactly four bits, so neither the weight row nor the switching row ever changes.
+</div>
+
+<div data-levels="ug" markdown="1">
+Restructuring removes every self-loop, so the equal-distance constraint now covers every transition, including the ones that used to read as HD = 0. With *l* = 1 the page finds encodings with a single weight and a single distance for seven of the eight machines; the MODULO12 search hits its budget, and DK27 needs no split because it has no self-loops. Across the settings the search completes, encoding length grows by zero to three bits over the original machine at the same *l* (most often two), and switching activity rises because every clock edge now toggles bits. For DK15 and S8 at *l* = 3, the page's shortest restructured encodings use five bits, the length of the paper's Table 2 encodings.
+</div>
+
+<div data-levels="grad res" markdown="1">
+The page splits each state with a self-loop into an A and B copy, routes the self-loop inputs between them, sends edges that entered the state into the A copy, and recomputes STPs on the new graph before running Algorithm 1 (the routing of incoming edges is this page's reading of Figure 4). At *l* = 1 the restructured encodings reach zero on all three of the page's leakage measures, consistent with the paper's report that restructured FSMs reach zero mutual information against HW, HD, and SD alike. The cost matches the paper's direction: averaged over its benchmarks, area grows by a factor of 2.04 and power by 3.4 at maximum security, against 1.37 and 1.6 for original FSMs. The restructured variant has no low-power step in the paper, so the page searches only for the shortest secure encoding. Restructured BBARA at *l* = 5 and several MODULO12 settings hit the search budget; the table says so.
 </div>
 
 ## Security against size and power
@@ -261,6 +281,7 @@ The method gives designers an explicit security parameter with measured costs in
 - **The five-bit secure BBARA encoding breaks one constraint.** Under the Figure 6 partition, the Table 3 secure code gives the transitions out of set 3 (st2, st5, and st9) distances of both 2 and 4. Exhaustive search here, cross-checked with an independent Z3 model of Section 5.2, finds no five-bit encoding for *l* = 4, so six bits is the shortest. That matches the low power & secure column and explains why the page needs one bit more than Figure 13 at *l* = 2 to 4.
 - **Table 3's minimal-encoding activity.** The printed four-bit codes give SA = 0.4265 rather than 0.443; the secure (0.5148) and low power & secure (0.4452) columns match exactly. Changing a single code (st2 from 0100 to 0101, for example) yields 0.4432, so a transcription difference in one code is the likeliest explanation.
 - **Table 4's switching distance lists.** For the minimal and secure codes, the page finds different sets of rise and fall combinations than Table 4 prints (it lists 4 − 4δ for the minimal code, which needs a transition from 1111 to 0000 that BBARA does not have). The Hamming weight and distance lists match for all three encodings.
+- **Table 2's restructured encodings.** They take only weights {2, 4} and distances {2, 4}, as the text states. They do not meet the per-set distance constraint, though: some states have outgoing transitions with both distances (DK15 state3A flips two bits to most successors and four to state4), and Algorithm 1 puts every transition leaving a state into that state's set. The page's own five-bit encodings at *l* = 3 meet the constraint at the same length.
 - **Figures 5 and 6 STPs.** The S8 values in Figure 5 match the self-loop completion of missing inputs to two decimals; one DK15 label (0.14 from s2 to s3) computes to 0.19 here, the same as the s2 self-loop.
 - **Table 7 units and incomplete machines.** Seven of nine rows reproduce to within 0.01 when Eq. 10 is read in microwatts. BEECOUNT and TRAIN11 differ, likely because their incomplete transitions were completed differently.
 - **The leakage measure in the encoding demo** (entropy of the reading under the stationary distribution) is this page's addition. It captures single-sample, noiseless leakage of each model and does not replace the paper's mutual information between simulated power and model.
