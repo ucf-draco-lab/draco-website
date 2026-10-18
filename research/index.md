@@ -86,6 +86,16 @@ Please note that the citations on this page were generated automatically from id
 
 {% include section.html %}
 
+## Interactive Papers
+
+Some DRACO results run in your browser. Each [interactive paper]({{ "/papers/" | relative_url }}) rebuilds an experiment from the published work and explains it at five reading levels, from the general public to researchers.
+
+{% for paper in site.papers %}
+- [{{ paper.title }}]({{ paper.url | relative_url }}): {{ paper.description }}
+{% endfor %}
+
+{% include section.html %}
+
 ## All Publications
 ## Publications
 

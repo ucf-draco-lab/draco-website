@@ -19,7 +19,10 @@
 {% assign subtitle = site.subtitle %}
 
 {% assign description = page.description | default: site.description %}
-{% if site.subtitle %}
+{% if page.share_description %}
+  {% comment %} a page-written social blurb is used as-is, without the subtitle prefix {% endcomment %}
+  {% assign description = page.share_description | escape %}
+{% elsif site.subtitle %}
   {% capture description -%}
     {{ site.subtitle }}. {{ description }}
   {%- endcapture %}
@@ -27,6 +30,10 @@
 {% capture url -%}
   {{ site.url }}{{ site.baseurl }}
 {%- endcapture %}
+{% comment %}
+  social cards need this page's own absolute address, not the home page's
+{% endcomment %}
+{% assign pageurl = page.url | default: "/" | absolute_url %}
 
 {% assign png = "images/icon.png" | file_exists %}
 {% assign jpg = "images/icon.jpg" | file_exists %}
@@ -34,7 +41,12 @@
 
 {% assign jpg = "images/share.jpg" | file_exists %}
 {% assign png = "images/share.png" | file_exists %}
-{% assign share = jpg | default: png | relative_url %}
+{% comment %}
+  crawlers only follow absolute image addresses; a page can set its own card
+  with share_image (and share_image_alt)
+{% endcomment %}
+{% assign share = page.share_image | default: jpg | default: png | absolute_url %}
+{% assign share_alt = page.share_image_alt | default: site.title | escape %}
 
 {% assign published = page.date | date_to_xmlschema %}
 {% assign updated = page.last_modified_at | date_to_xmlschema %}
@@ -46,6 +58,7 @@
 <title>{{ fulltitle }}</title>
 
 <link rel="icon" href="{{ icon }}">
+<link rel="canonical" href="{{ pageurl }}">
 
 <meta name="title" content="{{ title }}">
 <meta name="description" content="{{ description }}">
@@ -53,15 +66,17 @@
 <meta property="og:title" content="{{ title }}">
 <meta property="og:site_title" content="{{ site.title }}">
 <meta property="og:description" content="{{ description }}">
-<meta property="og:url" content="{{ url }}">
+<meta property="og:url" content="{{ pageurl }}">
 <meta property="og:image" content="{{ share }}">
+<meta property="og:image:alt" content="{{ share_alt }}">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="{{ title }}">
 <meta property="twitter:description" content="{{ description }}">
-<meta property="twitter:url" content="{{ url }}">
+<meta property="twitter:url" content="{{ pageurl }}">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="{{ share }}">
+<meta property="twitter:image:alt" content="{{ share_alt }}">
 
 {% if page.author %}
   <meta name="author" content="{{ page.author }}">
@@ -70,6 +85,8 @@
   <meta property="article:published_time" content="{{ published }}">
   <meta property="article:modified_time" content="{{ updated }}">
   <meta name="revised" content="{{ updated }}">
+{% elsif page.collection == "papers" %}
+  <meta property="og:type" content="article">
 {% else %}
   <meta property="og:type" content="website">
 {% endif %}
@@ -92,7 +109,7 @@
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "{{ icon }}" }
     },
-    "url": "{{ url }}"
+    "url": "{{ pageurl }}"
   }
 </script>
 

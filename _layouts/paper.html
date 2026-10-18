@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+{% comment %}
+  Interactive paper page. One reading-level switch drives every element that
+  carries data-levels="..."; widgets listen for the "paperlevel" event.
+  Front matter contract lives in papers/README.md.
+{% endcomment %}
+
+{% assign levels = site.data.paper_levels %}
+{% assign default_level = page.default_level | default: levels.first.id %}
+
+<link rel="stylesheet" href="{{ "/papers/kit/paper-kit.css" | relative_url }}">
+{% for css in page.widget.css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}">
+{% endfor %}
+
+<article
+  class="paper"
+  data-level="{{ default_level }}"
+  data-default-level="{{ default_level }}"
+  data-slug="{{ page.slug }}"
+>
+  <div class="paper-head">
+    {% if page.kicker %}
+      <p class="paper-kicker">{{ page.kicker }}</p>
+    {% endif %}
+    <h1 class="paper-title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+      <p class="paper-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+
+    {% if page.authors %}
+      <p class="paper-byline">
+        {% for author in page.authors %}
+          {% assign member = nil %}
+          {% if author.member %}
+            {% assign member = site.members | where_exp: "m", "m.slug == author.member" | first %}
+          {% endif %}
+          {% if member %}
+            <a href="{{ member.url | relative_url }}">{{ author.name }}</a>
+          {% elsif author.link %}
+            <a href="{{ author.link }}">{{ author.name }}</a>
+          {% else %}
+            <span>{{ author.name }}</span>
+          {% endif %}
+          {% if author.affiliation %}<span class="paper-affil">{{ author.affiliation }}</span>{% endif %}
+          {% unless forloop.last %}<span class="paper-sep" aria-hidden="true">/</span>{% endunless %}
+        {% endfor %}
+      </p>
+    {% endif %}
+
+    {% if page.sources %}
+      <ul class="paper-sources">
+        {% for source in page.sources %}
+          <li>
+            <span class="paper-source-venue">{{ source.venue }}</span>
+            <a class="paper-source-title" href="{{ source.url }}">{{ source.title }}</a>
+            {% if source.access %}<span class="paper-source-access">{{ source.access }}</span>{% endif %}
+          </li>
+        {% endfor %}
+        {% if page.code %}
+          <li>
+            <span class="paper-source-venue">Code</span>
+            <a class="paper-source-title" href="{{ page.code.url }}">{{ page.code.label }}</a>
+          </li>
+        {% endif %}
+      </ul>
+    {% endif %}
+
+    {% include share-bar.html compact=true %}
+  </div>
+
+  <div class="level-bar" role="group" aria-label="Reading level">
+    <span class="level-bar-label" id="level-bar-label">Read as</span>
+    <div class="level-options" role="radiogroup" aria-labelledby="level-bar-label">
+      {% for level in levels %}
+        <button
+          type="button"
+          role="radio"
+          class="level-option"
+          data-set-level="{{ level.id }}"
+          aria-checked="{% if level.id == default_level %}true{% else %}false{% endif %}"
+          aria-label="{{ level.label }}"
+          title="{{ level.label }}: {{ level.hint }}"
+        ><span class="level-long">{{ level.label }}</span><span class="level-short" aria-hidden="true">{{ level.short | default: level.label }}</span></button>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="paper-body">
+    {{ content }}
+  </div>
+
+  <div class="paper-foot">
+    {% if page.bibtex %}
+      <div class="paper-cite">
+        <div class="paper-cite-head">
+          <h2 id="cite">Cite the papers</h2>
+          <button type="button" class="paper-copy" data-copy-target="paper-bibtex">Copy BibTeX</button>
+        </div>
+        <pre id="paper-bibtex" class="paper-bibtex">{{ page.bibtex | strip | escape }}</pre>
+      </div>
+    {% endif %}
+
+    {% include share-bar.html %}
+
+    {% if page.credit %}
+      <p class="paper-credit">{{ page.credit | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+    {% endif %}
+  </div>
+</article>
+
+<script src="{{ "/papers/kit/paper-kit.js" | relative_url }}" defer></script>
+{% for js in page.widget.js %}
+  <script src="{{ js | relative_url }}" defer></script>
+{% endfor %}
