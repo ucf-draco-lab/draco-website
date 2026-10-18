@@ -109,6 +109,9 @@ layout: default
     {% if page.credit %}
       <p class="paper-credit">{{ page.credit | markdownify | remove: "<p>" | remove: "</p>" }}</p>
     {% endif %}
+
+    {% assign ai_model = page.ai_model | default: "Claude Opus 5.5 Extra" %}
+    <p class="paper-credit paper-ai-note">{{ ai_model }} (Anthropic) supported the development of this page's widget code and its reconstruction of the published work.</p>
   </div>
 </article>
 
