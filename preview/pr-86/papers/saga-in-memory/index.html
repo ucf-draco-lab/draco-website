@@ -845,7 +845,7 @@
   
 
   <section class="background" data-size="page">
-    <link rel="stylesheet" href="/preview/pr-86/papers/kit/paper-kit.css?v=1792306282">
+    <link rel="stylesheet" href="/preview/pr-86/papers/kit/paper-kit.css?v=1792306589">
 
   <link rel="stylesheet" href="/preview/pr-86/papers/saga-in-memory/widget.css">
 
@@ -1037,7 +1037,7 @@
 </div>
 
 <div data-levels="ug">
-  <p>Crossover keeps the first part of one parent and appends the remaining gates in the other parent’s order, which always yields a valid topological sort. Mutation picks a gate, rules out its ancestors and descendants, and swaps it with a remaining candidate until the result is valid. The seed makes a run repeatable: with the paper’s settings and seed 1, the browser and the authors’ Go tool return the identical order, needing 22 cells on cm150a, 38 on 5xp1, and 52 on clip.</p>
+  <p>Crossover keeps the first part of one parent and appends the remaining gates in the other parent’s order, which always yields a valid topological sort. Mutation picks a gate, rules out its ancestors and descendants, and swaps it with a remaining candidate until the result is valid. The seed makes a run repeatable: with the paper’s settings and seed 1, the browser and the authors’ Go tool return the identical order, needing 22 cells on cm150a, 38 on 5xp1, 52 on clip, and 64 on 9symml.</p>
 </div>
 
 <div data-levels="grad res">
@@ -1330,7 +1330,7 @@
 
 
     
-      <p class="paper-credit">Interactive page by the <a href="/">DRACO Lab</a>. The browser engine is a JavaScript port of the authors’ SAGA tool (GPLv3, as is the port), with Go’s random number generator and sort carried over so that a seed gives the same run in both. Against the Go tool it matches 800 random orders, 800 mutations, and 16 small evolutionary runs generation by generation, and full runs at the paper’s settings (population 2,000, ε = 50) return identical orders on cm150a (five seeds), 5xp1, and clip. The four benchmark netlists come from the SAGA repository; their gate counts equal the cycle counts in the paper’s Table I. Everything runs on your device.
+      <p class="paper-credit">Interactive page by the <a href="/">DRACO Lab</a>. The browser engine is a JavaScript port of the authors’ SAGA tool (GPLv3, as is the port), with Go’s random number generator and sort carried over so that a seed gives the same run in both. Against the Go tool it matches 800 random orders, 800 mutations, and 16 small evolutionary runs generation by generation, and full runs at the paper’s settings (population 2,000, ε = 50) return identical orders on cm150a (five seeds), 5xp1, clip, and 9symml. The four benchmark netlists come from the SAGA repository; their gate counts equal the cycle counts in the paper’s Table I. Everything runs on your device.
 </p>
     
   </div>
