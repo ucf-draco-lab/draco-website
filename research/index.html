@@ -922,7 +922,9 @@
   size: full;
 -->
 
-<div class="yt-embed" data-video-id="hXAL-cSkj1w">
+<div class="video-hero">
+  <div class="video-hero-inner">
+    <div class="yt-embed" data-video-id="hXAL-cSkj1w">
   <img src="https://i.ytimg.com/vi/hXAL-cSkj1w/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
   <button class="yt-play" aria-label="Play video">
     <svg viewbox="0 0 68 48" width="68" height="48">
@@ -938,13 +940,20 @@
     if (!el) return;
     var img = el.querySelector('img');
 
-    // Try upgrading to maxresdefault (1280×720) if it exists.
-    // YouTube returns a 120×90 gray placeholder for missing thumbs.
-    var hires = new Image();
-    hires.onload = function() {
-      if (hires.naturalWidth > 200) img.src = hires.src;
-    };
-    hires.src = 'https://i.ytimg.com/vi/' + vid + '/maxresdefault.jpg';
+    // Try the sharpest thumbnail that exists: maxresdefault
+    // (1280×720), then sddefault (640×480). YouTube returns a
+    // 120×90 gray placeholder for missing thumbs.
+    var sizes = ['maxresdefault', 'sddefault'];
+    (function tryNext(i) {
+      if (i >= sizes.length) return;
+      var hires = new Image();
+      hires.onload = function() {
+        if (hires.naturalWidth > 200) img.src = hires.src;
+        else tryNext(i + 1);
+      };
+      hires.onerror = function() { tryNext(i + 1); };
+      hires.src = 'https://i.ytimg.com/vi/' + vid + '/' + sizes[i] + '.jpg';
+    })(0);
 
     // Click to play
     el.addEventListener('click', function() {
@@ -960,6 +969,9 @@
     });
   })();
 </script>
+
+  </div>
+</div>
   </section>
 
   
