@@ -78,7 +78,7 @@ bibtex: |
 ---
 
 <div class="lede" data-levels="public" markdown="1">
-Most schools in the United States offer no computer science class, and fewer still teach cybersecurity, the work of keeping information secret, correct, and available. A team at the University of Wyoming ran three free, week-long summer camps on the subject in 2018 and 2019 for 84 students between 10 and 18 years old. Campers programmed pocket-sized computers to send radio messages, pick electronic locks, and drive small robots, then talked about what each lab meant for the phones and games they use every day. This page lets you try one of those labs, then follows how the camp changed between summers and what students reported at the end.
+Most schools in the United States offer no computer science class, and fewer still teach cybersecurity, the work of keeping information secret, correct, and available. A team at the University of Wyoming ran three free, week-long summer camps on the subject in 2018 and 2019 for 84 students between 10 and 18 years old. Campers programmed pocket-sized computers to send radio messages, pick electronic locks, and drive small robots, then talked about what each lab meant for the devices and accounts they use every day. This page lets you try one of those labs, then follows how the camp changed between summers and what students reported at the end.
 </div>
 
 <div class="lede" data-levels="hs" markdown="1">
