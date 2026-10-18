@@ -81,6 +81,8 @@
     this.advDelay = opts.advDelay || "stability";
     this.advScale = opts.advScale == null ? 0.2 : opts.advScale;
     this.order = opts.order || "dc";
+    this.ring = opts.ring || "seek";        // "band": move only outside delta +/- epsilon; "seek": also settle onto delta
+    this.space = opts.space || "patch";          // "patch": one agent per patch; "continuous": keep 0.5 units apart
     this.seed = opts.seed == null ? 1 : opts.seed;
     this.rand = mulberry32(this.seed * 2654435761 + 12345);
     this.agents = [];
@@ -179,6 +181,15 @@
 
   Swarm.prototype.freeAhead = function (a, dist) {
     var nx = a.x + dist * Math.sin(a.h * DEG), ny = a.y + dist * Math.cos(a.h * DEG);
+    if (this.space === "continuous") {
+      for (var i = 0; i < this.agents.length; i++) {
+        var b = this.agents[i];
+        if (b === a) continue;
+        var dx = wdelta(b.x - nx), dy = wdelta(b.y - ny);
+        if (dx * dx + dy * dy < 0.25) return false;
+      }
+      return true;
+    }
     var idx = patchIndex(nx, ny), own = patchIndex(a.x, a.y);
     var others = this.occ[idx] - (idx === own ? 1 : 0);
     return others <= 0;
@@ -216,6 +227,12 @@
     if (this.delta - dist < -this.epsilon) {
       if (this.freeAhead(a, this.c)) { this.move(a, this.c); return "forward"; }
       return "blocked";
+    }
+    if (this.ring === "seek" && Math.abs(this.delta - dist) > 0.05) {
+      // inside the band: step onto the ideal circle, never past it
+      var step = Math.min(this.c, Math.abs(this.delta - dist)) * (dist > this.delta ? 1 : -1);
+      if (this.freeAhead(a, step)) { this.move(a, step); return "settle"; }
+      return "in";
     }
     return "in";
   };
