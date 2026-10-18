@@ -261,7 +261,7 @@
         chart.appendChild(svg("line", { x1: padL, x2: W - padR, y1: y(t), y2: y(t), class: "c-grid" }));
         chart.appendChild(svg("text", { x: padL - 6, y: y(t) + 4, "text-anchor": "end", class: "c-tick" }, String(t)));
       }
-      chart.appendChild(svg("text", { x: padL, y: H - 6, class: "c-label" }, "bits flipped per clock, last " + MAXH + " clocks (bars); open = hold"));
+      chart.appendChild(svg("text", { x: padL, y: H - 6, class: "c-label" }, W < 520 ? "bits flipped per clock; open = hold" : "bits flipped per clock, last " + MAXH + " clocks; open or flat = hold"));
       var h = sim.hist.slice(-MAXH), bw = (W - padL - padR) / MAXH;
       h.forEach(function (e, i) {
         var x = padL + i * bw + bw * 0.15, w = bw * 0.7;
