@@ -23,6 +23,7 @@ layout: default
   data-slug="{{ page.slug }}"
 >
   <div class="paper-head">
+    <a class="paper-back" href="{{ "/papers/" | relative_url }}"><span aria-hidden="true">←</span> All interactive papers</a>
     {% if page.kicker %}
       <p class="paper-kicker">{{ page.kicker }}</p>
     {% endif %}
@@ -69,6 +70,8 @@ layout: default
       </ul>
     {% endif %}
 
+    {% include view-counter.html label="This page has" since="false" %}
+
     {% include share-bar.html compact=true %}
   </div>
 
@@ -113,6 +116,41 @@ layout: default
     {% assign ai_model = page.ai_model | default: "Claude Opus 5.5 Extra" %}
     <p class="paper-credit paper-ai-note">{{ ai_model }} (Anthropic) supported the development of this page's widget code and its reconstruction of the published work.</p>
   </div>
+
+  {% comment %}
+    Other interactive papers. Every other page is listed in date order so the
+    section works without JavaScript (the first three show); paper-kit.js then
+    reorders by view count from _data/views.yaml, or at random when there are
+    no counts, and offers a Most viewed / Random switch.
+  {% endcomment %}
+  {% assign others = site.papers | where_exp: "p", "p.url != page.url" | sort: "date" | reverse %}
+  {% if others.size > 0 %}
+    <aside class="paper-more" aria-labelledby="paper-more-heading" data-paper-more data-show="3">
+      <div class="paper-more-head">
+        <h2 id="paper-more-heading">More interactive papers</h2>
+        <a class="paper-more-all" href="{{ "/papers/" | relative_url }}">See all {{ site.papers.size }} papers</a>
+      </div>
+      <div class="paper-more-sort" role="group" aria-label="Choose papers by" hidden>
+        <button type="button" class="paper-more-option" data-more-sort="popular" aria-pressed="true">Most viewed</button>
+        <button type="button" class="paper-more-option" data-more-sort="random" aria-pressed="false">Random</button>
+      </div>
+      <ul class="paper-index paper-index-compact paper-more-list">
+        {% for paper in others %}
+          {% assign views = site.data.views.pages[paper.url] | default: 0 %}
+          {% assign icon = "images/papers/interactive/" | append: paper.slug | append: ".svg" %}
+          {% if paper.icon %}{% assign icon = paper.icon %}{% endif %}
+          <li data-views="{{ views }}"{% if forloop.index > 3 %} hidden{% endif %}>
+            <a class="paper-index-icon" href="{{ paper.url | relative_url }}" tabindex="-1" aria-hidden="true">
+              <img src="{{ icon | relative_url }}" alt="" width="64" height="64" loading="lazy" {% include fallback.html %}>
+            </a>
+            <a class="paper-index-title" href="{{ paper.url | relative_url }}">{{ paper.title }}</a>
+            <span class="paper-index-meta">{{ paper.kicker }}{% if views > 0 %} · {{ views | delimit_number }} {% if views == 1 %}view{% else %}views{% endif %}{% endif %}</span>
+            <span>{{ paper.description }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </aside>
+  {% endif %}
 </article>
 
 <script src="{{ "/papers/kit/paper-kit.js" | relative_url }}" defer></script>
