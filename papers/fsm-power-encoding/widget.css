@@ -109,3 +109,10 @@
 @media (max-width: 560px) { .paper-body .fp-facts { grid-template-columns: minmax(0, 1fr); } .fp-facts dt { border-bottom: 0; padding-bottom: 0; } }
 
 .paper-body li { text-align: left; }
+
+/* split self-loops (restructured) */
+.fp-fig4 { display: block; width: 100%; max-width: 360px; height: auto; margin: 8px 0; }
+.fp-fig4-node { fill: var(--background-alt); stroke: var(--primary); stroke-width: 2; }
+.paper-body .fp-split-table { min-width: 0; }
+.fp-split-table td:first-child { width: 38%; }
+@media (max-width: 560px) { .paper-body .fp-split-table th, .paper-body .fp-split-table td { padding: 6px 4px; font-size: 0.82rem; } .fp-split-table td:first-child { width: 34%; } }
