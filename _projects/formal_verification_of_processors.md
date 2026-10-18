@@ -1,7 +1,7 @@
 ---
 title: Formal Verification of a RISC-V Processor
 subtitle: Understanding Formal Verification Through Application
-image: images/projects/default.jpg
+image: images/projects/icons/formal_verification_of_processors.svg
 projectmembers:
 -
   id: lana-perkins

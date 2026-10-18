@@ -1,7 +1,7 @@
 ---
 title: Security in Automobile Systems
 subtitle: Testing the Security of STM32 MCU Against Side-Channel Attacks
-image: images/projects/default.jpg
+image: images/projects/icons/fault_injection_stm32.svg
 projectmembers:
 -
   id: sheridan-sloan

@@ -11,6 +11,12 @@ unique, even for repeat titles.
 
 Output is deterministic, so re-running produces no diffs. bib2yaml.py calls
 icon_for() for every entry; an `image` field in a .bib entry overrides it.
+
+The same generator also draws (run `python _cite/paper_icons.py`, which
+bib2yaml.py does too):
+  - a 3:2 card image for every project in _data/projects.yaml whose `image`
+    points into images/projects/icons/ (projects without artwork of their own)
+  - a square icon for each interactive paper in _papers/, shown on /papers/
 """
 
 import hashlib
@@ -19,6 +25,10 @@ import re
 from pathlib import Path
 
 ICON_DIR = Path("images/papers")
+PROJECT_ICON_DIR = Path("images/projects/icons")
+INTERACTIVE_ICON_DIR = Path("images/papers/interactive")
+PROJECTS_FILE = Path("_data/projects.yaml")
+INTERACTIVE_DIR = Path("_papers")
 
 # ─── Colour families (gradient start, gradient end) ──────────────────────────
 
@@ -137,9 +147,13 @@ GLYPHS = {
             '<line x1="65" y1="44" x2="55" y2="60"/><polyline points="55,54 55,60 61,58"/>'
             '<line x1="45" y1="60" x2="35" y2="44"/><polyline points="35,50 35,44 41,46"/>'),
     "chip": _chip('<rect class="F" x="42" y="42" width="16" height="16" rx="2"/>'),
+    "chip_bolt": _chip('<polygon class="F" points="53,38 42,52 49,52 46,62 58,47 51,47"/>'),
     "chip_warn": _chip('<polygon stroke-width="3" points="50,40 59,57 41,57"/>'
                        '<circle class="F" cx="50" cy="53" r="1.6"/><line stroke-width="3" x1="50" y1="46" x2="50" y2="49"/>'),
     "neural": _neural(),
+    "check": '<circle cx="50" cy="50" r="24"/><polyline points="38,51 46,59 63,42"/>',
+    "car": ('<path d="M22,62 V52 L30,50 L37,38 H63 L70,50 L78,52 V62 Z"/><line x1="38" y1="50" x2="69" y2="50"/>'
+            '<line x1="50" y1="38" x2="50" y2="50"/><circle cx="34" cy="64" r="6"/><circle cx="66" cy="64" r="6"/>'),
     "lock": ('<path d="M39,48 V40 a11,11 0 0 1 22,0 V48"/><rect x="31" y="48" width="38" height="26" rx="4"/>'
              '<circle class="F" cx="50" cy="59" r="3.5"/><line x1="50" y1="60" x2="50" y2="67"/>'),
     "eye_slash": ('<path d="M24,50 Q50,26 76,50 Q50,74 24,50 Z"/><circle cx="50" cy="50" r="7"/>'
@@ -249,6 +263,7 @@ GLYPHS = {
 TOPIC_RULES = [
     (r"ransomware", "file_lock", "cyber"),
     (r"trojan", "chip_warn", "hwsec"),
+    (r"fault injection|glitch", "chip_bolt", "hwsec"),
     (r"\btor\b", "onion", "cyber"),
     (r"malicious url|\burl\b", "globe", "cyber"),
     (r"ddos|canar", "router", "network"),
@@ -258,6 +273,9 @@ TOPIC_RULES = [
     (r"s-box|\baes\b|gift|block cipher", "key", "crypto"),
     (r"\bs?\*?fsms?\b|state machine|state encoding|secure controllers", "fsm", "hwsec"),
     (r"side.?channel|power analysis|power attack|tvla|\bdpa\b|leak|uncover the secrets", "waveform", "hwsec"),
+    (r"homomorphic|encrypt", "lock", "crypto"),
+    (r"formal verification|risc-v|processor", "chip", "hwsec"),
+    (r"equivalence|verified", "check", "hwsec"),
     (r"transistor|circuit|microelectronic|hardware security|\bchip", "chip", "hwsec"),
     (r"generative (ai|artificial)", "sparkle", "ml"),
     (r"federated", "hub", "ml"),
@@ -269,6 +287,7 @@ TOPIC_RULES = [
     (r"blockchain", "blocks", "crypto"),
     (r"\bswarms?\b(?! scholars)|drone|uav", "drone", "network"),
     (r"s-chirp|schirp|peer-to-peer|command, control", "radio", "network"),
+    (r"automobile|automotive|vehicle", "car", "systems"),
     (r"storage device|\busb\b", "usb", "systems"),
     (r"avionics", "plane", "systems"),
     (r"\biot\b|iots|internet of things|\bcps\b|embedded|devices", "wifi", "network"),
@@ -283,7 +302,7 @@ TOPIC_RULES = [
     (r"colder", "thermo", "science"),
     (r"big bang", "burst", "science"),
     (r"data corral|data analysis|data collection|statistic|quantitative|visualization|predictive|"
-     r"corpora|data-driven|search|feature selection", "bars", "science"),
+     r"corpora|data-driven|\bsearch|feature selection", "bars", "science"),
     (r"web notebooks|cloud", "cloud", "systems"),
     (r"c\+\+|lazy streams", "code", "systems"),
     (r"agile|constructivist|action research|lesson study|design thinking", "cycle", "edu"),
@@ -316,19 +335,21 @@ def classify(text):
     return glyph, family, badge
 
 
-def _traces(seed):
+def _traces(seed, width=100):
     """Faint circuit traces: grid-aligned runs with one 45° bend and a via."""
     out = []
+    sx = width / 100
     for k in range(6):
         b = seed[k * 4:(k + 1) * 4]
         side = b[0] % 4
         t = 14 + (b[1] % 8) * 10           # position along the starting edge
+        tx = round(t * sx)
         run = 8 + b[2] % 20                 # straight run before the bend
         bend = 6 + b[3] % 12                # diagonal run
         d = 1 if b[3] & 1 else -1
-        if side == 0:   x0, y0, dx, dy = t, 6, 0, 1
-        elif side == 1: x0, y0, dx, dy = 94, t, -1, 0
-        elif side == 2: x0, y0, dx, dy = t, 94, 0, -1
+        if side == 0:   x0, y0, dx, dy = tx, 6, 0, 1
+        elif side == 1: x0, y0, dx, dy = width - 6, t, -1, 0
+        elif side == 2: x0, y0, dx, dy = tx, 94, 0, -1
         else:           x0, y0, dx, dy = 6, t, 1, 0
         x1, y1 = x0 + dx * run, y0 + dy * run
         x2, y2 = x1 + (dx or d) * bend, y1 + (dy or d) * bend
@@ -337,7 +358,8 @@ def _traces(seed):
     return "".join(out)
 
 
-def render_svg(citation_id, title, text):
+def render_svg(citation_id, title, text, wide=False):
+    """Square rounded tile, or a full-bleed 3:2 banner when wide (project cards)."""
     glyph, family, badge = classify(text)
     c1, c2 = FAMILIES[family]
     seed = hashlib.sha256(citation_id.encode("utf-8")).digest()
@@ -351,16 +373,23 @@ def render_svg(citation_id, title, text):
                      f'{GLYPHS[badge]}</g>')
     else:
         badge_svg = ""
+    width = 150 if wide else 100
+    if wide:
+        main = f'<g transform="translate(25 0)">{main}</g>'
+        badge_svg = f'<g transform="translate(25 0)">{badge_svg}</g>'
+        frame = f'<rect width="{width}" height="100" fill="url(#{gid})"/>'
+    else:
+        frame = f'<rect x="4" y="4" width="92" height="92" rx="16" fill="url(#{gid})"/>'
     safe_title = (title.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img">'
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} 100" role="img">'
         f'<title>{safe_title}</title>'
         f'<defs><linearGradient id="{gid}" gradientTransform="rotate({angle} .5 .5)">'
         f'<stop offset="0" stop-color="{c1}"/><stop offset="1" stop-color="{c2}"/></linearGradient>'
         f'<style>.F{{fill:currentColor;stroke:none}}</style></defs>'
-        f'<rect x="4" y="4" width="92" height="92" rx="16" fill="url(#{gid})"/>'
+        f'{frame}'
         f'<g fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="1.6" stroke-linecap="round">'
-        f'{_traces(seed)}</g>'
+        f'{_traces(seed, width)}</g>'
         f'<g fill="none" stroke="#fff" color="#fff" stroke-width="4.5" stroke-linecap="round" '
         f'stroke-linejoin="round">{main}</g>'
         f'<g fill="none" color="{c2}" stroke-linecap="round" stroke-linejoin="round">{badge_svg}</g>'
@@ -374,9 +403,42 @@ def icon_filename(citation_id):
 
 def icon_for(citation_id, title, keywords=""):
     """Write the icon for one citation and return its site-relative path."""
-    ICON_DIR.mkdir(parents=True, exist_ok=True)
     path = ICON_DIR / icon_filename(citation_id)
-    svg = render_svg(citation_id, title, f"{title} {keywords}")
+    _write(path, render_svg(citation_id, title, f"{title} {keywords}"))
+    return path.as_posix()
+
+
+def _write(path, svg):
+    path.parent.mkdir(parents=True, exist_ok=True)
     if not path.exists() or path.read_text(encoding="utf-8") != svg:
         path.write_text(svg, encoding="utf-8")
-    return path.as_posix()
+
+
+def _front_matter(path):
+    import yaml
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith("---"):
+        return {}
+    return yaml.safe_load(text.split("---", 2)[1]) or {}
+
+
+def generate_site_icons():
+    """Project card images and interactive-paper icons (see module docstring)."""
+    import yaml
+    projects = yaml.safe_load(PROJECTS_FILE.read_text(encoding="utf-8")) or []
+    for project in projects:
+        image = Path(project.get("image", ""))
+        if image.parent != PROJECT_ICON_DIR:
+            continue
+        text = " ".join(str(project.get(k, "")) for k in ("title", "subtitle", "description"))
+        _write(image, render_svg(f"project:{image.stem}", project["title"], text, wide=True))
+
+    for page in sorted(INTERACTIVE_DIR.glob("*.md")):
+        meta = _front_matter(page)
+        text = f"{meta.get('title', '')} {meta.get('subtitle', '')}"
+        _write(INTERACTIVE_ICON_DIR / f"{page.stem}.svg",
+               render_svg(f"paper:{page.stem}", meta.get("title", page.stem), text))
+
+
+if __name__ == "__main__":
+    generate_site_icons()
