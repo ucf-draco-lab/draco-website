@@ -29,6 +29,8 @@ share_image: /papers/<slug>/share.png
 share_image_alt: "What the card shows"
 date: YYYY-MM-DD
 default_level: public
+level_hints:                   # optional: per-paper tooltips for the level buttons
+  hs: "Classroom science and a little coding"
 authors:
   - name: Full Name
     affiliation: Institution

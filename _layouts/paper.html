@@ -83,7 +83,7 @@ layout: default
           data-set-level="{{ level.id }}"
           aria-checked="{% if level.id == default_level %}true{% else %}false{% endif %}"
           aria-label="{{ level.label }}"
-          title="{{ level.label }}: {{ level.hint }}"
+          title="{{ level.label }}: {% if page.level_hints and page.level_hints[level.id] %}{{ page.level_hints[level.id] }}{% else %}{{ level.hint }}{% endif %}"
         ><span class="level-long">{{ level.label }}</span><span class="level-short" aria-hidden="true">{{ level.short | default: level.label }}</span></button>
       {% endfor %}
     </div>
@@ -97,7 +97,7 @@ layout: default
     {% if page.bibtex %}
       <div class="paper-cite">
         <div class="paper-cite-head">
-          <h2 id="cite">Cite the papers</h2>
+          <h2 id="cite">Cite the paper{% if page.sources.size > 1 %}s{% endif %}</h2>
           <button type="button" class="paper-copy" data-copy-target="paper-bibtex">Copy BibTeX</button>
         </div>
         <pre id="paper-bibtex" class="paper-bibtex">{{ page.bibtex | strip | escape }}</pre>
