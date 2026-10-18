@@ -11,6 +11,7 @@
   link: https://doi.org/10.3390/cryptography10030032
   type: journal
   source: pubs.bib
+  image: images/papers/cryptography10030032.svg
   tags:
   - journal
 - id: '11414067'
@@ -23,6 +24,7 @@
   link: https://doi.org/10.1109/ACCESS.2026.3668453
   type: journal
   source: pubs.bib
+  image: images/papers/11414067.svg
   tags:
   - journal
   - Polynomials
@@ -40,6 +42,7 @@
   link: https://doi.org/10.1109/ACCESS.2026.3662283
   type: journal
   source: pubs.bib
+  image: images/papers/11373715.svg
   tags:
   - journal
   - Authentication
@@ -58,6 +61,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/ifip-iot2025.svg
   tags:
   - conference
 - id: cars-2025
@@ -70,6 +74,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/cars-2025.svg
   tags:
   - conference
 - id: asee_peer2025
@@ -83,6 +88,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/asee_peer2025.svg
   tags:
   - conference
 - id: borowczak2025
@@ -96,6 +102,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/borowczak2025.svg
   tags:
   - conference
 - id: edsci2025
@@ -109,6 +116,7 @@
   link: https://doi.org/10.3390/educsci15070893
   type: journal
   source: pubs.bib
+  image: images/papers/edsci2025.svg
   tags:
   - journal
 - id: borowczak2025ai
@@ -121,6 +129,7 @@
   link: https://doi.org/10.1145/3716368.3735255
   type: conference
   source: proceedings.bib
+  image: images/papers/borowczak2025ai.svg
   tags:
   - conference
 - id: ifip-iot2024
@@ -135,6 +144,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/ifip-iot2024.svg
   tags:
   - conference
 - id: cars-2024
@@ -149,6 +159,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/cars-2024.svg
   tags:
   - conference
 - id: '1742'
@@ -163,6 +174,7 @@
   link: https://doi.org/10.33225/pec/24.82.507
   type: journal
   source: pubs.bib
+  image: images/papers/1742.svg
   tags:
   - journal
 - id: mwscas2024
@@ -175,6 +187,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/mwscas2024.svg
   tags:
   - conference
 - id: asee_peer2024
@@ -187,6 +200,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/asee_peer2024.svg
   tags:
   - conference
 - id: cryptography8030040
@@ -199,6 +213,7 @@
   link: https://doi.org/10.3390/cryptography8030040
   type: journal
   source: pubs.bib
+  image: images/papers/cryptography8030040.svg
   tags:
   - journal
 - id: asemf2023
@@ -212,6 +227,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/asemf2023.svg
   tags:
   - presentation
 - id: inl-poster-2023
@@ -226,6 +242,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/inl-poster-2023.svg
   tags:
   - presentation
 - id: jcp3040038
@@ -241,6 +258,7 @@
   link: https://doi.org/10.3390/jcp3040038
   type: journal
   source: pubs.bib
+  image: images/papers/jcp3040038.svg
   tags:
   - journal
 - id: jcp3030018
@@ -256,6 +274,7 @@
   link: https://doi.org/10.3390/jcp3030018
   type: journal
   source: pubs.bib
+  image: images/papers/jcp3030018.svg
   tags:
   - journal
 - id: foster2023faster
@@ -270,6 +289,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/foster2023faster.svg
   tags:
   - conference
 - id: borowczak-ises
@@ -281,6 +301,7 @@
   link: ''
   type: invited
   source: invited.bib
+  image: images/papers/borowczak-ises.svg
   tags:
   - invited
 - id: asee_peer_41204
@@ -296,6 +317,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/asee_peer_41204.svg
   tags:
   - conference
 - id: asee_peer_41203
@@ -310,6 +332,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/asee_peer_41203.svg
   tags:
   - conference
 - id: reynolds2022confusion
@@ -323,6 +346,7 @@
   link: https://doi.org/10.1177/21582440221097916
   type: journal
   source: pubs.bib
+  image: images/papers/reynolds2022confusion.svg
   tags:
   - journal
 - id: educsci12010004
@@ -336,6 +360,7 @@
   link: https://doi.org/10.3390/educsci12010004
   type: journal
   source: pubs.bib
+  image: images/papers/educsci12010004.svg
   tags:
   - journal
 - id: ises-2022
@@ -350,6 +375,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/ises-2022.svg
   tags:
   - conference
 - id: iccd-2022
@@ -363,6 +389,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/iccd-2022.svg
   tags:
   - conference
 - id: nist-lwc-2022
@@ -378,6 +405,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/nist-lwc-2022.svg
   tags:
   - conference
 - id: wsdm-2022
@@ -392,6 +420,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/wsdm-2022.svg
   tags:
   - conference
 - id: Borowczak2022
@@ -404,6 +433,7 @@
   link: https://doi.org/10.1007/978-3-030-78841-4_14
   type: book
   source: books.bib
+  image: images/papers/Borowczak2022.svg
   tags:
   - book
 - id: burrows2022stem
@@ -417,6 +447,7 @@
   link: ''
   type: book
   source: books.bib
+  image: images/papers/burrows2022stem.svg
   tags:
   - book
 - id: nicek1221
@@ -430,6 +461,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/nicek1221.svg
   tags:
   - presentation
 - id: inl-poster-2021
@@ -446,6 +478,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/inl-poster-2021.svg
   tags:
   - presentation
 - id: asee-Bekir
@@ -459,6 +492,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/asee-Bekir.svg
   tags:
   - conference
 - id: asee-NSFWySLICE
@@ -471,6 +505,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/asee-NSFWySLICE.svg
   tags:
   - conference
 - id: bekir-design-thinking
@@ -484,6 +519,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/bekir-design-thinking.svg
   tags:
   - presentation
 - id: INL-innovation
@@ -497,6 +533,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/INL-innovation.svg
   tags:
   - presentation
 - id: aera-2021-fostering
@@ -514,6 +551,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/aera-2021-fostering.svg
   tags:
   - conference
 - id: SDM-2021
@@ -526,6 +564,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/SDM-2021.svg
   tags:
   - presentation
 - id: iceti-2021-eval
@@ -544,6 +583,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/iceti-2021-eval.svg
   tags:
   - conference
 - id: BurrBoroMuga20212c
@@ -562,6 +602,7 @@
   link: https://www.learntechlib.org/p/219108
   type: conference
   source: proceedings.bib
+  image: images/papers/BurrBoroMuga20212c.svg
   tags:
   - conference
 - id: bekir-stem-micro-cred
@@ -579,6 +620,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/bekir-stem-micro-cred.svg
   tags:
   - presentation
 - id: borowczak-dber
@@ -590,6 +632,7 @@
   link: ''
   type: invited
   source: invited.bib
+  image: images/papers/borowczak-dber.svg
   tags:
   - invited
 - id: borowczak-codebreaker
@@ -601,6 +644,7 @@
   link: ''
   type: invited
   source: invited.bib
+  image: images/papers/borowczak-codebreaker.svg
   tags:
   - invited
 - id: mugayitoglu2021university
@@ -619,6 +663,7 @@
   link: ''
   type: journal
   source: pubs.bib
+  image: images/papers/mugayitoglu2021university.svg
   tags:
   - journal
 - id: educsci11010021
@@ -634,6 +679,7 @@
   link: https://doi.org/10.3390/educsci11010021
   type: journal
   source: pubs.bib
+  image: images/papers/educsci11010021.svg
   tags:
   - journal
 - id: wolf2021data
@@ -648,6 +694,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/wolf2021data.svg
   tags:
   - conference
 - id: ieee-big-data-2021
@@ -664,6 +711,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/ieee-big-data-2021.svg
   tags:
   - conference
 - id: wolf2021jangseung
@@ -677,6 +725,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/wolf2021jangseung.svg
   tags:
   - conference
 - id: '9516772'
@@ -691,6 +740,7 @@
   link: https://doi.org/10.1109/ISVLSI51109.2021.00052
   type: conference
   source: proceedings.bib
+  image: images/papers/9516772.svg
   tags:
   - conference
 - id: '9516763'
@@ -705,6 +755,7 @@
   link: https://doi.org/10.1109/ISVLSI51109.2021.00051
   type: conference
   source: proceedings.bib
+  image: images/papers/9516763.svg
   tags:
   - conference
 - id: '9534017'
@@ -718,6 +769,7 @@
   link: https://doi.org/10.1109/IJCNN52387.2021.9534017
   type: conference
   source: proceedings.bib
+  image: images/papers/9534017.svg
   tags:
   - conference
 - id: saraji2021blockchain
@@ -730,6 +782,7 @@
   link: ''
   type: other
   source: otherwork.bib
+  image: images/papers/saraji2021blockchain.svg
   tags:
   - other
 - id: borowczak-boise
@@ -741,6 +794,7 @@
   link: ''
   type: invited
   source: invited.bib
+  image: images/papers/borowczak-boise.svg
   tags:
   - invited
 - id: nicek1220
@@ -754,6 +808,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/nicek1220.svg
   tags:
   - presentation
 - id: IntegratedOuteach
@@ -770,6 +825,7 @@
   link: https://doi.org/10.3390/educsci10120353
   type: journal
   source: pubs.bib
+  image: images/papers/IntegratedOuteach.svg
   tags:
   - journal
 - id: icce-2020-sharks
@@ -782,6 +838,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/icce-2020-sharks.svg
   tags:
   - conference
 - id: icce-2020-canary
@@ -794,6 +851,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/icce-2020-canary.svg
   tags:
   - conference
 - id: MDDevConnect20
@@ -806,6 +864,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/MDDevConnect20.svg
   tags:
   - presentation
 - id: NSAShowcaseFa20
@@ -818,6 +877,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/NSAShowcaseFa20.svg
   tags:
   - presentation
 - id: inl-poster-2020
@@ -834,6 +894,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/inl-poster-2020.svg
   tags:
   - presentation
 - id: asee_peer_31078
@@ -849,6 +910,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/asee_peer_31078.svg
   tags:
   - conference
 - id: data_coral2
@@ -865,6 +927,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/data_coral2.svg
   tags:
   - conference
 - id: '9109421'
@@ -879,6 +942,7 @@
   link: https://doi.org/10.1109/MCE.2020.2969174
   type: journal
   source: pubs.bib
+  image: images/papers/9109421.svg
   tags:
   - journal
 - id: borowczak2020self
@@ -896,6 +960,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/borowczak2020self.svg
   tags:
   - conference
 - id: aste2020
@@ -908,6 +973,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/aste2020.svg
   tags:
   - presentation
 - id: ICMLA
@@ -921,6 +987,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/ICMLA.svg
   tags:
   - conference
 - id: 19nicek12
@@ -935,6 +1002,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/19nicek12.svg
   tags:
   - presentation
 - id: 19nice
@@ -949,6 +1017,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/19nice.svg
   tags:
   - presentation
 - id: smartcities2019
@@ -962,6 +1031,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/smartcities2019.svg
   tags:
   - conference
 - id: 19MDDevConnect
@@ -977,6 +1047,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/19MDDevConnect.svg
   tags:
   - presentation
 - id: JETTD
@@ -990,6 +1061,7 @@
   link: https://doi.org/10.1007/s10836-019-05821-z
   type: journal
   source: pubs.bib
+  image: images/papers/JETTD.svg
   tags:
   - journal
 - id: asee_peer_27365
@@ -1007,6 +1079,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/asee_peer_27365.svg
   tags:
   - conference
 - id: asee_peer_27304
@@ -1019,6 +1092,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/asee_peer_27304.svg
   tags:
   - conference
 - id: Borowczak2019Fueling
@@ -1032,6 +1106,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/Borowczak2019Fueling.svg
   tags:
   - conference
 - id: Borowczak2019CSUnplugged
@@ -1046,6 +1121,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/Borowczak2019CSUnplugged.svg
   tags:
   - conference
 - id: educsci9010066
@@ -1058,6 +1134,7 @@
   link: https://doi.org/10.3390/educsci9010066
   type: journal
   source: pubs.bib
+  image: images/papers/educsci9010066.svg
   tags:
   - journal
 - id: BorowBurrows2016o9
@@ -1070,6 +1147,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/BorowBurrows2016o9.svg
   tags:
   - conference
 - id: iet:/content/journals/10.1049/iet-cdt.2018.5186
@@ -1082,6 +1160,7 @@
   link: https://doi.org/10.1049/iet-cdt.2018.5186
   type: journal
   source: pubs.bib
+  image: images/papers/iet-content-journals-10-1049-iet-cdt-2018-5186.svg
   tags:
   - journal
 - id: burrows2019lesson
@@ -1094,6 +1173,7 @@
   link: https://doi.org/10.1080/09650792.2019.1566082
   type: journal
   source: pubs.bib
+  image: images/papers/burrows2019lesson.svg
   tags:
   - journal
 - id: LPFSMrAgrawal
@@ -1107,6 +1187,7 @@
   link: https://goo.gl/4kDDec
   type: conference
   source: proceedings.bib
+  image: images/papers/LPFSMrAgrawal.svg
   tags:
   - conference
 - id: '8595464'
@@ -1120,6 +1201,7 @@
   link: https://doi.org/10.1109/MPOT.2018.2850600
   type: journal
   source: pubs.bib
+  image: images/papers/8595464.svg
   tags:
   - journal
   - Internet of Things
@@ -1137,6 +1219,7 @@
   link: https://arxiv.org/abs/1903.03132
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/ContinuousSpyHunter.svg
   tags:
   - presentation
 - id: burrows_borowczak_2019
@@ -1149,6 +1232,7 @@
   link: https://doi.org/10.31235/osf.io/jre5k
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/burrows_borowczak_2019.svg
   tags:
   - presentation
 - id: nicek12-borowczak
@@ -1161,6 +1245,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/nicek12-borowczak.svg
   tags:
   - presentation
 - id: rmcwic18a
@@ -1177,6 +1262,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/rmcwic18a.svg
   tags:
   - presentation
 - id: rmcwic18b
@@ -1193,6 +1279,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/rmcwic18b.svg
   tags:
   - presentation
 - id: TampaDevConnect
@@ -1206,6 +1293,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/TampaDevConnect.svg
   tags:
   - presentation
 - id: GenCyberNSTA
@@ -1219,6 +1307,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/GenCyberNSTA.svg
   tags:
   - presentation
 - id: showcaseRAMPED
@@ -1233,6 +1322,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/showcaseRAMPED.svg
   tags:
   - presentation
 - id: csintegrated
@@ -1248,6 +1338,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/csintegrated.svg
   tags:
   - presentation
 - id: NSAShowcaseFa18
@@ -1260,6 +1351,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/NSAShowcaseFa18.svg
   tags:
   - presentation
 - id: Borowczak2018ISC2-BLESS
@@ -1273,6 +1365,7 @@
   link: https://goo.gl/KXidyZ
   type: conference
   source: proceedings.bib
+  image: images/papers/Borowczak2018ISC2-BLESS.svg
   tags:
   - conference
 - id: Borowczak2018ISC2-5GWork
@@ -1287,6 +1380,7 @@
   link: https://goo.gl/nwdN74
   type: conference
   source: proceedings.bib
+  image: images/papers/Borowczak2018ISC2-5GWork.svg
   tags:
   - conference
 - id: Borowczak2018ISC2
@@ -1300,6 +1394,7 @@
   link: https://goo.gl/i45ivW
   type: conference
   source: proceedings.bib
+  image: images/papers/Borowczak2018ISC2.svg
   tags:
   - conference
 - id: Borowczak2018ISVLSI
@@ -1313,6 +1408,7 @@
   link: https://goo.gl/iiuuK4
   type: conference
   source: proceedings.bib
+  image: images/papers/Borowczak2018ISVLSI.svg
   tags:
   - conference
 - id: 2018AAS...23212201B
@@ -1326,6 +1422,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/2018AAS-23212201B.svg
   tags:
   - conference
 - id: asee_peer_30370
@@ -1338,6 +1435,7 @@
   link: https://goo.gl/d58EPq
   type: conference
   source: proceedings.bib
+  image: images/papers/asee_peer_30370.svg
   tags:
   - conference
 - id: NSAShowcaseSp18
@@ -1350,6 +1448,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/NSAShowcaseSp18.svg
   tags:
   - presentation
 - id: FliGridSITE
@@ -1362,6 +1461,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/FliGridSITE.svg
   tags:
   - presentation
 - id: Borowczak2018SCHIRP
@@ -1374,6 +1474,7 @@
   link: https://goo.gl/LQzAVh
   type: conference
   source: proceedings.bib
+  image: images/papers/Borowczak2018SCHIRP.svg
   tags:
   - conference
 - id: Borowczak2018ToR
@@ -1388,6 +1489,7 @@
   link: https://goo.gl/fQ7hyP
   type: conference
   source: proceedings.bib
+  image: images/papers/Borowczak2018ToR.svg
   tags:
   - conference
 - id: bleedingedge
@@ -1400,6 +1502,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/bleedingedge.svg
   tags:
   - presentation
 - id: integratedstem
@@ -1415,6 +1518,7 @@
   link: https://goo.gl/uCxBkv
   type: journal
   source: pubs.bib
+  image: images/papers/integratedstem.svg
   tags:
   - journal
 - id: Yang:2018:PLM:3194206.3195587
@@ -1427,6 +1531,7 @@
   link: https://goo.gl/nwAq5h
   type: conference
   source: proceedings.bib
+  image: images/papers/Yang-2018-PLM-3194206-3195587.svg
   tags:
   - conference
   - data embedding
@@ -1443,6 +1548,7 @@
   link: https://goo.gl/g6zhRR
   type: conference
   source: proceedings.bib
+  image: images/papers/Borowczak2017AuthInquiry.svg
   tags:
   - conference
 - id: borowczak2017harden
@@ -1456,6 +1562,7 @@
   link: https://goo.gl/jWd2gp
   type: conference
   source: proceedings.bib
+  image: images/papers/borowczak2017harden.svg
   tags:
   - conference
 - id: borowczak2017interactive
@@ -1468,6 +1575,7 @@
   link: https://goo.gl/JaPHh8
   type: conference
   source: proceedings.bib
+  image: images/papers/borowczak2017interactive.svg
   tags:
   - conference
 - id: burrows2017Netlogo
@@ -1480,6 +1588,7 @@
   link: https://goo.gl/3wbjif
   type: conference
   source: proceedings.bib
+  image: images/papers/burrows2017Netlogo.svg
   tags:
   - conference
 - id: borowczak-wycbyersec
@@ -1491,6 +1600,7 @@
   link: ''
   type: invited
   source: invited.bib
+  image: images/papers/borowczak-wycbyersec.svg
   tags:
   - invited
 - id: NLOGO_TeacherUsingCS
@@ -1503,6 +1613,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/NLOGO_TeacherUsingCS.svg
   tags:
   - presentation
 - id: WebNotebookes
@@ -1515,6 +1626,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/WebNotebookes.svg
   tags:
   - presentation
 - id: GuffyClassroomSupport
@@ -1528,6 +1640,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/GuffyClassroomSupport.svg
   tags:
   - presentation
 - id: Borowczak2017Naturally
@@ -1540,6 +1653,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/Borowczak2017Naturally.svg
   tags:
   - presentation
 - id: Burrows2017PreServiceCS
@@ -1552,6 +1666,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/Burrows2017PreServiceCS.svg
   tags:
   - presentation
 - id: borowczak2016developing
@@ -1564,6 +1679,7 @@
   link: https://goo.gl/S14FXQ
   type: conference
   source: proceedings.bib
+  image: images/papers/borowczak2016developing.svg
   tags:
   - conference
 - id: burrows2016arduinos
@@ -1576,6 +1692,7 @@
   link: https://goo.gl/dyup3e
   type: conference
   source: proceedings.bib
+  image: images/papers/burrows2016arduinos.svg
   tags:
   - conference
 - id: borowczak-iac
@@ -1587,6 +1704,7 @@
   link: ''
   type: invited
   source: invited.bib
+  image: images/papers/borowczak-iac.svg
   tags:
   - invited
 - id: borowczak2016enabling
@@ -1599,6 +1717,7 @@
   link: https://goo.gl/yKweht
   type: journal
   source: pubs.bib
+  image: images/papers/borowczak2016enabling.svg
   tags:
   - journal
 - id: burrows2016authentic
@@ -1616,6 +1735,7 @@
   link: https://goo.gl/nYd6p9
   type: journal
   source: pubs.bib
+  image: images/papers/burrows2016authentic.svg
   tags:
   - journal
 - id: borowczak2016gis
@@ -1628,6 +1748,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/borowczak2016gis.svg
   tags:
   - presentation
 - id: burrows2016visualization
@@ -1641,6 +1762,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/burrows2016visualization.svg
   tags:
   - presentation
 - id: NonIntrusive
@@ -1653,6 +1775,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/NonIntrusive.svg
   tags:
   - presentation
 - id: rwcompute
@@ -1665,6 +1788,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/rwcompute.svg
   tags:
   - presentation
 - id: CollaborationBorowczak
@@ -1678,6 +1802,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/CollaborationBorowczak.svg
   tags:
   - presentation
 - id: partnership_burrows_myers
@@ -1696,6 +1821,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/partnership_burrows_myers.svg
   tags:
   - presentation
 - id: chen2015cressint
@@ -1711,6 +1837,7 @@
   link: https://goo.gl/SGawhd
   type: journal
   source: pubs.bib
+  image: images/papers/chen2015cressint.svg
   tags:
   - journal
 - id: borowczak2015communication
@@ -1722,6 +1849,7 @@
   link: https://goo.gl/XaKzEU
   type: journal
   source: pubs.bib
+  image: images/papers/borowczak2015communication.svg
   tags:
   - journal
 - id: Engineering_partners
@@ -1734,6 +1862,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/Engineering_partners.svg
   tags:
   - presentation
 - id: borowczak2014enabling
@@ -1746,6 +1875,7 @@
   link: https://goo.gl/CDEVzz
   type: conference
   source: proceedings.bib
+  image: images/papers/borowczak2014enabling.svg
   tags:
   - conference
 - id: burrows2014online
@@ -1758,6 +1888,7 @@
   link: https://goo.gl/x7u44W
   type: conference
   source: proceedings.bib
+  image: images/papers/burrows2014online.svg
   tags:
   - conference
 - id: IntegrateBurrowsBOrowczak
@@ -1771,6 +1902,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/IntegrateBurrowsBOrowczak.svg
   tags:
   - presentation
 - id: burrows2013enhancing
@@ -1785,6 +1917,7 @@
   link: https://goo.gl/5CgqDt
   type: journal
   source: pubs.bib
+  image: images/papers/burrows2013enhancing.svg
   tags:
   - journal
 - id: borowczak2013secure
@@ -1797,6 +1930,7 @@
   link: https://goo.gl/UFg8yp
   type: conference
   source: proceedings.bib
+  image: images/papers/borowczak2013secure.svg
   tags:
   - conference
 - id: robots_21
@@ -1809,6 +1943,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/robots_21.svg
   tags:
   - presentation
 - id: borowczak-youdemo
@@ -1821,6 +1956,7 @@
   link: ''
   type: invited
   source: invited.bib
+  image: images/papers/borowczak-youdemo.svg
   tags:
   - invited
 - id: youdemo_20
@@ -1833,6 +1969,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/youdemo_20.svg
   tags:
   - presentation
 - id: burrows2012teaching
@@ -1847,6 +1984,7 @@
   link: https://goo.gl/oEo9pn
   type: journal
   source: pubs.bib
+  image: images/papers/burrows2012teaching.svg
   tags:
   - journal
 - id: borowczak2012s
@@ -1859,6 +1997,7 @@
   link: https://goo.gl/nxM6AE
   type: conference
   source: proceedings.bib
+  image: images/papers/borowczak2012s.svg
   tags:
   - conference
 - id: ramakrishnan2012sdmlp
@@ -1874,6 +2013,7 @@
   link: https://goo.gl/Y3oppf
   type: conference
   source: proceedings.bib
+  image: images/papers/ramakrishnan2012sdmlp.svg
   tags:
   - conference
 - id: qualities_videos
@@ -1886,6 +2026,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/qualities_videos.svg
   tags:
   - presentation
 - id: youdemo_info
@@ -1898,6 +2039,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/youdemo_info.svg
   tags:
   - presentation
 - id: bigbang
@@ -1912,6 +2054,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/bigbang.svg
   tags:
   - presentation
 - id: borowczak2011youdemo
@@ -1924,6 +2067,7 @@
   link: ''
   type: conference
   source: proceedings.bib
+  image: images/papers/borowczak2011youdemo.svg
   tags:
   - conference
 - id: colder
@@ -1937,6 +2081,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/colder.svg
   tags:
   - presentation
 - id: engineerit
@@ -1951,6 +2096,7 @@
   link: ''
   type: presentation
   source: conf_pres_no_proceeding.bib
+  image: images/papers/engineerit.svg
   tags:
   - presentation
 - id: hunt2010go
@@ -1967,6 +2113,7 @@
   link: https://goo.gl/bfGxMK
   type: conference
   source: proceedings.bib
+  image: images/papers/hunt2010go.svg
   tags:
   - conference
 - id: burrows2010improving
@@ -1981,6 +2128,7 @@
   link: https://goo.gl/kjcTYG
   type: conference
   source: proceedings.bib
+  image: images/papers/burrows2010improving.svg
   tags:
   - conference
 - id: hadaway2010engineering
@@ -1998,6 +2146,7 @@
   link: https://goo.gl/LHsFPm
   type: conference
   source: proceedings.bib
+  image: images/papers/hadaway2010engineering.svg
   tags:
   - conference
 - id: wilsey2008self
@@ -2011,6 +2160,7 @@
   link: ''
   type: other
   source: otherwork.bib
+  image: images/papers/wilsey2008self.svg
   tags:
   - other
 - id: vemuri2008safety
@@ -2024,6 +2174,7 @@
   link: https://goo.gl/Vrh1Si
   type: conference
   source: proceedings.bib
+  image: images/papers/vemuri2008safety.svg
   tags:
   - conference
 - id: anderson2008use
@@ -2037,6 +2188,7 @@
   link: https://goo.gl/R5TCcx
   type: conference
   source: proceedings.bib
+  image: images/papers/anderson2008use.svg
   tags:
   - conference
 - id: renz2005implementing
@@ -2049,5 +2201,6 @@
   link: https://goo.gl/EbT6Y2
   type: journal
   source: pubs.bib
+  image: images/papers/renz2005implementing.svg
   tags:
   - journal
