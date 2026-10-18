@@ -3,7 +3,7 @@ title: "Round-Robin Talk for Tiny Devices: CHIRP and S-CHIRP"
 kicker: "Interactive paper · IEEE ICCE 2018 and IEEE Potentials 2019"
 subtitle: "An interactive companion to Mike Borowczak and George Purdy's protocol that lets every device in a swarm talk to every other device in as few rounds as there are devices, with no coordinator, and to the IEEE Potentials article that follows it into crowded, overlapping networks."
 description: "Watch a network of small devices pair off round by round until everyone has talked to everyone, knock devices out and bring them back, shuffle the round order to keep outsiders guessing, and see what happens when two networks share one channel."
-share_description: "How can a swarm of tiny devices make sure everyone talks to everyone, with no server in charge? One line of modular arithmetic. Step through CHIRP and S-CHIRP in your browser, written for five reading levels."
+share_description: "One line of modular arithmetic lets every device in a swarm talk to every other device, with no server in charge. Step through CHIRP and S-CHIRP in your browser, written for five reading levels."
 share_text: "One line of modular arithmetic lets every device in a swarm talk to every other device, with no server in charge. Try it in your browser:"
 share_image: /papers/s-chirp/share.png
 share_image_alt: "Eight numbered devices on a circle joined by all 28 conversation lines, colored by the round in which each pair talks, beside the title Round-Robin Talk for Tiny Devices."
