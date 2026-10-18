@@ -48,6 +48,7 @@ widget:
   css: [/papers/<slug>/widget.css]
   js: [/papers/<slug>/engine.js, /papers/<slug>/widget.js]
 credit: "Markdown line on how the page was built and checked"
+ai_model: "Claude Opus 5.5 Extra"  # optional: the layout's AI-development note names this model (default shown)
 bibtex: |
   @article{...}
 ```
