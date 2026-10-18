@@ -825,14 +825,14 @@
   tags:
   - presentation
 - id: IntegratedOuteach
-  title: 'Integrated Outreach: Increasing Student Engagement in Computer Science and Cybersecurity'
+  title: 'Integrated Outreach: Increasing Engagement in Computer Science and Cybersecurity'
   authors:
   - Shaya Wolf
   - Andrea C. Burrows
   - Mike Borowczak
   - Mason Johnson
   - Rafer Cooley
-  - Kyle Mogensen
+  - Kyle Mogenson
   publisher: 'Education Sciences: Cybersecurity and Digital Education Special Issue'
   date: '2020-11-01'
   link: https://doi.org/10.3390/educsci10120353
@@ -1089,7 +1089,7 @@
   - Mike Borowczak
   publisher: 2019 ASEE Annual Conference & Exposition
   date: '2019-06-17'
-  link: ''
+  link: https://doi.org/10.18260/1-2--32484
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer_27365.svg
