@@ -984,7 +984,7 @@
   - Mike Borowczak
   publisher: 2019 IEEE International Conference on Machine Learning and Applications
   date: '2019-12-01'
-  link: ''
+  link: https://doi.org/10.1109/ICMLA.2019.00207
   type: conference
   source: proceedings.bib
   image: images/papers/ICMLA.svg
