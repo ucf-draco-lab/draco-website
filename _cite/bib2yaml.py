@@ -14,6 +14,9 @@ import yaml
 from pathlib import Path
 from pybtex.database import parse_string
 
+sys.path.insert(0, str(Path(__file__).parent))
+from paper_icons import icon_for
+
 # ─── Configuration ───────────────────────────────────────────────────────────
 
 # Map each bib file to a publication type (used for icons and filtering).
@@ -244,9 +247,13 @@ def process_bib_file(filepath, pub_type):
             "source": filepath.name,
         }
 
+        # Thumbnail: an explicit `image` field wins, else a generated topic icon
+        keywords = get_field(entry, "keywords")
+        citation["image"] = (get_field(entry, "image").strip()
+                             or icon_for(key, title, keywords))
+
         # Add tags: always include the type for filtering/searchability
         tags = [pub_type]
-        keywords = get_field(entry, "keywords")
         if keywords:
             # Split on semicolons first, fall back to commas
             kw_list = [k.strip() for k in keywords.split(";")]
