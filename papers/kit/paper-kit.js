@@ -188,6 +188,63 @@
     });
   });
 
+  /* ---------- more interactive papers ---------- */
+
+  // The layout lists every other paper in date order with the first few
+  // visible. Reorder by view count (data-views, from _data/views.yaml) or at
+  // random, and show the first `data-show` of the result.
+  var more = document.querySelector("[data-paper-more]");
+  if (more) {
+    var moreList = more.querySelector(".paper-more-list");
+    var moreItems = Array.prototype.slice.call(moreList.children);
+    var moreShow = parseInt(more.getAttribute("data-show"), 10) || 3;
+    var moreGroup = more.querySelector(".paper-more-sort");
+    var moreButtons = Array.prototype.slice.call(more.querySelectorAll("[data-more-sort]"));
+    var viewsOf = function (li) { return parseInt(li.getAttribute("data-views"), 10) || 0; };
+    var hasViews = moreItems.some(function (li) { return viewsOf(li) > 0; });
+
+    var shuffled = function (list) {
+      var a = list.slice();
+      for (var i = a.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = a[i]; a[i] = a[j]; a[j] = t;
+      }
+      return a;
+    };
+
+    var arrange = function (mode) {
+      // Shuffle first so equal view counts come out in a fresh order each time
+      // (Array.prototype.sort is stable).
+      var order = shuffled(moreItems);
+      if (mode === "popular") order.sort(function (a, b) { return viewsOf(b) - viewsOf(a); });
+      order.forEach(function (li, i) {
+        li.hidden = i >= moreShow;
+        moreList.appendChild(li);
+      });
+      if (hasViews) {
+        moreButtons.forEach(function (b) {
+          b.setAttribute("aria-pressed", b.getAttribute("data-more-sort") === mode ? "true" : "false");
+        });
+      }
+    };
+
+    if (moreItems.length > moreShow) {
+      moreGroup.hidden = false;
+      if (!hasViews) {
+        // No counts yet (previews, forks, or before the first fetch): one
+        // button that draws another random set.
+        moreButtons.forEach(function (b) {
+          if (b.getAttribute("data-more-sort") === "popular") b.hidden = true;
+          else { b.textContent = "Show others"; b.removeAttribute("aria-pressed"); }
+        });
+      }
+      moreButtons.forEach(function (b) {
+        b.addEventListener("click", function () { arrange(b.getAttribute("data-more-sort")); });
+      });
+    }
+    arrange(hasViews ? "popular" : "random");
+  }
+
   /* ---------- start ---------- */
 
   var initial = fromUrl();
