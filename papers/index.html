@@ -237,6 +237,10 @@
   
 
   
+    <link href="/_styles/paper-gallery.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/paragraph.css" rel="stylesheet">
   
 
@@ -903,233 +907,351 @@
   
 
   <section class="background" data-size="page">
-    <link rel="stylesheet" href="/papers/kit/paper-kit.css?v=1792407149">
+    <link rel="stylesheet" href="/papers/kit/paper-kit.css?v=1792407362">
 
 <h1 id="interactive-papers">
 <i class="icon fa-solid fa-flask-vial"></i>Interactive Papers</h1>
 
 <p>Each page below rebuilds one DRACO result in your browser and explains it at five reading levels (public, high school, undergraduate, graduate, and researcher). Pick a level at the top of any page; shared links keep the level you chose.</p>
 
-<ul class="paper-index">
+<div class="paper-browse" data-paper-browse="" hidden="">
+  <div class="paper-browse-row">
+    <label class="paper-browse-search">
+      <span class="sr-only">Search interactive papers</span>
+      <i class="icon fa-solid fa-magnifying-glass"></i>
+      <input type="search" data-browse-q="" placeholder="Search titles and descriptions" autocomplete="off">
+    </label>
+    <label class="paper-browse-sort">
+      <span>Sort by</span>
+      <select data-browse-sort="">
+        <option value="added">Newest added</option>
+        <option value="popular" data-needs-views="">Most viewed</option>
+        <option value="year">Publication year</option>
+        <option value="title">Title (A–Z)</option>
+        <option value="random">Random</option>
+      </select>
+    </label>
+  </div>
+  <div class="pub-filters paper-browse-topics" role="group" aria-label="Filter by topic">
+    <button type="button" class="pub-filter" data-browse-topic="" data-active="" aria-pressed="true">All (18)</button>
+    
+      
+      <button type="button" class="pub-filter" data-browse-topic="ai-machine-learning" aria-pressed="false">AI &amp; machine learning (2)</button>
+    
+      
+      <button type="button" class="pub-filter" data-browse-topic="architecture" aria-pressed="false">Architecture (1)</button>
+    
+      
+      <button type="button" class="pub-filter" data-browse-topic="cryptography" aria-pressed="false">Cryptography (3)</button>
+    
+      
+      <button type="button" class="pub-filter" data-browse-topic="education" aria-pressed="false">Education (5)</button>
+    
+      
+      <button type="button" class="pub-filter" data-browse-topic="hardware-security" aria-pressed="false">Hardware security (5)</button>
+    
+      
+      <button type="button" class="pub-filter" data-browse-topic="networks" aria-pressed="false">Networks (2)</button>
+    
+      
+      <button type="button" class="pub-filter" data-browse-topic="swarms-iot" aria-pressed="false">Swarms &amp; IoT (5)</button>
+    
+  </div>
+  <p class="paper-browse-status" data-browse-status="" aria-live="polite"></p>
+</div>
 
+<ul class="paper-index" data-browse-list="">
 
   
   
-  <li>
+  
+  
+  <li data-views="0" data-added="2026-10-19" data-title="Breaking Formation: How a Swarm Slips Past the Drones That Corral It" data-topics=" swarms-iot ">
     <a class="paper-index-icon" href="/papers/swarm-ejection-defense/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/swarm-ejection-defense.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/swarm-ejection-defense/">Breaking Formation: How a Swarm Slips Past the Drones That Corral It</a>
-    
     <span class="paper-index-meta">Interactive paper · IEEE ICCE-Berlin 2020</span>
     <span>Watch rogue agents herd a circling swarm, switch on three ejection defenses, see the two formulas that decide how far and how often an agent breaks formation, and compare the paper's 11,664 simulated runs with this page's own.</span>
+    
+      <span class="paper-index-topics"><span>Swarms &amp; IoT</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-19" data-title="S*FSM: Rebuilding State Machines So the Power Meter Reads the Same Every Tick" data-topics=" hardware-security ">
     <a class="paper-index-icon" href="/papers/sfsm-secure-fsm/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/sfsm-secure-fsm.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/sfsm-secure-fsm/">S*FSM: Rebuilding State Machines So the Power Meter Reads the Same Every Tick</a>
-    
     <span class="paper-index-meta">Interactive papers · BioMedCom 2012, MWSCAS 2013, ISVLSI 2014 · 1 view</span>
     <span>Watch a branch predictor give away its state through power, unroll its self-loops the way the 2012 paper does, search for secure codes in your browser, and measure what the protection costs on 52 MCNC benchmark machines.</span>
+    
+      <span class="paper-index-topics"><span>Hardware security</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="0" data-added="2026-10-19" data-title="SDMLp: A Logic Cell That Spends the Same Energy Every Clock" data-topics=" hardware-security ">
     <a class="paper-index-icon" href="/papers/sdmlp-dpa-logic/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/sdmlp-dpa-logic.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/sdmlp-dpa-logic/">SDMLp: A Logic Cell That Spends the Same Energy Every Clock</a>
-    
     <span class="paper-index-meta">Interactive paper · IEEE HOST 2012</span>
     <span>Clock the SDMLp cell through pre-discharge and evaluation, synthesize the DES S-boxes into multiplexer cells over all 720 variable orders, compare the paper's area, power, and current-variance tables for three logic styles, and rerun a simulated power analysis attack on S-box 1 in your browser.</span>
+    
+      <span class="paper-index-topics"><span>Hardware security</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="0" data-added="2026-10-19" data-title="Router Canaries: Catching a Flood by How Little It Varies" data-topics=" networks swarms-iot ">
     <a class="paper-index-icon" href="/papers/router-canaries/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/router-canaries.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/router-canaries/">Router Canaries: Catching a Flood by How Little It Varies</a>
-    
     <span class="paper-index-meta">Interactive paper · IEEE ICCE-Berlin 2020</span>
     <span>Watch canaries on a simulated network of switches listen to traffic, count destinations in windows of 50 packets, and raise an alarm when a flood narrows them to one target; then set the alarm level from attack-free runs and compare the paper's detection tables with this page's simulation.</span>
+    
+      <span class="paper-index-topics"><span>Networks</span><span>Swarms &amp; IoT</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="0" data-added="2026-10-19" data-title="Private Averages for Edge Devices: Noise in Whole Numbers" data-topics=" ">
     <a class="paper-index-icon" href="/papers/pcu-fl-private-aggregation/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/pcu-fl-private-aggregation.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/pcu-fl-private-aggregation/">Private Averages for Edge Devices: Noise in Whole Numbers</a>
-    
     <span class="paper-index-meta">Interactive paper · IEEE CARS 2025</span>
     <span>Watch fifty simulated devices send updates whose average is released with calibrated noise; step through the integer pipeline (Hamilton weights, fixed-point encoding, one decode); draw discrete Gaussian noise with the authors' own sampler; test the trust-budget gate; and read the paper's accuracy, membership-attack, and FP8 results.</span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-19" data-title="Seven S-Boxes on Trial: Scoring a Cipher's Power Leak" data-topics=" hardware-security cryptography ">
     <a class="paper-index-icon" href="/papers/gift-sbox-leakage/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/gift-sbox-leakage.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/gift-sbox-leakage/">Seven S-Boxes on Trial: Scoring a Cipher's Power Leak</a>
-    
     <span class="paper-index-meta">Interactive paper · IEEE ISVLSI 2021 · 1 view</span>
     <span>Recover a key nibble from simulated power measurements, follow the leak through GIFT-64 round by round, score seven 4-bit S-boxes on non-linearity, transparency order, and DPA signal-to-noise ratio, and race them under the paper's attack protocol in your browser.</span>
+    
+      <span class="paper-index-topics"><span>Hardware security</span><span>Cryptography</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-18" data-title="Trust but Verify: How 147 Engineering Students Use Generative AI" data-topics=" education ai-machine-learning ">
     <a class="paper-index-icon" href="/papers/trust-but-verify/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/trust-but-verify.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/trust-but-verify/">Trust but Verify: How 147 Engineering Students Use Generative AI</a>
-    
     <span class="paper-index-meta">Interactive paper · ASEE Southeastern Section 2026 · 1 view</span>
     <span>Compare your own AI use with 147 engineering students, then explore the survey's five tables: familiarity with four kinds of AI tools, the tasks students hand to AI, how often they verify each kind of output, and where the line between yes and no falls on each answer scale.</span>
+    
+      <span class="paper-index-topics"><span>Education</span><span>AI &amp; machine learning</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="2" data-added="2026-10-18" data-title="Spy Hunter: Recognizing a Typist by Rhythm Alone" data-topics=" ai-machine-learning ">
     <a class="paper-index-icon" href="/papers/spy-hunter-keystrokes/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/spy-hunter-keystrokes.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/spy-hunter-keystrokes/">Spy Hunter: Recognizing a Typist by Rhythm Alone</a>
-    
     <span class="paper-index-meta">Interactive paper · IEEE ICMLA 2019 · 2 views</span>
     <span>Type a passage and see the five timings Spy Hunter reads from every keystroke, train its two one-class classifiers on your own rhythm in your browser, then keep typing (or hand the keyboard over) and watch the trust model decide.</span>
+    
+      <span class="paper-index-topics"><span>AI &amp; machine learning</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-18" data-title="Seventeen Campers: Weighing Survey Evidence When the Group Is Small" data-topics=" education ">
     <a class="paper-index-icon" href="/papers/small-sample-likert/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/small-sample-likert.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/small-sample-likert/">Seventeen Campers: Weighing Survey Evidence When the Group Is Small</a>
-    
     <span class="paper-index-meta">Interactive paper · Problems of Education in the 21st Century 2024 · 1 view</span>
     <span>Place the campers' answers, fill empty survey boxes with a Dirichlet prior, and recompute the likelihood ratios a small computer science summer camp used to weigh what changed over one week.</span>
+    
+      <span class="paper-index-topics"><span>Education</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-18" data-title="Circling Swarms: Two Rules That Hold a Perimeter, and the Intruders That Break It" data-topics=" swarms-iot ">
     <a class="paper-index-icon" href="/papers/sharks-swarms/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/sharks-swarms.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/sharks-swarms/">Circling Swarms: Two Rules That Hold a Perimeter, and the Intruders That Break It</a>
-    
     <span class="paper-index-meta">Interactive paper · IEEE ISC2 2018 and 2019 · 1 view</span>
     <span>Watch a leaderless swarm settle into a ring around a target using two rules, compare how fast it settles from different starting layouts and crowd sizes, then send in adversarial agents and measure the gap they open.</span>
+    
+      <span class="paper-index-topics"><span>Swarms &amp; IoT</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-18" data-title="Ordering In-Memory Logic: How a Genetic Algorithm Saves Memory Cells" data-topics=" architecture ">
     <a class="paper-index-icon" href="/papers/saga-in-memory/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/saga-in-memory.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/saga-in-memory/">Ordering In-Memory Logic: How a Genetic Algorithm Saves Memory Cells</a>
-    
     <span class="paper-index-meta">Interactive paper · IEEE MWSCAS 2024 · 1 view</span>
     <span>Run a small circuit gate by gate and watch memory fill and empty, see how gate order changes the memory a benchmark circuit needs, and evolve better orders in your browser with a port of the authors' genetic algorithm.</span>
+    
+      <span class="paper-index-topics"><span>Architecture</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-18" data-title="Round-Robin Talk for Tiny Devices: CHIRP and S-CHIRP" data-topics=" swarms-iot networks ">
     <a class="paper-index-icon" href="/papers/s-chirp/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/s-chirp.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/s-chirp/">Round-Robin Talk for Tiny Devices: CHIRP and S-CHIRP</a>
-    
     <span class="paper-index-meta">Interactive paper · IEEE ICCE 2018 and IEEE Potentials 2019 · 1 view</span>
     <span>Watch a network of small devices pair off round by round until everyone has talked to everyone, knock devices out and bring them back, shuffle the round order to keep outsiders guessing, and see what happens when two networks share one channel.</span>
+    
+      <span class="paper-index-topics"><span>Swarms &amp; IoT</span><span>Networks</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-18" data-title="Cyber Camp: How Three Summer Camps Built Interest in Cybersecurity" data-topics=" education ">
     <a class="paper-index-icon" href="/papers/integrated-outreach/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/integrated-outreach.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/integrated-outreach/">Cyber Camp: How Three Summer Camps Built Interest in Cybersecurity</a>
-    
     <span class="paper-index-meta">Interactive paper · Education Sciences 2020 and ASEE 2019 · 1 view</span>
     <span>Pick a radio lock box from the camps' Lock-Pick lab, then follow how field notes from two 2018 camps reshaped the 2019 camp, and what 24 paired surveys showed about what students learned and how interested they became.</span>
+    
+      <span class="paper-index-topics"><span>Education</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-18" data-title="Secure State Encoding: Hiding a Controller's Steps from Its Power Draw" data-topics=" hardware-security ">
     <a class="paper-index-icon" href="/papers/fsm-power-encoding/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/fsm-power-encoding.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/fsm-power-encoding/">Secure State Encoding: Hiding a Controller's Steps from Its Power Draw</a>
-    
     <span class="paper-index-meta">Interactive paper · Journal of Electronic Testing 2019 · 1 view</span>
     <span>Watch a small controller leak its state through power, then group its states by when they can be reached, search for secure encodings in your browser, and trade security against bits and power the way the paper does.</span>
+    
+      <span class="paper-index-topics"><span>Hardware security</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-18" data-title="Security as a Design Dial: A Quiet Bus and a Shuffled Schedule" data-topics=" hardware-security swarms-iot ">
     <a class="paper-index-icon" href="/papers/design-for-security-iot/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/design-for-security-iot.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/design-for-security-iot/">Security as a Design Dial: A Quiet Bus and a Shuffled Schedule</a>
-    
     <span class="paper-index-meta">Interactive paper · IEEE ISVLSI 2018 · 1 view</span>
     <span>Listen to a counter's bus give away its every step, then quiet it with the paper's constant-weight, constant-distance codes, trade bits for security across ten benchmark machines, search for secure codes in your browser, and shuffle a swarm's talking schedule.</span>
+    
+      <span class="paper-index-topics"><span>Hardware security</span><span>Swarms &amp; IoT</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="1" data-added="2026-10-18" data-title="Beyond Coding: A Cybersecurity Microcredential Built with Teachers" data-topics=" education cryptography ">
     <a class="paper-index-icon" href="/papers/cyber-microcredentials/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/cyber-microcredentials.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/cyber-microcredentials/">Beyond Coding: A Cybersecurity Microcredential Built with Teachers</a>
-    
     <span class="paper-index-meta">Interactive paper · Education Sciences 2022 and ASEE 2021 · 1 view</span>
     <span>Try the cipher activity teachers met in the first modules, then follow three pilots of a self-paced cybersecurity microcredential: how it grew from two modules to 12, who took part, and what changed in the teachers' confidence.</span>
+    
+      <span class="paper-index-topics"><span>Education</span><span>Cryptography</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="6" data-added="2026-10-18" data-title="Ants Go Marching: Teaching Teachers Computer Science with an Ant Colony" data-topics=" education ">
     <a class="paper-index-icon" href="/papers/ants-go-marching/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/ants-go-marching.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/ants-go-marching/">Ants Go Marching: Teaching Teachers Computer Science with an Ant Colony</a>
-    
     <span class="paper-index-meta">Interactive paper · Education Sciences 2019 · 6 views</span>
     <span>Take on the ant-colony challenges RAMPED teachers worked through, then explore what the 16-day professional development changed in their computer science knowledge, their confidence, and their classrooms.</span>
+    
+      <span class="paper-index-topics"><span>Education</span></span>
+    
   </li>
 
   
   
-  <li>
+  
+  
+  <li data-views="24" data-added="2026-10-17" data-title="One Bit In, Half the Bits Out: The Avalanche Inside SHA-256" data-topics=" cryptography ">
     <a class="paper-index-icon" href="/papers/sha256-avalanche/" tabindex="-1" aria-hidden="true">
       <img src="/images/papers/interactive/sha256-avalanche.svg" alt="" width="96" height="96" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     </a>
     <a class="paper-index-title" href="/papers/sha256-avalanche/">One Bit In, Half the Bits Out: The Avalanche Inside SHA-256</a>
-    
     <span class="paper-index-meta">Interactive paper · Cryptography 2024 and 2026 · 24 views</span>
     <span>Flip one bit of a message and watch SHA-256 scramble it round by round, switch off any of its seven internal parts, and measure the avalanche in your browser.</span>
+    
+      <span class="paper-index-topics"><span>Cryptography</span></span>
+    
   </li>
 
 </ul>
+<p class="paper-browse-empty" data-browse-empty="" hidden="">No papers match. <button type="button" class="button" data-style="bare" data-browse-reset="">Clear filters</button></p>
+
+<script src="/papers/kit/paper-gallery.js" defer></script>
   </section>
 
 
