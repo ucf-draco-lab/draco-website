@@ -12,7 +12,7 @@ and on the Research page, and every matching citation on the Research page gets 
 | `_papers/<slug>.md` | Front matter (below) and the page text, written per reading level |
 | `papers/<slug>/widget.js`, `widget.css` | The paper's interactive pieces; mount into empty `<div id="...">` elements in the page text |
 | `papers/<slug>/share.png` | 1200 × 630 social card |
-| `images/papers/interactive/<slug>.svg` | Listing icon on `/papers/`, drawn from the title and subtitle by `python _cite/paper_icons.py` (set `icon:` in front matter to use your own) |
+| `images/papers/interactive/<slug>.svg` | Listing icon on `/papers/` and in the "More interactive papers" section at the foot of every paper page, drawn from the title and subtitle by `python _cite/paper_icons.py` (set `icon:` in front matter to use your own) |
 | `papers/kit/paper-kit.js`, `paper-kit.css` | Shared: level switch, share bar, copy buttons (do not fork per paper) |
 | `_layouts/paper.html`, `_includes/share-bar.html` | Shared page frame |
 | `_data/paper_levels.yaml` | The five reading levels: `public`, `hs`, `ug`, `grad`, `res` |
@@ -48,6 +48,7 @@ widget:
   css: [/papers/<slug>/widget.css]
   js: [/papers/<slug>/engine.js, /papers/<slug>/widget.js]
 credit: "Markdown line on how the page was built and checked"
+ai_model: "Claude Opus 5.5 Extra"  # optional: the layout's AI-development note names this model (default shown)
 bibtex: |
   @article{...}
 ```

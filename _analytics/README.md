@@ -57,9 +57,20 @@ Other environment variables, all optional:
 Remember to `git checkout _data/views.yaml` afterwards if you don't want your
 local pull showing up in a commit.
 
+## Interactive papers
+
+Pages in the `_papers` collection are counted too, keyed by their
+`/papers/<slug>/` address; `?level=` variants of a page add into the same
+count. The paper layout shows the count under the page's sources, and the
+"More interactive papers" section at the foot of every paper page uses the
+counts to put the most viewed pages first (readers can switch it to a random
+pick). The `/papers/` index shows each page's count next to its venue.
+Without counts (pull request previews, forks, or before the secret exists)
+the section picks at random and no numbers render.
+
 ## Counting other page types
 
-`fetch_views.py` only writes counts for member profiles, which keeps
-`_data/views.yaml` small and its diffs readable. To count posts or projects
-too, widen `wanted_paths()` in the script and add
+`fetch_views.py` only writes counts for member profiles and interactive
+papers, which keeps `_data/views.yaml` small and its diffs readable. To count
+posts or projects too, widen `wanted_paths()` in the script and add
 `{% include view-counter.html %}` to the relevant layout.

@@ -466,6 +466,96 @@
     draw();
   }
 
+
+  /* ------------------------------------------------------------ demo: split self-loops (restructured FSMs) */
+
+  // Table 2 (JETTA 2019): restructured DK15 and S8 at l = 3.
+  var TABLE2 = { dk15: { l: 3, R: 5 }, s8: { l: 3, R: 5 } };
+
+  function fig4() {
+    var g = svg("svg", { class: "fp-fig4", viewBox: "0 0 360 120", role: "img", "aria-label": "A state with a self-loop becomes a pair of states that hand off to each other" });
+    function node(x, y, label) {
+      g.appendChild(svg("circle", { class: "fp-fig4-node", cx: x, cy: y, r: 17 }));
+      g.appendChild(svg("text", { class: "c-label", x: x, y: y + 4, "text-anchor": "middle" }, label));
+    }
+    g.appendChild(svg("circle", { class: "fp-edge", cx: 50, cy: 18, r: 11, "stroke-width": 2 }));
+    g.appendChild(svg("line", { class: "fp-edge", x1: 50, y1: 52, x2: 50, y2: 86, "stroke-width": 2 }));
+    node(50, 36, "s"); node(50, 100, "t");
+    g.appendChild(svg("text", { class: "c-tick", x: 70, y: 16 }, "stay"));
+    g.appendChild(svg("text", { class: "c-label", x: 150, y: 66, "text-anchor": "middle" }, "split →"));
+    g.appendChild(svg("line", { class: "fp-edge", x1: 248, y1: 36, x2: 312, y2: 36, "stroke-width": 2 }));
+    g.appendChild(svg("line", { class: "fp-edge", x1: 236, y1: 50, x2: 268, y2: 88, "stroke-width": 2 }));
+    g.appendChild(svg("line", { class: "fp-edge", x1: 324, y1: 50, x2: 292, y2: 88, "stroke-width": 2 }));
+    node(230, 36, "sA"); node(330, 36, "sB"); node(280, 100, "t");
+    g.appendChild(svg("text", { class: "c-tick", x: 280, y: 28, "text-anchor": "middle" }, "stay"));
+    return g;
+  }
+
+  function mountSplit(root) {
+    root.appendChild(fsmPicker());
+    root.appendChild(fig4());
+    var local = { l: 1 };
+    var out = el("output");
+    var input = el("input", { type: "range", min: 1, max: 1, step: 1, value: 1, "aria-label": "Number of sets l after splitting" });
+    input.addEventListener("input", function () { local.l = +input.value; draw(); });
+    root.appendChild(el("label", { class: "w-range" }, [el("span", { text: "Sets (l)" }), input, out]));
+    var wrap = el("div", { class: "fp-table-wrap" });
+    var table = el("table", { class: "results-table fp-split-table" });
+    wrap.appendChild(table);
+    root.appendChild(wrap);
+    var note = el("p", { class: "w-note" });
+    root.appendChild(note);
+
+    function reset() {
+      var sp = cur().split;
+      local.l = Math.min(TABLE2[state.fsm] ? TABLE2[state.fsm].l : 1, sp.Lmax);
+      input.max = sp.Lmax;
+      input.value = local.l;
+      draw();
+    }
+
+    function draw() {
+      var d = cur(), sp = d.split, l = local.l;
+      out.textContent = l + " of " + sp.Lmax;
+      var lo = Math.min(l, d.Lmax), a = d.levels[lo] && d.levels[lo].lowpower, b = sp.levels[l];
+      var loopsA = d.trans.filter(function (t) { return t[0] === t[1]; }).length;
+      var loopsB = sp.trans.filter(function (t) { return t[0] === t[1]; }).length;
+      function list(x) { return x ? x.join(", ") : "–"; }
+      function sd(x) { return x ? x.map(sdText).join(", ") : "–"; }
+      var bR = b.codes ? String(b.R) : (b.complete ? "none found" : "more than " + (b.R - 1) + " (search budget reached at " + b.R + ")");
+      var rows = [
+        ["States", String(d.states.length), String(sp.states.length), ""],
+        ["Transitions (self-loops)", d.trans.length + " (" + loopsA + ")", sp.trans.length + " (" + loopsB + ")", ""],
+        ["Bits per state", a ? String(a.R) + (lo < l ? " (at l = " + lo + ")" : "") : "–", bR, ""],
+        ["Weights the register shows", a ? list(a.hw) : "–", b.codes ? list(b.hw) : "–", ""],
+        ["Switching distances", a ? list(a.hd) : "–", b.codes ? list(b.hd) : "–", "hs ug grad res"],
+        ["Switching distances with rise and fall (δ)", a ? sd(a.sd) : "–", b.codes ? sd(b.sd) : "–", "grad res"],
+        ["Bit flips per tick (switching activity)", a ? fmt(a.sa, 3) : "–", b.codes ? fmt(b.sa, 3) : "–", "ug grad res"],
+        ["Bits one reading reveals (page's measure): weight, distance, switching", a ? [a.bits.hw, a.bits.hd, a.bits.sd].map(function (v) { return fmt(v, 2); }).join(", ") : "–",
+          b.codes ? [b.bits.hw, b.bits.hd, b.bits.sd].map(function (v) { return fmt(v, 2); }).join(", ") : "–", "grad res"]
+      ];
+      table.textContent = "";
+      table.appendChild(el("thead", {}, [el("tr", {}, [el("th", { text: "" }), el("th", { text: "Self-loops kept (low power & secure)" }), el("th", { text: "Self-loops split (secure)" })])]));
+      var body = el("tbody");
+      rows.forEach(function (r) {
+        var tr = el("tr", {}, [el("td", { class: "w-mono", text: r[0] }), el("td", { text: r[1] }), el("td", { text: r[2] })]);
+        if (r[3]) tr.setAttribute("data-levels", r[3]);
+        body.appendChild(tr);
+      });
+      table.appendChild(body);
+      var msg = "Computed by this page: the shortest encoding that meets the set constraints after splitting every state that has a self-loop.";
+      if (state.fsm === "bbara") msg += " The paper also reports 20 states and 74 transitions for BBARA after splitting.";
+      var t2 = TABLE2[state.fsm];
+      if (t2 && l === t2.l) msg += " Paper, Table 2 (l = 3): " + t2.R + " bits, weights 2 and 4, distances 2 and 4.";
+      if (b.codes && b.hd.indexOf(0) < 0) msg += " No transition flips zero bits, so the meter can no longer spot a pause.";
+      note.textContent = msg;
+    }
+    var lastFsm = null;
+    onChange(function () { if (state.fsm !== lastFsm) { lastFsm = state.fsm; reset(); } });
+    lastFsm = state.fsm;
+    reset();
+  }
+
   /* ------------------------------------------------------------ demo 4: trade-off */
 
   function mountTradeoff(root) {
@@ -587,7 +677,7 @@
   /* ------------------------------------------------------------ boot */
 
   var mounts = [
-    ["fp-trace", mountTrace], ["fp-sets", mountSets], ["fp-encode", mountEncode],
+    ["fp-trace", mountTrace], ["fp-sets", mountSets], ["fp-encode", mountEncode], ["fp-split", mountSplit],
     ["fp-tradeoff", mountTradeoff], ["fp-power", mountPower]
   ];
 

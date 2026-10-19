@@ -19,7 +19,8 @@ Each page below rebuilds one DRACO result in your browser and explains it at fiv
       <img src="{{ icon | relative_url }}" alt="" width="96" height="96" loading="lazy" {% include fallback.html %}>
     </a>
     <a class="paper-index-title" href="{{ paper.url | relative_url }}">{{ paper.title }}</a>
-    <span class="paper-index-meta">{{ paper.kicker }}</span>
+    {% assign views = site.data.views.pages[paper.url] | default: 0 %}
+    <span class="paper-index-meta">{{ paper.kicker }}{% if views > 0 %} · {{ views | delimit_number }} {% if views == 1 %}view{% else %}views{% endif %}{% endif %}</span>
     <span>{{ paper.description }}</span>
   </li>
 {% endfor %}
