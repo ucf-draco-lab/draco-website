@@ -1885,7 +1885,7 @@
   - Ranga Vemuri
   publisher: VLSI (ISVLSI), 2014 IEEE Computer Society Annual Symposium on
   date: '2014-01-01'
-  link: https://goo.gl/CDEVzz
+  link: https://doi.org/10.1109/ISVLSI.2014.78
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2014enabling.svg
@@ -1934,13 +1934,13 @@
   tags:
   - journal
 - id: borowczak2013secure
-  title: 'Secure controllers: Requirements of SFSM'
+  title: 'Secure controllers: Requirements of S*FSM'
   authors:
   - Mike Borowczak
   - Ranga Vemuri
   publisher: Circuits and Systems (MWSCAS), 2013 IEEE 56th International Midwest Symposium on
   date: '2013-01-01'
-  link: https://goo.gl/UFg8yp
+  link: https://doi.org/10.1109/MWSCAS.2013.6674708
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2013secure.svg
@@ -2001,13 +2001,13 @@
   tags:
   - journal
 - id: borowczak2012s
-  title: 'SFSM: A Paradigm Shift for Attack Resistant FSM Designs and Encodings'
+  title: 'S*FSM: A Paradigm Shift for Attack Resistant FSM Designs and Encodings'
   authors:
   - Mike Borowczak
   - Ranga Vemuri
   publisher: BioMedical Computing (BioMedCom), 2012 ASE/IEEE International Conference on
   date: '2012-01-01'
-  link: https://goo.gl/nxM6AE
+  link: https://doi.org/10.1109/BioMedCom.2012.22
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2012s.svg
