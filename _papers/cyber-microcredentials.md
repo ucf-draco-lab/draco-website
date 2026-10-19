@@ -8,6 +8,7 @@ share_text: "Thirty K–12 teachers helped rebuild an online cybersecurity cours
 share_image: /papers/cyber-microcredentials/share.png
 share_image_alt: "Three horizontal bars showing pilots of 28, 42, and 49 days that grew from two to 12 modules, next to the title Computer Science beyond Coding."
 date: 2026-10-18
+topics: ["Education", "Cryptography"]
 default_level: public
 level_hints:
   public: No background needed

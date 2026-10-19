@@ -8,6 +8,7 @@ share_text: "Two simple rules let a drone swarm circle a target with no leader, 
 share_image: /papers/sharks-swarms/share.png
 share_image_alt: "A simulated ring of 16 agents around a target, with three adversaries holding one side open and the largest gap in the ring marked, beside the title Circling Swarms."
 date: 2026-10-18
+topics: ["Swarms & IoT"]
 default_level: public
 level_hints:
   public: No background needed

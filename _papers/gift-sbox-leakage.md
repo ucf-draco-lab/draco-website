@@ -8,6 +8,7 @@ share_text: "Which S-box leaks a cipher's key the fastest? Score seven of them a
 share_image: /papers/gift-sbox-leakage/share.png
 share_image_alt: "Simulated attack success curves for seven 4-bit S-boxes rising from zero to one hundred percent as power traces accumulate, beside the title Seven S-Boxes on Trial."
 date: 2026-10-19
+topics: ["Hardware security", "Cryptography"]
 default_level: public
 level_hints:
   public: No background needed

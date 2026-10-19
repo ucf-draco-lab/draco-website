@@ -8,6 +8,7 @@ share_text: "Seventeen campers were too few for the usual survey statistics. See
 share_image: /papers/small-sample-likert/share.png
 share_image_alt: "Dot plot of 17 campers' answers to the statement I rarely feel relaxed within a group, before and after camp, next to the title Seventeen Campers."
 date: 2026-10-18
+topics: ["Education"]
 default_level: public
 level_hints:
   public: No background needed

@@ -8,6 +8,7 @@ share_text: "One line of modular arithmetic lets every device in a swarm talk to
 share_image: /papers/s-chirp/share.png
 share_image_alt: "Eight numbered devices on a circle joined by all 28 conversation lines, colored by the round in which each pair talks, beside the title Round-Robin Talk for Tiny Devices."
 date: 2026-10-18
+topics: ["Swarms & IoT", "Networks"]
 default_level: public
 level_hints:
   public: No background needed
