@@ -88,6 +88,18 @@
     - undergraduate-research-spots
     - graduate-research-spots
 
+- title: LATTE
+  subtitle: LATtice Trace Exploration
+  image: images/projects/latte.jpg
+  link: projects/latte.html
+  description: Post-quantum key exchange is arriving on embedded devices, and its core multiply looks a lot like a neural-network layer. LATTE turns the lab's model-extraction methods on ML-KEM to see how much of a post-quantum key leaks through a microcontroller's power draw, and what the optimized and masked implementations actually buy.
+  sponsor: [northrop-grumman]
+  group: active
+  tags:
+    - research
+    - available
+    - undergraduate-research-spots
+
 - title: RTL Insight
   subtitle: Static Analysis for RTL
   image: images/projects/rtl-insight.jpg
