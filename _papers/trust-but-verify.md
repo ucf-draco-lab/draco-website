@@ -8,6 +8,7 @@ share_text: "147 engineering students on generative AI: what they use it for and
 share_image: /papers/trust-but-verify/share.png
 share_image_alt: "Four horizontal bars showing how often 147 engineering students verify AI output, from code at 67.8 percent to general writing at 43.8 percent, next to the title Trust but Verify."
 date: 2026-10-18
+topics: ["Education", "AI & machine learning"]
 default_level: public
 level_hints:
   public: No background needed

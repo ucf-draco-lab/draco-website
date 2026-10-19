@@ -8,6 +8,7 @@ share_text: "Two simple rules on a controller's bits hide its steps from a power
 share_image: /papers/design-for-security-iot/share.png
 share_image_alt: "Two strip charts of bits flipped per clock for the same 12-step counter: the binary code jumps between zero and four flips, the secure code flips exactly two bits every clock, beside the title Security as a Design Dial."
 date: 2026-10-18
+topics: ["Hardware security", "Swarms & IoT"]
 default_level: public
 level_hints:
   public: No background needed

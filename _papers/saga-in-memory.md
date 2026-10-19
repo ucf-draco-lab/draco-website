@@ -8,6 +8,7 @@ share_text: "Computing inside memory saves energy, but every intermediate value 
 share_image: /papers/saga-in-memory/share.png
 share_image_alt: "Two memory occupancy charts for the 5xp1 benchmark circuit, a breadth-first order needing 56 cells above SAGA's order needing 38, beside the title Ordering In-Memory Logic."
 date: 2026-10-18
+topics: ["Architecture"]
 default_level: public
 level_hints:
   public: No background needed

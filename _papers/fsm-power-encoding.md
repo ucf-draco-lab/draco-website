@@ -8,6 +8,7 @@ share_text: "A chip's power draw can reveal which state its controller is in. Ch
 share_image: /papers/fsm-power-encoding/share.png
 share_image_alt: "The ten-state BBARA controller drawn as a graph, its states colored into four groups and labeled with six-bit secure codes, beside the title Secure State Encoding."
 date: 2026-10-18
+topics: ["Hardware security"]
 default_level: public
 level_hints:
   public: No background needed

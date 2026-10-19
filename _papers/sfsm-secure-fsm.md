@@ -8,6 +8,7 @@ share_text: "A controller's power draw can reveal which state it is in. S*FSMs m
 share_image: /papers/sfsm-secure-fsm/share.png
 share_image_alt: "The two-bit branch predictor rebuilt as a six-state S*FSM, each state labeled with a four-bit code holding two ones and every transition flipping exactly two bits, beside the title S*FSM."
 date: 2026-10-19
+topics: ["Hardware security"]
 default_level: public
 level_hints:
   public: No background needed

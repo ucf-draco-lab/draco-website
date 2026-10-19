@@ -8,6 +8,7 @@ share_text: "A logic cell that spends the same energy every clock, so the power 
 share_image: /papers/sdmlp-dpa-logic/share.png
 share_image_alt: "Simulated switching per clock for DES S-box 1: the static CMOS bars jump between 0 and 34 cell switches, while the SDMLp bars sit level at 51, beside the title SDMLp."
 date: 2026-10-19
+topics: ["Hardware security"]
 default_level: public
 level_hints:
   public: No background needed

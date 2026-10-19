@@ -8,6 +8,7 @@ share_text: "Ordinary traffic goes everywhere; a flood goes to one place. Small 
 share_image: /papers/router-canaries/share.png
 share_image_alt: "A chain of six simulated switches with hosts and canaries, beside an entropy trace that drops below the alarm threshold when a quarter of the hosts start flooding one target, under the title Router Canaries."
 date: 2026-10-19
+topics: ["Networks", "Swarms & IoT"]
 default_level: public
 level_hints:
   public: No background needed

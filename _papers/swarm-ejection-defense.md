@@ -8,6 +8,7 @@ share_text: "A few rogue drones can herd a leaderless swarm. Breaking formation 
 share_image: /papers/swarm-ejection-defense/share.png
 share_image_alt: "A simulated ring of 16 agents around a target with five adversaries in it, beside bars of the paper's spacing error for no defense and three ejection defenses, under the title Breaking Formation."
 date: 2026-10-19
+topics: ["Swarms & IoT"]
 default_level: public
 level_hints:
   public: No background needed

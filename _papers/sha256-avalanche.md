@@ -8,6 +8,7 @@ share_text: "Flip one bit and about half of SHA-256's output changes. Watch the 
 share_image: /papers/sha256-avalanche/share.png
 share_image_alt: "A grid of bits lighting up across 64 rounds of SHA-256, with the title One Bit In, Half the Bits Out."
 date: 2026-10-17
+topics: ["Cryptography"]
 default_level: public
 authors:
   - name: Riley Vaughn

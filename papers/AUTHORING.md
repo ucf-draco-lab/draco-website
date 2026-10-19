@@ -23,12 +23,13 @@ and on the Research page, and every matching citation on the Research page gets 
 title: "Plain-language title"
 kicker: "Interactive paper · Venue Year"
 subtitle: "One sentence on what the page lets a reader do"
-description: "Listing and Research-page blurb"
+description: "Listing blurb on /papers/ (also the tooltip on the Research-page gallery tile)"
 share_description: "Social card text (used as-is, no site prefix)"
 share_text: "Text that leads a shared post, ending with a colon"
 share_image: /papers/<slug>/share.png
 share_image_alt: "What the card shows"
 date: YYYY-MM-DD
+topics: ["Hardware security"]  # filter chips on /papers/; reuse an existing topic name when one fits
 default_level: public
 level_hints:                   # optional: per-paper tooltips for the level buttons
   hs: "Classroom science and a little coding"
