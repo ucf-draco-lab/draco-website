@@ -82,6 +82,9 @@
     if (levels) row.setAttribute("data-levels", levels);
     return row;
   }
+  // Table captions scroll away with a wide table on phones; render them as
+  // a note above the table instead.
+  function capOut(html) { return html.replace(/<table([^>]*)><caption class="w-note">([\s\S]*?)<\/caption>/, '<p class="w-note">$2</p><table$1>'); }
   function pct(x, d) { return x == null ? "–" : (x * 100).toFixed(d == null ? 2 : d) + "%"; }
   function int(x) { return Math.round(x).toLocaleString("en-US"); }
   function pairLabel(key) { var p = PAIRS[key]; return p[0] + " or " + p[1] + " nodes"; }
@@ -292,7 +295,7 @@
           html += "<tr><td>" + (i ? "" : "TP-NET, m = " + m) + "</td><td>N" + (i + 1) + " (" + z[0] + ", " + z[1] + ")</td><td>" + q.mul + "</td><td>" + q.add + "</td><td>" + q.act + "</td><td>" + q.upd + "</td><td>" + int(cc.cycles) + "</td></tr>";
         });
       });
-      tableWrap.innerHTML = html + "</tbody></table>";
+      tableWrap.innerHTML = capOut(html + "</tbody></table>");
     }
     function drawBound() {
       var rr = deep() ? r : 2;
@@ -302,7 +305,7 @@
         var p = PAIRS[k];
         html += "<tr" + (k === state.pair ? ' class="tp-current"' : "") + "><td>" + p[0] + " vs " + p[1] + "</td><td>" + pct(E.bayesAccuracy(p[0], p[1], rr, 6), 1) + "</td><td>" + pct(E.bayesAccuracySplit(p[0], p[1], rr, 6), 1) + "</td><td>100.0%</td></tr>";
       });
-      bound.innerHTML = html + "</tbody></table>";
+      bound.innerHTML = capOut(html + "</tbody></table>");
     }
     onChange(function (what) { if (what === "pair") { pSeg.set(state.pair); draw(); } if (what === "level") draw(); });
     resizers.push(draw);
@@ -405,7 +408,7 @@
             noises.map(function (n) { var x = A[n].results[k][row[0]]; return '<td class="tp-sim">' + x.k3.toFixed(4) + " / " + x.k6.toFixed(4) + "</td>"; }).join("") + "</tr>";
         });
       });
-      tableWrap.innerHTML = html + "</tbody></table>";
+      tableWrap.innerHTML = capOut(html + "</tbody></table>");
     }
     onChange(function (what) {
       if (what === "pair") { pSeg.set(state.pair); paperRef(); big.textContent = ""; status.textContent = ""; }
@@ -499,7 +502,7 @@
         html += "<tr><td>" + w + "</td><td>" + P[0].toFixed(4) + "</td><td>" + P[1].toFixed(4) + "</td>" +
           A.settings.map(function (s) { var r = s.results[w]; return '<td class="tp-sim">' + r.trad.toFixed(4) + '</td><td class="tp-sim">' + r.tp.toFixed(4) + "</td>"; }).join("") + "</tr>";
       });
-      tableWrap.innerHTML = html + "</tbody></table>";
+      tableWrap.innerHTML = capOut(html + "</tbody></table>");
     }
     onChange(function (what) { if (what === "pre") drawTable(); });
     resizers.push(draw);

@@ -127,7 +127,7 @@ Each run simulates labeled captures of each structure (or of each fixed network)
 </div>
 
 <div data-levels="grad res" markdown="1">
-The simulated chip is quieter than real hardware, so held-out structures resolve to all or nothing at default noise. At 16 times the default noise, the page's 8-against-10 structure 6 lands at 41.7 and 43.8 percent (k = 3 and 6), beside the paper's 40.6 and 40.8 percent, while the fixed networks still score 85.0 and 82.9 percent. The agreement is suggestive only; the simulation's noise level is a free parameter. Under fresh structures, the default-noise simulation gives 53 to 63 percent for 8 against 10, 82 to 83 percent for 8 against 14, and 67 to 69 percent for 10 against 14, the same ordering as the counting limits and the same trend as the paper's Observation 2: the further apart the widths, the more the traces give away.
+The simulated chip is quieter than real hardware, so held-out structures resolve to all or nothing at default noise. At 16 times the default noise, the page's 8-against-10 structure 6 lands at 41.7 and 43.8 percent (k = 3 and 6), beside the paper's 40.6 and 40.8 percent, while the fixed networks still score 85.0 and 82.9 percent. The agreement is suggestive only; the simulation's noise level is a free parameter. Under fresh structures, the default-noise simulation gives 53 to 63 percent for 8 against 10, 82 to 83 percent for 8 against 14, and 67 to 69 percent for 10 against 14 (60 to 61, 81 to 83, and 69 to 70 percent at the paper's sample sizes), the same ordering as the counting limits and the same trend as the paper's Observation 2: the further apart the widths, the more the traces give away.
 </div>
 
 ## What the defense costs
@@ -175,9 +175,9 @@ Table IV's Diabetes accuracies for the traditional network (62.33 to 64.15 perce
 </div>
 
 <div data-levels="grad res" markdown="1">
+<p class="w-note">Tables V to VII as printed: k-NN inference accuracy on the number of hidden nodes (Diabetes), with the printed relative change and this page's recomputation from the printed values.</p>
 <div class="tp-wrap-table">
 <table class="results-table">
-<caption class="w-note">Tables V to VII as printed: k-NN inference accuracy on the number of hidden nodes (Diabetes), with the printed relative change and this page's recomputation from the printed values.</caption>
 <thead><tr><th>Widths</th><th>Model</th><th>k = 3</th><th>Change</th><th>k = 6</th><th>Change</th><th>Recomputed</th></tr></thead>
 <tbody>
 <tr><td>8 vs 10</td><td>Traditional</td><td>0.9867</td><td></td><td>0.9850</td><td></td><td></td></tr>
@@ -193,9 +193,9 @@ Table IV's Diabetes accuracies for the traditional network (62.33 to 64.15 perce
 </table>
 </div>
 
+<p class="w-note">Table IV as printed: classification accuracy, with the printed relative change and this page's recomputation from the printed values.</p>
 <div class="tp-wrap-table">
 <table class="results-table">
-<caption class="w-note">Table IV as printed: classification accuracy, with the printed relative change and this page's recomputation from the printed values.</caption>
 <thead><tr><th>Width</th><th>Traditional, Diabetes</th><th>TP-NET, Diabetes</th><th>Recomputed</th><th>Traditional, COMPAS</th><th>TP-NET, COMPAS</th><th>Recomputed</th></tr></thead>
 <tbody>
 <tr><td>8</td><td>0.6257</td><td>0.6268 (+0.17%)</td><td>+0.18%</td><td>0.7644</td><td>0.6938 (−9.24%)</td><td>−9.24%</td></tr>
@@ -233,6 +233,7 @@ The contribution is a model-level randomization defense, evaluated on hardware t
 - **Eq. 4 counts.** The multiplication term, z₁d + z₂z₁ + z₂, matches the page's instrumented forward pass exactly. The addition term counts one addition per hidden node (z₁ + z₂), while Eq. 3's sum over k inputs takes k additions per node; Eq. 11's conclusion is unchanged because the extra additions also scale with the weight count.
 - **Deployment.** Step 3 keeps one sub-network for prediction, so the deployed model has a fixed structure with widths at most m. Training-time traces are protected by the randomization; whether inference-time traces of the chosen sub-network leak its own widths is outside the paper's scope and a natural question for follow-up work.
 - **COMPAS.** The page omits COMPAS: the paper's reduction from 18,317 records and 40 features to 5,000 records and 13 features is not specified closely enough to reproduce.
+- **Paper-scale simulation.** With the paper's sample sizes (1,600 labeled captures per network or structure, 600 unlabeled per width, 5,000 points), the default-noise simulation gives 100 percent for every traditional pair, 0 percent for 8-against-10 structure 6, 100 percent for every other fixed structure, and 60.3 / 60.6, 80.5 / 83.2, and 68.5 / 70.0 percent (k = 3 / 6) under fresh structures, each below its counting limit.
 - **What the simulation can and cannot say.** The leakage model, noise, capture length (one training step), and offsets are the page's choices, carried over from the lab's ISVLSI 2021 page. The simulated tables show mechanisms and trends; they are not predictions of the real traces.
 </div>
 
