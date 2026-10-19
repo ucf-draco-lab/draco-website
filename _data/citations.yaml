@@ -861,7 +861,7 @@
   - Mike Borowczak
   publisher: 2020 IEEE 10th International Conference on Consumer Electronics (ICCE-Berlin 2020)
   date: '2020-11-01'
-  link: ''
+  link: https://doi.org/10.1109/ICCE-Berlin50680.2020.9352164
   type: conference
   source: proceedings.bib
   image: images/papers/icce-2020-canary.svg
