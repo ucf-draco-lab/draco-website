@@ -505,13 +505,6 @@
     run.addEventListener("click", go);
 
     function draw() {
-      var W = chartWidth(chart), H = 150, L = plain() ? 200 : 190, R = 50, T = 8;
-      chart.setAttribute("viewBox", "0 0 " + W + " " + H); chart.innerHTML = "";
-      function xOf(v) { return L + v * (W - L - R); }
-      [0, 0.25, 0.5, 0.75, 1].forEach(function (g) {
-        chart.appendChild(svg("line", { x1: xOf(g), x2: xOf(g), y1: T, y2: H - 22, class: "c-grid" }));
-        chart.appendChild(svg("text", { x: xOf(g), y: H - 8, "text-anchor": "middle", class: "c-tick" }, g.toFixed(2)));
-      });
       var rows = [];
       rows.push([plain() ? "Attack, in the paper" : "Paper, Fig. 2 (Crime)", null, "below 0.6"]);
       if (out && out.pl.n) {
@@ -519,9 +512,18 @@
         rows.push([plain() ? "Guess “not mostly Black”" : "Always guess s = 0", out.maj, f4(out.maj).replace(/^\./, "0.")]);
         if (deep()) rows.push(["racePctWhite < 0.5 (page)", out.one, f4(out.one).replace(/^\./, "0.")]);
       }
+      var W = chartWidth(chart), narrow = W < 560, R = 56, T = 8;
+      var L = narrow ? 0 : (plain() ? 200 : 190), rowH = narrow ? 40 : 26;
+      var H = T + rows.length * rowH + 40;
+      chart.setAttribute("viewBox", "0 0 " + W + " " + H); chart.innerHTML = "";
+      function xOf(v) { return L + v * (W - L - R); }
+      (narrow ? [0, 0.5, 1] : [0, 0.25, 0.5, 0.75, 1]).forEach(function (g) {
+        chart.appendChild(svg("line", { x1: xOf(g), x2: xOf(g), y1: T, y2: H - 22, class: "c-grid" }));
+        chart.appendChild(svg("text", { x: xOf(g), y: H - 8, "text-anchor": g === 0 ? "start" : g === 1 ? "end" : "middle", class: "c-tick" }, g.toFixed(2)));
+      });
       rows.forEach(function (r, k) {
-        var y = T + 6 + k * 26;
-        chart.appendChild(svg("text", { x: 0, y: y + 11, class: "c-label" }, r[0]));
+        var y = T + 6 + k * rowH + (narrow ? 14 : 0);
+        chart.appendChild(svg("text", { x: 0, y: narrow ? y - 4 : y + 11, class: "c-label" }, r[0]));
         if (r[1] == null) {
           chart.appendChild(svg("rect", { x: xOf(0), y: y, width: xOf(0.6) - xOf(0), height: 14, class: "dp-bar paper" }));
         } else chart.appendChild(svg("rect", { x: xOf(0), y: y, width: Math.max(xOf(r[1]) - xOf(0), 1), height: 14, class: "dp-bar " + (k === 1 ? "pred" : "truth") }));
