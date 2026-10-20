@@ -426,11 +426,11 @@
   authors:
   - Hui Hu
   - Lu Cheng
-  - Jayden Vap
+  - Jayden Parker Vap
   - Mike Borowczak
-  publisher: The Web Conference 2022
+  publisher: Proceedings of the ACM Web Conference 2022 (WWW '22)
   date: '2022-01-01'
-  link: ''
+  link: https://doi.org/10.1145/3485447.3511975
   type: conference
   source: proceedings.bib
   image: images/papers/wsdm-2022.svg
