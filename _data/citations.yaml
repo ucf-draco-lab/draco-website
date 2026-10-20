@@ -1,6 +1,19 @@
 # DO NOT EDIT — generated automatically by bib2yaml.py
-# Source: _bibliography/*.bib (154 entries)
+# Source: _bibliography/*.bib (155 entries)
 
+- id: borowczak2026allowed
+  title: 'From Allowed to Embedded: Student Perceptions of AI Use Across Engineering Courses'
+  authors:
+  - Mike Borowczak
+  - Andrea Carneal-Burrows Borowczak
+  publisher: 2026 ASEE Annual Conference & Exposition
+  date: '2026-06-01'
+  link: https://doi.org/10.18260/1-2--59546
+  type: conference
+  source: proceedings.bib
+  image: images/papers/borowczak2026allowed.svg
+  tags:
+  - conference
 - id: borowczak2026trust
   title: 'Trust but Verify: Engineering Students'' Adoption of Generative AI and Pedagogical Implications Across Disciplines'
   authors:
