@@ -719,9 +719,9 @@
   - Rita Foster
   - Jed Haile
   - Mike Borowczak
-  publisher: IEEE Big Data 2021, Workshop on Cyber Threat Intelligence and Hunting with AI
+  publisher: 2021 IEEE International Conference on Big Data (Big Data)
   date: '2021-01-01'
-  link: ''
+  link: https://doi.org/10.1109/BigData52589.2021.9671573
   type: conference
   source: proceedings.bib
   image: images/papers/ieee-big-data-2021.svg
