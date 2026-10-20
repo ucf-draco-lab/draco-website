@@ -3,7 +3,7 @@ title: "Soft Skills, Hard Numbers: Six Questions Before and After One Class"
 kicker: "Interactive paper · ASEE First Year Engineering Experience 2017"
 subtitle: "An interactive companion to Andrea C. Borowczak and Mike Borowczak's baseline study of what 55 engineering and computing undergraduates knew about ABET's professional skills, partnerships, and conflict, and how far one class session moved 18 of them."
 description: "Answer the paper's six questions on ABET, partnerships, and conflict, follow the two cohorts behind the study, compare pre- and post-test scores by question and class standing, and, at the graduate and researcher levels, rebuild the class's scores from the printed tables."
-share_description: "Before one class session, 18 computing students averaged 3 to 21 percent on six questions about ABET, partnerships, and conflict. Afterward: 67 to 96 percent. Seniors started no higher than freshmen. Explore the study at five reading levels."
+share_description: "Before one class session, 18 computing students averaged 3 to 21 percent on six questions about ABET, partnerships, and conflict. Afterward: 67 to 96 percent. Juniors and seniors started barely ahead of freshmen and sophomores. Explore the study at five reading levels."
 share_text: "Six questions on ABET, teamwork, and conflict, asked before and after one class. See how 55 engineering students did:"
 share_image: /papers/freshman-soft-skills/share.png
 share_image_alt: "Pre-test and post-test averages for six questions on ABET, partnerships, and conflict, rising from between 3 and 21 percent to between 67 and 96 percent, beside the title Soft Skills, Hard Numbers."
