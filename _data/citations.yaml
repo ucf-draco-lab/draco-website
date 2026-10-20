@@ -2191,14 +2191,14 @@
   tags:
   - conference
 - id: anderson2008use
-  title: The use of device simulation in development of usb storage devices
+  title: The Use of Device Simulation in Development of USB Storage Devices
   authors:
   - R Brian Anderson
   - Mike Borowczak
   - Philip A Wilsey
   publisher: Simulation Symposium, 2008. ANSS 2008. 41st Annual
   date: '2008-01-01'
-  link: https://goo.gl/R5TCcx
+  link: https://doi.org/10.1109/ANSS-41.2008.34
   type: conference
   source: proceedings.bib
   image: images/papers/anderson2008use.svg
