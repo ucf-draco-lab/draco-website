@@ -1578,14 +1578,14 @@
   tags:
   - conference
 - id: borowczak2017harden
-  title: Hardening Freshman Engineering Student Soft Skills.
+  title: Hardening Freshman Engineering Student Soft Skills
   authors:
   - Andrea C Burrows
   - Mike Borowczak
   publisher: First Year Engineering Education Conference of the American Society of Engineering Education 2017, FYEE-ASEE,
     2017.
   date: '2017-08-01'
-  link: https://goo.gl/jWd2gp
+  link: https://doi.org/10.18260/1-2--29416
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2017harden.svg
