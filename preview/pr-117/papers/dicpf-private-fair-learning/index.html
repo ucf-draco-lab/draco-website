@@ -849,7 +849,7 @@
   
 
   <section class="background" data-size="page">
-    <link rel="stylesheet" href="/preview/pr-117/papers/kit/paper-kit.css?v=1792480419">
+    <link rel="stylesheet" href="/preview/pr-117/papers/kit/paper-kit.css?v=1792480634">
 
   <link rel="stylesheet" href="/preview/pr-117/papers/dicpf-private-fair-learning/widget.css">
 
@@ -1246,7 +1246,7 @@
     <li>
 <strong>Error against the trivial rule.</strong> The all-zero classifier has SP 0 and error 0.1441 on the 50 test sets. The paper’s z-Sparse error (0.1299) is 0.014 below it, and its standard deviation (0.0614) is five times the trivial rule’s. On Crime, every reported error in Table III should be read against 0.144.</li>
     <li>
-<strong>The attack’s objective.</strong> Eq. 11 minimizes the statistical parity of the model’s predictions over binary s. Any column that splits the flagged communities evenly achieves SP near 0, so the true s has no special status, and a fair model makes that more true. In the released GA, rank selection keeps 80 percent per generation without refilling the population, Mutation.m writes mutated copies over rows 1 to n rather than the mutated row, and <code class="language-plaintext highlighter-rouge">Selection.m</code> returns <code class="language-plaintext highlighter-rouge">value(idx(1:p_num))</code>, re-indexing already sorted values. The recorded best individual in the page’s runs comes from the first generation. A privacy loss near 0.5 is therefore what the attack returns for any model, which bounds what Figure 2 can show.</li>
+<strong>The attack’s objective.</strong> Eq. 11 minimizes the statistical parity of the model’s predictions over binary s. Any column that splits the flagged communities evenly achieves SP near 0, so the true s has no special status, and a fair model makes that more true. In the released GA, rank selection keeps 80 percent per generation without refilling the population, Mutation.m writes mutated copies over rows 1 to n rather than the mutated row, and <code class="language-plaintext highlighter-rouge">Selection.m</code> returns <code class="language-plaintext highlighter-rouge">value(idx(1:p_num))</code>, re-indexing already sorted values. Over 40 runs on the page, the recorded best individual came from generation 1 in 19 runs and never later than generation 16, while the population was still mostly random columns. A privacy loss near 0.5 is therefore what the attack returns for any model, which bounds what Figure 2 can show.</li>
     <li>
 <strong>Stronger baselines for privacy.</strong> Always guessing s = 0 scores 0.878, and thresholding the public feature racePctWhite at 0.5 scores 0.923. The public features also include racePctAsian and racePctHisp. Both baselines are computed by this page.</li>
     <li>
