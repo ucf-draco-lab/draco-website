@@ -786,13 +786,13 @@
   tags:
   - conference
 - id: saraji2021blockchain
-  title: A blockchain-based carbon credit ecosystem
+  title: A Blockchain-based Carbon Credit Ecosystem
   authors:
   - Soheil Saraji
   - Mike Borowczak
   publisher: arXiv preprint arXiv:2107.00185
   date: '2021-01-01'
-  link: ''
+  link: https://arxiv.org/abs/2107.00185
   type: other
   source: otherwork.bib
   image: images/papers/saraji2021blockchain.svg
