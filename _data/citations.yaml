@@ -1507,12 +1507,12 @@
   title: 'Portable Tor Router: Easily Enabling Web Privacy for Consumers'
   authors:
   - Adrian Barberis
-  - Wyatt Emery
   - Danny Radosevich
+  - Wyatt Emery
   - Mike Borowczak
   publisher: IEEE International Conference on Consumer Electronics, 2018. ICCE 2018.
   date: '2018-01-20'
-  link: https://goo.gl/fQ7hyP
+  link: https://doi.org/10.1109/ICCE.2018.8326333
   type: conference
   source: proceedings.bib
   image: images/papers/Borowczak2018ToR.svg
