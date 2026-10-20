@@ -6,7 +6,7 @@ description: "Play a thief and an owner against a USB drive that counts trust, d
 share_description: "A lost flash drive gives up its files to anyone who plugs it in. This one watches the order of the blocks it is asked for, and a stranger's copy tool locks it within four requests. Try the paper's trust counter in your browser, written for five reading levels."
 share_text: "A flash drive that watches the order of the blocks it is asked for, and locks when a stranger tries to copy it. Try it in your browser:"
 share_image: /papers/usb-self-protecting/share.png
-share_image_alt: "A trust counter for a USB drive: on a recreated FAT file-system trace the trust line stays between two and eight, while a raw copy without the driver drains it to zero in four accesses, under the title A Flash Drive That Locks When It Is Read Out of Order."
+share_image_alt: "A trust counter for a USB drive: on a recreated FAT file-system trace the trust line stays between three and eight, while a raw copy without the driver drains it to zero in four accesses, under the title A Flash Drive That Locks When It Is Read Out of Order."
 date: 2026-10-20
 topics: ["Hardware security"]
 default_level: public
