@@ -223,7 +223,7 @@
   - Andrea Carneal Borowczak
   publisher: 2024 ASEE Annual Conference & Exposition
   date: '2024-06-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--46898
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer2024.svg
@@ -526,9 +526,10 @@
   authors:
   - Mike Borowczak
   - Andrea C Burrows
+  - Mason Johnson
   publisher: 2021 ASEE Annual Conference & Exposition
   date: '2021-07-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--38225
   type: conference
   source: proceedings.bib
   image: images/papers/asee-NSFWySLICE.svg
