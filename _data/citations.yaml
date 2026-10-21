@@ -1,5 +1,5 @@
 # DO NOT EDIT — generated automatically by bib2yaml.py
-# Source: _bibliography/*.bib (155 entries)
+# Source: _bibliography/*.bib (156 entries)
 
 - id: borowczak2026allowed
   title: 'From Allowed to Embedded: Student Perceptions of AI Use Across Engineering Courses'
@@ -76,6 +76,24 @@
   - Standards
   - Forgery
   - Data models
+- id: mair2026peertutor
+  title: Generative AI Peer Tutoring to Support Peer-Reviewed Source Identification and Evaluation
+  authors:
+  - Rae Mair
+  - Michelle Kelley
+  - Taylar Wenzel
+  - Andrea C. Borowczak
+  - Yuqing Li
+  - Mike Borowczak
+  publisher: 'The Pedagogical Promptbook: Enacting Evidence-Based Teaching and Instructional Design Practices with Generative
+    AI'
+  date: '2026-01-01'
+  link: https://doi.org/10.59668/2340.26762
+  type: book
+  source: books.bib
+  image: images/papers/mair2026peertutor.svg
+  tags:
+  - book
 - id: ifip-iot2025
   title: LMAP - Low-cost Microcontroller Architecture Platform
   authors:
