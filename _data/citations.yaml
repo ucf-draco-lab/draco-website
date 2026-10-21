@@ -1,5 +1,5 @@
 # DO NOT EDIT — generated automatically by bib2yaml.py
-# Source: _bibliography/*.bib (155 entries)
+# Source: _bibliography/*.bib (156 entries)
 
 - id: borowczak2026allowed
   title: 'From Allowed to Embedded: Student Perceptions of AI Use Across Engineering Courses'
@@ -76,6 +76,24 @@
   - Standards
   - Forgery
   - Data models
+- id: mair2026peertutor
+  title: Generative AI Peer Tutoring to Support Peer-Reviewed Source Identification and Evaluation
+  authors:
+  - Rae Mair
+  - Michelle Kelley
+  - Taylar Wenzel
+  - Andrea C. Borowczak
+  - Yuqing Li
+  - Mike Borowczak
+  publisher: 'The Pedagogical Promptbook: Enacting Evidence-Based Teaching and Instructional Design Practices with Generative
+    AI'
+  date: '2026-01-01'
+  link: https://doi.org/10.59668/2340.26762
+  type: book
+  source: books.bib
+  image: images/papers/mair2026peertutor.svg
+  tags:
+  - book
 - id: ifip-iot2025
   title: LMAP - Low-cost Microcontroller Architecture Platform
   authors:
@@ -104,14 +122,14 @@
   tags:
   - conference
 - id: asee_peer2025
-  title: 'Blending Agile Methods with Constructivist Pedagogy: Enhancing Learning Outcomes in Introductory Computer Science
-    Courses'
+  title: 'Flexible Learning Cycles: Introducing an Agile Constructivist Pedagogy'
   authors:
+  - Andey Robins
   - Mike Borowczak
   - Andrea C. Borowczak
   publisher: 2025 ASEE Annual Conference & Exposition
   date: '2025-06-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--56579
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer2025.svg
@@ -223,7 +241,7 @@
   - Andrea Carneal Borowczak
   publisher: 2024 ASEE Annual Conference & Exposition
   date: '2024-06-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--46898
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer2024.svg
@@ -333,14 +351,14 @@
 - id: asee_peer_41204
   title: The Artful Craft of Improving Virtual Summer Camps in the Midst of COVID-19 (Work in Progress)
   authors:
-  - Shawna Wolf
-  - Shaya Wolf
-  - Hu Hui
-  - Andrea Burrows
   - Mike Borowczak
+  - Andrea C. Burrows
+  - Shawna M. Wolf
+  - Shaya Wolf
+  - Hui Hu
   publisher: 2022 ASEE Annual Conference & Exposition
   date: '2022-08-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--41204
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer_41204.svg
@@ -355,7 +373,7 @@
   - Mike Borowczak
   publisher: 2022 ASEE Annual Conference & Exposition
   date: '2022-08-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--41203
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer_41203.svg
@@ -526,9 +544,10 @@
   authors:
   - Mike Borowczak
   - Andrea C Burrows
+  - Mason Johnson
   publisher: 2021 ASEE Annual Conference & Exposition
   date: '2021-07-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--38225
   type: conference
   source: proceedings.bib
   image: images/papers/asee-NSFWySLICE.svg
@@ -1381,14 +1400,14 @@
   tags:
   - presentation
 - id: Borowczak2018ISC2-BLESS
-  title: Blockchain Based Election Infrastructures
+  title: Blockchain-Based Election Infrastructures
   authors:
   - Rafer Cooley
   - Shaya Wolf
   - Mike Borowczak
   publisher: 2018 ISC2 International Workshop on BLockchain Enabled Sustainable Smart Cities (BLESS 2018)
   date: '2018-09-19'
-  link: https://goo.gl/KXidyZ
+  link: https://doi.org/10.1109/ISC2.2018.8656988
   type: conference
   source: proceedings.bib
   image: images/papers/Borowczak2018ISC2-BLESS.svg
