@@ -1,5 +1,5 @@
 ---
-title: "Computer Science in Every Subject: WySLICE in Wyoming's K–8 Classrooms"
+title: "Computer Science in Every Subject: WySLICE in Wyoming's K–⁠8 Classrooms"
 kicker: "Interactive paper · ASEE 2021 and ASEE 2024"
 subtitle: "An interactive companion to Mike Borowczak, Andrea C. Borowczak, and Mason Johnson's study of a statewide professional development that taught K–8 teachers and librarians to weave computer science into the subjects they already teach."
 description: "Build a three-block model that works in science, mathematics, or social studies, then follow WySLICE's design from a July 2020 week to three summers of cohorts: the checkpoints, the knowledge question, the efficacy scales, and the reach the 2024 paper reports."
