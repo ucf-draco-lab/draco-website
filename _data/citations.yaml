@@ -104,14 +104,14 @@
   tags:
   - conference
 - id: asee_peer2025
-  title: 'Blending Agile Methods with Constructivist Pedagogy: Enhancing Learning Outcomes in Introductory Computer Science
-    Courses'
+  title: 'Flexible Learning Cycles: Introducing an Agile Constructivist Pedagogy'
   authors:
+  - Andey Robins
   - Mike Borowczak
   - Andrea C. Borowczak
   publisher: 2025 ASEE Annual Conference & Exposition
   date: '2025-06-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--56579
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer2025.svg
