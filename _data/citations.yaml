@@ -1400,14 +1400,14 @@
   tags:
   - presentation
 - id: Borowczak2018ISC2-BLESS
-  title: Blockchain Based Election Infrastructures
+  title: Blockchain-Based Election Infrastructures
   authors:
   - Rafer Cooley
   - Shaya Wolf
   - Mike Borowczak
   publisher: 2018 ISC2 International Workshop on BLockchain Enabled Sustainable Smart Cities (BLESS 2018)
   date: '2018-09-19'
-  link: https://goo.gl/KXidyZ
+  link: https://doi.org/10.1109/ISC2.2018.8656988
   type: conference
   source: proceedings.bib
   image: images/papers/Borowczak2018ISC2-BLESS.svg
