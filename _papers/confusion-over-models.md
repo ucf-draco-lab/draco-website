@@ -1,5 +1,5 @@
 ---
-title: "One Word, Two Meanings: \"Modeling\" in a Teacher PD"
+title: "One Word, Two Meanings: “Modeling” in a Teacher PD"
 kicker: "Interactive paper · SAGE Open 2022"
 subtitle: "An interactive companion to Todd Reynolds, Andrea C. Borowczak, and Mike Borowczak's study of 40 K–12 teachers in a two-week computer science professional development, where faculty said \"modeling\" and meant a computer model, and most teachers heard a way of teaching."
 description: "Code teachers' own words about modeling the way the authors did, walk the study from a two-week summer PD to a year of classroom follow-up, and see how 40 teachers' definitions of modeling moved, and how far, before and after."
