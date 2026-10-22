@@ -1721,7 +1721,7 @@
   - Andrea C Burrows
   publisher: 2016 ASEE Annual Conference & Exposition
   date: '2016-06-01'
-  link: https://goo.gl/S14FXQ
+  link: https://doi.org/10.18260/p.26718
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2016developing.svg
@@ -1734,7 +1734,7 @@
   - Mike Borowczak
   publisher: 2016 ASEE Annual Conference & Exposition
   date: '2016-06-01'
-  link: https://goo.gl/dyup3e
+  link: https://doi.org/10.18260/p.26275
   type: conference
   source: proceedings.bib
   image: images/papers/burrows2016arduinos.svg
@@ -2216,7 +2216,7 @@
   - Annie Avakian
   publisher: Aerospace and Electronics Conference, 2008. NAECON 2008. IEEE National
   date: '2008-01-01'
-  link: https://goo.gl/Vrh1Si
+  link: https://doi.org/10.1109/NAECON.2008.4806561
   type: conference
   source: proceedings.bib
   image: images/papers/vemuri2008safety.svg
