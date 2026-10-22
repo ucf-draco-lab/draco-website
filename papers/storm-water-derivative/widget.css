@@ -1,0 +1,93 @@
+/* Storm water derivative widget. Theme colors only; ruled rows, no cards. */
+
+.w-demo { margin: 10px 0 8px; padding: 4px 0 8px; border-bottom: 1px solid var(--light-gray); }
+.w-demo:not(.w-ready)::before { content: "This demo needs JavaScript."; color: var(--gray); font-size: 0.9rem; }
+
+.w-note { margin: 8px 0; font-size: 0.88rem; color: var(--dark-gray); max-width: 72ch; }
+.w-mono { font-family: var(--code); font-size: 0.78rem; color: var(--gray); }
+.w-source { font-family: var(--code); font-size: 0.75rem; color: var(--gray); margin: 4px 0 8px; }
+.w-big { margin: 8px 0; font-family: var(--heading); font-size: 1.05rem; }
+.w-big strong { color: var(--accent); }
+
+.w-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 8px 0; }
+.w-btn {
+  appearance: none; min-height: 38px; padding: 7px 14px; border: 1px solid var(--primary);
+  background: var(--primary); color: var(--background); font: inherit; font-family: var(--heading);
+  font-size: 0.88rem; font-weight: var(--semi-bold); cursor: pointer; border-radius: 0;
+}
+.w-btn:hover { background: transparent; color: var(--primary); }
+.w-btn:focus-visible, .seg-option:focus-visible, .sw-step-btn:focus-visible, .sw-select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--light-gray); }
+.seg-option {
+  appearance: none; padding: 6px 10px; border: 0; border-right: 1px solid var(--light-gray);
+  background: transparent; color: var(--text); font: inherit; font-family: var(--code); font-size: 0.78rem;
+  cursor: pointer; border-radius: 0; min-height: 34px;
+}
+.seg-option:last-child { border-right: 0; }
+.seg-option[aria-checked="true"], .seg-option[aria-pressed="true"] { background: var(--light-gray); color: var(--accent); }
+.sw-shed-btn[aria-pressed="false"] { color: var(--gray); text-decoration: line-through; }
+
+.sw-caption { margin: 12px 0 0; font-family: var(--code); font-size: 0.78rem; color: var(--dark-gray); }
+.sw-chart { margin: 4px 0; }
+.sw-svg { display: block; width: 100%; max-width: 760px; height: auto; overflow: visible; }
+.c-grid { stroke: var(--light-gray); stroke-width: 1; }
+.c-tick { fill: var(--gray); font-family: var(--code); font-size: 11px; }
+.c-label { fill: var(--dark-gray); font-family: var(--code); font-size: 11px; }
+.sw-val { fill: var(--text); font-family: var(--code); font-size: 11px; }
+
+/* three watersheds: primary, accent, gray */
+.sw-dot.sw-urban, .sw-sw.sw-urban { fill: var(--primary); background: var(--primary); }
+.sw-dot.sw-suburban, .sw-sw.sw-suburban { fill: var(--accent); background: var(--accent); }
+.sw-dot.sw-rural, .sw-sw.sw-rural { fill: var(--text); background: var(--text); }
+.sw-fit, .sw-model, .sw-step { fill: none; stroke-width: 2; }
+.sw-fit.sw-urban, .sw-step.sw-urban, .sw-model.sw-urban { stroke: var(--primary); }
+.sw-fit.sw-suburban, .sw-step.sw-suburban, .sw-model.sw-suburban { stroke: var(--accent); }
+.sw-fit.sw-rural, .sw-step.sw-rural, .sw-model.sw-rural { stroke: var(--text); }
+.sw-step { stroke-width: 3; opacity: 0.55; }
+.sw-model { stroke-width: 1.2; stroke-dasharray: 4 3; opacity: 0.8; }
+.sw-pour { fill: var(--light-gray); opacity: 0.35; }
+
+/* lesson components */
+.sw-addr, .sw-sw.sw-addr { fill: var(--primary); background: var(--primary); }
+.sw-part, .sw-sw.sw-part { fill: var(--accent); background: var(--accent); }
+.sw-none, .sw-sw.sw-none { fill: var(--light-gray); background: var(--light-gray); opacity: 0.6; }
+
+/* assessment */
+.sw-pre, .sw-sw.sw-pre { fill: var(--gray); background: var(--gray); }
+.sw-post, .sw-sw.sw-post { fill: var(--primary); background: var(--primary); }
+.sw-b2-line { fill: none; stroke: var(--primary); stroke-width: 2; }
+.sw-b5-line { fill: none; stroke: var(--accent); stroke-width: 2; }
+.sw-ceil-line { fill: none; stroke: var(--gray); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.sw-sw.sw-b2 { background: var(--primary); }
+.sw-sw.sw-b5 { background: var(--accent); }
+.sw-sw.sw-ceil { background: var(--gray); }
+.sw-you { fill: var(--text); stroke: var(--background); stroke-width: 2; }
+
+.c-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 6px 0 0; font-family: var(--code); font-size: 0.76rem; color: var(--dark-gray); }
+.sw-lg { display: inline-flex; align-items: center; gap: 6px; }
+.sw-sw { display: inline-block; width: 12px; height: 10px; flex: none; }
+
+.sw-table-scroll { overflow-x: auto; }
+.sw-table, .paper-body .results-table { width: 100%; min-width: 560px; border-collapse: collapse; margin: 10px 0; overflow-wrap: normal; }
+.sw-table th, .sw-table td, .paper-body .results-table th, .paper-body .results-table td { padding: 6px 8px; border-bottom: 1px solid var(--light-gray); text-align: left; vertical-align: top; font-size: 0.86rem; }
+.sw-table th, .paper-body .results-table th { font-family: var(--code); font-size: 0.74rem; color: var(--gray); font-weight: 500; }
+.sw-table td:not(:first-child) { font-family: var(--code); font-size: 0.8rem; }
+
+.sw-steps { margin: 8px 0; padding-left: 1.6em; max-width: 72ch; }
+.sw-steps li { margin: 0; border-bottom: 1px solid var(--light-gray); text-align: left; }
+.sw-step-btn { appearance: none; width: 100%; padding: 6px 4px; border: 0; background: transparent; color: var(--text); font: inherit; text-align: left; cursor: pointer; border-radius: 0; }
+.sw-step-btn[aria-current="step"] { background: var(--light-gray); color: var(--accent); }
+.sw-detail { margin: 8px 0; padding: 6px 0 6px 12px; border-left: 3px solid var(--accent); max-width: 72ch; min-height: 3.2em; }
+
+.sw-q { margin: 16px 0 6px; font-family: var(--heading); font-size: 1.05rem; max-width: 72ch; }
+.sw-q strong { color: var(--primary); }
+.sw-match { max-width: 72ch; }
+.sw-match-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; padding: 6px 0; border-bottom: 1px solid var(--light-gray); }
+.sw-pro { min-width: 14em; }
+.sw-select { max-width: 100%; min-height: 34px; padding: 4px 6px; border: 1px solid var(--light-gray); background: var(--background); color: var(--text); font: inherit; font-size: 0.85rem; border-radius: 0; }
+.sw-answer { margin: 4px 0 8px; padding: 6px 0 6px 12px; border-left: 3px solid var(--accent); max-width: 72ch; }
+.sw-answer li { text-align: left; margin: 4px 0; }
+.sw-ok { font-family: var(--code); font-size: 0.78rem; color: var(--accent); }
+input[type="range"] { width: min(260px, 60vw); accent-color: var(--primary); }
+.paper-body li { text-align: left; }
