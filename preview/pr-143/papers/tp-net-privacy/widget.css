@@ -1,0 +1,111 @@
+/* TP-NET widget. Theme colors only; ruled rows, no cards. */
+
+.w-demo {
+  margin: 10px 0 8px;
+  padding: 4px 0 8px;
+  border-bottom: 1px solid var(--light-gray);
+}
+.w-demo:not(.w-ready)::before { content: "This demo needs JavaScript."; color: var(--gray); font-size: 0.9rem; }
+
+.w-note { margin: 8px 0; font-size: 0.88rem; color: var(--dark-gray); max-width: 72ch; }
+.w-big { margin: 8px 0; font-family: var(--heading); font-size: 1.02rem; }
+.w-big strong { color: var(--accent); font-size: 1.3rem; }
+
+.w-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 10px 0; }
+.w-actions .w-note { margin: 0; }
+.w-btn {
+  appearance: none; min-height: 38px; padding: 7px 14px;
+  border: 1px solid var(--primary); background: var(--primary); color: var(--background);
+  font: inherit; font-family: var(--heading); font-size: 0.88rem; font-weight: var(--semi-bold);
+  cursor: pointer; border-radius: 0;
+}
+.w-btn:hover { background: transparent; color: var(--primary); }
+.w-btn-quiet { background: transparent; color: var(--primary); }
+.w-btn-quiet:hover { background: var(--primary); color: var(--background); }
+.w-btn.running { background: transparent; color: var(--accent); border-color: var(--accent); }
+.w-btn[disabled] { cursor: progress; opacity: 0.7; }
+.w-btn:focus-visible, .seg-option:focus-visible, .w-range input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--light-gray); }
+.seg-option {
+  appearance: none; padding: 6px 10px; border: 0; border-right: 1px solid var(--light-gray);
+  background: transparent; color: var(--text); font: inherit; font-family: var(--code); font-size: 0.78rem;
+  cursor: pointer; border-radius: 0; min-height: 34px;
+}
+.seg-option:last-child { border-right: 0; }
+.seg-option[aria-checked="true"] { background: var(--light-gray); color: var(--accent); }
+.seg-option.off { opacity: 0.35; cursor: not-allowed; text-decoration: line-through; }
+
+.tp-ctrls { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 8px 0; padding-top: 6px; border-top: 1px solid var(--light-gray); }
+.tp-ctl { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+.tp-ctl-label { font-family: var(--code); font-size: 0.75rem; color: var(--gray); min-width: 5.5rem; }
+.w-range { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr) 3.5rem; align-items: center; gap: 4px 10px; margin: 6px 0; max-width: 560px; font-family: var(--code); font-size: 0.78rem; color: var(--gray); }
+.w-range input[type="range"] { width: 100%; accent-color: var(--primary); }
+.w-range output { text-align: right; color: var(--text); }
+.tp-status { min-height: 1.2em; }
+.tp-sub { margin: 18px 0 4px; font-size: 1rem; }
+
+/* charts */
+.tp-chart { display: block; width: 100%; max-width: 760px; height: auto; margin: 8px 0; overflow: visible; }
+.c-grid { stroke: var(--light-gray); stroke-width: 1; }
+.c-ref { stroke: var(--gray); stroke-width: 1.5; stroke-dasharray: 2 3; }
+.c-tick { fill: var(--gray); font-family: var(--code); font-size: 11px; }
+.c-label { fill: var(--dark-gray); font-family: var(--code); font-size: 11px; }
+
+.tp-trace { fill: var(--primary); stroke: var(--primary); stroke-width: 0.8; fill-opacity: 0.55; }
+.tp-trace.k1 { fill: var(--accent); stroke: var(--accent); }
+path.tp-trace:not([d$="Z"]) { fill: none; }
+
+.tp-bar { stroke: none; }
+.tp-diff { fill: var(--accent); }
+.op-ld  { fill: var(--gray); background: var(--gray); }
+.op-st  { fill: var(--dark-gray); background: var(--dark-gray); }
+.op-add { fill: var(--primary); background: var(--primary); opacity: 0.55; }
+.op-mul { fill: var(--primary); background: var(--primary); }
+.op-div { fill: var(--accent); background: var(--accent); opacity: 0.6; }
+.op-exp { fill: var(--accent); background: var(--accent); }
+.op-cmp { fill: var(--text); background: var(--text); }
+.tp-key { font-family: var(--code); font-size: 0.75rem; }
+.tp-sw { display: inline-block; width: 10px; height: 10px; vertical-align: -1px; margin-right: 3px; }
+
+.tp-curve { fill: none; stroke: var(--gray); stroke-width: 1.5; }
+.tp-curve.full { stroke-dasharray: 5 3; }
+.tp-curve.on { stroke: var(--primary); stroke-width: 2.5; }
+.tp-paper { fill: none; stroke: var(--accent); stroke-width: 2; }
+
+/* tables */
+.paper-body .results-table { width: 100%; border-collapse: collapse; margin: 10px 0; overflow-wrap: normal; }
+.paper-body .results-table th, .paper-body .results-table td { padding: 6px 8px; border-bottom: 1px solid var(--light-gray); text-align: left; vertical-align: top; font-size: 0.86rem; }
+.paper-body .results-table th { font-family: var(--code); font-size: 0.74rem; color: var(--gray); font-weight: 500; }
+.paper-body .results-table caption { caption-side: top; text-align: left; }
+.tp-wrap-table { overflow-x: auto; }
+.tp-wrap-table .results-table { min-width: 520px; }
+.tp-table-wrap { overflow-x: auto; margin: 8px 0; }
+.tp-table-wrap .results-table { min-width: 560px; }
+.paper-body .tp-table-wrap .tp-conf { min-width: 0; width: auto; }
+.paper-body .tp-current td, .paper-body .tp-current th { color: var(--accent); }
+.paper-body td.tp-sim { color: var(--primary); }
+.paper-body .tp-t1 td, .paper-body .tp-ops-table td { font-family: var(--code); font-size: 0.8rem; text-align: right; }
+.paper-body .tp-t1 td:first-child, .paper-body .tp-ops-table td:first-child { text-align: left; }
+.paper-body .tp-conf td { font-family: var(--code); text-align: right; }
+.tp-smooth { fill: none; stroke: var(--text); stroke-width: 1.4; opacity: 0.85; }
+
+/* TP-NET additions */
+.tp-cap { fill: none; stroke: var(--primary); stroke-width: 1.4; opacity: 0.9; }
+.tp-cap.k1 { stroke: var(--accent); }
+.tp-cap.n1 { stroke-dasharray: 5 3; }
+.tp-cap.n2 { stroke-dasharray: 1.5 2.5; stroke-width: 1.8; }
+.tp-dist { fill: none; stroke: var(--primary); stroke-width: 2; }
+.tp-dist.k1 { stroke: var(--accent); stroke-dasharray: 5 3; }
+.tp-trad { stroke: var(--primary); stroke-width: 1.5; stroke-dasharray: 2 3; }
+.tp-trad.k1 { stroke: var(--accent); }
+.tp-dot { fill: var(--primary); opacity: 0.75; }
+.tp-dot.k1 { fill: var(--accent); }
+.tp-dot.on { opacity: 1; stroke: var(--text); stroke-width: 1; }
+.tp-sw { display: inline-block; width: 14px; height: 3px; vertical-align: 3px; margin-right: 4px; background: var(--primary); }
+.tp-sw.k1 { background: var(--accent); }
+.tp-bar { fill: var(--accent); opacity: 0.7; }
+.tp-bar.trad { fill: var(--primary); opacity: 1; }
+.tp-bar.mean { fill: var(--accent); opacity: 1; }
+.paper-body .tp-num td { font-family: var(--code); font-size: 0.8rem; text-align: right; }
+.paper-body .tp-num td:first-child, .paper-body .tp-num td:nth-child(2) { text-align: left; }
