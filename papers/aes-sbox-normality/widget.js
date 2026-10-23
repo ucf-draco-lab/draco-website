@@ -295,7 +295,7 @@
         d += (t ? "L" : "M") + X(t).toFixed(1) + "," + Y(Math.max(-ylim, Math.min(ylim, vals[t]))).toFixed(1);
       }
       chart.appendChild(svg("path", { class: "sn-trace", d: d }));
-      chart.appendChild(svg("text", { class: "c-label", x: (padL + W - padR) / 2, y: H - 6, "text-anchor": "middle" }, "Sample (time) · 2,440 per trace · dashed lines at ±4.5"));
+      chart.appendChild(svg("text", { class: "c-label", x: (padL + W - padR) / 2, y: H - 6, "text-anchor": "middle" }, W < 480 ? "Sample (time) · dashed lines at ±4.5" : "Sample (time) · 2,440 per trace · dashed lines at ±4.5"));
       chart.setAttribute("aria-label", (stat === "t" ? "Welch t" : "Wilcoxon z") + " value at each of 2,440 samples");
       var over = 0; for (i = 0; i < T; i++) if (Math.abs(vals[i]) > TH) over++;
       big.innerHTML = "";
