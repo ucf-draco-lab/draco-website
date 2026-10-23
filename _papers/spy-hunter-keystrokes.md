@@ -8,6 +8,7 @@ share_text: "A password checks you once. Spy Hunter keeps checking, from the rhy
 share_image: /papers/spy-hunter-keystrokes/share.png
 share_image_alt: "Seven keystrokes from the paper's Table I drawn as press-to-release bars on a time axis, with the hold, UD, UU, DD, and DU intervals between two of them, beside the title Spy Hunter."
 date: 2026-10-18
+topics: ["AI & machine learning"]
 default_level: public
 level_hints:
   public: No background needed

@@ -8,6 +8,7 @@ share_text: "Thirty K–12 teachers learned computer science by changing the cod
 share_image: /papers/ants-go-marching/share.png
 share_image_alt: "A simulated ant colony with glowing scent trails between its nest and three food piles, next to the title Ants Go Marching."
 date: 2026-10-18
+topics: ["Education"]
 default_level: public
 level_hints:
   public: No background needed

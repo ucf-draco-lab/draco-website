@@ -8,6 +8,7 @@ share_text: "Three free summer camps taught 84 students cybersecurity with pocke
 share_image: /papers/integrated-outreach/share.png
 share_image_alt: "Five rows of before-and-after dots showing the share of 24 students answering cybersecurity questions correctly, next to the title Integrated Outreach."
 date: 2026-10-18
+topics: ["Education"]
 default_level: public
 level_hints:
   public: No background needed
