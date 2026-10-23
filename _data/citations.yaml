@@ -379,6 +379,22 @@
   image: images/papers/asee_peer_41203.svg
   tags:
   - conference
+- id: nist-lwc-2022
+  title: TVLA, Correlation Power Analysis and Side-Channel Leakage Assessment Metrics
+  authors:
+  - William Unger
+  - Liljana Babinkostova
+  - Mike Borowczak
+  - Robert Erbes
+  - Aparna Srinath
+  publisher: NIST Lightweight Cryptography Workshop 2022
+  date: '2022-05-01'
+  link: https://csrc.nist.gov/csrc/media/Events/2022/lightweight-cryptography-workshop-2022/documents/papers/tvla-correlation-power-analysis-and-side-channel-leakage-assessment-metrics.pdf
+  type: conference
+  source: proceedings.bib
+  image: images/papers/nist-lwc-2022.svg
+  tags:
+  - conference
 - id: reynolds2022confusion
   title: 'Confusion Over Models: Exploring Discourse in a STEM Professional Development'
   authors:
@@ -434,22 +450,6 @@
   type: conference
   source: proceedings.bib
   image: images/papers/iccd-2022.svg
-  tags:
-  - conference
-- id: nist-lwc-2022
-  title: TVLA, Correlation Power Analysis and Side-Channel Leakage Assessment Metrics
-  authors:
-  - William Unger
-  - Liljana Babinkostova
-  - Mike Borowczak
-  - Robert Erbes
-  - Aparna Srinath
-  publisher: NIST Lightweight Cryptography Workshop 2022
-  date: '2022-01-01'
-  link: ''
-  type: conference
-  source: proceedings.bib
-  image: images/papers/nist-lwc-2022.svg
   tags:
   - conference
 - id: wsdm-2022
