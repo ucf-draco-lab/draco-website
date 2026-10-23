@@ -464,7 +464,7 @@
         grow.appendChild(svg("text", { class: "c-tick", x: L - 6, y: y(v) + 4, "text-anchor": "end" }, String(v)));
       });
       grow.appendChild(svg("line", { class: "tv-thr", x1: L, x2: W - R, y1: y(THR), y2: y(THR) }));
-      grow.appendChild(svg("text", { class: "c-tick", x: (L + W - R) / 2, y: H - 6, "text-anchor": "middle" }, "Traces collected (largest |t| over all cycles)"));
+      grow.appendChild(svg("text", { class: "c-tick", x: (L + W - R) / 2, y: H - 6, "text-anchor": "middle" }, W < 480 ? "Traces collected" : "Traces collected (largest |t| over all cycles)"));
       [0, 0.5, 1].forEach(function (q) {
         grow.appendChild(svg("text", { class: "c-tick", x: x(q * s.target), y: H - 18, "text-anchor": q === 0 ? "start" : q === 1 ? "end" : "middle" }, comma(q * s.target)));
       });
