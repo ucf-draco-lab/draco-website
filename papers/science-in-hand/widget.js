@@ -196,7 +196,7 @@
       var last = history[history.length - 1];
       if (m.t - last.t >= 0.5) history.push({ t: m.t, s: m.spread(), meet: m.meetings });
       drawRoom(); drawReadout();
-      if (history.length % 4 === 0) drawChart();
+      drawChart();
       if (m.t > 240) { stop(); startBtn.textContent = "Keep walking"; drawChart(); return; }
       raf = requestAnimationFrame(loop);
     }
