@@ -2,7 +2,8 @@
 # Usage:  {% youtube VIDEO_ID %}
 #
 # Uses hqdefault.jpg (always available at 480×360) as the initial
-# thumbnail, then attempts a JS upgrade to maxresdefault.jpg.
+# thumbnail, then attempts a JS upgrade to maxresdefault.jpg, falling
+# back to sddefault.jpg.
 # YouTube returns a tiny 120×90 gray placeholder instead of a 404
 # when maxresdefault doesn't exist, so the upgrade checks naturalWidth.
 
@@ -33,13 +34,20 @@ module Jekyll
             if (!el) return;
             var img = el.querySelector('img');
 
-            // Try upgrading to maxresdefault (1280×720) if it exists.
-            // YouTube returns a 120×90 gray placeholder for missing thumbs.
-            var hires = new Image();
-            hires.onload = function() {
-              if (hires.naturalWidth > 200) img.src = hires.src;
-            };
-            hires.src = 'https://i.ytimg.com/vi/' + vid + '/maxresdefault.jpg';
+            // Try the sharpest thumbnail that exists: maxresdefault
+            // (1280×720), then sddefault (640×480). YouTube returns a
+            // 120×90 gray placeholder for missing thumbs.
+            var sizes = ['maxresdefault', 'sddefault'];
+            (function tryNext(i) {
+              if (i >= sizes.length) return;
+              var hires = new Image();
+              hires.onload = function() {
+                if (hires.naturalWidth > 200) img.src = hires.src;
+                else tryNext(i + 1);
+              };
+              hires.onerror = function() { tryNext(i + 1); };
+              hires.src = 'https://i.ytimg.com/vi/' + vid + '/' + sizes[i] + '.jpg';
+            })(0);
 
             // Click to play
             el.addEventListener('click', function() {

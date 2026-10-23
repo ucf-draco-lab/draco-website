@@ -1,6 +1,32 @@
 # DO NOT EDIT — generated automatically by bib2yaml.py
-# Source: _bibliography/*.bib (153 entries)
+# Source: _bibliography/*.bib (156 entries)
 
+- id: borowczak2026allowed
+  title: 'From Allowed to Embedded: Student Perceptions of AI Use Across Engineering Courses'
+  authors:
+  - Mike Borowczak
+  - Andrea Carneal-Burrows Borowczak
+  publisher: 2026 ASEE Annual Conference & Exposition
+  date: '2026-06-01'
+  link: https://doi.org/10.18260/1-2--59546
+  type: conference
+  source: proceedings.bib
+  image: images/papers/borowczak2026allowed.svg
+  tags:
+  - conference
+- id: borowczak2026trust
+  title: 'Trust but Verify: Engineering Students'' Adoption of Generative AI and Pedagogical Implications Across Disciplines'
+  authors:
+  - Mike Borowczak
+  - Andrea Carneal-Burrows Borowczak
+  publisher: 2026 ASEE Southeastern Section Conference
+  date: '2026-03-01'
+  link: https://doi.org/10.18260/1-2--58017
+  type: conference
+  source: proceedings.bib
+  image: images/papers/borowczak2026trust.svg
+  tags:
+  - conference
 - id: cryptography10030032
   title: Relaxation of Strict Avalanche Criterion on All SHA-256 Sub-Function Combinations
   authors:
@@ -50,6 +76,24 @@
   - Standards
   - Forgery
   - Data models
+- id: mair2026peertutor
+  title: Generative AI Peer Tutoring to Support Peer-Reviewed Source Identification and Evaluation
+  authors:
+  - Rae Mair
+  - Michelle Kelley
+  - Taylar Wenzel
+  - Andrea C. Borowczak
+  - Yuqing Li
+  - Mike Borowczak
+  publisher: 'The Pedagogical Promptbook: Enacting Evidence-Based Teaching and Instructional Design Practices with Generative
+    AI'
+  date: '2026-01-01'
+  link: https://doi.org/10.59668/2340.26762
+  type: book
+  source: books.bib
+  image: images/papers/mair2026peertutor.svg
+  tags:
+  - book
 - id: ifip-iot2025
   title: LMAP - Low-cost Microcontroller Architecture Platform
   authors:
@@ -71,21 +115,21 @@
   - Mike Borowczak
   publisher: 2025 Cyber Awareness and Research Symposium (CARS)
   date: '2025-10-01'
-  link: ''
+  link: https://doi.org/10.1109/CARS67163.2025.11337755
   type: conference
   source: proceedings.bib
   image: images/papers/cars-2025.svg
   tags:
   - conference
 - id: asee_peer2025
-  title: 'Blending Agile Methods with Constructivist Pedagogy: Enhancing Learning Outcomes in Introductory Computer Science
-    Courses'
+  title: 'Flexible Learning Cycles: Introducing an Agile Constructivist Pedagogy'
   authors:
+  - Andey Robins
   - Mike Borowczak
   - Andrea C. Borowczak
   publisher: 2025 ASEE Annual Conference & Exposition
   date: '2025-06-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--56579
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer2025.svg
@@ -156,7 +200,7 @@
   - Mike Borowczak
   publisher: 2024 Cyber Awareness and Research Symposium (CARS)
   date: '2024-10-01'
-  link: ''
+  link: https://doi.org/10.1109/CARS61786.2024.10778786
   type: conference
   source: proceedings.bib
   image: images/papers/cars-2024.svg
@@ -197,7 +241,7 @@
   - Andrea Carneal Borowczak
   publisher: 2024 ASEE Annual Conference & Exposition
   date: '2024-06-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--46898
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer2024.svg
@@ -307,14 +351,14 @@
 - id: asee_peer_41204
   title: The Artful Craft of Improving Virtual Summer Camps in the Midst of COVID-19 (Work in Progress)
   authors:
-  - Shawna Wolf
-  - Shaya Wolf
-  - Hu Hui
-  - Andrea Burrows
   - Mike Borowczak
+  - Andrea C. Burrows
+  - Shawna M. Wolf
+  - Shaya Wolf
+  - Hui Hu
   publisher: 2022 ASEE Annual Conference & Exposition
   date: '2022-08-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--41204
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer_41204.svg
@@ -329,7 +373,7 @@
   - Mike Borowczak
   publisher: 2022 ASEE Annual Conference & Exposition
   date: '2022-08-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--41203
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer_41203.svg
@@ -372,7 +416,7 @@
   - Mike Borowczak
   publisher: The 8th Annual IEEE International Symposium on Smart Electronic Systems
   date: '2022-01-01'
-  link: ''
+  link: https://doi.org/10.1109/iSES54909.2022.00095
   type: conference
   source: proceedings.bib
   image: images/papers/ises-2022.svg
@@ -386,7 +430,7 @@
   - Mike Borowczak
   publisher: The 40th IEEE International Conference on Computer Design
   date: '2022-01-01'
-  link: ''
+  link: https://doi.org/10.1109/ICCD56317.2022.00090
   type: conference
   source: proceedings.bib
   image: images/papers/iccd-2022.svg
@@ -413,11 +457,11 @@
   authors:
   - Hui Hu
   - Lu Cheng
-  - Jayden Vap
+  - Jayden Parker Vap
   - Mike Borowczak
-  publisher: The Web Conference 2022
+  publisher: Proceedings of the ACM Web Conference 2022 (WWW '22)
   date: '2022-01-01'
-  link: ''
+  link: https://doi.org/10.1145/3485447.3511975
   type: conference
   source: proceedings.bib
   image: images/papers/wsdm-2022.svg
@@ -500,9 +544,10 @@
   authors:
   - Mike Borowczak
   - Andrea C Burrows
+  - Mason Johnson
   publisher: 2021 ASEE Annual Conference & Exposition
   date: '2021-07-01'
-  link: ''
+  link: https://doi.org/10.18260/1-2--38225
   type: conference
   source: proceedings.bib
   image: images/papers/asee-NSFWySLICE.svg
@@ -691,7 +736,7 @@
   - Mike Borowczak
   publisher: 2021 Resilience Week (RWS)
   date: '2021-01-01'
-  link: ''
+  link: https://doi.org/10.1109/RWS52686.2021.9611792
   type: conference
   source: proceedings.bib
   image: images/papers/wolf2021data.svg
@@ -706,9 +751,9 @@
   - Rita Foster
   - Jed Haile
   - Mike Borowczak
-  publisher: IEEE Big Data 2021, Workshop on Cyber Threat Intelligence and Hunting with AI
+  publisher: 2021 IEEE International Conference on Big Data (Big Data)
   date: '2021-01-01'
-  link: ''
+  link: https://doi.org/10.1109/BigData52589.2021.9671573
   type: conference
   source: proceedings.bib
   image: images/papers/ieee-big-data-2021.svg
@@ -722,7 +767,7 @@
   - Mike Borowczak
   publisher: 2021 IEEE International Smart Cities Conference (ISC2)
   date: '2021-01-01'
-  link: ''
+  link: https://doi.org/10.1109/ISC253183.2021.9562816
   type: conference
   source: proceedings.bib
   image: images/papers/wolf2021jangseung.svg
@@ -773,13 +818,13 @@
   tags:
   - conference
 - id: saraji2021blockchain
-  title: A blockchain-based carbon credit ecosystem
+  title: A Blockchain-based Carbon Credit Ecosystem
   authors:
   - Soheil Saraji
   - Mike Borowczak
   publisher: arXiv preprint arXiv:2107.00185
   date: '2021-01-01'
-  link: ''
+  link: https://arxiv.org/abs/2107.00185
   type: other
   source: otherwork.bib
   image: images/papers/saraji2021blockchain.svg
@@ -812,14 +857,14 @@
   tags:
   - presentation
 - id: IntegratedOuteach
-  title: 'Integrated Outreach: Increasing Student Engagement in Computer Science and Cybersecurity'
+  title: 'Integrated Outreach: Increasing Engagement in Computer Science and Cybersecurity'
   authors:
   - Shaya Wolf
   - Andrea C. Burrows
   - Mike Borowczak
   - Mason Johnson
   - Rafer Cooley
-  - Kyle Mogensen
+  - Kyle Mogenson
   publisher: 'Education Sciences: Cybersecurity and Digital Education Special Issue'
   date: '2020-11-01'
   link: https://doi.org/10.3390/educsci10120353
@@ -835,7 +880,7 @@
   - Mike Borowczak
   publisher: 2020 IEEE 10th International Conference on Consumer Electronics (ICCE-Berlin 2020)
   date: '2020-11-01'
-  link: ''
+  link: https://doi.org/10.1109/ICCE-Berlin50680.2020.9352161
   type: conference
   source: proceedings.bib
   image: images/papers/icce-2020-sharks.svg
@@ -848,7 +893,7 @@
   - Mike Borowczak
   publisher: 2020 IEEE 10th International Conference on Consumer Electronics (ICCE-Berlin 2020)
   date: '2020-11-01'
-  link: ''
+  link: https://doi.org/10.1109/ICCE-Berlin50680.2020.9352164
   type: conference
   source: proceedings.bib
   image: images/papers/icce-2020-canary.svg
@@ -1076,7 +1121,7 @@
   - Mike Borowczak
   publisher: 2019 ASEE Annual Conference & Exposition
   date: '2019-06-17'
-  link: ''
+  link: https://doi.org/10.18260/1-2--32484
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer_27365.svg
@@ -1355,14 +1400,14 @@
   tags:
   - presentation
 - id: Borowczak2018ISC2-BLESS
-  title: Blockchain Based Election Infrastructures
+  title: Blockchain-Based Election Infrastructures
   authors:
   - Rafer Cooley
   - Shaya Wolf
   - Mike Borowczak
   publisher: 2018 ISC2 International Workshop on BLockchain Enabled Sustainable Smart Cities (BLESS 2018)
   date: '2018-09-19'
-  link: https://goo.gl/KXidyZ
+  link: https://doi.org/10.1109/ISC2.2018.8656988
   type: conference
   source: proceedings.bib
   image: images/papers/Borowczak2018ISC2-BLESS.svg
@@ -1377,7 +1422,7 @@
   - Nick Cheney
   publisher: 2018 International ISC2 Workshop on 5G Communication, Security and Privacy in Smart Cities
   date: '2018-09-19'
-  link: https://goo.gl/nwdN74
+  link: https://doi.org/10.1109/ISC2.2018.8656982
   type: conference
   source: proceedings.bib
   image: images/papers/Borowczak2018ISC2-5GWork.svg
@@ -1405,7 +1450,7 @@
   - Shaya Wolf
   publisher: 2018 IEEE Computer Society Annual Symposium on VLSI (ISVLSI)
   date: '2018-07-01'
-  link: https://goo.gl/iiuuK4
+  link: https://doi.org/10.1109/ISVLSI.2018.00129
   type: conference
   source: proceedings.bib
   image: images/papers/Borowczak2018ISVLSI.svg
@@ -1432,7 +1477,7 @@
   - Andrea C. Burrows
   publisher: 2018 ASEE Annual Conference & Exposition
   date: '2018-06-01'
-  link: https://goo.gl/d58EPq
+  link: https://doi.org/10.18260/1-2--30370
   type: conference
   source: proceedings.bib
   image: images/papers/asee_peer_30370.svg
@@ -1481,12 +1526,12 @@
   title: 'Portable Tor Router: Easily Enabling Web Privacy for Consumers'
   authors:
   - Adrian Barberis
-  - Wyatt Emery
   - Danny Radosevich
+  - Wyatt Emery
   - Mike Borowczak
   publisher: IEEE International Conference on Consumer Electronics, 2018. ICCE 2018.
   date: '2018-01-20'
-  link: https://goo.gl/fQ7hyP
+  link: https://doi.org/10.1109/ICCE.2018.8326333
   type: conference
   source: proceedings.bib
   image: images/papers/Borowczak2018ToR.svg
@@ -1528,7 +1573,7 @@
   - Mike Borowczak
   publisher: 2nd International Conference on Innovation in Artificial Intelligence
   date: '2018-01-01'
-  link: https://goo.gl/nwAq5h
+  link: https://doi.org/10.1145/3194206.3195587
   type: conference
   source: proceedings.bib
   image: images/papers/Yang-2018-PLM-3194206-3195587.svg
@@ -1552,14 +1597,14 @@
   tags:
   - conference
 - id: borowczak2017harden
-  title: Hardening Freshman Engineering Student Soft Skills.
+  title: Hardening Freshman Engineering Student Soft Skills
   authors:
   - Andrea C Burrows
   - Mike Borowczak
   publisher: First Year Engineering Education Conference of the American Society of Engineering Education 2017, FYEE-ASEE,
     2017.
   date: '2017-08-01'
-  link: https://goo.gl/jWd2gp
+  link: https://doi.org/10.18260/1-2--29416
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2017harden.svg
@@ -1572,7 +1617,7 @@
   - Andrea C Burrows
   publisher: 2017 ASEE Annual Conference & Exposition
   date: '2017-06-01'
-  link: https://goo.gl/JaPHh8
+  link: https://doi.org/10.18260/1-2--28571
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2017interactive.svg
@@ -1676,7 +1721,7 @@
   - Andrea C Burrows
   publisher: 2016 ASEE Annual Conference & Exposition
   date: '2016-06-01'
-  link: https://goo.gl/S14FXQ
+  link: https://doi.org/10.18260/p.26718
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2016developing.svg
@@ -1689,7 +1734,7 @@
   - Mike Borowczak
   publisher: 2016 ASEE Annual Conference & Exposition
   date: '2016-06-01'
-  link: https://goo.gl/dyup3e
+  link: https://doi.org/10.18260/p.26275
   type: conference
   source: proceedings.bib
   image: images/papers/burrows2016arduinos.svg
@@ -1872,7 +1917,7 @@
   - Ranga Vemuri
   publisher: VLSI (ISVLSI), 2014 IEEE Computer Society Annual Symposium on
   date: '2014-01-01'
-  link: https://goo.gl/CDEVzz
+  link: https://doi.org/10.1109/ISVLSI.2014.78
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2014enabling.svg
@@ -1921,13 +1966,13 @@
   tags:
   - journal
 - id: borowczak2013secure
-  title: 'Secure controllers: Requirements of SFSM'
+  title: 'Secure controllers: Requirements of S*FSM'
   authors:
   - Mike Borowczak
   - Ranga Vemuri
   publisher: Circuits and Systems (MWSCAS), 2013 IEEE 56th International Midwest Symposium on
   date: '2013-01-01'
-  link: https://goo.gl/UFg8yp
+  link: https://doi.org/10.1109/MWSCAS.2013.6674708
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2013secure.svg
@@ -1988,13 +2033,13 @@
   tags:
   - journal
 - id: borowczak2012s
-  title: 'SFSM: A Paradigm Shift for Attack Resistant FSM Designs and Encodings'
+  title: 'S*FSM: A Paradigm Shift for Attack Resistant FSM Designs and Encodings'
   authors:
   - Mike Borowczak
   - Ranga Vemuri
   publisher: BioMedical Computing (BioMedCom), 2012 ASE/IEEE International Conference on
   date: '2012-01-01'
-  link: https://goo.gl/nxM6AE
+  link: https://doi.org/10.1109/BioMedCom.2012.22
   type: conference
   source: proceedings.bib
   image: images/papers/borowczak2012s.svg
@@ -2010,7 +2055,7 @@
   - Ranga Vemuri
   publisher: Hardware-Oriented Security and Trust (HOST), 2012 IEEE International Symposium on
   date: '2012-01-01'
-  link: https://goo.gl/Y3oppf
+  link: https://doi.org/10.1109/HST.2012.6224315
   type: conference
   source: proceedings.bib
   image: images/papers/ramakrishnan2012sdmlp.svg
@@ -2171,21 +2216,21 @@
   - Annie Avakian
   publisher: Aerospace and Electronics Conference, 2008. NAECON 2008. IEEE National
   date: '2008-01-01'
-  link: https://goo.gl/Vrh1Si
+  link: https://doi.org/10.1109/NAECON.2008.4806561
   type: conference
   source: proceedings.bib
   image: images/papers/vemuri2008safety.svg
   tags:
   - conference
 - id: anderson2008use
-  title: The use of device simulation in development of usb storage devices
+  title: The Use of Device Simulation in Development of USB Storage Devices
   authors:
   - R Brian Anderson
   - Mike Borowczak
   - Philip A Wilsey
   publisher: Simulation Symposium, 2008. ANSS 2008. 41st Annual
   date: '2008-01-01'
-  link: https://goo.gl/R5TCcx
+  link: https://doi.org/10.1109/ANSS-41.2008.34
   type: conference
   source: proceedings.bib
   image: images/papers/anderson2008use.svg
@@ -2198,7 +2243,7 @@
   - Mike Borowczak
   publisher: Morehead Electronic Journal of Applicable Mathematics
   date: '2005-01-01'
-  link: https://goo.gl/EbT6Y2
+  link: https://scholarworks.moreheadstate.edu/mejam_archives/5
   type: journal
   source: pubs.bib
   image: images/papers/renz2005implementing.svg

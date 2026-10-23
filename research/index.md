@@ -13,7 +13,11 @@ With over a dozen active researchers and nationally recognized cybersecurity edu
 
 {% include section.html size="full" %}
 
-{% youtube hXAL-cSkj1w /img/placeholder.jpg %}
+<div class="video-hero">
+  <div class="video-hero-inner">
+    {% youtube hXAL-cSkj1w %}
+  </div>
+</div>
 
 {% include section.html %}
 
@@ -88,11 +92,41 @@ Please note that the citations on this page were generated automatically from id
 
 ## Interactive Papers
 
-Some DRACO results run in your browser. Each [interactive paper]({{ "/papers/" | relative_url }}) rebuilds an experiment from the published work and explains it at five reading levels, from the general public to researchers.
+Some DRACO results run in your browser. Each [interactive paper]({{ "/papers/" | relative_url }}) rebuilds an experiment from the published work and explains it at five reading levels, from the general public to researchers. Here are a few of the most viewed, plus some picked at random; the full list can be sorted and filtered by topic.
 
-{% for paper in site.papers %}
-- [{{ paper.title }}]({{ paper.url | relative_url }}): {{ paper.description }}
-{% endfor %}
+{% comment %}
+  A small gallery, not the full list: the most viewed papers (from
+  _data/views.yaml) plus a few random picks, drawn by paper-gallery.js. Without
+  JavaScript the newest papers show. /papers/ holds the full, sortable list.
+{% endcomment %}
+{% assign gallery_top = 3 %}
+{% assign gallery_random = 3 %}
+{% assign gallery_size = gallery_top | plus: gallery_random %}
+{% assign gallery_papers = site.papers | sort: "date" | reverse %}
+<div class="paper-gallery" data-paper-gallery data-top="{{ gallery_top }}" data-random="{{ gallery_random }}">
+  <ul class="paper-gallery-grid">
+  {% for paper in gallery_papers %}
+    {% assign views = site.data.views.pages[paper.url] | default: 0 %}
+    {% assign icon = "images/papers/interactive/" | append: paper.slug | append: ".svg" %}
+    {% if paper.icon %}{% assign icon = paper.icon %}{% endif %}
+    {% assign short_title = paper.title | split: ":" | first %}
+    <li data-views="{{ views }}"{% if forloop.index > gallery_size %} hidden{% endif %}>
+      <a class="paper-tile" href="{{ paper.url | relative_url }}" title="{{ paper.description | escape }}">
+        <img src="{{ icon | relative_url }}" alt="" width="72" height="72" loading="lazy" {% include fallback.html %}>
+        <span class="paper-tile-badge" hidden></span>
+        <span class="paper-tile-title">{{ short_title }}</span>
+        <span class="paper-tile-meta">{{ paper.kicker | remove_first: "Interactive papers · " | remove_first: "Interactive paper · " }}</span>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+  <div class="paper-gallery-foot">
+    <a class="button paper-gallery-all" href="{{ "/papers/" | relative_url }}">{% include icon.html icon="fa-solid fa-flask-vial" %}<span>Browse all {{ site.papers.size }} interactive papers</span></a>
+    <button type="button" class="button paper-gallery-shuffle" data-style="bare" data-gallery-shuffle hidden>{% include icon.html icon="fa-solid fa-shuffle" %}<span>Shuffle picks</span></button>
+  </div>
+</div>
+
+<script src="{{ "/papers/kit/paper-gallery.js" | relative_url }}" defer></script>
 
 {% include section.html %}
 

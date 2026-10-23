@@ -12,7 +12,7 @@ and on the Research page, and every matching citation on the Research page gets 
 | `_papers/<slug>.md` | Front matter (below) and the page text, written per reading level |
 | `papers/<slug>/widget.js`, `widget.css` | The paper's interactive pieces; mount into empty `<div id="...">` elements in the page text |
 | `papers/<slug>/share.png` | 1200 × 630 social card |
-| `images/papers/interactive/<slug>.svg` | Listing icon on `/papers/`, drawn from the title and subtitle by `python _cite/paper_icons.py` (set `icon:` in front matter to use your own) |
+| `images/papers/interactive/<slug>.svg` | Listing icon on `/papers/` and in the "More interactive papers" section at the foot of every paper page, drawn from the title and subtitle by `python _cite/paper_icons.py` (set `icon:` in front matter to use your own) |
 | `papers/kit/paper-kit.js`, `paper-kit.css` | Shared: level switch, share bar, copy buttons (do not fork per paper) |
 | `_layouts/paper.html`, `_includes/share-bar.html` | Shared page frame |
 | `_data/paper_levels.yaml` | The five reading levels: `public`, `hs`, `ug`, `grad`, `res` |
@@ -23,12 +23,13 @@ and on the Research page, and every matching citation on the Research page gets 
 title: "Plain-language title"
 kicker: "Interactive paper · Venue Year"
 subtitle: "One sentence on what the page lets a reader do"
-description: "Listing and Research-page blurb"
+description: "Listing blurb on /papers/ (also the tooltip on the Research-page gallery tile)"
 share_description: "Social card text (used as-is, no site prefix)"
 share_text: "Text that leads a shared post, ending with a colon"
 share_image: /papers/<slug>/share.png
 share_image_alt: "What the card shows"
 date: YYYY-MM-DD
+topics: ["Hardware security"]  # filter chips on /papers/; reuse an existing topic name when one fits
 default_level: public
 level_hints:                   # optional: per-paper tooltips for the level buttons
   hs: "Classroom science and a little coding"
