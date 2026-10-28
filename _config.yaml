@@ -57,6 +57,10 @@ defaults:
       path: "red-team-day"
     values:
       sitemap: false
+  - scope:
+      path: "ireland-2026"
+    values:
+      sitemap: false
 
 collections:
   # generate page for each member
