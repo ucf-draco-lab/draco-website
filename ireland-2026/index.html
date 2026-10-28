@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Trip dashboard for Andrea C. Borowczak and Mike Borowczak: Mary Immaculate College and the Literacy Association of Ireland Conference, Limerick, 2-10 November 2026.">
+<title>Ireland 2026 · Trip Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Roboto+Mono:wght@400;500&display=swap">
+<style>
+/* Ireland 2026 trip dashboard. UCF black and Bold Gold, square edges, ruled rows (no cards).
+   One self-contained page; the same file is served on thedracolab.com and cxedhub.com. */
+:root {
+  --bg: #FFFFFF; --fg: #0B0B0B; --muted: #555555; --rule: #0B0B0B; --hair: #D9D9D9; --panel: #F4F4F2;
+  --gold: #EDB80C; --on-gold: #000000; --band: #000000; --band-fg: #FFFFFF; --band-muted: #BDBDBD;
+  --focus: #0B0B0B; --past: .5;
+  --display: "Oswald", "Arial Narrow", sans-serif;
+  --body: "Montserrat", Arial, Helvetica, sans-serif;
+  --mono: "Roboto Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E0E0D; --fg: #F2F2F0; --muted: #B5B5B0; --rule: #F2F2F0; --hair: #33332F; --panel: #181816;
+    --focus: #EDB80C; --past: .45; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E0E0D; --fg: #F2F2F0; --muted: #B5B5B0; --rule: #F2F2F0; --hair: #33332F; --panel: #181816;
+  --focus: #EDB80C; --past: .45; color-scheme: dark;
+}
+* { box-sizing: border-box; border-radius: 0; }
+html { scroll-padding-top: 140px; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.55; -webkit-text-size-adjust: 100%; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; margin: 0; line-height: 1.1; text-wrap: balance; }
+p { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+[hidden] { display: none !important; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.mono { font-family: var(--mono); }
+
+/* hero */
+.hero { background: var(--band); color: var(--band-fg); border-bottom: 6px solid var(--gold); }
+.hero .wrap { padding-block: 26px 26px; display: grid; gap: 16px; }
+.hero-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.chip { display: inline-block; background: var(--gold); color: var(--on-gold); font-family: var(--display); font-weight: 600; font-size: 14px; letter-spacing: .04em; padding: 2px 9px; text-transform: uppercase; }
+.hero h1 { font-size: clamp(44px, 9vw, 92px); font-weight: 700; margin-top: 10px; }
+.hero h1 span { color: var(--gold); }
+.hero .lede { font-size: clamp(16px, 2.1vw, 19px); max-width: 62ch; }
+.hero .who { font-size: 14px; color: var(--band-muted); }
+.hero-mark { width: 64px; height: auto; flex: 0 0 auto; }
+.clocks { display: flex; flex-wrap: wrap; gap: 6px 24px; font-family: var(--mono); font-size: 14px; color: var(--band-muted); }
+.clocks b { color: var(--band-fg); font-weight: 500; font-size: 16px; }
+
+/* now / next */
+.live { border-bottom: 1px solid var(--hair); background: var(--panel); }
+.live .wrap { padding-block: 16px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; }
+.live-cell { padding: 4px 18px 4px 14px; border-left: 6px solid var(--gold); min-width: 0; display: grid; gap: 3px; }
+.live-cell + .live-cell { border-left-color: var(--rule); margin-left: 18px; }
+.live-k { font-family: var(--mono); font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.live-t { font-family: var(--display); font-weight: 600; font-size: 24px; line-height: 1.15; }
+.live-s { font-size: 14.5px; }
+.live-s b { font-weight: 600; }
+.live-go { font-family: var(--mono); font-size: 13.5px; }
+.live-go b { background: var(--gold); color: var(--on-gold); padding: 0 5px; font-weight: 500; }
+
+/* controls */
+.bar { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 2px solid var(--rule); }
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 18px; padding-block: 8px; }
+.days-nav { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; min-width: 0; max-width: 100%; }
+.days-nav::-webkit-scrollbar { display: none; }
+.days-nav a { font-family: var(--display); font-weight: 600; font-size: 15px; text-decoration: none; padding: 6px 10px; white-space: nowrap; border-bottom: 3px solid transparent; }
+.days-nav a:hover { border-bottom-color: var(--hair); }
+.days-nav a.is-today { border-bottom-color: var(--gold); }
+.seg { display: inline-flex; border: 1.5px solid var(--rule); }
+.seg button { font-family: var(--body); font-weight: 600; font-size: 13px; padding: 5px 9px; background: transparent; color: var(--fg); border: 0; cursor: pointer; }
+.seg button + button { border-left: 1.5px solid var(--rule); }
+.seg button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+.ctl { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 13px; color: var(--muted); }
+.ctl label { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+
+/* days and rows */
+main { padding-bottom: 24px; }
+.day { padding-top: 30px; }
+.day-head { display: flex; align-items: baseline; justify-content: space-between; gap: 6px 16px; border-top: 3px solid var(--rule); padding-top: 9px; flex-wrap: wrap; }
+.day-head h2 { font-size: clamp(26px, 4vw, 36px); }
+.day-head p { color: var(--muted); font-size: 15px; }
+.rows { list-style: none; margin: 0; padding: 0; }
+.row { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 18px; padding-block: 16px; border-bottom: 1px solid var(--hair); position: relative; }
+.row.past { opacity: var(--past); }
+.row.now { box-shadow: inset 6px 0 0 var(--gold); padding-left: 14px; }
+.row.next { box-shadow: inset 6px 0 0 var(--rule); padding-left: 14px; }
+.when { font-family: var(--mono); font-size: 14.5px; font-weight: 500; font-variant-numeric: tabular-nums; display: grid; align-content: start; gap: 2px; }
+.when .z { font-size: 12px; color: var(--muted); font-weight: 400; }
+.when .flag { font-family: var(--display); font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 4px; }
+.flag.now { background: var(--gold); color: var(--on-gold); padding: 0 6px; justify-self: start; }
+.flag.next { border: 1.5px solid var(--rule); padding: 0 5px; justify-self: start; }
+.what { min-width: 0; display: grid; gap: 6px; }
+.kind { display: flex; flex-wrap: wrap; gap: 4px 12px; font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); align-items: center; }
+.kind .k { display: inline-flex; align-items: center; gap: 6px; color: var(--fg); }
+.kind .k::before { content: ""; width: 10px; height: 10px; background: var(--gold); display: inline-block; }
+.kind .k.travel::before { background: transparent; border: 2px solid var(--fg); }
+.kind .k.deadline::before { background: var(--fg); }
+.kind .k.conf::before { background: var(--hair); }
+.what h3 { font-size: 23px; }
+.meta { font-size: 14.5px; color: var(--muted); }
+.meta b { color: var(--fg); font-weight: 600; }
+.syn { font-size: 15.5px; max-width: 70ch; }
+.links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 2px; }
+.links a { font-family: var(--display); font-weight: 600; font-size: 15px; letter-spacing: .02em; text-decoration: none; padding: 4px 11px; border: 2px solid var(--rule); display: inline-flex; gap: 6px; align-items: center; }
+.links a.pdf { background: var(--gold); border-color: var(--gold); color: var(--on-gold); }
+.links a:hover { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.links a small { font-family: var(--mono); font-weight: 400; font-size: 11.5px; }
+details { font-size: 14.5px; }
+details summary { cursor: pointer; font-weight: 600; font-size: 14px; width: max-content; max-width: 100%; }
+details ul { margin: 6px 0 0; padding-left: 0; list-style: none; display: grid; gap: 3px; }
+details li { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 10px; }
+details li.plain { grid-template-columns: 14px minmax(0, 1fr); }
+details li.plain::before { content: ""; width: 7px; height: 7px; background: var(--gold); margin-top: 8px; }
+details li .tt { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.note { font-size: 13.5px; border-left: 4px solid var(--gold); padding-left: 10px; }
+.gap { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 18px; padding-block: 7px; border-bottom: 1px solid var(--hair); font-size: 13.5px; color: var(--muted); }
+.gap .g { font-family: var(--mono); font-size: 12.5px; font-variant-numeric: tabular-nums; }
+.gap .tr b { color: var(--fg); font-weight: 600; }
+.empty { padding-block: 14px; color: var(--muted); border-bottom: 1px solid var(--hair); font-size: 15px; }
+
+/* lower sections */
+section.block { padding-top: 40px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 6px 16px; border-top: 3px solid var(--rule); padding-top: 9px; margin-bottom: 6px; flex-wrap: wrap; }
+.sec-head h2 { font-size: clamp(26px, 4vw, 36px); }
+.sec-head p { color: var(--muted); font-size: 15px; max-width: 56ch; }
+table.decks { width: 100%; border-collapse: collapse; font-size: 15px; }
+.decks th { text-align: left; font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 8px 10px 6px 0; border-bottom: 2px solid var(--rule); }
+.decks td { padding: 10px 10px 10px 0; border-bottom: 1px solid var(--hair); vertical-align: top; }
+.decks td.t { font-family: var(--mono); font-size: 14px; white-space: nowrap; }
+.decks a { font-weight: 600; }
+.decks small { color: var(--muted); font-family: var(--mono); font-size: 12px; }
+.checklist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
+.checklist li { border-bottom: 1px solid var(--hair); }
+.checklist label { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 10px; padding-block: 10px; cursor: pointer; font-size: 15px; }
+.checklist input { accent-color: var(--fg); width: 18px; height: 18px; margin: 2px 0 0; }
+.checklist input:checked + span { text-decoration: line-through; color: var(--muted); }
+.checklist .when-k { display: block; font-family: var(--mono); font-size: 12px; color: var(--muted); text-decoration: none; }
+.places { list-style: none; margin: 0; padding: 0; }
+.places li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; padding-block: 12px; border-bottom: 1px solid var(--hair); align-items: center; }
+.places h3 { font-size: 20px; }
+.places p { font-size: 14px; color: var(--muted); }
+.places a { font-family: var(--display); font-weight: 600; font-size: 15px; text-decoration: none; padding: 4px 11px; border: 2px solid var(--rule); white-space: nowrap; }
+.places a:hover { background: var(--fg); color: var(--bg); }
+footer { margin-top: 44px; border-top: 1px solid var(--hair); }
+footer .wrap { padding-block: 16px 30px; font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+
+@media (max-width: 760px) {
+  .live .wrap { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .live-cell + .live-cell { margin-left: 0; }
+  .row, .gap { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .gap { gap: 0; }
+  .when { grid-auto-flow: column; justify-content: start; gap: 10px; align-items: baseline; }
+  .when .flag { margin-top: 0; }
+  .what h3 { font-size: 21px; }
+  .checklist { grid-template-columns: minmax(0, 1fr); }
+  .decks .hide-sm { display: none; }
+  .hero-mark { width: 48px; }
+}
+@media print {
+  .bar, .live { display: none; }
+  .row.past { opacity: 1; }
+  details { display: block; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div>
+        <span class="chip">Unlisted · trip dashboard</span>
+        <h1>Ireland <span>2026</span></h1>
+      </div>
+      <img class="hero-mark" src="ucf-mark.png" alt="UCF">
+    </div>
+    <p class="lede">Mary Immaculate College and the Literacy Association of Ireland Annual Conference, Limerick · 2–10 November 2026</p>
+    <p class="who">Andrea C. Borowczak, Ed.D. · Mike Borowczak, Ph.D. · University of Central Florida</p>
+    <div class="clocks" aria-live="off">
+      <span>Limerick <b id="clk-ie">--:--</b></span>
+      <span>Orlando <b id="clk-us">--:--</b></span>
+      <span id="clk-diff"></span>
+    </div>
+  </div>
+</header>
+
+<section class="live" aria-label="Now and next">
+  <div class="wrap">
+    <div class="live-cell" id="live-a"></div>
+    <div class="live-cell" id="live-b"></div>
+  </div>
+</section>
+
+<div class="bar">
+  <div class="wrap">
+    <nav class="days-nav" id="days-nav" aria-label="Days"></nav>
+    <div class="ctl">
+      <label id="lbl-tz">Times</label>
+      <div class="seg" role="group" aria-labelledby="lbl-tz" id="seg-tz">
+        <button type="button" data-v="local">Where it happens</button>
+        <button type="button" data-v="ie">Irish</button>
+        <button type="button" data-v="us">Orlando</button>
+      </div>
+      <label id="lbl-show">Show</label>
+      <div class="seg" role="group" aria-labelledby="lbl-show" id="seg-show">
+        <button type="button" data-v="all">Everything</button>
+        <button type="button" data-v="ours">Our sessions</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="days"></main>
+<noscript><div class="wrap"><p class="empty">This dashboard needs JavaScript for times and the live view. The slides are listed below.</p></div></noscript>
+
+<section class="block wrap" aria-labelledby="h-decks">
+  <div class="sec-head"><h2 id="h-decks">All slides</h2><p>PDF copies of every deck, in schedule order, named by day, time, and lead presenter.</p></div>
+  <table class="decks">
+    <thead><tr><th>When</th><th>Session</th><th class="hide-sm">Lead</th><th class="hide-sm">Room</th></tr></thead>
+    <tbody id="deck-rows"></tbody>
+  </table>
+</section>
+
+<section class="block wrap" aria-labelledby="h-check">
+  <div class="sec-head"><h2 id="h-check">Checklist</h2><p>Ticks are saved in this browser only.</p></div>
+  <ul class="checklist" id="checklist"></ul>
+</section>
+
+<section class="block wrap" aria-labelledby="h-places">
+  <div class="sec-head"><h2 id="h-places">Places</h2><p>Travel times are estimates.</p></div>
+  <ul class="places" id="places"></ul>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Unlisted page, not indexed by search engines. Updated 28 October 2026.</span>
+    <span><a href="/">DRACO Lab</a> · University of Central Florida</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var DATA = {"events":[{"id":"out","day":"2026-11-02","start":"2026-11-03T01:00:00Z","end":"2026-11-03T09:05:00Z","sz":"America/New_York","ez":"Europe/Dublin","kind":"travel","kindLabel":"Travel","title":"Fly Orlando to Dublin (overnight)","ours":true,"from":"mco","to":"dub","where":"Orlando International Airport","meta":"Aer Lingus · about 8 hours · arrives Tuesday 09:05 Irish time"},{"id":"road-out","day":"2026-11-03","start":"2026-11-03T10:00:00Z","end":"2026-11-03T12:30:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","approx":true,"kind":"travel","kindLabel":"Travel","title":"Dublin Airport to Limerick","ours":true,"from":"dub","to":"lim","where":"Dublin Airport","meta":"About 2 h 30 min by road","note":"Not booked yet. The rest of Tuesday is free."},{"id":"seminar","day":"2026-11-04","start":"2026-11-04T12:00:00Z","end":"2026-11-04T13:00:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"session","kindLabel":"Session","title":"Seminar: From Ideas to Impact","lead":"Andrea and Mike","ours":true,"from":"mic","to":"mic","where":"Room G10, MIC","room":"G10","meta":"<b>Room G10<\/b> · Arts+STEM Hub Seminar · about 30 STEM and arts staff, MIC staff, and research students · Hosts: June Robbins and Claudia Fraga Canedo","syn":"Publishing and leading in STEM education research. We trace our partnership from doctoral programs at the University of Cincinnati to 86 shared peer-reviewed works, then three parts: finding research puzzles where subjects meet, publishable work as two editors read it (with contribution sentences drafted in mixed groups of three), and leading through service in each other's communities.","agenda":[["12:00","Host welcome and introductions"],["12:05","Doctoral students in Cincinnati, partners ever since: two paths, 86 shared works, Project STEP to TACoS, GenCyber, WySLICE, and CRAFT"],["12:11","Part 1, pathways into research: puzzles where subjects meet"],["12:19","Part 2, publishable work from two editors: the first pass, contribution sentences in groups of three, venues, reviewer responses"],["12:32","Part 3, leading: the service ladder and service in each other's communities"],["12:40","Five things we would tell our earlier selves"],["12:43","Questions; thanks to the hosts at 12:58"]],"bring":["Laptop with the fonts installed","Presenter remote and display adapters","PDF backup of the slides"],"links":[{"href":"decks/2026-11-04-1200-seminar-from-ideas-to-impact.pdf","label":"Seminar slides","size":"185 KB","pdf":true}],"decks":[{"href":"decks/2026-11-04-1200-seminar-from-ideas-to-impact.pdf","label":"Seminar: From Ideas to Impact","size":"185 KB"}]},{"id":"pme1","day":"2026-11-04","start":"2026-11-04T14:00:00Z","end":"2026-11-04T15:00:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"session","kindLabel":"Session","title":"PME Year 1: The CRAFT Pedagogical Cycle with AI","lead":"Mike and Andrea","ours":true,"from":"mic","to":"mic","where":"Room 206, MIC","room":"206","meta":"<b>Room 206<\/b> · Digital Technologies and Science Education I · about 60 primary student teachers · Host: Maeve","syn":"Student teachers predict first (why do we have seasons?) and then see what an AI chatbot wrote. From there: CRAFT's two commitments and five phases, one primary science lesson planned with AI phase by phase with the Check the Machine routine in the Fortify phase, and groups of three planning their own lesson with AI on the CRAFT planner.","note":"End time not confirmed; the plan assumes 60 minutes.","agenda":[["0:00","Predict first: groups of three explain seasons, then see what one AI wrote"],["0:06","The tagline, CRAFT's two commitments, and the five phases"],["0:11","One lesson planned with AI, “Why do we have seasons?”, phase by phase"],["0:25","The Fortify phase beside the 5E model's Evaluate phase; the Transfer phase"],["0:31","Groups of three plan a lesson with AI on the CRAFT planner"],["0:46","Share-out: three or four Takeaways"],["0:53","Take it to placement; questions"]],"bring":["Laptop with two chatbots signed in","Screenshots of the seasons outputs in case the network fails","22 printed CRAFT planners","One printed AI output per menu topic"],"links":[{"href":"decks/2026-11-04-1400-pme-year-1-craft-cycle-with-ai.pdf","label":"PME Year 1 slides","size":"151 KB","pdf":true}],"decks":[{"href":"decks/2026-11-04-1400-pme-year-1-craft-cycle-with-ai.pdf","label":"PME Year 1: The CRAFT Pedagogical Cycle with AI","size":"151 KB"}]},{"id":"pme2","day":"2026-11-05","start":"2026-11-05T09:00:00Z","end":"2026-11-05T10:00:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"session","kindLabel":"Session","title":"PME Year 2: Partnering Science and Art","lead":"Andrea","ours":true,"from":"mic","to":"mic","where":"Room T116, MIC","room":"T116","meta":"<b>Room T116<\/b> · Digital Technologies and Science Education II · about 70 primary student teachers, tiered lecture hall · Host: Maeve","syn":"Arts and STEM partnerships in the primary classroom. Ninety seconds of drawing a satellite image of a river opens the session, then the practices science and art share, Andrea's silk-batik methods unit with 52 pre-service teachers, partnership levels from the LIFT balloon teams, and a test for how deeply two subjects partner. Groups of three plan a partnered lesson with a named partner.","note":"End time not confirmed; the plan assumes 60 minutes.","agenda":[["0:00","Ninety seconds drawing a satellite image; groups of three share what drawing made them notice"],["0:06","Science and art share a working method; practices that pair"],["0:12","The silk-batik methods unit: five sessions, 52 pre-service teachers"],["0:20","Partnership levels (pre, p, P) and the LIFT balloon teams"],["0:28","How deep the subjects partner; the partnership test; four lessons to borrow"],["0:39","Groups of three plan a partnered lesson with a named partner"],["0:51","Share: what would be lost without the art?"],["0:57","Take it to placement; questions"]],"bring":["A4 paper and pencils for 70","One Makey Makey and one Strawbees set to show","24 printed partnered-lesson planners","One set of topic cards"],"links":[{"href":"decks/2026-11-05-0900-pme-year-2-partnering-science-and-art.pdf","label":"PME Year 2 slides","size":"1.0 MB","pdf":true}],"decks":[{"href":"decks/2026-11-05-0900-pme-year-2-partnering-science-and-art.pdf","label":"PME Year 2: Partnering Science and Art","size":"1.0 MB"}]},{"id":"setup","day":"2026-11-05","start":"2026-11-05T10:45:00Z","end":"2026-11-05T11:15:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"session","kindLabel":"Set-up","title":"Set up the CRAFT Maker Space","lead":"Mike","ours":true,"from":"mic","to":"mic","where":"CRAFT Maker Space, MIC","room":"CRAFT Maker Space","meta":"<b>CRAFT Maker Space<\/b> · Host: Eleanor","bring":["Ten micro:bit V2 boards, flashed with a heart and numbered","Cables and battery packs with AAA batteries","One laptop per team in Chrome or Edge, makecode.microbit.org open and paired","Radio group numbers on sticky notes; a reference thermometer","Unplugged printables, in case devices fail"]},{"id":"microbit","day":"2026-11-05","start":"2026-11-05T11:15:00Z","end":"2026-11-05T12:15:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"session","kindLabel":"Workshop","title":"micro:bit Workshop: Code a Tiny Computer","lead":"Mike","ours":true,"from":"mic","to":"mic","where":"CRAFT Maker Space, MIC","room":"CRAFT Maker Space","meta":"<b>CRAFT Maker Space<\/b> · 20–28 pupils from 5th and 6th class with their teacher · Host: Eleanor","syn":"Teams of three (Coder, Tester, Reporter) code, download, and run programs on a BBC micro:bit: a name badge, shake dice, then a choice of thermometer, night light, step counter, or secret messages by radio. Backup and second station: Sort and Search, Unplugged, with pupils acting as a binary search tree.","note":"End time not confirmed; the plan assumes 60 minutes.","agenda":[["11:15","Welcome, “this is a whole computer,” and the find-it race"],["11:21","Teams of three with roles, swapped every mission"],["11:24","Mission 1, name badge"],["11:34","Mission 2, shake dice"],["11:44","Mission 3, choose one: thermometer, night light, step counter, or radio messages"],["11:58","Mission 4 mash-up for fast teams"],["12:03","Show and tell, 30 seconds per team"],["12:09","Computers hiding everywhere; tidy up"]],"links":[{"href":"decks/2026-11-05-1115-microbit-code-a-tiny-computer.pdf","label":"micro:bit slides","size":"135 KB","pdf":true},{"href":"decks/2026-11-05-1115-unplugged-sort-and-search.pdf","label":"Unplugged slides","size":"146 KB","pdf":true},{"href":"decks/2026-11-05-unplugged-printables.pdf","label":"Printables","size":"86 KB","pdf":true}],"decks":[{"href":"decks/2026-11-05-1115-microbit-code-a-tiny-computer.pdf","label":"micro:bit Workshop: Code a Tiny Computer","size":"135 KB"},{"href":"decks/2026-11-05-1115-unplugged-sort-and-search.pdf","label":"Sort and Search, Unplugged (companion)","size":"146 KB"},{"href":"decks/2026-11-05-unplugged-printables.pdf","label":"Unplugged printables","size":"86 KB"}]},{"id":"decks-due","day":"2026-11-05","start":"2026-11-05T15:00:00Z","end":"2026-11-05T15:00:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","point":true,"pointLabel":"Due by","kind":"deadline","kindLabel":"Deadline","title":"Send both LAI decks to the session chair","ours":true,"from":"online","to":"online","noMap":true,"where":"Email or WeTransfer","meta":"Email or WeTransfer to <b>Susan Nic Réamoinn<\/b>, chair of the AI and Literacy session. USB sticks are not supported at MIC. No address yet? Ask conference@literacyireland.com.","links":[{"href":"decks/2026-11-07-1015-lai-leading-teachers-through-ai.pdf","label":"Talk 1 slides","size":"249 KB","pdf":true},{"href":"decks/2026-11-07-1045-lai-check-the-machine.pdf","label":"Talk 2 slides","size":"125 KB","pdf":true}]},{"id":"lai-eve","day":"2026-11-06","start":"2026-11-06T18:00:00Z","end":"2026-11-06T21:00:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"conf","kindLabel":"Conference","title":"LAI Conference opening evening","ours":false,"from":"tara","to":"tara","where":"Room T118, Tara Building","meta":"<b>Room T118<\/b> · Tara Building, MIC","agendaLabel":"Program","agenda":[["18:00","Registration"],["18:30","Welcome: Prof Dermot Nestor (MIC President) and Dr Sylvaine Ní Aogáin (LAI President)"],["18:45","LAI Award for Inspiring Literacy Leadership"],["19:00","Teach Meet"],["19:35","Launch of the LAI 2025 proceedings"],["19:45","Biennial Award for an Outstanding Master's Thesis"],["20:00","Fireside chat with Dr Déirdre Kirwan"],["20:30","Poster reception, An tSlí (outside T118)"]]},{"id":"lai-am","day":"2026-11-07","start":"2026-11-07T08:15:00Z","end":"2026-11-07T10:00:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"conf","kindLabel":"Conference","title":"Registration, welcome, and keynote","ours":false,"from":"tara","to":"tara","where":"Tara Building","meta":"Tara Building, MIC","agendaLabel":"Program","agenda":[["08:15","Registration"],["09:00","Welcome: Dr Angela Canny, Acting Dean of Education, MIC"],["09:10","Keynote: Prof Teresa Cremin CBE, Reading for Pleasure: The 3 Rs"]]},{"id":"t214","day":"2026-11-07","start":"2026-11-07T10:05:00Z","end":"2026-11-07T10:15:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"session","kindLabel":"Set-up","title":"Arrive at T214, meet the chair, check both decks","ours":true,"from":"tara","to":"tara","where":"Room T214, Tara Building","room":"T214","meta":"<b>Room T214<\/b> · AI and Literacy session · Chair: Susan Nic Réamoinn","note":"Put scrap paper on the seats for the live exercise in the second talk."},{"id":"talk1","day":"2026-11-07","start":"2026-11-07T10:15:00Z","end":"2026-11-07T10:45:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"session","kindLabel":"Paper","title":"Leading Teachers Through AI","lead":"Mike and Andrea","ours":true,"from":"tara","to":"tara","where":"Room T214, Tara Building","room":"T214","meta":"<b>Room T214<\/b> · A CRAFT-framed professional development study for multiliteracy leadership · 20 minutes plus 5 for questions; timing is strict","syn":"Two CRAFT workshops with K–12 teachers in the Western Regional Noyce Network. Most teachers said their students use AI secretly. After one workshop, confidence rose on every item and checking AI output rose least; a second session built on checking moved it further, and the teachers' own writing shows the same gap. What this means for anyone who leads teacher learning.","links":[{"href":"decks/2026-11-07-1015-lai-leading-teachers-through-ai.pdf","label":"Talk 1 slides","size":"249 KB","pdf":true}],"decks":[{"href":"decks/2026-11-07-1015-lai-leading-teachers-through-ai.pdf","label":"LAI Talk 1: Leading Teachers Through AI","size":"249 KB"}]},{"id":"talk2","day":"2026-11-07","start":"2026-11-07T10:45:00Z","end":"2026-11-07T11:15:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"session","kindLabel":"Paper","title":"Check the Machine","lead":"Andrea and Mike","ours":true,"from":"tara","to":"tara","where":"Room T214, Tara Building","room":"T214","meta":"<b>Room T214<\/b> · A classroom protocol for early critical AI literacy · 20 minutes plus 5 for questions","syn":"The routine run live with the room on a seasons question: write your own answer first (the Before step), compare it with what one AI wrote (the After step), and name what writing first let you see (the Takeaway step). Then what teachers' first runs looked like and how the routine adapts for the early grades.","links":[{"href":"decks/2026-11-07-1045-lai-check-the-machine.pdf","label":"Talk 2 slides","size":"125 KB","pdf":true}],"decks":[{"href":"decks/2026-11-07-1045-lai-check-the-machine.pdf","label":"LAI Talk 2: Check the Machine","size":"125 KB"}]},{"id":"talk3","day":"2026-11-07","start":"2026-11-07T11:15:00Z","end":"2026-11-07T11:45:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","kind":"conf","kindLabel":"Conference","title":"GenAI Literacy in Teacher Education","lead":"Dr TJ Ó Ceallaigh and Dr Stephen Murphy","leadLabel":"By","ours":false,"from":"tara","to":"tara","where":"Room T214, Tara Building","meta":"<b>Room T214<\/b> · third paper in our session"},{"id":"lai-pm","day":"2026-11-07","start":"2026-11-07T11:45:00Z","end":"2026-11-07T18:00:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","tentative":true,"kind":"conf","kindLabel":"Conference","title":"Parallel sessions and the LAI AGM","ours":false,"from":"tara","to":"tara","where":"Tara Building","meta":"Tara Building, MIC","agendaLabel":"Program, with sessions close to our work","agenda":[["11:45","Tea and coffee, An tSlí"],["12:15","Parallel sessions: Literacy in Initial Teacher Education (T214); Digital Literacies (T208)"],["13:45","Lunch, An Bhialann"],["14:45","Parallel sessions: Literacy in the Curriculum (T314)"],["16:15","Refreshments, grab and go"],["16:30","Parallel sessions: Disciplinary Literacy (T314)"],["17:30","LAI annual general meeting, T118"]]},{"id":"road-home","day":"2026-11-10","start":"2026-11-10T08:00:00Z","end":"2026-11-10T10:30:00Z","sz":"Europe/Dublin","ez":"Europe/Dublin","approx":true,"kind":"travel","kindLabel":"Travel","title":"Limerick to Dublin Airport","ours":true,"from":"lim","to":"dub","where":"Limerick","meta":"About 2 h 30 min by road","note":"Leave by about 08:00 to be at the airport 3 hours before departure; US preclearance happens in Dublin."},{"id":"home","day":"2026-11-10","start":"2026-11-10T13:45:00Z","end":"2026-11-10T23:10:00Z","sz":"Europe/Dublin","ez":"America/New_York","kind":"travel","kindLabel":"Travel","title":"Fly Dublin to Orlando","ours":true,"from":"dub","to":"mco","where":"Dublin Airport","meta":"Aer Lingus · about 9 h 25 min · lands 18:10 Orlando time"}],"places":{"mco":{"name":"Orlando International Airport (MCO)","short":"Orlando airport","desc":"Departure Monday 2 November; home Tuesday 10 November.","map":"https://www.google.com/maps/search/?api=1&query=Orlando%20International%20Airport"},"dub":{"name":"Dublin Airport (DUB)","short":"Dublin Airport","desc":"Arrive Tuesday 3 November; depart Tuesday 10 November. US preclearance happens here before boarding, so allow 3 hours.","map":"https://www.google.com/maps/search/?api=1&query=Dublin%20Airport"},"lim":{"name":"Limerick","short":"Limerick","desc":"Base for the week.","map":"https://www.google.com/maps/search/?api=1&query=Limerick%2C%20Ireland"},"mic":{"name":"Mary Immaculate College (MIC)","short":"MIC campus","desc":"South Circular Road, Limerick. Wednesday and Thursday sessions: rooms G10, 206, T116, and the CRAFT Maker Space.","map":"https://www.google.com/maps/search/?api=1&query=Mary%20Immaculate%20College%2C%20South%20Circular%20Road%2C%20Limerick"},"tara":{"name":"Tara Building, MIC","short":"Tara Building","desc":"LAI Conference, Friday and Saturday: rooms T118 and T214; tea, coffee, and posters in An tSlí.","map":"https://www.google.com/maps/search/?api=1&query=Tara%20Building%2C%20Mary%20Immaculate%20College%2C%20Limerick"},"online":{"name":"Online","short":"","desc":"","map":""}},"days":[{"key":"2026-11-02","nav":"Mon 2","title":"Monday 2 November","sub":"Travel out","keys":["2026-11-02"]},{"key":"2026-11-03","nav":"Tue 3","title":"Tuesday 3 November","sub":"Arrive in Ireland","keys":["2026-11-03"]},{"key":"2026-11-04","nav":"Wed 4","title":"Wednesday 4 November","sub":"Mary Immaculate College","keys":["2026-11-04"]},{"key":"2026-11-05","nav":"Thu 5","title":"Thursday 5 November","sub":"Mary Immaculate College","keys":["2026-11-05"]},{"key":"2026-11-06","nav":"Fri 6","title":"Friday 6 November","sub":"LAI Conference opening evening","keys":["2026-11-06"]},{"key":"2026-11-07","nav":"Sat 7","title":"Saturday 7 November","sub":"LAI Conference · our papers at 10:15","keys":["2026-11-07"]},{"key":"2026-11-08","keys":["2026-11-08","2026-11-09"],"nav":"Sun 8–Mon 9","title":"Sunday 8 and Monday 9 November","sub":"Open days","empty":"Nothing scheduled."},{"key":"2026-11-10","nav":"Tue 10","title":"Tuesday 10 November","sub":"Travel home","keys":["2026-11-10"]}],"checklist":[{"k":"fonts","t":"Montserrat, Oswald, and Roboto Mono installed on both laptops; Embed fonts turned on in PowerPoint","when":"Before flying"},{"k":"adapters","t":"Two Type G plug adapters, HDMI and USB-C display adapters, and a presenter remote","when":"Before flying"},{"k":"backup","t":"PDF backup of every deck on a USB drive (the PDFs are also on this page)","when":"Before flying"},{"k":"demo","t":"Two chatbots signed in on the presenting laptop; the seasons task and each menu topic run once; screenshots saved","when":"For Wednesday 14:00"},{"k":"print-y1","t":"22 CRAFT planners and three copies of each menu topic's AI output","when":"For Wednesday 14:00"},{"k":"print-y2","t":"24 partnered-lesson planners and one set of topic cards","when":"For Thursday 09:00"},{"k":"print-unplugged","t":"Unplugged printables: Reporter sheets, signs, team card sets, number cards on card stock","when":"For Thursday 11:15"},{"k":"lai-decks","t":"Both LAI decks sent to the session chair, Susan Nic Réamoinn","when":"By Thursday 15:00"}],"placeList":["mic","tara","dub","mco"]};
+  var EV = DATA.events, PL = DATA.places;
+  var TZ = { ie: "Europe/Dublin", us: "America/New_York" };
+  var CITY = { "Europe/Dublin": "Irish time", "America/New_York": "Orlando time" };
+
+  // simulate a moment with ?now=2026-11-05T10:20:00Z (for checking the live view)
+  var qs = new URLSearchParams(location.search);
+  var fixedNow = qs.get("now") ? new Date(qs.get("now")) : null;
+  if (fixedNow && isNaN(fixedNow)) fixedNow = null;
+  function now() { return fixedNow ? fixedNow.getTime() : Date.now(); }
+
+  function store(k, v) { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } }
+  var state = { tz: store("ie26.tz") || "local", show: store("ie26.show") || "all" };
+
+  EV.forEach(function (e, i) { e.i = i; e.s = Date.parse(e.start); e.e = Date.parse(e.end); });
+
+  var fmtCache = {};
+  function fmt(zone, opts) {
+    var key = zone + JSON.stringify(opts);
+    if (!fmtCache[key]) fmtCache[key] = new Intl.DateTimeFormat("en-GB", Object.assign({ timeZone: zone }, opts));
+    return fmtCache[key];
+  }
+  function hm(t, zone) { return fmt(zone, { hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(t); }
+  function ymd(t, zone) {
+    var p = fmt(zone, { year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(t), o = {};
+    p.forEach(function (x) { o[x.type] = x.value; });
+    return o.year + "-" + o.month + "-" + o.day;
+  }
+  function parts(t, zone, opts) { var o = {}; fmt(zone, opts).formatToParts(t).forEach(function (x) { o[x.type] = x.value; }); return o; }
+  function wdd(t, zone) { var o = parts(t, zone, { weekday: "short", day: "numeric", month: "short" }); return o.weekday + " " + o.day + " " + o.month; }
+  function wd(t, zone) { var o = parts(t, zone, { weekday: "short", day: "numeric" }); return o.weekday + " " + o.day; }
+  function dur(ms) {
+    var m = Math.round(ms / 60000), d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60), mm = m % 60;
+    if (d > 0) return d + " d " + h + " h";
+    if (h > 0) return h + " h" + (mm ? " " + mm + " min" : "");
+    return mm + " min";
+  }
+  function zonesFor(e) {
+    if (state.tz === "ie") return [TZ.ie, TZ.ie];
+    if (state.tz === "us") return [TZ.us, TZ.us];
+    return [e.sz, e.ez];
+  }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function campus(p) { return p === "mic" || p === "tara"; }
+  function travel(a, b, wa, wb) {
+    if (!a || !b || a === "online" || b === "online") return null;
+    if (wa && wb && wa === wb) return { min: 0, text: "Same room" };
+    if (campus(a) && campus(b)) return { min: 5, text: "Same campus · about 5 min on foot" };
+    if (a === b) return null;
+    if (a === "dub" && (campus(b) || b === "lim")) return { min: 150, text: "Dublin Airport to Limerick · about 2 h 30 min by road" };
+    if ((campus(a) || a === "lim") && b === "dub") return { min: 150, text: "Limerick to Dublin Airport · about 2 h 30 min by road; be there 3 h before a US flight (preclearance)" };
+    if (a === "lim" && campus(b)) return { min: 15, text: "In Limerick · allow about 15 min to MIC, South Circular Road" };
+    return null;
+  }
+  function visible(e) { return state.show === "all" || e.ours; }
+
+  // ---------- render the schedule ----------
+  function renderDays() {
+    var t = now(), main = document.getElementById("days"), html = "";
+    var cur = EV.filter(function (e) { return e.s <= t && t < e.e && !e.wide; });
+    var nxt = EV.filter(function (e) { return e.s > t; })[0];
+    var todayIE = ymd(t, TZ.ie), list = EV.filter(visible);
+    DATA.days.forEach(function (d) {
+      var evs = list.filter(function (e) { return e.day === d.key; });
+      html += '<section class="day" id="d' + d.key + '"><div class="day-head"><h2>' + esc(d.title) + "</h2><p>" + esc(d.sub) + '</p></div><ol class="rows">';
+      if (!evs.length) html += '<li class="empty">' + esc(d.empty || "Nothing scheduled.") + "</li>";
+      evs.forEach(function (e, j) {
+        var z = zonesFor(e), cls = "row", flag = "";
+        if (e.e <= t) cls += " past";
+        if (cur.indexOf(e) >= 0) { cls += " now"; flag = '<span class="flag now">Now</span>'; }
+        else if (nxt === e) { cls += " next"; flag = '<span class="flag next">Next</span>'; }
+        var st = hm(e.s, z[0]), en = hm(e.e, z[1]), approx = e.approx ? "~" : "";
+        var dayMark = ymd(e.s, z[0]) !== e.day ? " " + wd(e.s, z[0]) : "";
+        var endMark = ymd(e.e, z[1]) !== ymd(e.s, z[0]) ? " " + wd(e.e, z[1]) : "";
+        var whenH;
+        if (e.point) whenH = '<span>' + (e.pointLabel || "") + " " + st + "</span>";
+        else whenH = "<span>" + approx + st + dayMark + "–<wbr>" + en + endMark + "</span>";
+        var zl = z[0] === z[1] ? CITY[z[0]] : CITY[z[0]] + " → " + CITY[z[1]];
+        html += '<li class="' + cls + '" id="e' + e.id + '"><div class="when">' + whenH + '<span class="z">' + zl + "</span>" + flag + "</div>";
+        html += '<div class="what"><div class="kind"><span class="k ' + e.kind + '">' + esc(e.kindLabel) + "</span>" + (e.lead ? "<span>" + esc(e.leadLabel || "Lead") + ": " + esc(e.lead) + "</span>" : "") + (e.tentative ? "<span>Optional</span>" : "") + "</div>";
+        html += "<h3>" + esc(e.title) + "</h3>";
+        if (e.meta) html += '<p class="meta">' + e.meta + "</p>";
+        if (e.syn) html += '<p class="syn">' + esc(e.syn) + "</p>";
+        if (e.note) html += '<p class="note">' + e.note + "</p>";
+        if (e.agenda && e.agenda.length) {
+          html += "<details><summary>" + esc(e.agendaLabel || "Run of show") + "</summary><ul>";
+          e.agenda.forEach(function (a) { html += a[0] ? '<li><span class="tt">' + esc(a[0]) + "</span><span>" + esc(a[1]) + "</span></li>" : '<li class="plain"><span>' + esc(a[1]) + "</span></li>"; });
+          html += "</ul></details>";
+        }
+        if (e.bring && e.bring.length) {
+          html += "<details><summary>Bring</summary><ul>";
+          e.bring.forEach(function (b) { html += '<li class="plain"><span>' + esc(b) + "</span></li>"; });
+          html += "</ul></details>";
+        }
+        var links = (e.links || []).map(function (l) {
+          return '<a class="' + (l.pdf ? "pdf" : "") + '" href="' + esc(l.href) + '"' + (l.pdf ? "" : ' target="_blank" rel="noopener"') + ">" + esc(l.label) + (l.size ? " <small>" + esc(l.size) + "</small>" : "") + "</a>";
+        });
+        var p = PL[e.to] || PL[e.from], prevE = evs[j - 1];
+        var newPlace = !prevE || prevE.to !== e.from || e.kind === "travel";
+        if (p && p.map && !e.noMap && newPlace) links.push('<a href="' + esc(p.map) + '" target="_blank" rel="noopener">Map</a>');
+        if (links.length) html += '<div class="links">' + links.join("") + "</div>";
+        html += "</div></li>";
+
+        // gap and travel to the next visible item
+        var n = list[list.indexOf(e) + 1];
+        if (n) {
+          var g = n.s - e.e, tr = travel(e.to, n.from, e.where, n.where), sameDay = n.day === e.day, txt;
+          if (g < 0) txt = "Overlaps next";
+          else if (g === 0) txt = "Straight on";
+          else txt = sameDay ? dur(g) + " free" : "Next " + wd(n.s, zonesFor(n)[0]) + " " + hm(n.s, zonesFor(n)[0]) + " · in " + dur(g);
+          var dest = n.from === "online" ? "" : (n.where || (PL[n.from] ? PL[n.from].short : ""));
+          var trH = '<span class="tr"><b>' + esc(dest) + "</b>" + (tr ? " · " + esc(tr.text) : "") + "</span>";
+          if (sameDay || j === evs.length - 1) html += '<li class="gap"><span class="g">' + esc(txt) + "</span>" + trH + "</li>";
+        }
+      });
+      html += "</ol></section>";
+    });
+    main.innerHTML = html;
+
+    // day nav
+    var nav = document.getElementById("days-nav");
+    nav.innerHTML = DATA.days.map(function (d) { return '<a href="#d' + d.key + '"' + (d.keys.indexOf(todayIE) >= 0 ? ' class="is-today" aria-current="date"' : "") + ">" + esc(d.nav) + "</a>"; }).join("");
+  }
+
+  // ---------- now / next band ----------
+  function renderLive() {
+    var t = now(), A = document.getElementById("live-a"), B = document.getElementById("live-b");
+    var first = EV[0], last = EV[EV.length - 1];
+    var cur = EV.filter(function (e) { return e.s <= t && t < e.e && !e.wide; });
+    var nxt = EV.filter(function (e) { return e.s > t && visible(e); })[0] || EV.filter(function (e) { return e.s > t; })[0];
+    var z = TZ.ie;
+    function nextCell(n, from, fromWhere) {
+      if (!n) return "";
+      var zn = zonesFor(n)[0], tr = travel(from, n.from, fromWhere, n.where), leave = "";
+      if (tr && tr.min > 0 && n.s - t > tr.min * 60000) {
+        var lb = n.s - (tr.min + (tr.min >= 60 ? 30 : 10)) * 60000;
+        leave = '<p class="live-go">Leave by <b>' + hm(lb, zn) + "</b> · " + esc(tr.text) + "</p>";
+      } else if (tr) leave = '<p class="live-go">' + esc(tr.text) + "</p>";
+      var label = n.point ? (n.pointLabel || "Due") + " " : "";
+      return '<p class="live-k">Next · in ' + dur(n.s - t) + '</p><p class="live-t">' + esc(n.title) + '</p><p class="live-s"><b>' + label + wdd(n.s, zn) + " " + hm(n.s, zn) + "</b> " + esc(CITY[zn]) + (n.where ? " · " + esc(n.where) : "") + "</p>" + leave;
+    }
+    if (t < first.s) {
+      A.innerHTML = '<p class="live-k">Trip starts in</p><p class="live-t">' + dur(first.s - t) + '</p><p class="live-s">Flights out on ' + wdd(first.s, first.sz) + " at " + hm(first.s, first.sz) + " Orlando time</p>";
+      var firstSession = EV.filter(function (e) { return e.ours && e.kind === "session"; })[0];
+      B.innerHTML = '<p class="live-k">First session · in ' + dur(firstSession.s - t) + '</p><p class="live-t">' + esc(firstSession.title) + '</p><p class="live-s"><b>' + wdd(firstSession.s, z) + " " + hm(firstSession.s, z) + "</b> Irish time · " + esc(firstSession.where) + "</p>";
+      return;
+    }
+    if (t >= last.e) {
+      A.innerHTML = '<p class="live-k">Trip complete</p><p class="live-t">Home in Orlando</p><p class="live-s">Landed ' + wdd(last.e, last.ez) + " " + hm(last.e, last.ez) + " Orlando time</p>";
+      B.innerHTML = '<p class="live-k">Slides</p><p class="live-s">Every deck is listed under All slides below.</p>';
+      return;
+    }
+    var here = null, hereWhere = null;
+    if (cur.length) {
+      var c = cur[cur.length - 1], zc = zonesFor(c)[1];
+      here = c.to; hereWhere = c.where;
+      A.innerHTML = '<p class="live-k">Now · ends in ' + dur(c.e - t) + '</p><p class="live-t">' + esc(c.title) + '</p><p class="live-s"><b>until ' + hm(c.e, zc) + "</b> " + esc(CITY[zc]) + (c.where ? " · " + esc(c.where) : "") + "</p>";
+    } else {
+      var prev = EV.filter(function (e) { return e.e <= t; }).pop();
+      here = prev ? prev.to : null; hereWhere = prev ? prev.where : null;
+      A.innerHTML = '<p class="live-k">Now</p><p class="live-t">Free time</p><p class="live-s">' + (prev ? "Last: " + esc(prev.title) + ", ended " + hm(prev.e, zonesFor(prev)[1]) : "") + "</p>";
+    }
+    B.innerHTML = nextCell(nxt, here, hereWhere) || '<p class="live-k">Next</p><p class="live-t">Nothing else scheduled</p>';
+  }
+
+  function renderClocks() {
+    var t = now();
+    document.getElementById("clk-ie").textContent = hm(t, TZ.ie);
+    document.getElementById("clk-us").textContent = hm(t, TZ.us);
+    var off = function (zone) { var p = fmt(zone, { timeZoneName: "shortOffset" }).formatToParts(t).filter(function (x) { return x.type === "timeZoneName"; })[0]; var m = p && /GMT([+-]\d+)?(?::(\d+))?/.exec(p.value); return m ? (parseInt(m[1] || "0", 10) * 60 + (m[2] ? parseInt(m[2], 10) : 0)) : 0; };
+    try { var dh = (off(TZ.ie) - off(TZ.us)) / 60; document.getElementById("clk-diff").textContent = "Ireland is " + dh + " h ahead" + (fixedNow ? " · simulated time" : ""); } catch (e) {}
+  }
+
+  // ---------- static lists ----------
+  function renderDecks() {
+    var rows = EV.filter(function (e) { return e.decks; }).map(function (e) {
+      return e.decks.map(function (d) {
+        return '<tr><td class="t">' + wdd(e.s, TZ.ie) + "<br>" + hm(e.s, TZ.ie) + '</td><td><a href="' + esc(d.href) + '">' + esc(d.label) + "</a> <small>PDF · " + esc(d.size) + '</small></td><td class="hide-sm">' + esc(e.lead || "") + '</td><td class="hide-sm">' + esc(e.room || "") + "</td></tr>";
+      }).join("");
+    }).join("");
+    document.getElementById("deck-rows").innerHTML = rows;
+  }
+  function renderChecklist() {
+    var done = {};
+    try { done = JSON.parse(store("ie26.done") || "{}") || {}; } catch (e) { done = {}; }
+    var ul = document.getElementById("checklist");
+    ul.innerHTML = DATA.checklist.map(function (c) {
+      return '<li><label><input type="checkbox" data-k="' + c.k + '"' + (done[c.k] ? " checked" : "") + "><span>" + esc(c.t) + '<span class="when-k">' + esc(c.when) + "</span></span></label></li>";
+    }).join("");
+    ul.addEventListener("change", function (ev) {
+      var k = ev.target.getAttribute("data-k"); if (!k) return;
+      done[k] = ev.target.checked; store("ie26.done", JSON.stringify(done));
+    });
+  }
+  function renderPlaces() {
+    document.getElementById("places").innerHTML = DATA.placeList.map(function (k) {
+      var p = PL[k];
+      return "<li><div><h3>" + esc(p.name) + "</h3><p>" + esc(p.desc) + '</p></div><a href="' + esc(p.map) + '" target="_blank" rel="noopener">Map</a></li>';
+    }).join("");
+  }
+
+  // ---------- controls ----------
+  function wire(id, key) {
+    var seg = document.getElementById(id);
+    function sync() { Array.prototype.forEach.call(seg.querySelectorAll("button"), function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-v") === state[key])); }); }
+    seg.addEventListener("click", function (ev) {
+      var b = ev.target.closest("button"); if (!b) return;
+      state[key] = b.getAttribute("data-v"); store("ie26." + key, state[key]); sync(); renderDays(); renderLive();
+    });
+    sync();
+  }
+
+  function tick() { renderClocks(); renderLive(); }
+  wire("seg-tz", "tz"); wire("seg-show", "show");
+  renderDays(); renderDecks(); renderChecklist(); renderPlaces(); tick();
+  if (!location.hash && now() >= EV[0].s && now() < EV[EV.length - 1].e) {
+    var target = document.querySelector(".row.now") || document.querySelector(".row.next");
+    if (target) requestAnimationFrame(function () {
+      var bar = document.querySelector(".bar");
+      window.scrollTo(0, target.getBoundingClientRect().top + window.pageYOffset - (bar ? bar.offsetHeight : 0) - 12);
+    });
+  }
+  var cur = document.querySelector(".days-nav .is-today");
+  if (cur && cur.scrollIntoView) cur.scrollIntoView({ block: "nearest", inline: "center" });
+  setInterval(function () { tick(); }, 30000);
+  setInterval(function () { renderDays(); }, 300000);
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) { tick(); renderDays(); } });
+})();
+</script>
+</body>
+</html>
