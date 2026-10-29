@@ -1,13 +1,13 @@
 source "https://rubygems.org"
 
 # jekyll
-gem "jekyll", "~> 4.3"
-gem "webrick", "~> 1.7"
+gem "jekyll", "~> 4.4"
+gem "webrick", "~> 1.9"
 
-gem "html-proofer", "~> 5.0"
+gem "html-proofer", "~> 5.2"
 
 # portrait thumbnails (see _plugins/image_thumbnails.rb)
-gem "mini_magick", "~> 4.13"
+gem "mini_magick", "~> 5.4"
 
 # plugins
 group :jekyll_plugins do
