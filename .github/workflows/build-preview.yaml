@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Debug dump
-        uses: crazy-max/ghaction-dump-context@v2
+        uses: crazy-max/ghaction-dump-context@v3
 
       # Only the deploy pass needs the PR's own content. On 'closed' the head
       # branch has usually already been deleted by auto-delete-on-merge, so
@@ -30,7 +30,7 @@ jobs:
       # runs - which is why stale preview/pr-* dirs pile up on gh-pages.
       - name: Checkout branch contents
         if: github.event.action != 'closed'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.head_ref }}
@@ -38,7 +38,7 @@ jobs:
       # The cleanup pass only needs a git repo to work in, not the PR's files.
       - name: Checkout base repo for preview cleanup
         if: github.event.action == 'closed'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Install Ruby packages
         if: github.event.action != 'closed'
@@ -66,7 +66,7 @@ jobs:
 
       - name: Cache generated portrait thumbnails
         if: github.event.action != 'closed'
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .jekyll-cache/thumbs
           key: jekyll-thumbs-${{ hashFiles('images/people/**', '_members/**', '_plugins/image_thumbnails.rb') }}
@@ -76,7 +76,7 @@ jobs:
       - name: Get Pages url
         if: github.event.action != 'closed'
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v6
 
       - uses: jwalton/gh-find-current-pr@master
         if: github.event.action != 'closed'
@@ -108,7 +108,7 @@ jobs:
           fi
 
       - name: Commit preview to Pages branch
-        uses: rossjrw/pr-preview-action@v1.4.7
+        uses: rossjrw/pr-preview-action@v1.8.1
         with:
           source-dir: _site
           umbrella-dir: ${{ env.PREVIEWS_FOLDER }}
