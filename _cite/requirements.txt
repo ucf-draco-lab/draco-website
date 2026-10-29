@@ -1,2 +1,2 @@
-pybtex~=0.24
+pybtex~=0.26
 PyYAML~=6.0
