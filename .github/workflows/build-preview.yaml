@@ -44,7 +44,7 @@ jobs:
         if: github.event.action != 'closed'
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1"
+          # version comes from .ruby-version in the checked-out branch
           bundler-cache: true
 
       # ubuntu-24.04 runners no longer ship ImageMagick, which mini_magick
