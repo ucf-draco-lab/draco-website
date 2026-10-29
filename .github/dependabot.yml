@@ -1,0 +1,31 @@
+# Dependabot version updates. Each ecosystem's updates arrive as one grouped pull
+# request, so the PR preview build (build-preview.yaml) checks the whole set at once.
+version: 2
+updates:
+  # Jekyll and its plugins (Gemfile / Gemfile.lock)
+  - package-ecosystem: bundler
+    directory: "/"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 3
+    groups:
+      ruby-gems:
+        patterns: ["*"]
+
+  # citation process (_cite/requirements.txt)
+  - package-ecosystem: pip
+    directory: "/_cite"
+    schedule:
+      interval: monthly
+    groups:
+      python:
+        patterns: ["*"]
+
+  # actions used by the workflows in .github/workflows
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly
+    groups:
+      actions:
+        patterns: ["*"]
