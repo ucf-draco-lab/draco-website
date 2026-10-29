@@ -3,7 +3,7 @@
    Map tiles are kept only after you view or save them, and are dropped after 28 days (CARTO's terms allow
    up to 30 days of on-device caching). */
 "use strict";
-var VERSION = "bcb46098405a";
+var VERSION = "e2f6b5e141aa";
 var SHELL = "ie26-shell-" + VERSION, TILES = "ie26-tiles", FONTS = "ie26-fonts";
 var PRECACHE = ["./", "ucf-mark.png", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png", "decks/2026-11-04-1200-seminar-from-ideas-to-impact.pdf.enc", "decks/2026-11-04-1400-pme-year-1-craft-cycle-with-ai.pdf.enc", "decks/2026-11-05-0900-pme-year-2-partnering-science-and-art.pdf.enc", "decks/2026-11-05-1115-microbit-code-a-tiny-computer.pdf.enc", "decks/2026-11-05-1115-unplugged-sort-and-search.pdf.enc", "decks/2026-11-05-unplugged-printables.pdf.enc", "decks/2026-11-07-1015-lai-leading-teachers-through-ai.pdf.enc", "decks/2026-11-07-1045-lai-check-the-machine.pdf.enc", "decks/citylink-ticket-1.pdf.enc", "decks/citylink-ticket-2.pdf.enc"];
 var SCOPE = self.registration.scope;
