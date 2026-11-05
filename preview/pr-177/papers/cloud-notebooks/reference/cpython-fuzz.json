@@ -1,0 +1,9257 @@
+[
+ {
+  "name": "fuzz",
+  "cells": [
+   {
+    "stdout": "",
+    "value": "27.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-9.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "28.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-43.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5.248044760952131e+22",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2.0414412575278145",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "40.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-30.9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-41.147",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "37.5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-67759100420695632176",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "51.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-49473596216520442172",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-83549237928291815780",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-72287191401844657417",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-32.5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-78531940348222225727",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "10613092860862516959",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-62513610955170904411",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "75723014833681006450",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "32.0257",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-42.223",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "36929586634102804010",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16.37",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6.52",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "31.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-56693912375296",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-65.80000000000001",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5.23095273213327e+20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-25.3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6.003999999999998",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "64816674132151382590",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-23.953",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "92847175948516449382",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.247166908605658e+20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "5.3541187287175476e+20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-21.777300000000004",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "48736557896135241025",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-9.422",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.8818",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "24.241",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5.68",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "34.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-70106757313292626094",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.06625482625482626",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-31.9144",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "38.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-303304590549253911068",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-31.0364",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-14.379999999999999",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4.814995025366415e+119",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4.275623254194607e-19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-815.3524017777779",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-31.8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0001457938474996355",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-268474774050318641480",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-88641652790238994125",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "82416.40999999997",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-18.105",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-75.5232",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "28.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3.619999999999999",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "25.74",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4.058102372163107e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-278993256126",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "36.953",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-0.0020848789151385687",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4.005",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-85064349465931652766",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20.3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "96",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.2947481243301179",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-21.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-43.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-26.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-24.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "56160937847387930792",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-48.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11.99537037037037",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-24.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-13.48",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4.698",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-43.31",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4.412052722088725e-05",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "19.46",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.05263157894736842",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6.41",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-57.02",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "2.933156626506024",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0007513148009015778",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-35.8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "886.5036809999993",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3.3485031082373935e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.769165478356689",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.004629629629629629",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-37081353470993759070",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20644769441342613298",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-38.94615384615384",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.8868642062490787e+17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "17.7333",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3.049894751053266e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-84642640794702642382",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-29.758666666666663",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.4577171935411252e-22",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16.564",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.22740663877296846",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "587.0929",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.015625",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-72284709318106355545",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8.137304844401225",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-512.6363200000001",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-12.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-44.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-28.000025204441382",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "2165.5120660664857",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.689884208276468e-19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3.000011739293764",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.68",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "51459141781760614913",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6.8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "15.01",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5.075200336305213e+18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "90630741793451504585",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "55.48",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "14.8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "101.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-46348087482401891645",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-31.38",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "18.9186",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.416603679639456e+21",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-43.4415",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0019406205808137195",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-26.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-35.399",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-31.09",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-24.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-12365970876160189046",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-174563646541387095972",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "102400000.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "13.8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-68.272",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20.1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.5730000000000075",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0009959261332781158",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-36.9993",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "55355539218409805163",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-36.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "19.9783",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "25.267",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "49.249",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.9500000000034543",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-28.94",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "46.88",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2780914306.640625",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "30.1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-48.882",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "7.916666666666667",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-25.767228915662653",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "43.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-97423004708481678501",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-792.7501350135021",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "5.493607920311378e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "58823452693627923147",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "28.49",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.2222222222222222",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-54464135153661561294",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-13210647523574266095",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11.6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "23.6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "50269769602726746209",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.6411169682290925",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-22.9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6.25",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-22.272",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-36253925345156821810",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "76669988393859477462",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.025",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.4939046149200953e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "23.439",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "15627.934152765583",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2.009",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "98024542442725659612",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.43464517148727677",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-11.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.047619047619047616",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "95706888092374639521",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "38026135304815749181",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "32.16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.010252719277470368",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "121.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "23.799999999999997",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "1.3999999999999986",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "52480559965250354391",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1769.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "96901830159431986909",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.5211536359076233e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.08333333333333333",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.0047847348550304e-117",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3.494318862533437e-07",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "13.9129",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-40.2635",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "18.76666666666667",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "21.231",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-23.0322",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.15384615384615385",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "32428196884089114758",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-23.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2.64",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.023586362108123312",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-91514142369342653587",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-25.403799999999997",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-36.95",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10.9393",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17.98",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-40.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.03225806451612903",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-12.000999999999998",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.002770083102493075",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-39.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.5620000000000012",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.7500000000000031",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-32.727000000000004",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6829353557858280832",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "7.3771",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "281.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "9.015",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.93",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "33.373",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0002901083198645061",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-15.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0004363978138815028",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-46.5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "40.6058",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-21373109479875821779",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "5420856575564376207",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-32.82482162162162",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-9.81",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "46.92",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "25.5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "38416",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "21.2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "42.95",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-23472794522859982387569466418892713291654556170428290719207200484790319797388385460934297195475168",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1048576.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "34.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "28.2656",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8.6592",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-23.291",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.05263157894736842",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.004629629629629629",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-9.226",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6.641205832734726e-18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0625",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "43.6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "43700224921259453811",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.8256269400890162",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-44.622",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "43.21093999999999",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "30.2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-729",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.1784500436822995e+22",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "-23.7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-30023684611484201942",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-26.03",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-14.5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-28.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3.9274381066928416e-05",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "28629670225842580296",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-36.035",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2.1453503086049673e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-32.869",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.6041879380278135e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "45.073",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.1060642453214464e+18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "3.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-47013895068025505643",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-19.7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-35.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "45.02",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-18.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.024255948771436196",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "47.975",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "65.48642857142859",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "37.601",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "-20.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-41.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-55",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.5141649996417262",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-82906670359404191839",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-30.0499",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-32768",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-36.6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-24.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6817468406206147887",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.2569178082191781",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-37.0223",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.8579561709447224e+18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "-1.3152145144522433e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-25.521",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4.25",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "22.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "14.7355",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "33.1992",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "64.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "44.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "99177980217030749816",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "44142142641883020027",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11.4287",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "164.77199999999996",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6.8459999999999965",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "9.420999999999992",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-19.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "27830097930086776148",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-30.81",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "28.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-35370860892891653149",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-105",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "4.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10257402058414163041",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-23.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "77.1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "27.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-50.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.3479999999985921",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3.921",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "71.6572",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "40.414",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-21.781100000000002",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "28561",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "12.344",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "916.3829999999999",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.05189999999999895",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-36.5101",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-27.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "47.307",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.008101620243032405",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.8571428571428572",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.586810456123203",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "48131512210662129137",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "31.24",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "51.6154",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6.1153",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "40.4264",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20.1506",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "12896753151.176472",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "400.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3375",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-33.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "49.5361",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "39.3329",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "13.260000000000002",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-40.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.986758329110661e-19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-68.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "27.75",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "10.717",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8.808",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-33.01",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-257.6204201705643",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2.027121451864037e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-18.623762376237625",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "43.98",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-7.999985219772885",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "2368838342697103761",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-47.3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "45.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17.731",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "16.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.013242209277226977",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-3156698860353618211",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "21.5671",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-22.55",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "29.45",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "14.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.125",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.029411764705882353",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "877.3444000000001",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "25.31",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16.8474",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "10468912144977086068834509633100346219617532782981237321637667657821536024396652949972914674602974110824788146244074569",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "104536870480902644272",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-28.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.8695652173913043",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4.926783910032069",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "35.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "434.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10214718205932551071",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-1.1529999999999987",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-29462479673751723249",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "28.5531",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-27.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "457.776",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "45.95",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "5.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8.78239900967172e+20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-51",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.8416666666666668",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "1.1366722404376523e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-469934135.081599",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.2343151714796185e+39",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "28.592",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.6368599602571692",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3447308.8124300004",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-301.98",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-37.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.5479045335112694e+18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "48.2143",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "23.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-45285866090119381579",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-27.97",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-92578789976336109858",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-3.101",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8.879999999999999",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-10.0468",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "18.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "19.0929",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "128179820603811941092732527712896609436",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-46.729",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1000000000000000000000000",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-68847913184753285010",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-11.390625",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.541684057909861e+24",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-32.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "-0.04922228785193936",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-27.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-25994.464099999994",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "40.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "86603474575515420836",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-36.9569",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-23431606208431643578",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-29.84",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-121.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "35.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "23.7649",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8.3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.5479637306146561e-19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "45118.016",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "372.2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0001457938474996355",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-18.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "19.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "24",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-30.86",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "46.3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8.1165",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-170",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4.595050461361291e-19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.05263157894736842",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "27.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.3036781105297396e+21",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17.5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "95781242294664571973",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-1.273151697238422e-18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "45695087791542780645",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "225199600704.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "34.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.3333333333333333",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-3.549",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "7.726",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-44.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "42.74",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "15.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-25742443574948592603",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "38.398",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-54.671",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "93242046111456569964",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "19.86",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.7560415354922438e-19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-30.5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "19.513",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-15.165",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-38.69",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "49927.57072327386",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2.926",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "38.354",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-15.758",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "24.22",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-3.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5405727547481169123",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.3142857142857143",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-47.336",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.06065991926164746",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-12.393939393939394",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-20.762368439870215",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-36",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "36.9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-41.29",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-37.2797",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "457698015515178.75",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "13.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-345729642273902566996",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-63797328163689224875",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "37.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "4.7647872196001055e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "35306899437684960520",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4.4421219829851907e-05",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-43.5659",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4.002915451895044",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "69462303769470891352",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4.406553503341461e-20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "15.42457894736842",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-46.7839",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "7.149500000000003",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.1492537313432836",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-3.42233868393744e+18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.2261904761904762",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-3.048",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-35.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "63339038534913710619",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "5.111979674233829e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "13.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-909.313",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4.39",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "360.62389801000006",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-22.052799999999998",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "38.27",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-7.17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "5.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "48.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "29.646",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "47.59",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-79340203908021964465",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: integer division or modulo by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "-40.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-14.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-526.86",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6.187",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4.710979310349538e+19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "37.255",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.3125",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: division by zero"
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6.84531399992026e+18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-453.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "15",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2.6970000000000027",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: 0.0 cannot be raised to a negative power"
+   },
+   {
+    "stdout": "",
+    "value": "-8.2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-40.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-52.9387",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "37.3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "41.8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float floor division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.9832413770684716",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-8.3538",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "4834648028617847222",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6.224",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17.1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.04510599909788002",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0.8125",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2476087",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6.066",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "61612440634541664337",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "32.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": null,
+    "error": "ZeroDivisionError: float division by zero"
+   },
+   {
+    "stdout": "",
+    "value": "16",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-4.8618",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-43.868",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "True",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-16.43",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "False",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17.6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "754.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-758.5313",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "510.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "879.509207",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "946.6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-400.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-857.925",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "498.8306",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "700.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "509.014288",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-244.27541",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-684.670902",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-139.1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "120.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-660.4243",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-158.295",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-112.9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "280.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "806.722457",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-920.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "348.76",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-118.371616",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-44.83",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-510.1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "220.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-491.96",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "400.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "300.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-109.42",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-120.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "764.04096",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-846.2457",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-357.297477",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "100.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "235.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "261.068",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "500.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "530.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "720.75",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-489.8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-800.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "995.0933",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-600.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-215.1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-219.91536",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-925.02",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-855.546606",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-838.97",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-991.85718",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-725.66",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-500.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "280.63059",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "358.49438",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "37.5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "960.5972",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "86.6381",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "990.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-502.36",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "100.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-500.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-798.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-224.96803",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "52.53",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "802.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-581.2958",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-411.31",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "179.6983",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "930.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-932.6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-728.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "500.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "900.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "821.7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-850.11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "369.218852",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-700.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "908.913607",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-400.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "633.81173",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "810.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "175.9977",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "560.11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "188.272",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-601.31",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "107.6803",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "39.3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-88.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-300.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "498.6822",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "36.897959",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-937.698914",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "894.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-961.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-840.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-500.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-750.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "357.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "74.2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "508.884",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-140.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-700.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "42.2549",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "722.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "861.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-851.3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "988.96879",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-163.3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "706.5398",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "28.24",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "349.9245",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-430.01426",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-230.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-17.5",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "700.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-118.77927",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-336.930996",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-965.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-0.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-746.43579",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-868.397",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "260.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-89.7",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "519.492",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "995.894723",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "100.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "518.2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "141.092",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-550.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-490.325757",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "263.9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-668.517",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "500.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-770.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "690.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "674.26",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "400.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "323.713612",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "625.9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-855.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-408.3",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-686.79",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "976.130106",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "694.7217",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "593.936",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "948.0539",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-500.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "890.1534",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-989.646",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-250.18319",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "749.97",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "29.99",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-294.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-587.125",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "394.006",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "300.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-823.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "434.798758",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "467.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "745.4675",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "955.70391",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-621.27583",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "719.6232",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-791.55115",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "978.9",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-77.27897",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "354.69",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "329.04696",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "400.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "448.1841",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "316.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-659.9113",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "54.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-984.7827",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-626.6957",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "510.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "556.203",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "999.138577",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "309.969",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-990.22",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "319.1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-502.606",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-581.44",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-402.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-966.85",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-850.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-590.8529",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "757.3172",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "386.33",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-866.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-788.65",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-144.491",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "45.39935",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "891.9133",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-310.55928",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-508.4709",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-930.159245",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "829.579",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-344.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "914.01",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-612.205783",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "151.3324",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-713.26949",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-578.8418",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-610.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "610.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-223.41107",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-156.0666",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "300.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-20.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-467.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "900.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-680.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-912.19",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-557.01",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-584.109",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "708.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "356.985",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "66.1758",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-355.1994",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-997.143",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-18.19671",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "263.703",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "970.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "230.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "493.11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "525.11",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-340.68",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-100.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-88.9401",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-479.632867",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-272.25945",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-300.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "532.65",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "223.481582",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1000.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "880.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "400.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "950.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "456.123331",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "600.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1000.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "45.459563",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-888.057",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "374.1",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "943.76728",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "413.675",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "659.4",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-400.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "990.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "296.280554",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "600.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "850.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-341.18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-891.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "994.91",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-330.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "300.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "164.74",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-758.064269",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-796.3924",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "81.2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "904.588806",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "260.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-1000.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "391.3808",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "790.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-721.7508",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-600.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "385.72",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "367.7521",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-458.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-830.40858",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "602.2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-500.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-254.6745",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "662.248",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "704.401",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "760.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "491.877",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "500.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "600.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "649.768113",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "792.6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-895.29",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "382.71",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-877.13",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-86.8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-955.7658",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-755.2064",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-279.184",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-652.81",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-882.29859",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-78.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-777.72396",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "835.153",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "700.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-511.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-117.0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "368.89538",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "40",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-44",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "14",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "34",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "44",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "44",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "20",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "44",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "44",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-18",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-28",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-26",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "24",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "42",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-26",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "36",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "2",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-42",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-24",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "22",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "8",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "26",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "22",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-28",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-32",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-6",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "30",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-30",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "30",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "44",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-34",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-30",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-46",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "12",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "-48",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "34",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "48",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "40",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "0",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "10",
+    "error": null
+   },
+   {
+    "stdout": "",
+    "value": "10",
+    "error": null
+   }
+  ]
+ }
+]

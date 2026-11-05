@@ -1,0 +1,39 @@
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.tag {
+  max-width: 100%;
+  margin: 0;
+  padding: 5px 12px;
+  border-radius: var(--rounded);
+  background: var(--secondary);
+  color: var(--text);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  font-weight: var(--semi-bold);
+  letter-spacing: 0.5px;
+  border: 1px solid transparent;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.tag:hover {
+  border-color: var(--primary);
+  background: var(--secondary);
+}
+
+.tag[data-active] {
+  background: var(--primary);
+  color: #fff;
+}
+
+/*# sourceMappingURL=tags.css.map */
