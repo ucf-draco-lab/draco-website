@@ -1,0 +1,98 @@
+/* WySLICE widget. Theme colors only; ruled rows, no cards. */
+
+.w-demo { margin: 10px 0 8px; padding: 4px 0 8px; border-bottom: 1px solid var(--light-gray); }
+.w-demo:not(.w-ready)::before { content: "This demo needs JavaScript."; color: var(--gray); font-size: 0.9rem; }
+
+.w-note { margin: 8px 0; font-size: 0.88rem; color: var(--dark-gray); max-width: 72ch; }
+.w-mono { font-family: var(--code); font-size: 0.78rem; color: var(--gray); margin: 10px 0 2px; }
+.w-source { font-family: var(--code); font-size: 0.75rem; color: var(--gray); margin: 4px 0 8px; }
+.w-big { margin: 8px 0; font-family: var(--heading); font-size: 1.05rem; }
+
+.w-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 10px 0; }
+.w-btn {
+  appearance: none; min-height: 38px; padding: 7px 14px; border: 1px solid var(--primary);
+  background: var(--primary); color: var(--background); font: inherit; font-family: var(--heading);
+  font-size: 0.88rem; font-weight: var(--semi-bold); cursor: pointer; border-radius: 0;
+}
+.w-btn:hover { background: transparent; color: var(--primary); }
+.w-btn-quiet { background: transparent; color: var(--primary); }
+.w-btn-quiet:hover { background: var(--primary); color: var(--background); }
+.w-btn:focus-visible, .seg-option:focus-visible, .ws-item:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--light-gray); }
+.seg-option {
+  appearance: none; padding: 6px 10px; border: 0; border-right: 1px solid var(--light-gray);
+  background: transparent; color: var(--text); font: inherit; font-family: var(--code); font-size: 0.78rem;
+  cursor: pointer; border-radius: 0; min-height: 34px;
+}
+.seg-option:last-child { border-right: 0; }
+.seg-option[aria-checked="true"] { background: var(--light-gray); color: var(--accent); }
+
+.w-range { display: grid; grid-template-columns: minmax(6.5rem, auto) minmax(0, 1fr) 3.4rem; align-items: center; gap: 4px 10px; margin: 8px 0; font-family: var(--code); font-size: 0.78rem; color: var(--gray); max-width: 560px; }
+.w-range input[type="range"] { width: 100%; accent-color: var(--primary); }
+.w-range output { text-align: right; color: var(--text); font-size: 0.9rem; }
+
+/* charts */
+.ws-chart { margin: 6px 0; }
+.ws-svg { display: block; width: 100%; max-width: 760px; height: auto; overflow: visible; }
+.c-grid { stroke: var(--light-gray); stroke-width: 1; }
+.c-tick { fill: var(--gray); font-family: var(--code); font-size: 11px; }
+.c-label { fill: var(--dark-gray); font-family: var(--code); font-size: 11px; }
+
+/* demo 1: model */
+.ws-program { margin: 10px 0 4px; border-top: 1px solid var(--light-gray); max-width: 560px; }
+.ws-block { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr); gap: 4px 10px; padding: 6px 0; border-bottom: 1px solid var(--light-gray); align-items: baseline; }
+.ws-indent { padding-left: 1.4rem; }
+.ws-block-key { font-family: var(--code); font-size: 0.78rem; color: var(--accent); }
+.ws-block-val { font-size: 0.9rem; color: var(--text); }
+.ws-code { font-family: var(--code); font-size: 0.8rem; color: var(--text); background: var(--background-alt); padding: 8px 10px; margin: 8px 0; overflow-x: auto; border-left: 2px solid var(--primary); white-space: pre; }
+.ws-line { fill: none; stroke: var(--primary); stroke-width: 2; }
+.ws-pt { fill: var(--primary); }
+
+/* demo 2: design */
+.ws-span { fill: var(--light-gray); }
+.ws-span-on { fill: var(--primary); }
+.ws-mark { stroke: var(--accent); stroke-width: 2; }
+.ws-rows { margin: 8px 0; border-top: 1px solid var(--light-gray); }
+.ws-row {
+  display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: 4px 14px; align-items: baseline;
+  padding: 6px 0; border-bottom: 1px solid var(--light-gray);
+}
+.ws-row-name { font-family: var(--code); font-size: 0.78rem; color: var(--gray); }
+.ws-row-val { font-size: 0.88rem; color: var(--text); }
+.ws-row-bar .ws-dbar-wrap { grid-column: 2; display: block; height: 8px; }
+.ws-dbar { display: block; height: 8px; min-width: 1px; background: var(--primary); }
+@media (max-width: 560px) {
+  .ws-row { grid-template-columns: minmax(0, 1fr); }
+  .ws-row-bar .ws-dbar-wrap { grid-column: 1; }
+}
+.ws-bar { fill: var(--primary); }
+.ws-bar-alt { fill: var(--accent); }
+.ws-track { fill: var(--light-gray); }
+
+/* demo 3: knowledge */
+.ws-dot { fill: var(--background); stroke: var(--gray); stroke-width: 1.4; }
+.ws-dot-on { fill: var(--primary); stroke: var(--primary); }
+.ws-dot-hot { stroke: var(--accent); stroke-width: 2.4; }
+.ws-link { stroke: var(--accent); stroke-width: 1.4; opacity: 0.55; }
+.ws-link-same { stroke: var(--light-gray); opacity: 1; }
+.ws-link-hot { stroke-width: 2.6; opacity: 1; }
+.ws-readout p { max-width: 72ch; margin: 6px 0; font-size: 0.9rem; }
+.ws-own { color: var(--accent); font-family: var(--code); font-size: 0.78rem !important; }
+
+/* demo 4: scale */
+.ws-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(3.2rem, 1fr)); border-top: 1px solid var(--light-gray); border-left: 1px solid var(--light-gray); margin: 8px 0; max-width: 560px; }
+.ws-item {
+  appearance: none; display: flex; flex-direction: column; align-items: center; gap: 2px; min-height: 48px; padding: 4px 0;
+  border: 0; border-right: 1px solid var(--light-gray); border-bottom: 1px solid var(--light-gray);
+  background: transparent; color: var(--text); font: inherit; cursor: pointer; border-radius: 0;
+}
+.ws-item-num { font-family: var(--code); font-size: 0.68rem; color: var(--gray); }
+.ws-item-val { font-family: var(--heading); font-size: 1.05rem; color: var(--primary); }
+
+/* tables in the page text */
+.ws-study-wrap { overflow-x: auto; }
+.paper-body .results-table { width: 100%; min-width: 560px; border-collapse: collapse; margin: 10px 0; overflow-wrap: normal; }
+.paper-body .results-table th, .paper-body .results-table td { padding: 6px 8px; border-bottom: 1px solid var(--light-gray); text-align: left; vertical-align: top; font-size: 0.86rem; }
+.paper-body .results-table th { font-family: var(--code); font-size: 0.74rem; color: var(--gray); font-weight: 500; }
+.paper-body li { text-align: left; }

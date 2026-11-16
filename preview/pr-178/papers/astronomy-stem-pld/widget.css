@@ -1,0 +1,92 @@
+/* Astronomy STEM PLD widget. Theme colors only; ruled rows, no cards. */
+
+.w-demo { margin: 10px 0 8px; padding: 4px 0 8px; border-bottom: 1px solid var(--light-gray); }
+.w-demo:not(.w-ready)::before { content: "This demo needs JavaScript."; color: var(--gray); font-size: 0.9rem; }
+
+.w-note { margin: 8px 0; font-size: 0.88rem; color: var(--dark-gray); max-width: 72ch; }
+.w-mono { font-family: var(--code); font-size: 0.78rem; color: var(--gray); }
+.w-source { font-family: var(--code); font-size: 0.75rem; color: var(--gray); margin: 4px 0 8px; }
+.w-big { margin: 8px 0; font-family: var(--heading); font-size: 1.05rem; max-width: 72ch; }
+.w-big strong { color: var(--accent); }
+.pl-sub { margin-top: 14px; font-family: var(--code); font-size: 0.78rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.w-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 10px 0; }
+.w-btn {
+  appearance: none; min-height: 38px; padding: 7px 14px; border: 1px solid var(--primary);
+  background: var(--primary); color: var(--background); font: inherit; font-family: var(--heading);
+  font-size: 0.88rem; font-weight: var(--semi-bold); cursor: pointer; border-radius: 0;
+}
+.w-btn:hover, .w-btn.pl-ghost { background: transparent; color: var(--primary); }
+.w-btn.pl-ghost:hover { background: var(--primary); color: var(--background); }
+.w-btn:focus-visible, .seg-option:focus-visible, .pl-range:focus-visible, .pl-num:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--light-gray); }
+.seg-option {
+  appearance: none; padding: 6px 10px; border: 0; border-right: 1px solid var(--light-gray);
+  background: transparent; color: var(--text); font: inherit; font-family: var(--code); font-size: 0.78rem;
+  cursor: pointer; border-radius: 0; min-height: 34px;
+}
+.seg-option:last-child { border-right: 0; }
+.seg-option[aria-checked="true"] { background: var(--light-gray); color: var(--accent); }
+
+.pl-range { width: min(320px, 100%); accent-color: var(--accent); }
+.pl-num { width: 5.5em; padding: 4px 6px; border: 1px solid var(--light-gray); background: var(--background); color: var(--text); font-family: var(--code); border-radius: 0; }
+
+.pl-rows { margin: 8px 0; }
+.pl-row { display: grid; grid-template-columns: minmax(110px, 30%) 1fr; gap: 4px 14px; padding: 7px 0; border-bottom: 1px solid var(--light-gray); }
+.pl-k { font-family: var(--code); font-size: 0.76rem; color: var(--gray); padding-top: 2px; }
+.pl-v { font-size: 0.92rem; text-align: left; }
+.pl-v strong { color: var(--accent); }
+@media (max-width: 480px) { .pl-row { grid-template-columns: 1fr; } }
+.pl-dots { display: inline-flex; flex-wrap: wrap; gap: 3px; vertical-align: middle; margin-left: 6px; color: var(--gray); font-family: var(--code); font-size: 0.75rem; }
+.pl-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+
+.pl-chart { margin: 6px 0; }
+.pl-svg { display: block; width: 100%; max-width: 760px; height: auto; overflow: visible; }
+.c-grid { stroke: var(--light-gray); stroke-width: 1; }
+.c-tick { fill: var(--gray); font-family: var(--code); font-size: 11px; }
+.c-label { fill: var(--dark-gray); font-family: var(--code); font-size: 11px; }
+.pl-strong { fill: var(--accent); font-weight: 600; }
+.pl-val { fill: var(--text); font-family: var(--code); font-size: 11px; }
+.pl-inbar { fill: var(--background); font-family: var(--code); font-size: 11px; font-weight: 600; }
+.pl-sig { fill: var(--accent); font-family: var(--code); font-size: 11px; font-weight: 600; }
+.pl-track { fill: var(--light-gray); opacity: 0.45; }
+.pl-sched, .pl-before, .pl-tech { fill: var(--gray); }
+.pl-collab, .pl-after { fill: var(--primary); }
+.pl-concept { fill: var(--light-gray); }
+.pl-warn { fill: var(--accent); }
+.pl-empty { fill: none; stroke: var(--light-gray); stroke-width: 1.5; }
+.pl-person { fill: var(--primary); }
+.pl-mean { stroke: var(--accent); stroke-width: 2; stroke-dasharray: 4 3; }
+.pl-c1 { fill: var(--primary); }
+.pl-c2 { fill: var(--accent); }
+.pl-c3 { fill: var(--gray); }
+.pl-c4 { fill: var(--dark-gray); }
+.pl-c5 { fill: var(--light-gray); }
+
+.pl-zone { fill: var(--accent); opacity: 0.08; }
+.pl-cut { stroke: var(--accent); stroke-width: 2; }
+.pl-unknown { fill: var(--gray); opacity: 0.8; }
+.pl-star { fill: var(--gray); opacity: 0.85; }
+.pl-qso { fill: var(--primary); }
+.pl-wrong { stroke: var(--accent); stroke-width: 2.5; }
+
+.c-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 6px 0 0; font-family: var(--code); font-size: 0.76rem; color: var(--dark-gray); }
+.pl-lg-group { display: inline-flex; flex-wrap: wrap; gap: 4px 10px; margin-right: 10px; }
+.pl-lg { display: inline-flex; align-items: center; gap: 6px; }
+.pl-sw { display: inline-block; width: 12px; height: 10px; }
+.pl-sw.pl-before, .pl-sw.pl-c3 { background: var(--gray); }
+.pl-sw.pl-after, .pl-sw.pl-c1 { background: var(--primary); }
+.pl-sw.pl-warn, .pl-sw.pl-c2 { background: var(--accent); }
+.pl-sw.pl-c4 { background: var(--dark-gray); }
+.pl-sw.pl-c5 { background: var(--light-gray); }
+.pl-sw.pl-empty { background: transparent; border: 1.5px solid var(--light-gray); }
+
+.pl-adv { margin: 10px 0; padding: 4px 0 4px 12px; border-left: 3px solid var(--light-gray); background: var(--background-alt); overflow-x: auto; }
+.pl-gbody, .pl-readout { overflow-x: auto; }
+.pl-table, .paper-body .results-table { width: 100%; min-width: 520px; border-collapse: collapse; margin: 10px 0; overflow-wrap: normal; }
+.pl-table th, .pl-table td, .paper-body .results-table th, .paper-body .results-table td { padding: 6px 8px; border-bottom: 1px solid var(--light-gray); text-align: left; vertical-align: top; font-size: 0.86rem; }
+.pl-table th, .paper-body .results-table th { font-family: var(--code); font-size: 0.74rem; color: var(--gray); font-weight: 500; }
+.pl-table td:last-child { font-family: var(--code); font-size: 0.8rem; }
+.pl-table-scroll { overflow-x: auto; }
+.paper-body li { text-align: left; }

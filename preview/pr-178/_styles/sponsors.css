@@ -1,0 +1,44 @@
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.4;
+}
+
+.sponsors .icon {
+  color: var(--gray);
+}
+
+.sponsors-label {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  font-weight: var(--semi-bold);
+}
+
+.sponsors .sponsor {
+  color: var(--primary);
+  font-weight: var(--semi-bold);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition);
+}
+
+a.sponsor:hover {
+  border-bottom-color: var(--primary);
+}
+
+.sponsor-sep {
+  color: var(--light-gray);
+}
+
+.sponsors:not([data-style=card]) {
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=sponsors.css.map */
