@@ -108,7 +108,7 @@ jobs:
           fi
 
       - name: Commit preview to Pages branch
-        uses: rossjrw/pr-preview-action@v1.8.1
+        uses: rossjrw/pr-preview-action@v1.8.2
         with:
           source-dir: _site
           umbrella-dir: ${{ env.PREVIEWS_FOLDER }}
